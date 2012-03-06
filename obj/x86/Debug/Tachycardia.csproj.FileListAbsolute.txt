@@ -1,0 +1,12 @@
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\Tachycardia.exe
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\Tachycardia.pdb
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\Mogre.dll
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\MogreNewt.dll
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\Mogre_d.dll
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\MOIS.dll
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\MOIS_d.dll
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\Mogre.xml
+C:\Uczelnia\Tachycardia\Tachycardia\bin\Debug\MogreNewt.xml
+C:\Uczelnia\Tachycardia\Tachycardia\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Uczelnia\Tachycardia\Tachycardia\obj\x86\Debug\Tachycardia.exe
+C:\Uczelnia\Tachycardia\Tachycardia\obj\x86\Debug\Tachycardia.pdb
