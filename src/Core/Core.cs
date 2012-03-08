@@ -7,6 +7,7 @@ namespace Tachycardia
 {
     class Core
     {
+        
         protected static Core Instance = null;
 
         public static Core Singleton()
@@ -18,7 +19,7 @@ namespace Tachycardia
 
         protected Core()
         {
-            m_Config = null;
+            //m_Config = null;
             //!config
             m_StateManager = null;
 
@@ -51,7 +52,7 @@ namespace Tachycardia
             return true;
         }
 
-        public Boolean Init(String wndTitle, MOIS.KeyListener keyListener = null, MOIS.MouseListener mouseListener = null)
+        public Boolean Init(String wndTitle/*, skoro to static to po co przekazywac? MOIS.KeyListener.KeyPressedHandler keyListener/* = null, MOIS.MouseListener.MouseMovedHandler mouseListener = null*/)
         {
 
 #if DEBUG
@@ -59,7 +60,7 @@ namespace Tachycardia
 	            m_PluginsCfg = "../../res/plugins_d.cfg";
 #else
             m_ResourcesCfg = "../../res/resources.cfg";
-            m_luginsCfg = "../../res/plugins.cfg";
+            m_PluginsCfg = "../../res/plugins.cfg";
 #endif
 
             //m_ResourcesCfg = "../../res/resources.cfg";
@@ -77,12 +78,12 @@ namespace Tachycardia
             m_RenderWnd = m_Root.Initialise(true, wndTitle);
 
 
-            GetRoot().AddFrameListener(this);
+            //?????GetRoot().AddFrameListener(this);
 
             SetupViewport();
             GetLog().LogMessage("ViewPort ready.");
 
-            SetupInputSystem(keyListener, mouseListener);
+            SetupInputSystem(/*keyListener, mouseListener*/);
             GetLog().LogMessage("InputSystem ready.");
 
             SetupResources();
@@ -230,10 +231,10 @@ namespace Tachycardia
             return true;
         }
 
-        public Config GetConfig()
+        /*public Config GetConfig()
         {
             return m_Config;
-        }
+        }*/
 
         public StateManager GetStateManager()
         {
@@ -298,7 +299,7 @@ namespace Tachycardia
             m_Viewport = m_RenderWnd.AddViewport(null);
             m_Viewport.BackgroundColour = new Mogre.ColourValue(0.5f, 0.5f, 0.5f, 1.0f);
         }
-        private void SetupInputSystem(MOIS.KeyListener pKeyListener, MOIS.MouseListener pMouseListener)
+        private void SetupInputSystem(/*MOIS.KeyListener pKeyListener, MOIS.MouseListener pMouseListener//jak wczesniej static przekzywac?*/)
         {
             ulong hWnd = 0;
 	        MOIS.ParamList paramList = new MOIS.ParamList();
@@ -325,12 +326,29 @@ namespace Tachycardia
 
         private void SetupResources()
         {
+            // Load resource paths from config file
+            var cf = new Mogre.ConfigFile();
+            cf.Load(m_ResourcesCfg, "\t:=", true);
 
+            // Go through all sections & settings in the file
+            var seci = cf.GetSectionIterator();
+            while (seci.MoveNext())
+            {
+                foreach (var pair in seci.Current)
+                {
+                    Mogre.ResourceGroupManager.Singleton.AddResourceLocation(
+                        pair.Value, pair.Key, seci.CurrentKey);
+                }
+            }
+
+            /*
             String secName, typeName, archName;
             Mogre.ConfigFile cf;
             cf.Load(m_ResourcesCfg, "", false);
 
             Mogre.ConfigFile.SectionIterator seci = cf.GetSectionIterator();
+
+            
             while (seci.HasMoreElements())
             {
                 secName = seci.PeekNextKey();
@@ -342,7 +360,7 @@ namespace Tachycardia
                     archName = i.Value;
                     Mogre.ResourceGroupManager.Singleton.AddResourceLocation(archName, typeName, secName);
                 }
-            }
+            }*/
             /*
 	        new SoundDict();
 	        SoundDict.Singleton().SetDirectory( "../../res/sfx/" );
@@ -363,7 +381,7 @@ namespace Tachycardia
 
 
 
-        private Config m_Config;
+        //private Config m_Config;
         private StateManager m_StateManager;
 
         private Mogre.Root m_Root;
