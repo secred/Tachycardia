@@ -7,29 +7,33 @@ namespace Tachycardia
 {
     class Core
     {
+        protected static Core Instance = null;
+
         public static Core Singleton()
         {
-            return new Core();
+            if (Instance == null)
+                Instance = new Core();
+            return Instance;
         }
 
-        public Core()
+        protected Core()
         {
-            m_config = 0;
+            m_Config = null;
             //!config
-            m_stateManager = 0;
+            m_StateManager = null;
 
-            m_root = null;
-            m_renderWnd = null;
-            m_viewport = null;
-            m_log = null;
-            m_timer = null;
+            m_Root = null;
+            m_RenderWnd = null;
+            m_Viewport = null;
+            m_Log = null;
+            m_Timer = null;
 
-            m_inputMgr = null;
-            m_keyboard = null;
-            m_mouse = null;
+            m_InputMgr = null;
+            m_Keyboard = null;
+            m_Mouse = null;
 
-            m_update = 1.0f / 120;
-            m_elapsed = 0.0f;
+            m_Update = 1.0f / 120;
+            m_Elapsed = 0.0f;
 
             /*
             for (int i = 0; i < 256; ++i)
@@ -42,8 +46,8 @@ namespace Tachycardia
             //GameState.create(m_stateManager, "GameState");
             //MenuState.create(m_stateManager, "MenuState");
             //PauseState.create(m_stateManager, "PauseState");
-            m_stateManager->pushState("MenuState");
-            m_stateManager->start();
+            m_StateManager.PushState("MenuState");
+            m_StateManager.Start();
             return true;
         }
 
@@ -51,8 +55,8 @@ namespace Tachycardia
         {
 
 #if DEBUG
-	            m_resourcesCfg = "../../res/resources_d.cfg";
-	            m_pluginsCfg = "../../res/plugins_d.cfg";
+	            m_ResourcesCfg = "../../res/resources_d.cfg";
+	            m_PluginsCfg = "../../res/plugins_d.cfg";
 #else
             m_ResourcesCfg = "../../res/resources.cfg";
             m_luginsCfg = "../../res/plugins.cfg";
@@ -65,12 +69,12 @@ namespace Tachycardia
 
             GetLog().LogMessage("Initialize SECred Framework...");
 
-            m_root = new Mogre.Root(m_pluginsCfg);
-            if (!m_root.ShowConfigDialog())
+            m_Root = new Mogre.Root(m_PluginsCfg);
+            if (!m_Root.ShowConfigDialog())
             {
                 return false;
             }
-            m_renderWnd = m_root.Initialise(true, wndTitle);
+            m_RenderWnd = m_Root.Initialise(true, wndTitle);
 
 
             GetRoot().AddFrameListener(this);
@@ -89,8 +93,8 @@ namespace Tachycardia
 
             GetLog().LogMessage("TrayManager ready.");
 
-            m_timer = new Mogre.Timer();
-            m_timer.Reset();
+            m_Timer = new Mogre.Timer();
+            m_Timer.Reset();
             GetLog().LogMessage("Timer ready.");
 
             //config
@@ -98,7 +102,7 @@ namespace Tachycardia
             GetLog().LogMessage("ConfigManager ready.");
 
             //!config	
-            //m_stateManager = new StateManager();
+            m_StateManager = new StateManager();
             GetLog().LogMessage("StateManager ready.");
             /*
 	        //CEgui initialization
@@ -122,7 +126,7 @@ namespace Tachycardia
 	        
             GetLog().LogMessage("CEgui has been initiliazed!");
             */
-            m_renderWnd.IsActive = true;
+            m_RenderWnd.IsActive = true;
 
             //MissionsCreator missions;
 
@@ -133,8 +137,8 @@ namespace Tachycardia
 
         public Boolean FrameRenderingQueued(Mogre.FrameEvent evt)
         {
-            if (m_stateManager->getActiveState())
-                m_stateManager->getActiveState()->updateFrameEvent(evt);
+            if (m_StateManager.GetActiveState() != null)
+                m_StateManager.GetActiveState().UpdateFrameEvent(evt);
 
             double time = evt.timeSinceLastFrame;
             ///// Bullet time tymczasowo wyci?ty
@@ -143,8 +147,8 @@ namespace Tachycardia
             //else
             //	time = 1.0 * evt.timeSinceLastFrame;
 
-            double tElapsed = m_elapsed += time;
-            double tUpdate = m_update;
+            double tElapsed = m_Elapsed += time;
+            double tUpdate = m_Update;
 
             // loop through and update as many times as necessary (up to 10 times maximum).
             if ((tElapsed > tUpdate) && (tElapsed < (tUpdate * 10)))
@@ -153,7 +157,7 @@ namespace Tachycardia
                 {
                     //for( std.list<TimeObserver *>.iterator it = m_TimeObservers.begin(); it != m_TimeObservers.end(); it++ )
                     //	(*it)->update( tUpdate );
-                    m_stateManager->update(tUpdate);
+                    m_StateManager.Update(tUpdate);
                     tElapsed -= tUpdate;
                 }
             }
@@ -170,13 +174,13 @@ namespace Tachycardia
                     // the elapsed time since the last drawn frame is very long.
                     //for( std.list<TimeObserver *>.iterator it = m_TimeObservers.begin(); it != m_TimeObservers.end(); it++ )
                     //	(*it)->update( tUpdate );
-                    m_stateManager->update(tUpdate);
+                    m_StateManager.Update(tUpdate);
                     tElapsed = 0.0f; // reset the elapsed time so we don't become "eternally behind".
                 }
             }
 
-            Core.Singleton().m_elapsed = tElapsed;
-            Core.Singleton().m_update = tUpdate;
+            Core.Singleton().m_Elapsed = tElapsed;
+            Core.Singleton().m_Update = tUpdate;
 
             //wstrzykiwanie uplywu czasu do CEgui
             //CEGUI.System.getSingleton().injectTimePulse(evt.timeSinceLastFrame);
@@ -186,136 +190,136 @@ namespace Tachycardia
 
         public Boolean KeyPressed(MOIS.KeyEvent keyEventRef)
         {
-            m_stateManager.keyPressed(keyEventRef);
+            m_StateManager.KeyPressed(keyEventRef);
 
-            m_keyStates[keyEventRef.key] = true;
+            m_KeyStates[keyEventRef.key] = true;
 
             return true;
         }
 
         public Boolean KeyReleased(MOIS.KeyEvent keyEventRef)
         {
-            if (keyEventRef.key == MOIS.KeyCode.KC_KANJI || keyEventRef.key == MOIS.KeyCode.KC_GRAVE || keyEventRef.key == OIS.KC_TAB)
+            if (keyEventRef.key == MOIS.KeyCode.KC_KANJI || keyEventRef.key == MOIS.KeyCode.KC_GRAVE || keyEventRef.key == MOIS.KeyCode.KC_TAB)
                 /*{
                     if (Console.getSingleton().isVisible())
                         Console.getSingleton().hide();
                     else
                         Console.getSingleton().show();
                 }*/
-                m_stateManager.keyReleased(keyEventRef);
-            m_keyStates[keyEventRef.key] = false;
+                m_StateManager.KeyReleased(keyEventRef);
+            m_KeyStates[keyEventRef.key] = false;
             return true;
         }
 
         public Boolean MouseMoved(MOIS.MouseEvent evt)
         {
-            m_stateManager.mouseMoved(evt);
+            m_StateManager.MouseMoved(evt);
 
             return true;
         }
 
         public Boolean MousePressed(MOIS.MouseEvent evt, MOIS.MouseButtonID id)
         {
-            m_stateManager.mousePressed(evt, id);
+            m_StateManager.MousePressed(evt, id);
             return true;
         }
 
         public Boolean MouseReleased(MOIS.MouseEvent evt, MOIS.MouseButtonID id)
         {
-            m_stateManager.mouseReleased(evt, id);
+            m_StateManager.MouseReleased(evt, id);
             return true;
         }
 
         public Config GetConfig()
         {
-            return m_config;
+            return m_Config;
         }
 
         public StateManager GetStateManager()
         {
-            return m_stateManager;
+            return m_StateManager;
         }
 
         public Mogre.Root GetRoot()
         {
-            return m_root;
+            return m_Root;
         }
 
-        public Mogre.RenderWindow GetRenderWnd()
+        public Mogre.RenderWindow GetRenderWindow()
         {
-            return m_renderWnd;
+            return m_RenderWnd;
         }
 
         public Mogre.Viewport GetViewport()
         {
-            return m_viewport;
+            return m_Viewport;
         }
 
         public Mogre.Log GetLog()
         {
-            return m_log;
+            return m_Log;
         }
 
         public Mogre.Timer GetTimer()
         {
-            return m_timer;
+            return m_Timer;
         }
 
         public MOIS.InputManager GetInputMgr()
         {
-            return m_inputMgr;
+            return m_InputMgr;
         }
 
         public MOIS.Keyboard GetKeyboard()
         {
-            return m_keyboard;
+            return m_Keyboard;
         }
 
         public MOIS.Mouse GetMouse()
         {
-            return m_mouse;
+            return m_Mouse;
         }
 
         //public CEGUI.MogreRenderer		    getMogreRenderer();
 
         public Boolean GetKeyState(MOIS.KeyCode keyCode)
         {
-            return m_keyStates[keyCode];
+            return m_KeyStates[keyCode];
         }
 
         private void SetupLog()
         {
             Mogre.LogManager logMgr = new Mogre.LogManager();
-            m_log = Mogre.LogManager.Singleton.CreateLog("OgreLogfile.log", true, true, false);
-            m_log.SetDebugOutputEnabled(true);
+            m_Log = Mogre.LogManager.Singleton.CreateLog("OgreLogfile.log", true, true, false);
+            m_Log.SetDebugOutputEnabled(true);
         }
         private void SetupViewport()
         {
-            m_viewport = m_renderWnd.AddViewport(null);
-            m_viewport.BackgroundColour = new Mogre.ColourValue(0.5f, 0.5f, 0.5f, 1.0f);
+            m_Viewport = m_RenderWnd.AddViewport(null);
+            m_Viewport.BackgroundColour = new Mogre.ColourValue(0.5f, 0.5f, 0.5f, 1.0f);
         }
         private void SetupInputSystem(MOIS.KeyListener pKeyListener, MOIS.MouseListener pMouseListener)
         {
             ulong hWnd = 0;
-	        MOIS.ParamList paramList;
+	        MOIS.ParamList paramList = new MOIS.ParamList();
 	        paramList.Insert( "WINDOW", Mogre.StringConverter.ToString(hWnd));
 
-	        m_inputMgr = MOIS.InputManager.CreateInputSystem(paramList);
-	        m_keyboard = (MOIS.Keyboard) m_inputMgr.CreateInputObject( MOIS.Type.OISKeyboard, true);
-	        m_mouse = (MOIS.Mouse) m_inputMgr.CreateInputObject(MOIS.Type.OISMouse, true));
-	        /*m_mouse.MouseState.height = m_renderWnd.height;
-	        m_mouse.MouseState.width  = m_renderWnd.width;
-	        
-	        if(pKeyListener == 0)
-		        m_Keyboard->setEventCallback(this);
-	        else
-		        m_Keyboard->setEventCallback(pKeyListener);
+	        m_InputMgr = MOIS.InputManager.CreateInputSystem(paramList);
+	        m_Keyboard = (MOIS.Keyboard) m_InputMgr.CreateInputObject( MOIS.Type.OISKeyboard, true);
+            m_Mouse = (MOIS.Mouse)m_InputMgr.CreateInputObject(MOIS.Type.OISMouse, true);
+
+            //m_mouse.MouseState.height = m_renderWnd.height;
+            //m_mouse.MouseState.width  = m_renderWnd.width;
+
+            //if(pKeyListener == 0)
+            //    m_Keyboard->setEventCallback(this);
+            //else
+            //    m_Keyboard->setEventCallback(pKeyListener);
             
-	        if(pMouseListener == 0)
-		        m_Mouse->setEventCallback(this);
-	        else
-		        m_Mouse->setEventCallback(pMouseListener);
-             */
+            //if(pMouseListener == 0)
+            //    m_Mouse->setEventCallback(this);
+            //else
+            //    m_Mouse->setEventCallback(pMouseListener);
         }
 
 
@@ -324,7 +328,7 @@ namespace Tachycardia
 
             String secName, typeName, archName;
             Mogre.ConfigFile cf;
-            cf.Load(m_resourcesCfg, "", false);
+            cf.Load(m_ResourcesCfg, "", false);
 
             Mogre.ConfigFile.SectionIterator seci = cf.GetSectionIterator();
             while (seci.HasMoreElements())
@@ -359,29 +363,29 @@ namespace Tachycardia
 
 
 
-        private Config m_config;
-        private StateManager m_stateManager;
+        private Config m_Config;
+        private StateManager m_StateManager;
 
-        private Mogre.Root m_root;
-        private Mogre.RenderWindow m_renderWnd;
-        private Mogre.Viewport m_viewport;
-        private Mogre.Log m_log;
-        private Mogre.Timer m_timer;
+        private Mogre.Root m_Root;
+        private Mogre.RenderWindow m_RenderWnd;
+        private Mogre.Viewport m_Viewport;
+        private Mogre.Log m_Log;
+        private Mogre.Timer m_Timer;
 
-        private MOIS.InputManager m_inputMgr;
-        private MOIS.Keyboard m_keyboard;
-        private MOIS.Mouse m_mouse;
+        private MOIS.InputManager m_InputMgr;
+        private MOIS.Keyboard m_Keyboard;
+        private MOIS.Mouse m_Mouse;
 
         //CEgui - renderer dla CEgui
         //private CEGUI.MogreRenderer         mainRenderer;
 
-        private String m_resourcesCfg;
-        private String m_pluginsCfg;
+        private String m_ResourcesCfg;
+        private String m_PluginsCfg;
 
-        private Double m_update;
-        private Double m_elapsed;
+        private Double m_Update;
+        private Double m_Elapsed;
 
-        private Dictionary<MOIS.KeyCode, Boolean> m_keyStates;
+        private Dictionary<MOIS.KeyCode, Boolean> m_KeyStates;
 
     }
 }

@@ -12,14 +12,14 @@ namespace Tachycardia
 	    Dictionary<String, State>	    m_States;
 	    bool							m_Shutdown;
 
-        StateManager()
+        public StateManager()
         {
             m_ActiveStateStack = new List<State>();
             m_States = new Dictionary<string,State>();
 	        m_Shutdown = false;
         }
 
-        ~StateManager()
+        public ~StateManager()
         {
             while(m_ActiveStateStack.Count > 0)
 	        {
@@ -203,31 +203,31 @@ namespace Tachycardia
 		        m_ActiveStateStack[0].Update( dt );
         }
 
-        bool KeyPressed( MOIS.KeyEvent keyEventRef)
+        public bool KeyPressed(MOIS.KeyEvent keyEventRef)
         {
 	        if(m_ActiveStateStack.Count > 0)
                 return m_ActiveStateStack[0].KeyPressed(keyEventRef);
             return false;
         }
-        bool KeyReleased( MOIS.KeyEvent keyEventRef)
+        public bool KeyReleased(MOIS.KeyEvent keyEventRef)
         {
             if (m_ActiveStateStack.Count > 0)
                 return m_ActiveStateStack[0].KeyReleased(keyEventRef);
             return false;
         }
-        bool MouseMoved( MOIS.MouseEvent evt)
+        public bool MouseMoved(MOIS.MouseEvent evt)
         {
             if (m_ActiveStateStack.Count > 0)
                 return m_ActiveStateStack[0].MouseMoved(evt);
             return false;
         }
-        bool MousePressed( MOIS.MouseEvent evt, MOIS.MouseButtonID id)
+        public bool MousePressed(MOIS.MouseEvent evt, MOIS.MouseButtonID id)
         {
             if (m_ActiveStateStack.Count > 0)
                 return m_ActiveStateStack[0].MousePressed(evt, id);
             return false;
         }
-        bool MouseReleased( MOIS.MouseEvent evt, MOIS.MouseButtonID id)
+        public bool MouseReleased(MOIS.MouseEvent evt, MOIS.MouseButtonID id)
         {
             if (m_ActiveStateStack.Count > 0)
                 return m_ActiveStateStack[0].MouseReleased(evt, id);
