@@ -54,14 +54,8 @@
     <Reference Include="MogreNewt">
       <HintPath>lib\Release\MogreNewt.dll</HintPath>
     </Reference>
-    <Reference Include="Mogre_d">
-      <HintPath>lib\Debug\Mogre_d.dll</HintPath>
-    </Reference>
     <Reference Include="MOIS">
       <HintPath>lib\Release\MOIS.dll</HintPath>
-    </Reference>
-    <Reference Include="MOIS_d">
-      <HintPath>lib\Debug\MOIS_d.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -73,6 +67,10 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Core\Core.cs" />
+    <Compile Include="src\Core\StateManager\State.cs" />
+    <Compile Include="src\Core\StateManager\IStateListener.cs" />
+    <Compile Include="src\Core\StateManager\StateManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -90,6 +88,14 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Core\Map\" />
+    <Folder Include="src\Core\Mission\" />
+    <Folder Include="src\Core\World\" />
+    <Folder Include="src\Objects\" />
+    <Folder Include="src\Sound\" />
+    <Folder Include="src\States\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
