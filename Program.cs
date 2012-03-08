@@ -9,6 +9,8 @@ namespace Tachycardia
     {
         static void Main(string[] args)
         {
+            //
+            //new Mogre.Root();
         }
     }
 }
