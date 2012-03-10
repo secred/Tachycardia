@@ -19,7 +19,7 @@ namespace Tachycardia
 	        m_Shutdown = false;
         }
 
-        public ~StateManager()
+        ~StateManager()
         {
             while(m_ActiveStateStack.Count > 0)
 	        {

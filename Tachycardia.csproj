@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{43623635-E6CE-4C02-9777-913914E96322}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Core\Controller\Controller.cs" />
     <Compile Include="src\Core\Core.cs" />
     <Compile Include="src\Core\StateManager\State.cs" />
     <Compile Include="src\Core\StateManager\IStateListener.cs" />
