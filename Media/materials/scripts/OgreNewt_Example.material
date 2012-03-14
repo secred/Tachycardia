@@ -1,0 +1,60 @@
+
+material Simple/dirt01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0
+			texture_unit
+			{
+				texture dirt01.jpg
+			}
+		}
+	}
+}
+
+material Simple/BumpyMetal
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0
+			texture_unit
+			{
+				texture BumpyMetal.jpg
+			}
+		}
+	}
+}
+
+material Simple/RockWall
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0
+			texture_unit
+			{
+				texture rockwall.tga
+			}
+		}
+	}
+}
+
+material Simple/BeachStones
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0
+			texture_unit
+			{
+				texture BeachStones.jpg
+			}
+		}
+	}
+}
