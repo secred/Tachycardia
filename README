@@ -1,0 +1,134 @@
+*********************************************************
+*							*
+*		TACHYCARDIA 0.1 pre-alpha		*
+*							*
+*********************************************************
+
+    OpenSource multi- and singleplayer game project.
+Licensed under BSD license, see COPYING for more details.
+ Current developers team and contact inside AUTHORS file.
+
+
+
+
+                --- TABLE OF CONTENTS ---
+
+1. TARGET
+2. TECHNICAL SPEC
+3. INSTALLATION
+4. PROJECT STRUCTURE
+
+
+
+1. TARGET
+
+Main target of this project is to create OpenSource game
+in team. It started at University (Western Pomeranian
+University of Technology to be exact). After finding out
+an interest in such an idea we decided to unite and
+create our own game.
+
+Going deeper into our motivation, we wanted to learn
+more about developing games and teach each other about
+our findings. Thanks to that, we can do more and faster.
+
+Second thing is promotion of or University and, of
+course, ourselves.
+
+
+
+2.TECHNICAL SPEC
+
+Project is written in C# now (it was C++ before), except
+GDD, where LaTeX is used. Libraries used:
+ * Ogre
+ * Newton
+ * OpenAL
+
+
+
+3. INSTALLATION
+
+No info at this moment, sorry!
+
+
+
+4. PROJECT STRUCTURE
+
+Tachycardia
+  |
+  +--Media
+  |  |
+  |  +--DeferredShadingMedia
+  |  |
+  |  +--fonts
+  |  |
+  |  +--gui
+  |  |
+  |  +--materials
+  |  |
+  |  +--models
+  |  |
+  |  +--overlays
+  |  |
+  |  +--packs
+  |  |
+  |  +--particle
+  |  |
+  |  |-terrain.cfg
+  |
+  +--Properties
+  |  |
+  |  |-AssemblyInfo.cs
+  |
+  +--bin			[BINARIES]
+  |  |
+  |  +--Debug
+  |  |
+  |  +--Release
+  |
+  +--doc			[DOCUMENTATION]
+  |  |
+  |  +--en			[ENGLISH VERSIONS]
+  |  |
+  |  +--pl			[POLISH VERSIONS]
+  |     |
+  |     +--GDD			[GAME DESIGN DOCUMENT]
+  |
+  +--lib			[LIBRARIES]
+  |  |
+  |  +--Debug
+  |  |
+  |  +--Release
+  |
+  +--obj
+  |  |
+  |  +--x86
+  |     |
+  |     +--Debug
+  |     |
+  |     +--Release
+  |
+  +--src			[SOURCE CODE]
+  |  |
+  |  +--Core
+  |  |  |
+  |  |  +--Controller
+  |  |  |
+  |  |  +--StateManager
+  |  |
+  |  |-Config.cs
+  |  |
+  |  |-Core.cs
+  |
+  |-AUTHORS			[AUTHORS INFO]
+  |
+  |-COPYING			[COPYRIGHT INFO]
+  |
+  |-Program.cs
+  |
+  |-README			[THIS FILE]
+  |
+  |-Tachycardia.csproj		[MS VISUAL STUDIO 2010 PROJECT FILE]
+  |
+  |-core.cs
