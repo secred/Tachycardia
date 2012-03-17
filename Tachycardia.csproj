@@ -72,6 +72,8 @@
     <Compile Include="src\Core\StateManager\State.cs" />
     <Compile Include="src\Core\StateManager\IStateListener.cs" />
     <Compile Include="src\Core\StateManager\StateManager.cs" />
+    <Compile Include="src\Player\PlayerData.cs" />
+    <Compile Include="src\Player\PlayerLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
