@@ -1,0 +1,100 @@
+material Level/SOLID/TEX/door.jpg
+{
+	technique
+	{
+		pass
+		{
+			specular 0.000000 0.000000 0.000000 12.500000
+			texture_unit
+			{
+				texture door.jpg
+			}
+            texture_unit
+            {
+                texture lightmap.png
+                tex_coord_set 1
+                colour_op modulate
+            }
+		}
+	}
+}
+material Level/SOLID/TEX/stoneFloor.jpg
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture stoneFloor.jpg
+			}
+            texture_unit
+            {
+                texture lightmap.png
+                tex_coord_set 1
+                colour_op modulate
+            }
+		}
+	}
+}
+material Level/SOLID/TEX/stoneWall.jpg
+{
+	technique
+	{
+		pass
+		{
+			specular 0.000000 0.000000 0.000000 12.500000
+			texture_unit
+			{
+				texture stoneWall.jpg
+			}
+            texture_unit
+            {
+                texture lightmap.png
+                tex_coord_set 1
+                colour_op modulate
+            }
+		}
+	}
+}
+material Level/SOLID/TEX/grass.jpg
+{
+	technique
+	{
+		pass
+		{
+			specular 0.000000 0.000000 0.000000 12.500000
+			texture_unit
+			{
+				texture grass.jpg
+			}
+            texture_unit
+            {
+                texture lightmap.png
+                tex_coord_set 1
+                colour_op modulate
+            }
+		}
+	}
+}
+material Level/SOLID/TEX/marble.png
+{
+	technique
+	{
+		pass
+		{
+			specular 0.000000 0.000000 0.000000 12.500000
+			texture_unit
+			{
+				texture marble.jpg
+			}
+            texture_unit
+            {
+                texture lightmap.png
+                tex_coord_set 1
+                colour_op modulate
+            }
+		}
+	}
+}

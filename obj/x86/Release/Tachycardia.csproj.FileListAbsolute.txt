@@ -10,3 +10,11 @@ C:\Uczelnia\Tachycardia\Tachycardia\bin\Release\MogreNewt.xml
 C:\Uczelnia\Tachycardia\Tachycardia\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Uczelnia\Tachycardia\Tachycardia\obj\x86\Release\Tachycardia.exe
 C:\Uczelnia\Tachycardia\Tachycardia\obj\x86\Release\Tachycardia.pdb
+D:\Tachycardia\obj\x86\Release\Tachycardia.exe
+D:\Tachycardia\obj\x86\Release\Tachycardia.pdb
+D:\Tachycardia\bin\Release\Tachycardia.exe
+D:\Tachycardia\bin\Release\Tachycardia.pdb
+D:\Tachycardia\bin\Release\Mogre.dll
+D:\Tachycardia\bin\Release\MogreNewt.dll
+D:\Tachycardia\bin\Release\MOIS.dll
+D:\Tachycardia\obj\x86\Release\ResolveAssemblyReference.cache

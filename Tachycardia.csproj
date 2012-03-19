@@ -48,14 +48,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mogre">
-      <HintPath>lib\Release\Mogre.dll</HintPath>
+    <Reference Include="Mogre, Version=1.7.1.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WORK\Mogre\Mogre.dll</HintPath>
     </Reference>
-    <Reference Include="MogreNewt">
-      <HintPath>lib\Release\MogreNewt.dll</HintPath>
+    <Reference Include="MogreNewt, Version=2.20.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WORK\Mogre\MogreNewt.dll</HintPath>
     </Reference>
-    <Reference Include="MOIS">
-      <HintPath>lib\Release\MOIS.dll</HintPath>
+    <Reference Include="MOIS, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WORK\Mogre\MOIS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -69,9 +72,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\Core\Controller\Controller.cs" />
     <Compile Include="src\Core\Core.cs" />
+    <Compile Include="src\Core\Map\Map.cs" />
     <Compile Include="src\Core\StateManager\State.cs" />
     <Compile Include="src\Core\StateManager\IStateListener.cs" />
     <Compile Include="src\Core\StateManager\StateManager.cs" />
+    <Compile Include="src\GameCamera.cs" />
+    <Compile Include="src\Objects\GameObject.cs" />
+    <Compile Include="src\Objects\ObjectManager.cs" />
+    <Compile Include="src\Player\Character.cs" />
+    <Compile Include="src\Player\CharacterProfile.cs" />
     <Compile Include="src\Player\PlayerData.cs" />
     <Compile Include="src\Player\PlayerLogic.cs" />
   </ItemGroup>
@@ -93,10 +102,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\Core\Map\" />
     <Folder Include="src\Core\Mission\" />
     <Folder Include="src\Core\World\" />
-    <Folder Include="src\Objects\" />
     <Folder Include="src\Sound\" />
     <Folder Include="src\States\" />
   </ItemGroup>
