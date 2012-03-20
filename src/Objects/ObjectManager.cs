@@ -7,22 +7,31 @@ namespace Tachycardia
 {
     class ObjectManager
     {
-        List<GameObject> m_Objects;
+        Dictionary<string, GameObject> m_Objects;
 
         public ObjectManager()
         {
-            m_Objects = new List<GameObject>();
+            m_Objects = new Dictionary<string, GameObject>();
         }
 
-        public void Add(GameObject gameObject)
+        public void Add(string objectName, GameObject gameObject)
         {
-            m_Objects.Add(gameObject);
+            m_Objects.Add(objectName, gameObject);
+        }
+
+        public GameObject Find(string objectName)
+        {
+            if (m_Objects.ContainsKey(objectName))
+            {
+                return m_Objects[objectName];
+            }
+            return null;
         }
 
         public void Update()
         {
-            foreach (GameObject gameObject in m_Objects)
-                gameObject.Update();
+            foreach (KeyValuePair<string, GameObject> gameObjectPair in m_Objects)
+                gameObjectPair.Value.Update();
         }
 
     }

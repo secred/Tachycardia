@@ -1,26 +1,28 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-//namespace Tachycardia
-//{
-//    interface IStateListener
-//    {
+namespace Tachycardia
+{
 
-//        void    RegisterState(String stateName, State state);
+    interface IStateListener
+    {
 
-//        State   FindByName(String stateName);
+        void RegisterState(String stateName, State state);
 
-//        void    ChangeState(State state);
-//        void    ChangeState(String stateName);
+        State FindByName(String stateName);
 
-//        bool    PushState(State state);
-//        bool    PushState(String stateName);
+        void ChangeState(State state);
+        void ChangeState(String stateName);
 
-//        void    PopState();
-//        void    PauseState();
-//        void    Shutdown();
-//        void    PopAllAndPushState(State state);
-//    }
-//}
+        bool PushState(State state);
+        bool PushState(String stateName);
+
+        void PopState();
+        void PauseState();
+        void PopAllAndPushState(State state);
+
+        State GetActiveState();
+    }
+}

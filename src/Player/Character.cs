@@ -12,7 +12,9 @@ namespace Tachycardia
         public enum CharacterState
         {
             IDLE,
-            WALK
+            WALK,
+            BACKWALK,
+            RUN
         };
 
         public Entity m_Entity;
@@ -62,8 +64,7 @@ namespace Tachycardia
             collision.Dispose();
         }
 
-        void BodyTransformCallback(Body sender, Quaternion orientation,
-        Vector3 position, int threadIndex)
+        void BodyTransformCallback(Body sender, Quaternion orientation, Vector3 position, int threadIndex)
         {
             m_Node.Position = position;
             m_Node.Orientation = m_Orientation;
@@ -86,21 +87,33 @@ namespace Tachycardia
             AnimationState idleAnimation = m_Entity.GetAnimationState("Idle");
             AnimationState walkAnimation = m_Entity.GetAnimationState("Walk");
 
+            float animationCorrector = 0.3f;
+
             switch (m_State)
             {
                 case CharacterState.IDLE:
+                    m_Profile.m_WalkSpeed = 0.0f;
                     m_Velocity = Vector3.ZERO;
                     walkAnimation.Enabled = false;
                     idleAnimation.Enabled = true;
                     idleAnimation.Loop = true;
-                    idleAnimation.AddTime(1.0f / 90.0f);
+                    idleAnimation.AddTime(Core.m_FixedTime * m_Profile.m_WalkSpeed * animationCorrector);
                     break;
                 case CharacterState.WALK:
+                    m_Profile.m_WalkSpeed = 3.0f;
                     m_Velocity = m_Orientation * Vector3.UNIT_Z * m_Profile.m_WalkSpeed;
                     idleAnimation.Enabled = false;
                     walkAnimation.Enabled = true;
                     walkAnimation.Loop = true;
-                    walkAnimation.AddTime(1.0f / 90.0f);
+                    walkAnimation.AddTime(Core.m_FixedTime * m_Profile.m_WalkSpeed * animationCorrector);
+                    break;
+                case CharacterState.RUN:
+                    m_Profile.m_WalkSpeed = 8.0f;
+                    m_Velocity = m_Orientation * Vector3.UNIT_Z * m_Profile.m_WalkSpeed;
+                    idleAnimation.Enabled = false;
+                    walkAnimation.Enabled = true;
+                    walkAnimation.Loop = true;
+                    walkAnimation.AddTime(Core.m_FixedTime * m_Profile.m_WalkSpeed * animationCorrector);
                     break;
             }
         }
