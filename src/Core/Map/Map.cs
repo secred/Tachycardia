@@ -15,7 +15,7 @@ namespace Tachycardia
         Entity m_CollisionEntity;
         SceneNode m_CollisionNode;
 
-        Body m_Body;
+        public Body m_Body;
 
         public void SetGraphicsMesh(String meshFile)
         {

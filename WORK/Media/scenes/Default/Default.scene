@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<scene formatVersion="1.0.0" generator="Ogitor SceneBuilder 0.4.4">
+    <resourceLocations>
+        <resourceLocation type="FileSystem" name="../../DeferredShadingMedia/DeferredShading" />
+        <resourceLocation type="FileSystem" name="../../DeferredShadingMedia/DeferredShading/material" />
+        <resourceLocation type="FileSystem" name="../../DeferredShadingMedia/DeferredShading/post" />
+        <resourceLocation type="FileSystem" name="../../SkyX" />
+        <resourceLocation type="FileSystem" name="../../packs" />
+        <resourceLocation type="FileSystem" name="../../gui" />
+        <resourceLocation type="FileSystem" name="../../fonts" />
+        <resourceLocation type="FileSystem" name="../../" />
+        <resourceLocation type="FileSystem" name="../../DeferredShadingMedia" />
+        <resourceLocation type="FileSystem" name="../../DeferredShadingMedia/DeferredShading/material/glsl" />
+        <resourceLocation type="FileSystem" name="../../DeferredShadingMedia/DeferredShading/material/hlsl" />
+        <resourceLocation type="FileSystem" name="../../DeferredShadingMedia/DeferredShading/post/glsl" />
+        <resourceLocation type="FileSystem" name="../../DeferredShadingMedia/DeferredShading/post/hlsl" />
+        <resourceLocation type="FileSystem" name="../../Hydrax" />
+        <resourceLocation type="FileSystem" name="../../materials" />
+        <resourceLocation type="FileSystem" name="../../materials/programs" />
+        <resourceLocation type="FileSystem" name="../../materials/scripts" />
+        <resourceLocation type="FileSystem" name="../../materials/textures" />
+        <resourceLocation type="FileSystem" name="../" />
+        <resourceLocation type="FileSystem" name="../../models" />
+        <resourceLocation type="FileSystem" name="../../overlays" />
+        <resourceLocation type="FileSystem" name="../../particle" />
+    </resourceLocations>
+    <environment>
+        <scenemanager name="SceneManager" id="8911406" type="OctreeSceneManager" />
+        <colourAmbient r="0.5" g="0.5" b="0.5" a="1" />
+        <fog mode="none" start="0" end="1000" density="0">
+            <colour r="0.5" g="0.5" b="0.5" a="1" />
+        </fog>
+        <viewport name="Viewport1" id="2000000002" index="1">
+            <colour r="0" g="0" b="0" a="1" />
+        </viewport>
+        <camera name="intViewCamera1" viewMode="0" polyMode="3" fov="1">
+            <clipping near="1" far="3000" />
+            <position x="11.1123" y="5.92513" z="24.395" />
+            <rotation qw="0.955958" qx="-0.257883" qy="-0.135372" qz="-0.0362441" />
+        </camera>
+    </environment>
+    <nodes>
+        <node name="Level#0" id="236426896">
+            <position x="0" y="0" z="0" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="Level#0" meshFile="Level.mesh" castShadows="false">
+                <subentity index="0" materialName="Level/SOLID/TEX/grass.jpg" />
+                <subentity index="1" materialName="Level/SOLID/TEX/marble.png" />
+                <subentity index="2" materialName="Level/SOLID/TEX/stoneWall.jpg" />
+                <subentity index="3" materialName="Level/SOLID/TEX/stoneFloor.jpg" />
+                <subentity index="4" materialName="Level/SOLID/TEX/door.jpg" />
+            </entity>
+        </node>
+        <node name="LevelCol#0" id="925748480">
+            <position x="0" y="0" z="0" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="LevelCol#0" meshFile="LevelCol.mesh" castShadows="false">
+                <subentity index="0" materialName="Level/SOLID/TEX/stoneWall.jpg" />
+                <subentity index="1" materialName="Level/SOLID/TEX/stoneFloor.jpg" />
+            </entity>
+        </node>
+    </nodes>
+</scene>
