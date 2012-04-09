@@ -525,8 +525,7 @@
 				collision.Dispose();
                 //to do wymiany powinno byc w propertisie
                 map.m_Body.MaterialGroupID = Tachycardia.Core.Singleton.m_PhysicsManager.getMaterialID("Ground");
-
-                map.m_Body.AttachNode(pNode);
+				map.m_Body.AttachNode(pNode);
 			}
 		}
 

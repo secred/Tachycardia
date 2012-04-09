@@ -126,7 +126,6 @@
   <ItemGroup>
     <Folder Include="src\Core\Mission\" />
     <Folder Include="src\Core\World\" />
-    <Folder Include="src\Player\Controller\" />
     <Folder Include="src\Sound\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
