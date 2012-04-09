@@ -9,7 +9,10 @@ namespace Tachycardia.Objects.Actions
     {
         //teleport destination
         public Mogre.Vector3 m_TeleportTo;
-
+        public Teleport(Mogre.Vector3 destination)
+        {
+            m_TeleportTo = destination;
+        }
         
         //launch method
         public override void Go()
@@ -20,6 +23,7 @@ namespace Tachycardia.Objects.Actions
             //Tachycardia.Core.Singleton.m_Camera.DoSmth();
             //move player to:
             _Player.m_Control.m_MainBody.SetPositionOrientation(m_TeleportTo, Mogre.Quaternion.IDENTITY);
+            _Player.m_Control.m_MainBody.Velocity = new Mogre.Vector3(0,0,0);
         }
     }
 }

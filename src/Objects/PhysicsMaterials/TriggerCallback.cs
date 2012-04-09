@@ -21,8 +21,8 @@ namespace Tachycardia.Objects.PhysicsMaterials
             }
             else if ( contact.Body1.Type == (int)PhysicsManager.BodyTypes.TRIGGER )
             {
-                Tachycardia.Objects.Actions.BaseAction action = (Tachycardia.Objects.Actions.BaseAction)contact.Body1.UserData;
-                action.Go();
+                Tachycardia.Objects.Trigger _this = (Tachycardia.Objects.Trigger)contact.Body1.UserData;
+                _this.m_action.Go();
             }
             return;
         }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Tachycardia.Objects
 {
-    class Trigger
+    class Trigger : GameObject
     {
         //more than one? vector?
         public Tachycardia.Objects.Actions.BaseAction m_action;
@@ -41,6 +41,15 @@ namespace Tachycardia.Objects
             m_Body.UserData = this;
             m_Body.Type = (int)PhysicsManager.BodyTypes.TRIGGER;
             m_Body.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("Trigger");
+        }
+
+        public void SetPosition(Mogre.Vector3 position)
+        {
+            m_Body.SetPositionOrientation(position, Mogre.Quaternion.IDENTITY);
+        }
+
+        public override void Update()
+        {
         }
     }
 }

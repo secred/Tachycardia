@@ -134,9 +134,19 @@ namespace Tachycardia
            /*
             * Koniec inicjalizacji materialow ktora musi sie znalezc w opisie mapy, dla niekumatych w ogitorze. 
             */
-
-
-			CreateOgitorScene();
+            /*
+            * Przyklady dla wyzwalaczy 
+            */
+            //utworzenie wyzwalacza
+            //1 box = ksztalt / vector = rozmiar
+            Tachycardia.Objects.Trigger TriggerTeleport = new Tachycardia.Objects.Trigger("box", new Vector3(2, 2, 2));
+            //<trigger shape="box" sizex=2 sizey=2 sizez=2 action="teleport" x=14 y=2 z=20 ETC/>
+            TriggerTeleport.m_action = new Tachycardia.Objects.Actions.Teleport(new Vector3(14, 2, 20));
+            TriggerTeleport.SetPosition(new Vector3(5, 2, 0));
+            m_ObjectManager.Add("TriggerTeleport", TriggerTeleport);
+            
+            
+            CreateOgitorScene();
 			//CreateScene();
 
 			/*
@@ -273,7 +283,7 @@ namespace Tachycardia
             m_ObjectManager.Add("player", player);
 			m_Log.LogMessage("Player created.");
             
-
+            
 			m_Log.LogMessage("Adding light...");
 			Light light = Core.Singleton.m_SceneManager.CreateLight();
 			light.Type = Light.LightTypes.LT_DIRECTIONAL;
