@@ -9,77 +9,46 @@ namespace Tachycardia
 {
     class Character : GameObject
     {
+        /*w kontrolerze
         public enum CharacterState
         {
             IDLE,
             WALK,
             BACKWALK,
-            RUN
-        };
+            RUN,
+            CROUCH,
+            CROUCH_RUN,
+            CROUCH_BACK,
+            CROUCH_IDLE,
+            JUMP,
+            CRAWL
 
+        };
+        */
         public Entity m_Entity;
         public SceneNode m_Node;
-        public Body m_Body;
+   //    public CharacterState m_State;
 
-        public CharacterProfile m_Profile;
-        public CharacterState m_State;
+        //dostarczane przez kontroler
+        //public Quaternion m_Orientation;
+        
+        public PlayerController m_Control;//kontroler
+        public Vector3 m_HeadOffset;
 
-        public Quaternion m_Orientation;
-        public Vector3 m_Velocity;
-
-        public Character(CharacterProfile profile)
-        {
-            m_Profile = profile.Clone();
-
-            m_Orientation = Quaternion.IDENTITY;
-
-            m_Entity = Core.Singleton.m_SceneManager.CreateEntity(m_Profile.m_MeshName);
+        public Character(string meshName,float mass/*CharacterProfile profile*/)
+        {//tworzy grafike playera i podczepia mu kontroler, obsluguje animacje i uaktualnia kontroler
+            m_HeadOffset = new Vector3(0, 0.8f, 0);
+            //headoffset powinien byc chyba zmienny dla croucha itp
+            m_Entity = Core.Singleton.m_SceneManager.CreateEntity(meshName);
             m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
             m_Node.AttachObject(m_Entity);
-
-            Vector3 scaledSize = m_Entity.BoundingBox.HalfSize * m_Profile.m_BodyScaleFactor;
-
-            ConvexCollision collision = new MogreNewt.CollisionPrimitives.Capsule(
-                Core.Singleton.m_NewtonWorld,
-                System.Math.Min(scaledSize.x, scaledSize.z),
-                scaledSize.y * 2,
-                Vector3.UNIT_X.GetRotationTo(Vector3.UNIT_Y),
-                Core.Singleton.GetUniqueBodyId());
-
-            Vector3 inertia, offset;
-            collision.CalculateInertialMatrix(out inertia, out offset);
-            inertia *= m_Profile.m_BodyMass;
-
-            m_Body = new Body(Core.Singleton.m_NewtonWorld, collision, true);
-            m_Body.AttachNode(m_Node);
-            m_Body.SetMassMatrix(m_Profile.m_BodyMass, inertia);
-            m_Body.AutoSleep = false;
-
-            m_Body.Transformed += BodyTransformCallback;
-            m_Body.ForceCallback += BodyForceCallback;
-
-            Joint upVector = new MogreNewt.BasicJoints.UpVector(
-            Core.Singleton.m_NewtonWorld, m_Body, Vector3.UNIT_Y);
-
-            collision.Dispose();
-        }
-
-        void BodyTransformCallback(Body sender, Quaternion orientation, Vector3 position, int threadIndex)
-        {
-            m_Node.Position = position;
-            m_Node.Orientation = m_Orientation;
-        }
-
-        public void BodyForceCallback(Body body, float timeStep, int threadIndex)
-        {
-            Vector3 force = (m_Velocity - m_Body.Velocity * new Vector3(1, 0, 1))
-              * m_Profile.m_BodyMass * Core.m_FixedFPS;
-            m_Body.AddForce(force);
+            
+            m_Control = new PlayerController(m_Node, m_Entity, mass);
         }
 
         public void SetPosition(Vector3 position)
         {
-            m_Body.SetPositionOrientation(position, m_Orientation);
+            m_Control.m_MainBody.SetPositionOrientation(position, Mogre.Quaternion.IDENTITY);
         }
 
         public override void Update()
@@ -89,31 +58,27 @@ namespace Tachycardia
 
             float animationCorrector = 0.3f;
 
-            switch (m_State)
+            //tutaj sprawdzana jest informacja w jakim stanie obecnie znajduje sie player
+            //odczytane z controlera
+            switch (m_Control.m_State)
             {
-                case CharacterState.IDLE:
-                    m_Profile.m_WalkSpeed = 0.0f;
-                    m_Velocity = Vector3.ZERO;
+                case PlayerController.CharacterState.IDLE:
                     walkAnimation.Enabled = false;
                     idleAnimation.Enabled = true;
                     idleAnimation.Loop = true;
-                    idleAnimation.AddTime(Core.m_FixedTime * m_Profile.m_WalkSpeed * animationCorrector);
+                    idleAnimation.AddTime(Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector);
                     break;
-                case CharacterState.WALK:
-                    m_Profile.m_WalkSpeed = 3.0f;
-                    m_Velocity = m_Orientation * Vector3.UNIT_Z * m_Profile.m_WalkSpeed;
+                case PlayerController.CharacterState.WALK:
                     idleAnimation.Enabled = false;
                     walkAnimation.Enabled = true;
                     walkAnimation.Loop = true;
-                    walkAnimation.AddTime(Core.m_FixedTime * m_Profile.m_WalkSpeed * animationCorrector);
+                    walkAnimation.AddTime(Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector);
                     break;
-                case CharacterState.RUN:
-                    m_Profile.m_WalkSpeed = 8.0f;
-                    m_Velocity = m_Orientation * Vector3.UNIT_Z * m_Profile.m_WalkSpeed;
+                case PlayerController.CharacterState.RUN:
                     idleAnimation.Enabled = false;
                     walkAnimation.Enabled = true;
                     walkAnimation.Loop = true;
-                    walkAnimation.AddTime(Core.m_FixedTime * m_Profile.m_WalkSpeed * animationCorrector);
+                    walkAnimation.AddTime(Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector);
                     break;
             }
         }

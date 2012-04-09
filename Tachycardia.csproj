@@ -72,10 +72,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Core\Physics\PhysicsManager.cs" />
+    <Compile Include="src\Objects\Actions\BaseAction.cs" />
+    <Compile Include="src\Objects\Actions\AddAdrenaline.cs" />
+    <Compile Include="src\Objects\Actions\DoorLock.cs" />
+    <Compile Include="src\Objects\Actions\DoorUnlock.cs" />
+    <Compile Include="src\Objects\Actions\ElevatorDown.cs" />
+    <Compile Include="src\Objects\Actions\ElevatorUp.cs" />
+    <Compile Include="src\Objects\Actions\Teleport.cs" />
+    <Compile Include="src\Objects\Logic\Barrel.cs" />
+    <Compile Include="src\Objects\Logic\Door.cs" />
+    <Compile Include="src\Objects\Logic\Elevator.cs" />
+    <Compile Include="src\Objects\Logic\TnT.cs" />
+    <Compile Include="src\Objects\Logic\Trigger.cs" />
+    <Compile Include="src\Objects\PhysicsMaterials\MetalMetalCallback.cs" />
+    <Compile Include="src\Objects\PhysicsMaterials\TriggerCallback.cs" />
+    <Compile Include="src\Player\PlayerController.cs" />
+    <Compile Include="src\Player\acoztym\PlayerData.cs" />
+    <Compile Include="src\Player\acoztym\PlayerLogic.cs" />
     <Compile Include="src\Tools\DotSceneLoader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\Core\Controller\Controller.cs" />
     <Compile Include="src\Core\Core.cs" />
     <Compile Include="src\Core\Map\Map.cs" />
     <Compile Include="src\Core\StateManager\State.cs" />
@@ -85,9 +102,7 @@
     <Compile Include="src\Objects\GameObject.cs" />
     <Compile Include="src\Objects\ObjectManager.cs" />
     <Compile Include="src\Player\Character.cs" />
-    <Compile Include="src\Player\CharacterProfile.cs" />
-    <Compile Include="src\Player\PlayerData.cs" />
-    <Compile Include="src\Player\PlayerLogic.cs" />
+    <Compile Include="src\Player\acoztym\CharacterProfile.cs" />
     <Compile Include="src\States\GameState.cs" />
     <Compile Include="src\States\IntroState.cs" />
   </ItemGroup>
@@ -111,6 +126,7 @@
   <ItemGroup>
     <Folder Include="src\Core\Mission\" />
     <Folder Include="src\Core\World\" />
+    <Folder Include="src\Player\Controller\" />
     <Folder Include="src\Sound\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

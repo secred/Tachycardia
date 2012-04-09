@@ -41,6 +41,7 @@ namespace Tachycardia
 
         public override void Update()
         {
+            /*
             if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_ESCAPE))
                 Core.Singleton.Shutdown();
 
@@ -57,7 +58,8 @@ namespace Tachycardia
             }
             else
                 m_Player.m_State = Character.CharacterState.IDLE;
+*/
         }
-
+            
     }
 }

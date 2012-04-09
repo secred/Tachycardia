@@ -26,6 +26,7 @@ namespace Tachycardia
 		public GameCamera m_GameCamera;
 		public ObjectManager m_ObjectManager;
 		public StateManager m_StateManager;
+        public PhysicsManager m_PhysicsManager;
 
 		bool m_Shutdown;
 
@@ -99,6 +100,41 @@ namespace Tachycardia
 			m_GameCamera = new GameCamera();
 			m_ObjectManager = new ObjectManager();
 			m_StateManager = new StateManager();
+            m_PhysicsManager = new PhysicsManager();
+
+            /*
+             * To co tu mamy nalezy przeniesc jak najszybciej do ogitora
+             * Materialy dla kazdej mapy moga byc inne inne parametry inne powiazania itp wiec tworzone
+             * sa oddzielnie dla kazdej nowej mapy, a potem przy obiektach konkretny material jest przypsiywany
+             * przy starcie ladowania physicsmanager powinien byc wyczyszczony
+             */
+            //inicjalizacja konkretnych obiektow, w sumie tylko nadanie nazw w dictionary
+            m_PhysicsManager.addMaterial("Metal");
+            //podstawowe
+            m_PhysicsManager.addMaterial("Ground");
+            m_PhysicsManager.addMaterial("Trigger");
+            m_PhysicsManager.addMaterial("Player");
+
+            //laczenie materialow w pary
+            //dla kazdej mapy rozne powiazania (zapewne beda sie powtarzac ale im wieksza ilosc
+            //materialow tym wieksze obciazenie dla silnika wiec nalezy to ograniczac
+            //dla kazdej pary materialow mozna ustawic rozne parametry kolizji
+            //jak tarcie, elastycznosc, miekkosc kolizji oraz callback ktory jest wywolywany przy kolizji
+            m_PhysicsManager.addMaterialPair("Metal", "Metal");
+            m_PhysicsManager.getMaterialPair("MetalMetal").SetDefaultFriction(1.5f, 1.4f);
+            m_PhysicsManager.setPairCallback("MetalMetal", "MetalCallback");
+
+            //obowiazkowe
+            m_PhysicsManager.addMaterialPair("Trigger", "Player");//wyzwalacze pozycja obowiazkowa
+            m_PhysicsManager.setPairCallback("TriggerPlayer", "TriggerCallback");
+            
+            //obowiazkowe
+            m_PhysicsManager.addMaterialPair("Ground", "Player");//ground material podstawowy
+            m_PhysicsManager.getMaterialPair("GroundPlayer").SetDefaultElasticity(0);
+           /*
+            * Koniec inicjalizacji materialow ktora musi sie znalezc w opisie mapy, dla niekumatych w ogitorze. 
+            */
+
 
 			CreateOgitorScene();
 			//CreateScene();
@@ -215,7 +251,8 @@ namespace Tachycardia
 			m_Hydrax.Create();
 			m_Log.LogMessage("Hydrax initialized.");
 
-			m_Log.LogMessage("Creating character profile...");
+            
+			/*m_Log.LogMessage("Creating character profile...");
 			CharacterProfile profile = new CharacterProfile();
 			profile.m_BodyMass = 70;
 			profile.m_BodyScaleFactor = new Vector3(1.5f, 1, 1.5f);
@@ -227,7 +264,15 @@ namespace Tachycardia
 			Character player = new Character(profile);
 			player.SetPosition(new Vector3(0, 2, 0));
 			m_ObjectManager.Add("player", player);
+			m_Log.LogMessage("Player created.");*/
+            
+            //z pominieciem profilu, jezeli mi ktos przedstawi jaki byl glebszy sens tego to wrocimy
+            m_Log.LogMessage("Creating player...");
+            Character player = new Character("Man.mesh", 70);//tworzenie grafiki
+            player.SetPosition(new Vector3(0, 3, 0));
+            m_ObjectManager.Add("player", player);
 			m_Log.LogMessage("Player created.");
+            
 
 			m_Log.LogMessage("Adding light...");
 			Light light = Core.Singleton.m_SceneManager.CreateLight();
@@ -239,7 +284,7 @@ namespace Tachycardia
 			m_SceneManager.ShadowTechnique = ShadowTechnique.SHADOWTYPE_STENCIL_MODULATIVE;
 			m_Log.LogMessage("Default scene created.");
 		}
-
+        /*
 		private void CreateScene()
 		{
 			m_CurrentMap = new Map();
@@ -263,7 +308,7 @@ namespace Tachycardia
 			light.DiffuseColour = new ColourValue(0.2f, 0.2f, 0.2f);
 
 			m_SceneManager.ShadowTechnique = ShadowTechnique.SHADOWTYPE_STENCIL_MODULATIVE;
-		}
+		}*/
 
 		public bool KeyPressed(MOIS.KeyEvent keyEventRef)
 		{
