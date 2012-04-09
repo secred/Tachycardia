@@ -523,7 +523,10 @@
 				map.m_Body = new MogreNewt.Body(Tachycardia.Core.Singleton.m_NewtonWorld, collision);
 				map.m_Body.SetPositionOrientation(pNode.Position, pNode.Orientation);
 				collision.Dispose();
-				map.m_Body.AttachNode(pNode);
+                //to do wymiany powinno byc w propertisie
+                map.m_Body.MaterialGroupID = Tachycardia.Core.Singleton.m_PhysicsManager.getMaterialID("Ground");
+
+                map.m_Body.AttachNode(pNode);
 			}
 		}
 
