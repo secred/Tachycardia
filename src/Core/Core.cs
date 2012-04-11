@@ -293,7 +293,18 @@ namespace Tachycardia
 
 			m_SceneManager.ShadowTechnique = ShadowTechnique.SHADOWTYPE_STENCIL_MODULATIVE;
 			m_Log.LogMessage("Default scene created.");
-		}
+
+
+            //overlays
+            //m_Log.LogMessage("Creating an overlay...");
+            //var overlay = OverlayManager.Singleton.GetByName("TestScriptOverlay");
+            //overlay.Show();
+
+            //overlaye na klawisz: Enter i R wlacza, T wylacza
+            m_Keyboard.KeyPressed += new MOIS.KeyListener.KeyPressedHandler(KeyPressedHandler);
+
+            
+        }
         /*
 		private void CreateScene()
 		{
@@ -319,6 +330,51 @@ namespace Tachycardia
 
 			m_SceneManager.ShadowTechnique = ShadowTechnique.SHADOWTYPE_STENCIL_MODULATIVE;
 		}*/
+
+        //overlaye na przycisk
+        //hello world - ENTER
+        //red - R
+        //hello world na wierzch - V
+        //wylacz - T
+        //broken screen - B
+        public bool KeyPressedHandler(MOIS.KeyEvent keyEventRef)
+        {
+            if (keyEventRef.key == MOIS.KeyCode.KC_RETURN)
+            {
+                var messageBox = OverlayManager.Singleton.GetOverlayElement("HelloWorldOverlay/MessageBox");
+                messageBox.Left = (m_RenderWindow.Width - messageBox.Width) / 2;
+                messageBox.Top = (m_RenderWindow.Height - messageBox.Height) / 2;
+
+                var messageBody = OverlayManager.Singleton.GetOverlayElement("HelloWorldOverlay/MessageBox/Body");
+                messageBody.Caption = "Ssij palke :*";
+
+                OverlayManager.Singleton.GetByName("HelloWorldOverlay").Show();
+            }
+
+            if (keyEventRef.key == MOIS.KeyCode.KC_R)
+            {
+                OverlayManager.Singleton.GetByName("Red").Show();
+            }
+
+            if (keyEventRef.key == MOIS.KeyCode.KC_B)
+            {
+                OverlayManager.Singleton.GetByName("BrokenScreen").Show();
+            }
+
+            if (keyEventRef.key == MOIS.KeyCode.KC_T)
+            {
+                OverlayManager.Singleton.GetByName("Red").Hide();
+                OverlayManager.Singleton.GetByName("HelloWorldOverlay").Hide();
+                OverlayManager.Singleton.GetByName("BrokenScreen").Hide();
+            }
+
+            if (keyEventRef.key == MOIS.KeyCode.KC_V)
+            {
+                OverlayManager.Singleton.GetByName("Red").ZOrder -= 50;
+            }
+
+            return true;
+        }
 
 		public bool KeyPressed(MOIS.KeyEvent keyEventRef)
 		{
