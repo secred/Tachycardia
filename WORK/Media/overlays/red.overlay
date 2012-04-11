@@ -1,0 +1,11 @@
+Red
+{
+	zorder 650
+	
+	container Panel(Red/Panel)
+	{
+		width                 1
+		height                1
+		material              Red
+	}
+}

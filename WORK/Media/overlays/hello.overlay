@@ -1,0 +1,25 @@
+HelloWorldOverlay
+{
+	zorder 600
+
+	container BorderPanel(HelloWorldOverlay/MessageBox)
+	{
+		metrics_mode          pixels
+		width                 250
+		height                150
+		material              Core/StatsBlockCenter
+		border_material       Core/StatsBlockBorder
+		border_size           1 1 1 1
+
+		element TextArea(HelloWorldOverlay/MessageBox/Body)
+		{
+			metrics_mode  pixels
+			left          125
+			top           75
+			font_name     BlueHighway
+			char_height   16
+			alignment     center
+			colour        0.5 0.7 0.5
+		}
+	}
+}

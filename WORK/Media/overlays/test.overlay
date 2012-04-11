@@ -1,0 +1,22 @@
+TestScriptOverlay
+{
+	container Panel(TestScriptOverlay/ScriptPanelElement)
+	{
+		material     Core/StatsBlockCenter
+		metrics_mode pixels
+		top          200
+		left         300
+		width        250
+		height       150
+
+		element Panel(TestScriptOverlay/ScriptChildPanelElement)
+		{
+			material     Core/StatsBlockCenter
+			metrics_mode pixels
+			top          50
+			left         50
+			width        150
+			height       50
+		}
+	}
+}
