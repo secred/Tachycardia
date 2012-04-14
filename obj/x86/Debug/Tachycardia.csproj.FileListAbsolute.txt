@@ -25,3 +25,11 @@ C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\MOIS.dll
 C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\Tachycardia.exe
 C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\Tachycardia.pdb
+D:\Moje Dokumenty\Programowanie\Tachycardia C#\bin\Debug\Tachycardia.exe
+D:\Moje Dokumenty\Programowanie\Tachycardia C#\bin\Debug\Tachycardia.pdb
+D:\Moje Dokumenty\Programowanie\Tachycardia C#\bin\Debug\Mogre.dll
+D:\Moje Dokumenty\Programowanie\Tachycardia C#\bin\Debug\MogreNewt.dll
+D:\Moje Dokumenty\Programowanie\Tachycardia C#\bin\Debug\MOIS.dll
+D:\Moje Dokumenty\Programowanie\Tachycardia C#\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Moje Dokumenty\Programowanie\Tachycardia C#\obj\x86\Debug\Tachycardia.exe
+D:\Moje Dokumenty\Programowanie\Tachycardia C#\obj\x86\Debug\Tachycardia.pdb

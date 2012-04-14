@@ -173,6 +173,17 @@
 				);
 		}
 
+        protected Vector3 parseVector3line(XmlElement XMLNode)
+        {
+            string[] cosik = XMLNode.GetAttribute("data").Split(' ');
+
+            return new Vector3(
+            ParseFloat(cosik[0]),
+            ParseFloat(cosik[1]),
+            ParseFloat(cosik[2])
+            );
+        } 
+
 		protected void processCamera(XmlElement XMLNode, SceneNode pParent)
 		{
 			// Process attributes
@@ -238,29 +249,40 @@
 			Entity pEntity = null;
 			try
 			{
-				MeshPtr mesh = MeshManager.Singleton.Load(meshFile, m_sGroupName);
-				ushort src, dest;
-				mesh.SuggestTangentVectorBuildParams(VertexElementSemantic.VES_TANGENT, out src, out dest);
-				mesh.BuildTangentVectors(VertexElementSemantic.VES_TANGENT, src, dest);
+                XmlElement pElement;
 
-				pEntity = mSceneMgr.CreateEntity(name, meshFile);
-				pEntity.Visible = bvisible;
-				pEntity.CastShadows = bcastshadows;
-				pEntity.RenderingDistance = brenderingDistance;
+                if(!name.Contains("trigger"))
+                {
+				    MeshPtr mesh = MeshManager.Singleton.Load(meshFile, m_sGroupName);
+				    ushort src, dest;
+				    mesh.SuggestTangentVectorBuildParams(VertexElementSemantic.VES_TANGENT, out src, out dest);
+				    mesh.BuildTangentVectors(VertexElementSemantic.VES_TANGENT, src, dest);
 
-				XmlElement pElement;
-				// Process subentities (?)
-				pElement = (XmlElement)XMLNode.SelectSingleNode("subentities");
-				if (pElement != null)
-				{
-					pElement = (XmlElement)pElement.FirstChild;
-					while (pElement != null)
-					{
-						string mat = getAttrib(pElement, "materialName");
-						pEntity.SetMaterialName(mat);
-						pElement = (XmlElement)pElement.NextSibling;
-					}
-				}
+				    pEntity = mSceneMgr.CreateEntity(name, meshFile);
+				    pEntity.Visible = bvisible;
+				    pEntity.CastShadows = bcastshadows;
+				    pEntity.RenderingDistance = brenderingDistance;
+                
+				    // Process subentities
+                    pElement = (XmlElement)XMLNode.SelectSingleNode("subentity");
+                    if (pElement != null)
+                    {
+                        pElement = (XmlElement)pElement.FirstChild;
+                        while (pElement != null && pElement.Name=="subentity")
+                        {
+                            string mat = getAttrib(pElement, "materialName");
+                            pEntity.SetMaterialName(mat);
+                            pElement = (XmlElement)pElement.NextSibling;
+                        }
+                    }
+                }
+
+                // Process userDataReference
+                pElement = (XmlElement)XMLNode.SelectSingleNode("userData");
+                if (pElement != null)
+                {
+                    processUserDataReference((XmlElement)pElement);
+                }
 
 				pParent.AttachObject(pEntity);
 			}
@@ -500,11 +522,7 @@
 				processCamera(pElement, pNode);
 			}
 
-			// Process userDataReference (?)
-			pElement = (XmlElement)XMLNode.SelectSingleNode("userData");
-			if (pElement != null)
-				processUserDataReference(pElement, pNode);
-
+			
 			// Process childnodes
 			pElement = (XmlElement)XMLNode.SelectSingleNode("node");
 			while (pElement != null)
@@ -513,20 +531,28 @@
 				pElement = (XmlElement)pElement.NextSibling;
 			}
 
-			if (name.Contains("Col#"))
-			{
-				pNode.SetVisible(false);
-				MogreNewt.CollisionPrimitives.TreeCollisionSceneParser collision =
-						new MogreNewt.CollisionPrimitives.TreeCollisionSceneParser(Tachycardia.Core.Singleton.m_NewtonWorld);
-				collision.ParseScene(pNode, true, 1);
-				Tachycardia.Map map = Tachycardia.Core.Singleton.m_CurrentMap = new Tachycardia.Map();
-				map.m_Body = new MogreNewt.Body(Tachycardia.Core.Singleton.m_NewtonWorld, collision);
-				map.m_Body.SetPositionOrientation(pNode.Position, pNode.Orientation);
-				collision.Dispose();
+            /** Póki co kolizję ładujemy bezpośrednio z plików z obiektami, zwłaszcza, że ze względu na wygenerowane .scene przez grafików
+             *  w aktualnej planszy mamy niecałe 300 meshy, więc jak się znajdzie ktoś, komu chce się przerabiać je na Col to zapraszam.;) MSZ
+             */
+
+            if (!name.Contains("triggerBox#"))
+            {
+                //pNode.SetVisible(false);
+                MogreNewt.CollisionPrimitives.TreeCollisionSceneParser collision =
+                        new MogreNewt.CollisionPrimitives.TreeCollisionSceneParser(Tachycardia.Core.Singleton.m_NewtonWorld);
+                collision.ParseScene(pNode, true, 1);
+                Tachycardia.Map map = Tachycardia.Core.Singleton.m_CurrentMap = new Tachycardia.Map();
+                map.m_Body = new MogreNewt.Body(Tachycardia.Core.Singleton.m_NewtonWorld, collision);
+                map.m_Body.SetPositionOrientation(pNode.Position, pNode.Orientation);
+                collision.Dispose();
                 //to do wymiany powinno byc w propertisie
                 map.m_Body.MaterialGroupID = Tachycardia.Core.Singleton.m_PhysicsManager.getMaterialID("Ground");
-				map.m_Body.AttachNode(pNode);
-			}
+                map.m_Body.AttachNode(pNode);
+            }
+            else
+            {
+
+            }
 		}
 
 		protected void processPlane(XmlElement XMLNode, SceneNode pParent)
@@ -619,9 +645,60 @@
 			//            processExternals(pElement);
 		}
 
-		protected void processUserDataReference(XmlElement XMLNode, SceneNode pNode)
+        protected void processUserDataReference(XmlElement pElement)
 		{
-			// TODO
+            pElement = (XmlElement)pElement.FirstChild;
+            while (pElement != null)
+            {
+                if (getAttrib(pElement, "name") == "mass")
+                {
+                    float mass = ParseFloat(getAttrib(pElement, "data"));
+                    Console.WriteLine("Mass: " + mass);
+                }
+                
+                if (getAttrib(pElement, "name").Contains("trigger"))
+                {
+                    string name = getAttrib(pElement, "name");
+                    string action = getAttrib(pElement, "data");
+                    
+                    pElement = (XmlElement)pElement.NextSibling;
+                    Vector3 triggerPosition = parseVector3line(pElement);
+
+                    pElement = (XmlElement)pElement.NextSibling;
+                    Vector3 triggerSize = parseVector3line(pElement);
+
+                    pElement = (XmlElement)pElement.NextSibling;
+                    Vector3 triggerDestination = parseVector3line(pElement);
+
+                    pElement = (XmlElement)pElement.ParentNode;
+                    pElement = (XmlElement)pElement.ParentNode;
+                    string triggerName = pElement.GetAttribute("name");
+
+                    Tachycardia.Objects.Trigger TriggerTeleport;
+
+                    if(triggerName.Contains("Box"))
+                    {
+                        TriggerTeleport = new Tachycardia.Objects.Trigger("box", triggerSize);
+                    }
+                    else
+                    { 
+                        TriggerTeleport = new Tachycardia.Objects.Trigger("ellipsoid", triggerSize);
+                    }
+
+                    TriggerTeleport.SetPosition(triggerPosition);
+                    TriggerTeleport.m_action = new Tachycardia.Objects.Actions.Teleport(triggerDestination);           
+
+                    Console.WriteLine("TriggerName: " + triggerName);
+                    Console.WriteLine("Action: " + action);
+                    Console.WriteLine("Position: " + triggerPosition);
+                    Console.WriteLine("Size: " + triggerSize);
+                    Console.WriteLine("Destination: " + triggerDestination);
+
+                    Tachycardia.Core.Singleton.m_ObjectManager.Add(triggerName, TriggerTeleport);
+                }
+
+                pElement = (XmlElement)pElement.NextSibling;
+            }
 		}
 
 		#endregion Methods

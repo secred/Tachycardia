@@ -108,6 +108,7 @@ namespace Tachycardia
              * sa oddzielnie dla kazdej nowej mapy, a potem przy obiektach konkretny material jest przypsiywany
              * przy starcie ladowania physicsmanager powinien byc wyczyszczony
              */
+
             //inicjalizacja konkretnych obiektow, w sumie tylko nadanie nazw w dictionary
             m_PhysicsManager.addMaterial("Metal");
             //podstawowe
@@ -134,17 +135,6 @@ namespace Tachycardia
            /*
             * Koniec inicjalizacji materialow ktora musi sie znalezc w opisie mapy, dla niekumatych w ogitorze. 
             */
-            /*
-            * Przyklady dla wyzwalaczy 
-            */
-            //utworzenie wyzwalacza
-            //1 box = ksztalt / vector = rozmiar
-            Tachycardia.Objects.Trigger TriggerTeleport = new Tachycardia.Objects.Trigger("box", new Vector3(2, 2, 2));
-            //<trigger shape="box" sizex=2 sizey=2 sizez=2 action="teleport" x=14 y=2 z=20 ETC/>
-            TriggerTeleport.m_action = new Tachycardia.Objects.Actions.Teleport(new Vector3(14, 2, 20));
-            TriggerTeleport.SetPosition(new Vector3(5, 2, 0));
-            m_ObjectManager.Add("TriggerTeleport", TriggerTeleport);
-            
             
             CreateOgitorScene();
 			//CreateScene();
@@ -250,16 +240,16 @@ namespace Tachycardia
 
 			m_Log.LogMessage("Loading scene data...");
 			Helper.DotSceneLoader dsl = new Helper.DotSceneLoader();
-			dsl.ParseDotScene("Default.scene", "Scenes", m_SceneManager);
+			dsl.ParseDotScene("mapa.scene", "Scenes", m_SceneManager);
 			m_Log.LogMessage("Scene data loaded.");
 
-			m_Log.LogMessage("Hydrax initialization...");
-			m_Hydrax = new MHydrax.MHydrax(m_SceneManager, m_Camera, m_Viewport);
-			MHydrax.MProjectedGrid grid = new MHydrax.MProjectedGrid(m_Hydrax, new MHydrax.MPerlin(), new Plane(new Vector3(0, 1, 0), new Vector3()), MHydrax.MMaterialManager.MNormalMode.NM_VERTEX);
-			m_Hydrax.SetModule(grid);
-			m_Hydrax.LoadCfg("../scenes/Default/Hydrax/Hydrax.hdx");
-			m_Hydrax.Create();
-			m_Log.LogMessage("Hydrax initialized.");
+            //m_Log.LogMessage("Hydrax initialization...");
+            //m_Hydrax = new MHydrax.MHydrax(m_SceneManager, m_Camera, m_Viewport);
+            //MHydrax.MProjectedGrid grid = new MHydrax.MProjectedGrid(m_Hydrax, new MHydrax.MPerlin(), new Plane(new Vector3(0, 1, 0), new Vector3()), MHydrax.MMaterialManager.MNormalMode.NM_VERTEX);
+            //m_Hydrax.SetModule(grid);
+            //m_Hydrax.LoadCfg("../scenes/Default/Hydrax/Hydrax.hdx");
+            //m_Hydrax.Create();
+            //m_Log.LogMessage("Hydrax initialized.");
 
             
 			/*m_Log.LogMessage("Creating character profile...");
@@ -282,7 +272,6 @@ namespace Tachycardia
             player.SetPosition(new Vector3(0, 3, 0));
             m_ObjectManager.Add("player", player);
 			m_Log.LogMessage("Player created.");
-            
             
 			m_Log.LogMessage("Adding light...");
 			Light light = Core.Singleton.m_SceneManager.CreateLight();

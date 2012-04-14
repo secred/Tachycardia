@@ -113,7 +113,7 @@
   <OBJECT object_id="2000000002" name="Viewport1" typename="Viewport Object">
     <PROPERTY id="camera::clipdistance" type="8" value="1 3000"></PROPERTY>
     <PROPERTY id="camera::fov" type="6" value="1"></PROPERTY>
-    <PROPERTY id="camera::orientation" type="13" value="0.955958 -0.257883 -0.135372 -0.0362441"></PROPERTY>
+    <PROPERTY id="camera::orientation" type="13" value="0.955959 -0.257883 -0.135372 -0.0362442"></PROPERTY>
     <PROPERTY id="camera::polymode" type="2" value="3"></PROPERTY>
     <PROPERTY id="camera::position" type="9" value="11.1123 5.92513 24.395"></PROPERTY>
     <PROPERTY id="camera::viewmode" type="2" value="0"></PROPERTY>
@@ -202,7 +202,7 @@
     <PROPERTY id="pgmodule::smooth" type="12" value="false"></PROPERTY>
     <PROPERTY id="pgmodule::strength" type="6" value="3"></PROPERTY>
     <PROPERTY id="planes_error" type="6" value="0"></PROPERTY>
-    <PROPERTY id="position" type="9" value="0 2 0"></PROPERTY>
+    <PROPERTY id="position" type="9" value="0 2.75 0"></PROPERTY>
     <PROPERTY id="rtt_quality::depth" type="2" value="0"></PROPERTY>
     <PROPERTY id="rtt_quality::depth_aip" type="2" value="0"></PROPERTY>
     <PROPERTY id="rtt_quality::depth_reflection" type="2" value="0"></PROPERTY>
@@ -212,7 +212,7 @@
     <PROPERTY id="shader_mode" type="2" value="0"></PROPERTY>
     <PROPERTY id="smooth::power" type="6" value="9.98"></PROPERTY>
     <PROPERTY id="sun::area" type="6" value="746.089"></PROPERTY>
-    <PROPERTY id="sun::colour" type="11" value="1 1 1 1"></PROPERTY>
+    <PROPERTY id="sun::colour" type="11" value="0.4 0 0 1"></PROPERTY>
     <PROPERTY id="sun::position" type="9" value="2997.92 7460.89 -16863.8"></PROPERTY>
     <PROPERTY id="sun::strength" type="6" value="1.75"></PROPERTY>
     <PROPERTY id="technique_add" type="7" value=""></PROPERTY>
@@ -266,6 +266,21 @@
     <PROPERTY id="subentitycount" type="2" value="2"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
+    </CUSTOMPROPERTIES>
+  </OBJECT>
+
+  <OBJECT object_id="259102128" name="Particle#0" typename="Particle Object" parentnode="SceneManager">
+    <PROPERTY id="autotracktarget" type="7" value="None"></PROPERTY>
+    <PROPERTY id="castshadows" type="12" value="true"></PROPERTY>
+    <PROPERTY id="layer" type="2" value="0"></PROPERTY>
+    <PROPERTY id="locked" type="12" value="false"></PROPERTY>
+    <PROPERTY id="orientation" type="13" value="1 0 0 0"></PROPERTY>
+    <PROPERTY id="particle" type="7" value="EmptyParticle"></PROPERTY>
+    <PROPERTY id="position" type="9" value="25.9595 -11.809 -8.57422"></PROPERTY>
+    <PROPERTY id="scale" type="9" value="1 1 1"></PROPERTY>
+    <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
+    <CUSTOMPROPERTIES>
+      <PROPERTY id="piotrek" type="7" value="ToPa?ka" autooptiontype="0"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
