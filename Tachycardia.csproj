@@ -105,6 +105,7 @@
     <Compile Include="src\Player\acoztym\CharacterProfile.cs" />
     <Compile Include="src\States\GameState.cs" />
     <Compile Include="src\States\IntroState.cs" />
+    <Compile Include="src\Tools\ParticleMethod.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

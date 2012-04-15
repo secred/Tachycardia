@@ -5,6 +5,7 @@
 	using System.Globalization;
 	using System.Xml;
 	using Mogre;
+    using Tachycardia.src.Tools;
 
 	public class DotSceneLoader
 	{
@@ -513,7 +514,10 @@
 				pElement = (XmlElement)pElement.NextSibling;
 			}
 
-
+            //process particle (*)
+            pElement = (XmlElement)XMLNode.SelectSingleNode("particleSystem");
+            if (pElement != null)
+                processParticleSystem(pElement, pNode);
 
 			// Process camera (*)
 			pElement = (XmlElement)XMLNode.SelectSingleNode("camera");
@@ -701,6 +705,48 @@
             }
 		}
 
+        
+        //nie usuwac jak narazie
+        // dataUserReference
+        /*XmlElement pElement;
+        pElement = (XmlElement)XMLNode.SelectSingleNode("property");
+        while (pElement != null)
+        {
+            processParticleUserDataReference(pElement, pNode);
+            pElement = (XmlElement)pElement.NextSibling;
+        }*/
+        //--dataUserReference
+        /*protected void processParticleUserDataReference(XmlElement XMLNode, SceneNode pNode)
+        {
+            String name = getAttrib(XMLNode, "name");
+            String data = getAttrib(XMLNode, "data");
+            LogManager.Singleton.LogMessage("jestemname: "+ name);
+            LogManager.Singleton.LogMessage("jestemdata: " + data);
+
+        }*/
+
+        protected void processParticleSystem(XmlElement XMLNode, SceneNode pParent)
+        {
+            // Process attributes
+            String particleName = getAttrib(XMLNode, "name");
+            String script = getAttrib(XMLNode, "script");
+
+
+            // Create the particle system
+            try
+            {
+                ParticleSystem pParticles = mSceneMgr.CreateParticleSystem(particleName, script);
+                pParticles.Visible = true;
+                pParent.AttachObject(pParticles);
+                ParticleMethod.Instance.addStaticParticleName2List(particleName);
+
+
+            }
+            catch (Exception)
+            {
+                LogManager.Singleton.LogMessage("[DotSceneLoader] Error creating a particle system!");
+            }
+        }
 		#endregion Methods
 	}
 }
