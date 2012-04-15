@@ -5,7 +5,6 @@
 	using System.Globalization;
 	using System.Xml;
 	using Mogre;
-    using Tachycardia.src.Tools;
 
 	public class DotSceneLoader
 	{
@@ -18,6 +17,7 @@
 		protected SceneManager mSceneMgr;
 		protected String m_sGroupName;
 		protected String m_sPrependNode;
+        protected String[] m_Materials;
 
 		#endregion Fields
 
@@ -176,13 +176,26 @@
 
         protected Vector3 parseVector3line(XmlElement XMLNode)
         {
-            string[] cosik = XMLNode.GetAttribute("data").Split(' ');
+            string[] parameters = XMLNode.GetAttribute("data").Split(' ');
 
             return new Vector3(
-            ParseFloat(cosik[0]),
-            ParseFloat(cosik[1]),
-            ParseFloat(cosik[2])
+            ParseFloat(parameters[0]),
+            ParseFloat(parameters[1]),
+            ParseFloat(parameters[2])
             );
+        }
+
+        protected void parseMaterials(XmlElement XMLNode)
+        {
+            string[] materialsList = XMLNode.GetAttribute("data").Split(';');
+
+            Console.Write("MaterialList: " + materialsList);
+
+            //return new Vector3(
+            //ParseFloat(materialsList[0]),
+            //ParseFloat(cosik[1]),
+            //ParseFloat(cosik[2])
+            //);
         } 
 
 		protected void processCamera(XmlElement XMLNode, SceneNode pParent)
@@ -514,11 +527,6 @@
 				pElement = (XmlElement)pElement.NextSibling;
 			}
 
-            //process particle (*)
-            pElement = (XmlElement)XMLNode.SelectSingleNode("particleSystem");
-            if (pElement != null)
-                processParticleSystem(pElement, pNode);
-
 			// Process camera (*)
 			pElement = (XmlElement)XMLNode.SelectSingleNode("camera");
 			if (pElement != null)
@@ -526,7 +534,6 @@
 				processCamera(pElement, pNode);
 			}
 
-			
 			// Process childnodes
 			pElement = (XmlElement)XMLNode.SelectSingleNode("node");
 			while (pElement != null)
@@ -654,6 +661,18 @@
             pElement = (XmlElement)pElement.FirstChild;
             while (pElement != null)
             {
+                if (getAttrib(pElement, "name") == "material")
+                {
+                    string PhysicsMaterial = getAttrib(pElement, "data");
+                    for (int i=0;i<m_Materials.Length;i++)
+                    {
+                        if (m_Materials.Equals(PhysicsMaterial))
+                        {
+                        }
+                    }
+                    Console.WriteLine("Material: " + PhysicsMaterial);
+                }
+
                 if (getAttrib(pElement, "name") == "mass")
                 {
                     float mass = ParseFloat(getAttrib(pElement, "data"));
@@ -674,6 +693,9 @@
                     pElement = (XmlElement)pElement.NextSibling;
                     Vector3 triggerDestination = parseVector3line(pElement);
 
+                    pElement = (XmlElement)pElement.NextSibling;
+                    string PhysicsMaterial = getAttrib(pElement, "data");
+                    
                     pElement = (XmlElement)pElement.ParentNode;
                     pElement = (XmlElement)pElement.ParentNode;
                     string triggerName = pElement.GetAttribute("name");
@@ -693,10 +715,7 @@
                     TriggerTeleport.m_action = new Tachycardia.Objects.Actions.Teleport(triggerDestination);           
 
                     Console.WriteLine("TriggerName: " + triggerName);
-                    Console.WriteLine("Action: " + action);
-                    Console.WriteLine("Position: " + triggerPosition);
-                    Console.WriteLine("Size: " + triggerSize);
-                    Console.WriteLine("Destination: " + triggerDestination);
+                    Console.WriteLine("Material: " + PhysicsMaterial);
 
                     Tachycardia.Core.Singleton.m_ObjectManager.Add(triggerName, TriggerTeleport);
                 }
@@ -705,48 +724,6 @@
             }
 		}
 
-        
-        //nie usuwac jak narazie
-        // dataUserReference
-        /*XmlElement pElement;
-        pElement = (XmlElement)XMLNode.SelectSingleNode("property");
-        while (pElement != null)
-        {
-            processParticleUserDataReference(pElement, pNode);
-            pElement = (XmlElement)pElement.NextSibling;
-        }*/
-        //--dataUserReference
-        /*protected void processParticleUserDataReference(XmlElement XMLNode, SceneNode pNode)
-        {
-            String name = getAttrib(XMLNode, "name");
-            String data = getAttrib(XMLNode, "data");
-            LogManager.Singleton.LogMessage("jestemname: "+ name);
-            LogManager.Singleton.LogMessage("jestemdata: " + data);
-
-        }*/
-
-        protected void processParticleSystem(XmlElement XMLNode, SceneNode pParent)
-        {
-            // Process attributes
-            String particleName = getAttrib(XMLNode, "name");
-            String script = getAttrib(XMLNode, "script");
-
-
-            // Create the particle system
-            try
-            {
-                ParticleSystem pParticles = mSceneMgr.CreateParticleSystem(particleName, script);
-                pParticles.Visible = true;
-                pParent.AttachObject(pParticles);
-                ParticleMethod.Instance.addStaticParticleName2List(particleName);
-
-
-            }
-            catch (Exception)
-            {
-                LogManager.Singleton.LogMessage("[DotSceneLoader] Error creating a particle system!");
-            }
-        }
 		#endregion Methods
 	}
 }

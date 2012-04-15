@@ -1,4 +1,4 @@
-particle_system Examples/Water/Rain
+Examples/Water/Rain
 {
     material        Examples/Droplet
     particle_width  100

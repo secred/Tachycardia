@@ -1,7 +1,7 @@
 // Example particle systems
 
 // Exudes greeny particles which float upwards
-particle_system Examples/GreenyNimbus
+Examples/GreenyNimbus
 {
     material        Examples/FlarePointSprite
 	point_rendering	true
@@ -48,7 +48,7 @@ particle_system Examples/GreenyNimbus
 }
 
 // A sparkly purple fountain
-particle_system Examples/PurpleFountain
+Examples/PurpleFountain
 {
     material        Examples/Flare2
     particle_width  20
@@ -88,7 +88,7 @@ particle_system Examples/PurpleFountain
 
 
 // A downpour
-particle_system Examples/Rain
+Examples/Rain
 {
     material        Examples/Droplet
     particle_width  20
@@ -124,7 +124,7 @@ particle_system Examples/Rain
 }
 
 // A jet engine (of sorts)
-particle_system Examples/JetEngine1
+Examples/JetEngine1
 {
 	material 		Examples/Flare
 	particle_width 	25
@@ -153,7 +153,7 @@ particle_system Examples/JetEngine1
 	}
 	
 }
-particle_system Examples/JetEngine2
+Examples/JetEngine2
 {
 	material 		Examples/Flare
 	particle_width 	15
@@ -184,7 +184,7 @@ particle_system Examples/JetEngine2
 }
 
 // Exudes aureola particles which around the model float upwards
-particle_system Examples/Aureola
+Examples/Aureola
 {
     material        Examples/Aureola
     particle_width  200
@@ -246,7 +246,7 @@ particle_system Examples/Aureola
 }
 
 
-particle_system Examples/Swarm
+Examples/Swarm
 {
 	quota	3000
 	material	Examples/Flare2
@@ -341,7 +341,7 @@ particle_system Examples/Swarm
 }
 
 
-particle_system Examples/Snow
+Examples/Snow
 {
 	quota	2000
 	material	Examples/Flare

@@ -233,6 +233,17 @@ namespace Tachycardia
 			}
 		}
 
+        private void AttachHydrax()
+        {
+            m_Log.LogMessage("Hydrax initialization...");
+            m_Hydrax = new MHydrax.MHydrax(m_SceneManager, m_Camera, m_Viewport);
+            MHydrax.MProjectedGrid grid = new MHydrax.MProjectedGrid(m_Hydrax, new MHydrax.MPerlin(), new Plane(new Vector3(0, 1, 0), new Vector3()), MHydrax.MMaterialManager.MNormalMode.NM_VERTEX);
+            m_Hydrax.SetModule(grid);
+            m_Hydrax.LoadCfg("../scenes/Default/Hydrax/Hydrax.hdx");
+            m_Hydrax.Create();
+            m_Log.LogMessage("Hydrax initialized.");
+        }
+
 		private void CreateOgitorScene()
 		{
 			m_Log.LogMessage("Creating Default scene...");
@@ -240,17 +251,10 @@ namespace Tachycardia
 
 			m_Log.LogMessage("Loading scene data...");
 			Helper.DotSceneLoader dsl = new Helper.DotSceneLoader();
-			dsl.ParseDotScene("mapa.scene", "Scenes", m_SceneManager);
+			dsl.ParseDotScene("techdemo.scene", "Scenes", m_SceneManager);
 			m_Log.LogMessage("Scene data loaded.");
 
-            //m_Log.LogMessage("Hydrax initialization...");
-            //m_Hydrax = new MHydrax.MHydrax(m_SceneManager, m_Camera, m_Viewport);
-            //MHydrax.MProjectedGrid grid = new MHydrax.MProjectedGrid(m_Hydrax, new MHydrax.MPerlin(), new Plane(new Vector3(0, 1, 0), new Vector3()), MHydrax.MMaterialManager.MNormalMode.NM_VERTEX);
-            //m_Hydrax.SetModule(grid);
-            //m_Hydrax.LoadCfg("../scenes/Default/Hydrax/Hydrax.hdx");
-            //m_Hydrax.Create();
-            //m_Log.LogMessage("Hydrax initialized.");
-
+            // AttachHydrax();
             
 			/*m_Log.LogMessage("Creating character profile...");
 			CharacterProfile profile = new CharacterProfile();
@@ -280,9 +284,8 @@ namespace Tachycardia
 			light.DiffuseColour = new ColourValue(0.2f, 0.2f, 0.2f);
 			m_Log.LogMessage("Light added.");
 
-			m_SceneManager.ShadowTechnique = ShadowTechnique.SHADOWTYPE_STENCIL_MODULATIVE;
+			m_SceneManager.ShadowTechnique = ShadowTechnique.SHADOWTYPE_TEXTURE_MODULATIVE;
 			m_Log.LogMessage("Default scene created.");
-
 
             //overlays
             //m_Log.LogMessage("Creating an overlay...");
@@ -292,7 +295,6 @@ namespace Tachycardia
             //overlaye na klawisz: Enter i R wlacza, T wylacza
             m_Keyboard.KeyPressed += new MOIS.KeyListener.KeyPressedHandler(KeyPressedHandler);
 
-            
         }
         /*
 		private void CreateScene()

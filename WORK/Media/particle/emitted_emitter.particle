@@ -1,6 +1,6 @@
 <<<<<<< emitted_emitter.particle
 // Example emitted emitters
- Examples/Fireworks
+Examples/Fireworks
 {
     material Examples/Flare
     point_rendering            false

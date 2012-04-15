@@ -24,3 +24,95 @@ material "mapaskp_front_default"
 		}
 	}
 }
+material "mapaMaterial5"
+{
+	technique mapaMaterial5_technique
+	{
+		pass mapaMaterial5_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0 0 0 0 25.5
+			emissive 0 0 0 1
+
+			texture_unit mapaMaterial5_Diffuse#0
+			{
+				texture mapacretewall03.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material "mapaMaterial4"
+{
+	technique mapaMaterial4_technique
+	{
+		pass mapaMaterial4_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0 0 0 0 25.5
+			emissive 0 0 0 1
+
+			texture_unit mapaMaterial4_Diffuse#0
+			{
+				texture maparock01.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material "mapaMaterial2"
+{
+	technique mapaMaterial2_technique
+	{
+		pass mapaMaterial2_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0 0 0 0 25.5
+			emissive 0 0 0 1
+
+			texture_unit mapaMaterial2_Diffuse#0
+			{
+				texture maparock1_d.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material "mapaMaterial3"
+{
+	technique mapaMaterial3_technique
+	{
+		pass mapaMaterial3_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0 0 0 0 25.5
+			emissive 0 0 0 1
+
+			texture_unit mapaMaterial3_Diffuse#0
+			{
+				texture mapadirt01.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}

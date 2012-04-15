@@ -1,7 +1,7 @@
 // Example particle systems
 
 // smoke
-particle_system Examples/Smoke
+Examples/Smoke
 {
     	material        	Examples/Smoke
     	particle_width  	55
