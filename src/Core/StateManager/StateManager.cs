@@ -134,6 +134,15 @@ namespace Tachycardia
             return null;
         }
 
+        public bool IsActiveState(string stateName)
+        {
+            if (m_States.ContainsKey(stateName)
+                && m_ActiveStateStack.Count > 0
+                && m_ActiveStateStack[0] == m_States[stateName])
+                return true;
+            return false;
+        }​
+
         public void Init(State state)
         {
             Core.Singleton.m_RenderWindow.ResetStatistics();
