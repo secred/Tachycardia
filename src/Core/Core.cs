@@ -134,9 +134,10 @@ namespace Tachycardia
             //obowiazkowe
             m_PhysicsManager.addMaterialPair("Ground", "Player");//ground material podstawowy
             m_PhysicsManager.getMaterialPair("GroundPlayer").SetDefaultElasticity(0);
-           /*
-            * Koniec inicjalizacji materialow ktora musi sie znalezc w opisie mapy, dla niekumatych w ogitorze. 
-            */
+            m_PhysicsManager.setPairCallback("GroundPlayer", "GroundPlayerCallback");
+            /*
+                        * Koniec inicjalizacji materialow ktora musi sie znalezc w opisie mapy, dla niekumatych w ogitorze. 
+                        */
             
             CreateOgitorScene();
 			//CreateScene();

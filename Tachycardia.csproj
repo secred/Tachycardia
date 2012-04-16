@@ -85,6 +85,7 @@
     <Compile Include="src\Objects\Logic\Elevator.cs" />
     <Compile Include="src\Objects\Logic\TnT.cs" />
     <Compile Include="src\Objects\Logic\Trigger.cs" />
+    <Compile Include="src\Objects\PhysicsMaterials\GroundPlayerCallback.cs" />
     <Compile Include="src\Objects\PhysicsMaterials\MetalMetalCallback.cs" />
     <Compile Include="src\Objects\PhysicsMaterials\TriggerCallback.cs" />
     <Compile Include="src\Player\PlayerController.cs" />

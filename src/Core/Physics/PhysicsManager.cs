@@ -60,6 +60,11 @@ namespace Tachycardia
                 m_PairCallback[pair_name] = new Tachycardia.Objects.PhysicsMaterials.TriggerCallback();
                 m_MaterialsPair[pair_name].SetContactCallback(m_PairCallback[pair_name]);
             }
+            else if (callback_class == "GroundPlayerCallback")
+            {
+                m_PairCallback[pair_name] = new Tachycardia.Objects.PhysicsMaterials.GroundPlayerCallback();
+                m_MaterialsPair[pair_name].SetContactCallback(m_PairCallback[pair_name]);
+            }
         }
 
 
