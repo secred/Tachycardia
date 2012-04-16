@@ -251,7 +251,7 @@ namespace Tachycardia
 
 			m_Log.LogMessage("Loading scene data...");
 			Helper.DotSceneLoader dsl = new Helper.DotSceneLoader();
-			dsl.ParseDotScene("techdemo.scene", "Scenes", m_SceneManager);
+			dsl.ParseDotScene("default.scene", "Scenes", m_SceneManager);
 			m_Log.LogMessage("Scene data loaded.");
 
             // AttachHydrax();
