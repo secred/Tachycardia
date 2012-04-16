@@ -252,30 +252,34 @@
 			{
                 XmlElement pElement;
 
-                if(!name.Contains("Trigger"))
+                if (!name.Contains("trigger"))
                 {
-				    MeshPtr mesh = MeshManager.Singleton.Load(meshFile, m_sGroupName);
-				    ushort src, dest;
-				    mesh.SuggestTangentVectorBuildParams(VertexElementSemantic.VES_TANGENT, out src, out dest);
-				    mesh.BuildTangentVectors(VertexElementSemantic.VES_TANGENT, src, dest);
+                    MeshPtr mesh = MeshManager.Singleton.Load(meshFile, m_sGroupName);
+                    ushort src, dest;
+                    mesh.SuggestTangentVectorBuildParams(VertexElementSemantic.VES_TANGENT, out src, out dest);
+                    mesh.BuildTangentVectors(VertexElementSemantic.VES_TANGENT, src, dest);
 
-				    pEntity = mSceneMgr.CreateEntity(name, meshFile);
-				    pEntity.Visible = bvisible;
-				    pEntity.CastShadows = bcastshadows;
-				    pEntity.RenderingDistance = brenderingDistance;
-                
-				    // Process subentities
+                    pEntity = mSceneMgr.CreateEntity(name, meshFile);
+                    pEntity.Visible = bvisible;
+                    pEntity.CastShadows = bcastshadows;
+                    pEntity.RenderingDistance = brenderingDistance;
+
+                    // Process subentities
                     pElement = (XmlElement)XMLNode.SelectSingleNode("subentity");
                     if (pElement != null)
                     {
                         pElement = (XmlElement)pElement.FirstChild;
-                        while (pElement != null && pElement.Name=="subentity")
+                        while (pElement != null && pElement.Name == "subentity")
                         {
                             string mat = getAttrib(pElement, "materialName");
                             pEntity.SetMaterialName(mat);
                             pElement = (XmlElement)pElement.NextSibling;
                         }
                     }
+                }
+                else 
+                {
+          
                 }
 
                 // Process userDataReference
@@ -674,8 +678,8 @@
                     pElement = (XmlElement)pElement.NextSibling;
                     Vector3 triggerDestination = parseVector3line(pElement);
 
-                    pElement = (XmlElement)pElement.NextSibling;
-                    string PhysicsMaterial = getAttrib(pElement, "data");
+                    //pElement = (XmlElement)pElement.NextSibling;
+                    //string PhysicsMaterial = getAttrib(pElement, "data");
 
                     pElement = (XmlElement)pElement.ParentNode;
                     pElement = (XmlElement)pElement.ParentNode;
