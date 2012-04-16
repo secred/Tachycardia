@@ -252,7 +252,7 @@
 			{
                 XmlElement pElement;
 
-                if(!name.Contains("trigger"))
+                if(!name.Contains("Trigger"))
                 {
 				    MeshPtr mesh = MeshManager.Singleton.Load(meshFile, m_sGroupName);
 				    ushort src, dest;
@@ -674,8 +674,8 @@
                     pElement = (XmlElement)pElement.NextSibling;
                     Vector3 triggerDestination = parseVector3line(pElement);
 
-                  //  pElement = (XmlElement)pElement.NextSibling;
-                  //  string PhysicsMaterial = getAttrib(pElement, "data");
+                    pElement = (XmlElement)pElement.NextSibling;
+                    string PhysicsMaterial = getAttrib(pElement, "data");
 
                     pElement = (XmlElement)pElement.ParentNode;
                     pElement = (XmlElement)pElement.ParentNode;
@@ -689,7 +689,7 @@
                     }
                     else
                     {
-                        TriggerTeleport = new Tachycardia.Objects.Trigger("ellipsoid", triggerSize);
+                        TriggerTeleport = new Tachycardia.Objects.Trigger("ellipsoid", new Vector3(1,1,1));
                     }
 
                     TriggerTeleport.SetPosition(triggerPosition);

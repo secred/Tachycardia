@@ -4,15 +4,15 @@
         <resourceLocation type="FileSystem" name="./" />
         <resourceLocation type="FileSystem" name="./bitmap" />
         <resourceLocation type="FileSystem" name="./program" />
-        <resourceLocation type="FileSystem" name="../../materials" />
+        <resourceLocation type="FileSystem" name="../../../../../../../Projekty/secred-Tachycardia-46e16d8/WORK/Media/materials" />
         <resourceLocation type="FileSystem" name="./material" />
         <resourceLocation type="FileSystem" name="./mesh" />
         <resourceLocation type="FileSystem" name="./Scripts" />
-        <resourceLocation type="FileSystem" name="../../materials/scripts" />
+        <resourceLocation type="FileSystem" name="../../../../../../../Projekty/secred-Tachycardia-46e16d8/WORK/Media/materials/scripts" />
         <resourceLocation type="FileSystem" name="./Temp" />
-        <resourceLocation type="FileSystem" name="../../materials/programs" />
-        <resourceLocation type="FileSystem" name="../../materials/textures" />
-        <resourceLocation type="FileSystem" name="../../models" />
+        <resourceLocation type="FileSystem" name="../../../../../../../Projekty/secred-Tachycardia-46e16d8/WORK/Media/materials/programs" />
+        <resourceLocation type="FileSystem" name="../../../../../../../Projekty/secred-Tachycardia-46e16d8/WORK/Media/materials/textures" />
+        <resourceLocation type="FileSystem" name="../../../../../../../Projekty/secred-Tachycardia-46e16d8/WORK/Media/models" />
     </resourceLocations>
     <environment>
         <scenemanager name="SceneManager" id="862239424" type="OctreeSceneManager" />
@@ -25,11 +25,26 @@
         </viewport>
         <camera name="intViewCamera1" viewMode="0" polyMode="3" fov="1">
             <clipping near="1" far="1000" />
-            <position x="118.74" y="196.304" z="71.7887" />
-            <rotation qw="0.859033" qx="-0.48129" qy="0.152452" qz="0.0853869" />
+            <position x="61.2825" y="11.305" z="-17.4587" />
+            <rotation qw="0.703887" qx="-0.710312" qy="1.90262e-005" qz="-1.40586e-005" />
         </camera>
     </environment>
     <nodes>
+        <node name="TriggerEllipsoid#1" id="249092080">
+            <position x="314.276" y="56.3974" z="-27.5101" />
+            <rotation qw="0.92388" qx="0" qy="-0.382683" qz="0" />
+            <scale x="11.9513" y="1.32792" z="10.2445" />
+            <entity name="TriggerEllipsoid#1" meshFile="box.mesh" castShadows="false">
+                <subentity index="0" materialName="BaseWhite" />
+                <userData>
+                    <property type="7" name="triggerAction" data="teleport" />
+                    <property type="9" name="triggerPosition" data="314.276 56.3974 -27.5101" />
+                    <property type="9" name="triggerSize" data="11.9513 1.32792 10.2445" />
+                    <property type="9" name="triggerDestination" data="300 20 25" />
+                    <property type="7" name="material" data="Trigger" />
+                </userData>
+            </entity>
+        </node>
         <node name="Camera" id="266212976">
             <position x="147.906" y="467.578" z="-441.679" />
             <rotation qw="0.0209354" qx="-0.0088067" qy="-0.921527" qz="-0.38765" />
@@ -2284,38 +2299,20 @@
                 </node>
             </node>
         </node>
-        <node name="Triggers" id="17670220">
-            <position x="59.421" y="-1.10258" z="-3.36525" />
-            <rotation qw="1" qx="0" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <node name="triggerEllipsoid#1" id="249092080">
-                <position x="255" y="57.5" z="-24" />
-                <rotation qw="0.92388" qx="0" qy="-0.382683" qz="0" />
-                <scale x="9" y="1" z="2" />
-                <entity name="triggerEllipsoid#1" meshFile="box.mesh" castShadows="false">
-                    <subentity index="0" materialName="BaseWhite" />
-                </entity>
-            </node>
-            <node name="triggerBox#1" id="383526112">
-                <position x="2" y="1.5" z="-15" />
-                <rotation qw="0.995805" qx="0" qy="0.0915016" qz="0" />
-                <scale x="4.5" y="1" z="4.5" />
-                <entity name="triggerBox#1" meshFile="box.mesh" castShadows="false">
-                    <subentity index="0" materialName="BaseWhite" />
-                </entity>
-            </node>
-        </node>
-		        <node name="Particle#0" id="745262016">
-            <position x="6.41088" y="-22.8671" z="10.7238" />
-            <rotation qw="1" qx="0" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <particleSystem name="Particle#0" script="Examples/Swarm" />
-        </node>
-        <node name="Particle#1" id="335398400">
-            <position x="29.9266" y="-19.4526" z="-5.15971" />
-            <rotation qw="1" qx="0" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <particleSystem name="Particle#1" script="Examples/JetEngine1" />
+        <node name="TriggerBox#1" id="383526112">
+            <position x="61.421" y="0.39742" z="-18.3653" />
+            <rotation qw="0.995805" qx="0" qy="0.0915016" qz="0" />
+            <scale x="6.52491" y="1.44998" z="31.7677" />
+            <entity name="TriggerBox#1" meshFile="box.mesh" castShadows="false">
+                <subentity index="0" materialName="BaseWhite" />
+                <userData>
+                    <property type="7" name="triggerAction" data="teleport" />
+                    <property type="9" name="triggerPosition" data="61.421 0.39742 -18.3653" />
+                    <property type="9" name="triggerSize" data="6.52491 1.44998 31.7677" />
+                    <property type="9" name="triggerDestination" data="320 60 -35" />
+                    <property type="7" name="material" data="Trigger" />
+                </userData>
+            </entity>
         </node>
     </nodes>
 </scene>
