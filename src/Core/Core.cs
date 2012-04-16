@@ -54,6 +54,7 @@ namespace Tachycardia
 		{
 			m_Shutdown = false;
 
+
 			new Mogre.LogManager();
 			m_Log = Mogre.LogManager.Singleton.CreateLog("OgreLogfile.log", true, true, false);
 
@@ -94,6 +95,7 @@ namespace Tachycardia
 			m_Mouse = (MOIS.Mouse)m_InputManager.CreateInputObject(MOIS.Type.OISMouse, true);
 
 			m_NewtonWorld = new World();
+            m_NewtonWorld.SetWorldSize(new AxisAlignedBox(-300, -300, -300, 300, 300, 300)); 
 			m_NewtonDebugger = new Debugger(m_NewtonWorld);
 			m_NewtonDebugger.Init(m_SceneManager);
 

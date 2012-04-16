@@ -2314,5 +2314,17 @@
                 </userData>
             </entity>
         </node>
+		<node name="Particle#0" id="745262016">
+            <position x="6.41088" y="-22.8671" z="10.7238" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <particleSystem name="Particle#0" script="Examples/Swarm" />
+        </node>
+        <node name="Particle#1" id="335398400">
+            <position x="29.9266" y="-19.4526" z="-5.15971" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <particleSystem name="Particle#1" script="Examples/JetEngine1" />
+        </node>
     </nodes>
 </scene>
