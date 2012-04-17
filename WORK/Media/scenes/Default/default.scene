@@ -27,8 +27,8 @@
         </viewport>
         <camera name="intViewCamera1" viewMode="0" polyMode="3" fov="1">
             <clipping near="1" far="1000" />
-            <position x="-162.637" y="-11.1904" z="31.4509" />
-            <rotation qw="-0.852605" qx="0.193065" qy="0.474079" qz="0.107254" />
+            <position x="19.5973" y="13.4977" z="-4.99404" />
+            <rotation qw="-0.658434" qx="0.058239" qy="0.74786" qz="0.0681152" />
         </camera>
     </environment>
     <nodes>
@@ -1740,10 +1740,10 @@
             </entity>
         </node>
         <node name="Particle#0" id="435499136">
-            <position x="-100" y="47.0966" z="0" />
+            <position x="-99.9783" y="-26.8322" z="0.698538" />
             <rotation qw="1" qx="0" qy="0" qz="0" />
             <scale x="0.1" y="0.1" z="0.1" />
-            <particleSystem name="Particle#0" script="Examples/JetEngine2" />
+            <particleSystem name="Particle#0" script="Examples/JetEngine1" />
         </node>
         <node name="Particle#1" id="821649856">
             <position x="144.982" y="-27.4" z="-1.23589" />
@@ -1767,6 +1767,12 @@
             <entity name="cylinder#0" meshFile="cylinder.mesh" castShadows="false">
                 <subentity index="0" materialName="BaseWhite" />
             </entity>
+        </node>
+        <node name="RobotFire#1" id="731070848">
+            <position x="140.369" y="14.5394" z="55.067" />
+            <rotation qw="0.396887" qx="-0.841521" qy="0.331484" qz="0.156338" />
+            <scale x="1" y="1" z="1" />
+            <particleSystem name="RobotFire#1" script="Examples/PurpleFountain" />
         </node>
         <node name="triggerBox#1" id="820001856">
             <position x="-100" y="-27.4" z="0" />
@@ -1797,6 +1803,28 @@
                     <property type="7" name="material" data="Trigger" />
                 </userData>
             </entity>
+        </node>
+        <node name="robot#1" id="133884696">
+            <position x="163.987" y="-27.6505" z="54.4785" />
+            <rotation qw="-0.41866" qx="0" qy="-0.908143" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="robot#1" meshFile="robot.mesh" castShadows="false">
+                <subentity index="0" materialName="Examples/Robot" />
+            </entity>
+        </node>
+        <node name="fish#0" id="687429440">
+            <position x="149.714" y="34.1929" z="-12.2325" />
+            <rotation qw="0.712378" qx="0.693968" qy="-0.0748739" qz="-0.072939" />
+            <scale x="0.650976" y="0.650976" z="0.650976" />
+            <entity name="fish#0" meshFile="fish.mesh" castShadows="false">
+                <subentity index="0" materialName="Examples/Fish" />
+            </entity>
+        </node>
+        <node name="RobotFire#2" id="76570944">
+            <position x="167.492" y="13.9645" z="32.5133" />
+            <rotation qw="-0.448766" qx="0.424697" qy="0.157012" qz="-0.770447" />
+            <scale x="1" y="1" z="1" />
+            <particleSystem name="RobotFire#2" script="Examples/PurpleFountain" />
         </node>
     </nodes>
 </scene>
