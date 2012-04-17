@@ -27,8 +27,8 @@
         </viewport>
         <camera name="intViewCamera1" viewMode="0" polyMode="3" fov="1">
             <clipping near="1" far="1000" />
-            <position x="19.5973" y="13.4977" z="-4.99404" />
-            <rotation qw="-0.658434" qx="0.058239" qy="0.74786" qz="0.0681152" />
+            <position x="134.887" y="18.6636" z="-2.96163" />
+            <rotation qw="-0.903742" qx="0.18107" qy="0.381274" qz="0.0783499" />
         </camera>
     </environment>
     <nodes>
@@ -1825,6 +1825,38 @@
             <rotation qw="-0.448766" qx="0.424697" qy="0.157012" qz="-0.770447" />
             <scale x="1" y="1" z="1" />
             <particleSystem name="RobotFire#2" script="Examples/PurpleFountain" />
+        </node>
+        <node name="athene#1" id="233130880">
+            <position x="-126.267" y="-23.2744" z="10.2124" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="0.0478683" y="0.0478683" z="0.0478683" />
+            <entity name="athene#1" meshFile="athene.mesh" castShadows="false">
+                <subentity index="0" materialName="BaseWhite" />
+            </entity>
+        </node>
+        <node name="athene#0" id="920743424">
+            <position x="-125.948" y="-23.2653" z="18.4327" />
+            <rotation qw="0.0392596" qx="0" qy="-0.999229" qz="0" />
+            <scale x="0.047868" y="0.047868" z="0.047868" />
+            <entity name="athene#0" meshFile="athene.mesh" castShadows="false">
+                <subentity index="0" materialName="BaseWhite" />
+            </entity>
+        </node>
+        <node name="razor#0" id="142246768">
+            <position x="151.217" y="13.7795" z="-7.44927" />
+            <rotation qw="0.91706" qx="0" qy="-0.398749" qz="0" />
+            <scale x="0.0487082" y="0.0487082" z="0.0487082" />
+            <entity name="razor#0" meshFile="razor.mesh" castShadows="false">
+                <subentity index="0" materialName="Material__25" />
+            </entity>
+        </node>
+        <node name="razor#1" id="689382592">
+            <position x="145.57" y="13.7819" z="-13.005" />
+            <rotation qw="0.936672" qx="0" qy="-0.350207" qz="0" />
+            <scale x="0.048708" y="0.048708" z="0.048708" />
+            <entity name="razor#1" meshFile="razor.mesh" castShadows="false">
+                <subentity index="0" materialName="Material__25" />
+            </entity>
         </node>
     </nodes>
 </scene>
