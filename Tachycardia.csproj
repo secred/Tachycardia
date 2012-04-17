@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -46,6 +47,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MHydrax, Version=0.5.0.0, Culture=neutral, processorArchitecture=x86">
@@ -91,6 +93,25 @@
     <Compile Include="src\Player\PlayerController.cs" />
     <Compile Include="src\Player\acoztym\PlayerData.cs" />
     <Compile Include="src\Player\acoztym\PlayerLogic.cs" />
+    <Compile Include="src\Sound\AudioContext.cs" />
+    <Compile Include="src\Sound\Audio\AudioCapture.cs" />
+    <Compile Include="src\Sound\Audio\AudioContextException.cs" />
+    <Compile Include="src\Sound\Audio\AudioDeviceEnumerator.cs" />
+    <Compile Include="src\Sound\Audio\AudioDeviceErrorChecker.cs" />
+    <Compile Include="src\Sound\Audio\AudioDeviceException.cs" />
+    <Compile Include="src\Sound\Audio\AudioException.cs" />
+    <Compile Include="src\Sound\Audio\AudioValueException.cs" />
+    <Compile Include="src\Sound\Audio\BlittableValueType.cs" />
+    <Compile Include="src\Sound\Audio\ContextHandle.cs" />
+    <Compile Include="src\Sound\Audio\OpenAL\Alc\Alc.cs" />
+    <Compile Include="src\Sound\Audio\OpenAL\Alc\AlcEnums.cs" />
+    <Compile Include="src\Sound\Audio\OpenAL\AL\AL.cs" />
+    <Compile Include="src\Sound\Audio\OpenAL\AL\ALEnums.cs" />
+    <Compile Include="src\Sound\Audio\OpenAL\AL\EffectsExtension.cs" />
+    <Compile Include="src\Sound\Audio\OpenAL\AL\EffectsExtensionEnums.cs" />
+    <Compile Include="src\Sound\Audio\OpenAL\AL\EffectsExtensionPresets.cs" />
+    <Compile Include="src\Sound\Audio\OpenAL\AL\XRamExtension.cs" />
+    <Compile Include="src\Sound\SoundDict.cs" />
     <Compile Include="src\Tools\DotSceneLoader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,7 +149,6 @@
   <ItemGroup>
     <Folder Include="src\Core\Mission\" />
     <Folder Include="src\Core\World\" />
-    <Folder Include="src\Sound\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

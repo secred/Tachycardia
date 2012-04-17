@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Mogre;
 using MogreNewt;
+using Tachycardia.src.Sound;
 
 namespace Tachycardia
 {
@@ -27,6 +28,7 @@ namespace Tachycardia
 		public ObjectManager m_ObjectManager;
 		public StateManager m_StateManager;
         public PhysicsManager m_PhysicsManager;
+        public SoundDict m_SoundDict;
 
 		bool m_Shutdown;
 
@@ -103,6 +105,7 @@ namespace Tachycardia
 			m_ObjectManager = new ObjectManager();
 			m_StateManager = new StateManager();
             m_PhysicsManager = new PhysicsManager();
+            m_SoundDict = new SoundDict();
 
             /*
              * To co tu mamy nalezy przeniesc jak najszybciej do ogitora
@@ -200,6 +203,7 @@ namespace Tachycardia
 					m_ObjectManager.Update();
 					m_NewtonWorld.Update(m_FixedTime);
 					m_GameCamera.Update();
+                    m_SoundDict.Update();
 
 					m_TimeAccumulator -= m_FixedTime;
 

@@ -73,12 +73,24 @@ namespace Tachycardia
                     walkAnimation.Enabled = true;
                     walkAnimation.Loop = true;
                     walkAnimation.AddTime(Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector);
+                    if (walkAnimation.TimePosition / walkAnimation.Length > 0.5f
+                        && (walkAnimation.TimePosition - (Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector)) / walkAnimation.Length < 0.5f
+                        || (walkAnimation.TimePosition - (Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector)) / walkAnimation.Length < 0.0f)
+                    {
+                        Core.Singleton.m_SoundDict.Play("player/step_concrete_0" + new Random().Next(1, 5) + ".wav", m_Control.m_MainBody.Position);
+                    }
                     break;
                 case PlayerController.CharacterState.RUN:
                     idleAnimation.Enabled = false;
                     walkAnimation.Enabled = true;
                     walkAnimation.Loop = true;
                     walkAnimation.AddTime(Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector);
+                    if (walkAnimation.TimePosition / walkAnimation.Length > 0.5f
+                        && (walkAnimation.TimePosition - (Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector)) / walkAnimation.Length < 0.5f
+                        || (walkAnimation.TimePosition - (Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector)) / walkAnimation.Length < 0.0f)
+                    {
+                        Core.Singleton.m_SoundDict.Play("player/step_concrete_0" + new Random().Next(1, 5) + ".wav", m_Control.m_MainBody.Position);
+                    }
                     break;
             }
         }
