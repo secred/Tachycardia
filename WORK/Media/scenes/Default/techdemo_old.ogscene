@@ -23,7 +23,7 @@
     </RESOURCEDIRECTORIES>
   <CAMERASPEED value="1"></CAMERASPEED>
   <CAMERAPOSITIONS count="0">
-    <OPTION id="0" position="-56.7303 301.184 299.088" orientation="-0.738415 0.453427 0.425232 0.261391"></OPTION>
+    <OPTION id="0" position="49.1013 113.21 212.833" orientation="-0.0310413 0.0106624 -0.946132 -0.322114"></OPTION>
   </CAMERAPOSITIONS>
     <LAYERS>
       <LAYER id="0" name="Layer 0" visible="true"></LAYER>
@@ -104,9 +104,9 @@
   <OBJECT object_id="2000000002" name="Viewport" typename="Viewport Object">
     <PROPERTY id="camera::clipdistance" type="8" value="1 1000"></PROPERTY>
     <PROPERTY id="camera::fov" type="6" value="1"></PROPERTY>
-    <PROPERTY id="camera::orientation" type="13" value="-0.738559 0.453516 0.425315 0.261442"></PROPERTY>
+    <PROPERTY id="camera::orientation" type="13" value="-0.031044 0.0106634 -0.946214 -0.322142"></PROPERTY>
     <PROPERTY id="camera::polymode" type="2" value="3"></PROPERTY>
-    <PROPERTY id="camera::position" type="9" value="-56.7303 301.184 299.088"></PROPERTY>
+    <PROPERTY id="camera::position" type="9" value="49.1013 113.21 212.833"></PROPERTY>
     <PROPERTY id="camera::viewmode" type="2" value="0"></PROPERTY>
     <PROPERTY id="colour" type="11" value="0 0 0 1"></PROPERTY>
     <PROPERTY id="compositorcount" type="2" value="0"></PROPERTY>
@@ -231,7 +231,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -250,7 +250,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -269,7 +269,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -288,7 +288,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -307,7 +307,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -326,7 +326,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -345,7 +345,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -364,7 +364,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -383,6 +383,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
+      <PROPERTY id="material" type="7" value="" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -401,7 +402,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -420,7 +421,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="Property#0" type="7" value="Concrete" autooptiontype="0"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -439,7 +440,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -458,7 +459,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -477,7 +478,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -496,7 +497,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -515,7 +516,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -534,7 +535,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -553,7 +554,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -572,7 +573,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -591,7 +592,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -610,7 +611,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -629,7 +630,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -648,7 +649,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -667,7 +668,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -686,7 +687,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -705,7 +706,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -724,7 +725,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -743,7 +744,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -762,7 +763,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -781,7 +782,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -800,7 +801,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -819,7 +820,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -838,7 +839,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -857,7 +858,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -876,7 +877,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -895,7 +896,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -914,7 +915,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -933,7 +934,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -952,7 +953,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -971,7 +972,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -990,7 +991,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1009,7 +1010,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1028,7 +1029,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1047,7 +1048,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1066,7 +1067,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1085,7 +1086,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1104,7 +1105,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1123,7 +1124,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1142,7 +1143,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1161,7 +1162,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1180,7 +1181,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1199,7 +1200,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1218,7 +1219,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1237,7 +1238,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1256,7 +1257,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1275,7 +1276,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1294,7 +1295,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1313,7 +1314,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1332,7 +1333,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1351,7 +1352,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1370,7 +1371,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1389,7 +1390,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1408,26 +1409,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
-    </CUSTOMPROPERTIES>
-  </OBJECT>
-
-  <OBJECT object_id="457960768" name="mapaGroup_268" typename="Entity Object" parentnode="SceneManager">
-    <PROPERTY id="autotracktarget" type="7" value="None"></PROPERTY>
-    <PROPERTY id="castshadows" type="12" value="true"></PROPERTY>
-    <PROPERTY id="layer" type="2" value="0"></PROPERTY>
-    <PROPERTY id="locked" type="12" value="false"></PROPERTY>
-    <PROPERTY id="meshfile" type="7" value="mapaGroup_268"></PROPERTY>
-    <PROPERTY id="orientation" type="13" value="-0.685571 -0.690968 -0.164116 0.160069"></PROPERTY>
-    <PROPERTY id="position" type="9" value="-490.324 -218.615 154.728"></PROPERTY>
-    <PROPERTY id="renderingdistance" type="6" value="5000"></PROPERTY>
-    <PROPERTY id="scale" type="9" value="1 1 1"></PROPERTY>
-    <PROPERTY id="subentity0::material" type="7" value="mapaMaterial4"></PROPERTY>
-    <PROPERTY id="subentity0::visible" type="12" value="true"></PROPERTY>
-    <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
-    <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
-    <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1446,7 +1428,26 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+    </CUSTOMPROPERTIES>
+  </OBJECT>
+
+  <OBJECT object_id="457960768" name="mapaGroup_268" typename="Entity Object" parentnode="SceneManager">
+    <PROPERTY id="autotracktarget" type="7" value="None"></PROPERTY>
+    <PROPERTY id="castshadows" type="12" value="true"></PROPERTY>
+    <PROPERTY id="layer" type="2" value="0"></PROPERTY>
+    <PROPERTY id="locked" type="12" value="false"></PROPERTY>
+    <PROPERTY id="meshfile" type="7" value="mapaGroup_268"></PROPERTY>
+    <PROPERTY id="orientation" type="13" value="-0.685571 -0.690968 -0.164116 0.160069"></PROPERTY>
+    <PROPERTY id="position" type="9" value="-490.324 -218.615 154.728"></PROPERTY>
+    <PROPERTY id="renderingdistance" type="6" value="5000"></PROPERTY>
+    <PROPERTY id="scale" type="9" value="1 1 1"></PROPERTY>
+    <PROPERTY id="subentity0::material" type="7" value="mapaMaterial4"></PROPERTY>
+    <PROPERTY id="subentity0::visible" type="12" value="true"></PROPERTY>
+    <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
+    <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
+    <CUSTOMPROPERTIES>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1465,7 +1466,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1484,7 +1485,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1503,26 +1504,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
-    </CUSTOMPROPERTIES>
-  </OBJECT>
-
-  <OBJECT object_id="140263072" name="mapaGroup_218" typename="Entity Object" parentnode="SceneManager">
-    <PROPERTY id="autotracktarget" type="7" value="None"></PROPERTY>
-    <PROPERTY id="castshadows" type="12" value="true"></PROPERTY>
-    <PROPERTY id="layer" type="2" value="0"></PROPERTY>
-    <PROPERTY id="locked" type="12" value="false"></PROPERTY>
-    <PROPERTY id="meshfile" type="7" value="mapaGroup_218"></PROPERTY>
-    <PROPERTY id="orientation" type="13" value="0.701702 0.00442801 -0.712455 -0.0017732"></PROPERTY>
-    <PROPERTY id="position" type="9" value="-55.3152 -11.1444 147.039"></PROPERTY>
-    <PROPERTY id="renderingdistance" type="6" value="5000"></PROPERTY>
-    <PROPERTY id="scale" type="9" value="4.025 1 4.44"></PROPERTY>
-    <PROPERTY id="subentity0::material" type="7" value="mapaskp_front_default"></PROPERTY>
-    <PROPERTY id="subentity0::visible" type="12" value="true"></PROPERTY>
-    <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
-    <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
-    <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1541,7 +1523,26 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+    </CUSTOMPROPERTIES>
+  </OBJECT>
+
+  <OBJECT object_id="140263072" name="mapaGroup_218" typename="Entity Object" parentnode="SceneManager">
+    <PROPERTY id="autotracktarget" type="7" value="None"></PROPERTY>
+    <PROPERTY id="castshadows" type="12" value="true"></PROPERTY>
+    <PROPERTY id="layer" type="2" value="0"></PROPERTY>
+    <PROPERTY id="locked" type="12" value="false"></PROPERTY>
+    <PROPERTY id="meshfile" type="7" value="mapaGroup_218"></PROPERTY>
+    <PROPERTY id="orientation" type="13" value="0.701702 0.00442801 -0.712455 -0.0017732"></PROPERTY>
+    <PROPERTY id="position" type="9" value="-55.3152 -11.1444 147.039"></PROPERTY>
+    <PROPERTY id="renderingdistance" type="6" value="5000"></PROPERTY>
+    <PROPERTY id="scale" type="9" value="4.025 1 4.44"></PROPERTY>
+    <PROPERTY id="subentity0::material" type="7" value="mapaskp_front_default"></PROPERTY>
+    <PROPERTY id="subentity0::visible" type="12" value="true"></PROPERTY>
+    <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
+    <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
+    <CUSTOMPROPERTIES>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1560,7 +1561,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1579,7 +1580,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1598,7 +1599,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1617,7 +1618,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Ground" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1636,7 +1637,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1655,7 +1656,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1674,7 +1675,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1693,7 +1694,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1712,7 +1713,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1731,7 +1732,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1750,7 +1751,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1769,7 +1770,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1788,7 +1789,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1807,7 +1808,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1826,7 +1827,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1845,7 +1846,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1864,7 +1865,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1883,7 +1884,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1902,7 +1903,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1921,7 +1922,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1940,7 +1941,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1959,7 +1960,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1978,7 +1979,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -1997,7 +1998,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2016,7 +2017,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2035,7 +2036,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2054,7 +2055,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2073,7 +2074,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2092,7 +2093,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2111,7 +2112,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2130,7 +2131,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2149,7 +2150,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2168,7 +2169,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2187,7 +2188,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2206,7 +2207,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2225,7 +2226,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2244,7 +2245,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2263,7 +2264,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2282,7 +2283,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2301,7 +2302,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2320,7 +2321,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2339,7 +2340,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2358,7 +2359,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2377,7 +2378,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2396,7 +2397,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2415,7 +2416,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2434,7 +2435,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2453,7 +2454,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2472,7 +2473,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2491,7 +2492,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2510,7 +2511,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2529,7 +2530,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2548,7 +2549,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2567,7 +2568,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2586,7 +2587,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2605,7 +2606,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2624,7 +2625,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2643,7 +2644,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2662,7 +2663,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2681,7 +2682,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2700,7 +2701,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2719,7 +2720,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2738,7 +2739,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2757,7 +2758,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2776,7 +2777,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2795,7 +2796,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2814,7 +2815,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2833,7 +2834,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2852,7 +2853,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2871,7 +2872,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2890,7 +2891,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2909,7 +2910,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2928,7 +2929,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2947,7 +2948,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2966,7 +2967,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -2985,7 +2986,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3004,7 +3005,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3023,7 +3024,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3042,7 +3043,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3061,7 +3062,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3080,7 +3081,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3099,7 +3100,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3118,7 +3119,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3137,7 +3138,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3156,7 +3157,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3175,7 +3176,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3194,7 +3195,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3213,7 +3214,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3232,7 +3233,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3251,7 +3252,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3270,7 +3271,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3289,7 +3290,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3308,7 +3309,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3327,7 +3328,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3346,7 +3347,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3365,7 +3366,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3384,7 +3385,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3403,7 +3404,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3422,7 +3423,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3441,7 +3442,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3460,7 +3461,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3479,7 +3480,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3498,7 +3499,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3517,7 +3518,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3536,7 +3537,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3555,7 +3556,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3574,7 +3575,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3593,7 +3594,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3612,7 +3613,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3631,7 +3632,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3650,7 +3651,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3669,7 +3670,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3688,7 +3689,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3707,7 +3708,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3726,7 +3727,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3745,7 +3746,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3764,7 +3765,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3783,7 +3784,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3802,7 +3803,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3821,7 +3822,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3840,7 +3841,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3859,7 +3860,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3878,7 +3879,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3897,7 +3898,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3916,7 +3917,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3935,7 +3936,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3954,7 +3955,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3973,7 +3974,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -3992,7 +3993,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4011,7 +4012,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4030,7 +4031,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4049,7 +4050,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4068,7 +4069,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4087,7 +4088,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4106,7 +4107,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4125,7 +4126,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4144,7 +4145,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4163,7 +4164,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4182,7 +4183,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4201,7 +4202,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4220,7 +4221,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4239,7 +4240,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4258,7 +4259,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4277,7 +4278,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4296,7 +4297,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4315,7 +4316,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4334,7 +4335,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4353,7 +4354,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4372,7 +4373,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4391,7 +4392,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4410,7 +4411,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4429,7 +4430,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4448,7 +4449,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4467,7 +4468,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4486,7 +4487,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4505,7 +4506,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4524,7 +4525,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4543,7 +4544,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4562,7 +4563,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4581,7 +4582,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4600,7 +4601,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4619,7 +4620,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4638,7 +4639,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4657,7 +4658,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4676,7 +4677,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4695,7 +4696,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4714,7 +4715,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4733,7 +4734,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4752,7 +4753,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4771,7 +4772,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4790,7 +4791,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4809,7 +4810,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4828,7 +4829,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4847,7 +4848,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4866,7 +4867,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4885,7 +4886,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4904,7 +4905,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4923,7 +4924,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4942,7 +4943,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4961,7 +4962,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4980,7 +4981,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -4999,7 +5000,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5018,7 +5019,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5037,7 +5038,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5056,7 +5057,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5075,7 +5076,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5094,7 +5095,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5113,7 +5114,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5132,7 +5133,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5151,7 +5152,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5170,7 +5171,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5189,7 +5190,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5208,7 +5209,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5227,7 +5228,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5246,7 +5247,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5265,7 +5266,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5284,7 +5285,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5303,7 +5304,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5322,7 +5323,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5341,7 +5342,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5360,7 +5361,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5379,7 +5380,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5398,7 +5399,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5417,7 +5418,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5436,7 +5437,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5455,7 +5456,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
-      <PROPERTY id="material" type="7" value="" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Concrete" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5478,7 +5479,7 @@
       <PROPERTY id="triggerPosition" type="9" value="25 40.5 310" autooptiontype="0"></PROPERTY>
       <PROPERTY id="triggerSize" type="9" value="2 2 2" autooptiontype="0"></PROPERTY>
       <PROPERTY id="triggerDestination" type="9" value="0 -12 290" autooptiontype="0"></PROPERTY>
-      <PROPERTY id="material" type="7" value="Trigger" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Trigger" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5501,7 +5502,7 @@
       <PROPERTY id="triggerPosition" type="9" value="15 -13 50" autooptiontype="0"></PROPERTY>
       <PROPERTY id="triggerSize" type="9" value="2 2 2" autooptiontype="0"></PROPERTY>
       <PROPERTY id="triggerDestination" type="9" value="30 45 315" autooptiontype="0"></PROPERTY>
-      <PROPERTY id="material" type="7" value="Trigger" autooptiontype="0" options="Concrete;Concrete;Glass;Glass;Ground;Ground;Plastic;Plastic;Player;Player;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
+      <PROPERTY id="material" type="7" value="Trigger" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5520,6 +5521,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
+      <PROPERTY id="material" type="7" value="Metal" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5538,6 +5540,7 @@
     <PROPERTY id="subentitycount" type="2" value="1"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
+      <PROPERTY id="material" type="7" value="Metal" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5549,9 +5552,10 @@
     <PROPERTY id="orientation" type="13" value="1 0 0 0"></PROPERTY>
     <PROPERTY id="particle" type="7" value="Examples/Swarm"></PROPERTY>
     <PROPERTY id="position" type="9" value="7.29406 98.7038 179.838"></PROPERTY>
-    <PROPERTY id="scale" type="9" value="1 1 1"></PROPERTY>
+    <PROPERTY id="scale" type="9" value="1e-006 1e-006 1e-006"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
+      <PROPERTY id="material" type="7" value="Particle" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5566,6 +5570,7 @@
     <PROPERTY id="scale" type="9" value="1e-006 1e-006 1e-006"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
+      <PROPERTY id="material" type="7" value="Particle" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 
@@ -5580,6 +5585,7 @@
     <PROPERTY id="scale" type="9" value="1e-005 1e-005 1e-005"></PROPERTY>
     <PROPERTY id="updatescript" type="7" value=""></PROPERTY>
     <CUSTOMPROPERTIES>
+      <PROPERTY id="material" type="7" value="Particle" autooptiontype="0" options=";;Concrete;Concrete;Glass;Glass;Ground;Ground;Metal;Metal;Particle;Particle;Plastic;Plastic;Player;Player;Sand;Sand;TnT;TnT;Trigger;Trigger;Wood;Wood;"></PROPERTY>
     </CUSTOMPROPERTIES>
   </OBJECT>
 

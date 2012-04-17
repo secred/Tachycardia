@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; 
 using System.Collections;
 using System.Linq;
 using System.Text;
@@ -21,7 +21,7 @@ namespace Tachycardia.src.Tools
              }
              return instance;
           }
-       }
+        }
 
        public void addStaticParticleName2List(String name)
        {
