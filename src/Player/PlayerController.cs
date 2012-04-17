@@ -71,6 +71,16 @@ namespace Tachycardia
                 m_Control.m_MainBody.AddForce(_force);
             }
         }
+
+        public virtual void willBackward()
+        {
+            if (m_Control.m_MainBody.Velocity.Length < getMaxSpd() && m_Control.m_MainBody.Velocity.Length > getMaxSpd() * -1)
+            {
+                Mogre.Vector3 _force = m_Control.m_GoTo * Mogre.Vector3.UNIT_Z;
+                _force *= m_Control.m_MainBody.Mass * m_MaxForce;
+                m_Control.m_MainBody.AddForce(-_force);
+            }
+        }
     };
 
     class Normal : LogicState
@@ -97,7 +107,7 @@ namespace Tachycardia
             //addimpulse()
             System.Console.WriteLine("IMPULSE");
 
-            m_Control.m_MainBody.AddImpulse(new Mogre.Vector3(0, 10, 0), m_Control.m_MainBody.Position);
+            m_Control.m_MainBody.AddImpulse(new Mogre.Vector3(0, 8, 0), m_Control.m_MainBody.Position);
             m_Control.m_Pose = m_Control.m_myPoses["fly"];
             m_Control.m_jumpLimit = (int)Core.m_FixedFPS;//ograniczenie mozliwosci skoku na jedna sekunde
             //m_Control.changestateto(""fly)/
@@ -257,7 +267,8 @@ namespace Tachycardia
         public Mogre.Node m_PlayerNode;
 
         public Mogre.Quaternion m_GoTo;//miejsce w ktore skierowana jest obecnie sila
-        
+
+        Mogre.Vector3 m_stayHere;
         //public float m_forceJump;
 
         public CharacterState m_State;
@@ -271,6 +282,7 @@ namespace Tachycardia
 
         public PlayerController(Mogre.Node node,Mogre.Entity entity,float mass)
         {
+            m_stayHere = Mogre.Vector3.ZERO;
             //init logic states for controler
             initLogicStates();
             //force direction
@@ -362,30 +374,12 @@ namespace Tachycardia
         {//calling each physics iteration
 
             //jezeli niedawno skoczyl to obniz
+            //to zmiany bo jak zeskoczymy z czegos to nadal mozna bedzie podskoczycz lecac
             if (m_jumpLimit > 0)
                 m_jumpLimit--;
 
             KeyboardUpdate();
-            /*
-            if (m_State != CharacterState.IDLE)
-            {
-                //mass
-                _force = m_Velocity * body.Mass * 5;
-                if (body.Velocity.Length < m_MaxSpeed && body.Velocity.Length > m_MaxSpeed * -1)
-                    body.AddForce(_force);
-            }
-            else
-            {
-                //stan IDLE w ktorym probujemy stac caigle w meijscu uzywajac kontr sily
-                //nie jest on teraz stanem zatrzymania sie,
-                //w tym stanie postac stara sie utrzymac w danym miejscu niwelujac predkosci jakie na nia dzialaja
-                if (body.Velocity.Length > 0.001)
-                {
-                    //System.Console.WriteLine("idle niweluje" + m_Body.Velocity.Length);
-                    body.AddForce(body.Velocity * -3 * m_MainBody.Mass * new Mogre.Vector3(1, 0, 1));
-
-                }
-            }*/
+            
         }
         
         public void KeyboardUpdate()
@@ -393,6 +387,7 @@ namespace Tachycardia
 
             if (Core.Singleton.m_StateManager.IsActiveState("Game"))
             {
+                bool activateidle = true;
                 //JUMP
                 if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_SPACE) && m_jumpLimit == 0)
                 {//ograniczenie czasowe skokow!
@@ -404,26 +399,21 @@ namespace Tachycardia
                     {//i want catch smth
 
                     }
-
+                    activateidle = false;
                 }
 
                 //MOVE FORWARD
                 if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_W))
                 {//i want to go forward, can i in this position?
                     m_Pose.willForward();
+                    activateidle = false;
                 }
 
                 //MOVE BACKWARD 
                 if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_S))
                 {//i want to go backward its possible?
-                    /*m_MaxSpeed = 3.5f;
-                    //BUGGG
-                    //if (m_MainBody.Velocity.Length > m_MaxSpeed)
-                    //Mogre.Quaternion nowy = m_GoTo.Inverse();
-                    m_Force = -m_GoTo * Mogre.Vector3.UNIT_Z;
-                    m_Force *= m_Force * m_MainBody.Mass * 12;
-                    m_MainBody.AddForce(m_Force);*/
-
+                    m_Pose.willBackward();
+                    activateidle = false;
                 }
 
                 //TURN ME LEFT!
@@ -454,6 +444,20 @@ namespace Tachycardia
                 if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_Z))
                 {//i want to crawl, possible? 1. no contact with water or smth?
 
+                }
+
+                //proba zatrzymania typa w miejscu w ktorym ostatnio puscil klawisze
+                if (activateidle == true)
+                {
+                    if (!m_MainBody.Velocity.IsZeroLength)
+                    {//nie zatrzymal sie jeszcze to go zatrzymujemy
+                        Mogre.Vector3 xyVector = new Mogre.Vector3(0, 0, 1);
+                        Mogre.Vector3 velocityxy = m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1);
+                        Mogre.Quaternion ForceDirection = xyVector.GetRotationTo(velocityxy);
+                        //System.Console.WriteLine(kierunek);
+                        Mogre.Vector3 StoppingForce = -ForceDirection * Mogre.Vector3.UNIT_Z * m_MainBody.Mass * 4;
+                        m_MainBody.AddForce(-StoppingForce);
+                    }
                 }
             }
         }
