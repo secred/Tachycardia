@@ -19,6 +19,7 @@ namespace Tachycardia
             Core.Singleton.m_GameCamera.Character = m_Player;
             Core.Singleton.m_GameCamera.Distance = 4;
             Core.Singleton.m_GameCamera.Angle = new Degree(20);
+            Core.Singleton.m_GameCamera.Cam1();
 
             Core.Log("\n\nGAME  INSTRUCTION:\n\nW/A/D  -  Player controller\nW+LSHIFT  -  Run\nESCAPE  -  Exit Game\n\n");
         }
@@ -35,6 +36,19 @@ namespace Tachycardia
                 case MOIS.KeyCode.KC_ESCAPE:
                     PopState();
                     break;
+                case MOIS.KeyCode.KC_1:
+                    Core.Singleton.m_GameCamera.Cam1();
+                    break;
+                case MOIS.KeyCode.KC_2:
+                    Core.Singleton.m_GameCamera.Cam2();
+                    break;
+                case MOIS.KeyCode.KC_3:
+                    Core.Singleton.m_GameCamera.Cam3();
+                    break;
+                case MOIS.KeyCode.KC_4:
+                    Core.Singleton.m_GameCamera.Cam4();
+                    break;
+
             }
             return true;
         }
