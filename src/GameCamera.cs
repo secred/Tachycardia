@@ -28,7 +28,7 @@ namespace Tachycardia
         public void Update()
         {
             Vector3 offset =
-            Character.m_Control.m_GoTo * (-Vector3.UNIT_Z +
+            Character.m_Control.m_LookingAt * (-Vector3.UNIT_Z +
                 (Vector3.UNIT_Y)
                 ).NormalisedCopy * Distance;
 
