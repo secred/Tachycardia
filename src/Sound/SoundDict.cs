@@ -50,6 +50,10 @@ namespace Tachycardia.src.Sound
             Insert("player/step_concrete_03.wav");
             Insert("player/step_concrete_04.wav");
             Insert("player/step_concrete_05.wav");
+            Insert("player/step_gravel_01.wav");
+            Insert("player/step_gravel_02.wav");
+            Insert("player/step_gravel_03.wav");
+            Insert("player/step_gravel_04.wav");
             Play("die_01.wav", new Mogre.Vector3(0,0,0));
         }
         public byte[] LoadWave(Stream stream, out int channels, out int bits, out int rate)
