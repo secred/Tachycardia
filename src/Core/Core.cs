@@ -30,6 +30,8 @@ namespace Tachycardia
         public PhysicsManager m_PhysicsManager;
         public SoundDict m_SoundDict;
 
+        public Random Rand;
+
 		bool m_Shutdown;
 
 		int m_BodyId;
@@ -56,6 +58,7 @@ namespace Tachycardia
 		{
 			m_Shutdown = false;
 
+            Rand = new Random();
 
 			new Mogre.LogManager();
 			m_Log = Mogre.LogManager.Singleton.CreateLog("OgreLogfile.log", true, true, false);
@@ -120,6 +123,7 @@ namespace Tachycardia
             m_PhysicsManager.addMaterial("Ground");
             m_PhysicsManager.addMaterial("Trigger");
             m_PhysicsManager.addMaterial("Player");
+            m_PhysicsManager.addMaterial("NPC");
 
             //laczenie materialow w pary
             //dla kazdej mapy rozne powiazania (zapewne beda sie powtarzac ale im wieksza ilosc
@@ -138,6 +142,9 @@ namespace Tachycardia
             m_PhysicsManager.addMaterialPair("Ground", "Player");//ground material podstawowy
             m_PhysicsManager.getMaterialPair("GroundPlayer").SetDefaultElasticity(0);
             m_PhysicsManager.setPairCallback("GroundPlayer", "GroundPlayerCallback");
+            m_PhysicsManager.addMaterialPair("Ground", "NPC");//ground material podstawowy
+            m_PhysicsManager.getMaterialPair("GroundNPC").SetDefaultElasticity(0);
+            m_PhysicsManager.setPairCallback("GroundNPC", "GroundPlayerCallback");
             /*
                         * Koniec inicjalizacji materialow ktora musi sie znalezc w opisie mapy, dla niekumatych w ogitorze. 
                         */
@@ -283,6 +290,14 @@ namespace Tachycardia
             player.SetPosition(new Vector3(-160f, -25f, 15.5f));
             m_ObjectManager.Add("player", player);
 			m_Log.LogMessage("Player created.");
+
+            // NPCs:
+            for (int i = 0; i < 100; i++)
+            {
+                player = new Character("Man.mesh", 70, true);
+                player.SetPosition(new Vector3(0f, -i / 10f, 0f));
+                m_ObjectManager.Add("bot" + i.ToString(), player);
+            }
             
 			m_Log.LogMessage("Adding light...");
 			Light light = Core.Singleton.m_SceneManager.CreateLight();

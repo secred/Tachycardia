@@ -35,15 +35,23 @@ namespace Tachycardia
         public PlayerController m_Control;//kontroler
         public Vector3 m_HeadOffset;
 
-        public Character(string meshName,float mass/*CharacterProfile profile*/)
+        public Character(string meshName, float mass)
+            : this(meshName, mass, false)
+        {
+        }
+
+        public Character(string meshName, float mass/*CharacterProfile profile*/, bool npc)
         {//tworzy grafike playera i podczepia mu kontroler, obsluguje animacje i uaktualnia kontroler
             m_HeadOffset = new Vector3(0, 0.8f, 0);
             //headoffset powinien byc chyba zmienny dla croucha itp
             m_Entity = Core.Singleton.m_SceneManager.CreateEntity(meshName);
             m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
             m_Node.AttachObject(m_Entity);
-            
-            m_Control = new PlayerController(m_Node, m_Entity, mass);
+
+            if (npc)
+                m_Control = new NpcController(m_Node, m_Entity, mass);
+            else
+                m_Control = new PlayerController(m_Node, m_Entity, mass);
         }
 
         public void SetPosition(Vector3 position)

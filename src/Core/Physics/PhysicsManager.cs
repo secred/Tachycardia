@@ -10,6 +10,7 @@ namespace Tachycardia
         public enum BodyTypes
         {
             PLAYER,
+            NPC,
             TRIGGER
         };
 
