@@ -1735,6 +1735,18 @@
                 <property type="7" name="material" data="Particle" />
             </userData>
         </node>
+		<node name="Particle#2" id="321298880">
+            <position x="146.132" y="13.787" z="60.9988" />
+            <rotation qw="-0.32417" qx="0.0600814" qy="0.172047" qz="-0.92828" />
+            <scale x="1" y="1" z="1" />
+            <particleSystem name="Particle#2" script="Examples/PurpleFountain" />
+        </node>
+        <node name="Particle#3" id="693838272">
+            <position x="171.21" y="12.8648" z="34.8996" />
+            <rotation qw="0.245569" qx="-0.0488467" qy="-0.188876" qz="0.949545" />
+            <scale x="1" y="1" z="1" />
+            <particleSystem name="Particle#3" script="Examples/PurpleFountain" />
+        </node>
         <node name="box#1" id="974333952">
             <position x="-105" y="-27.5" z="-5" />
             <rotation qw="1" qx="0" qy="0" qz="0" />
@@ -1786,6 +1798,14 @@
             <scale x="0.036278" y="0.036278" z="0.036278" />
             <entity name="razor#1" meshFile="razor.mesh" castShadows="false">
                 <subentity index="0" materialName="Material__25" />
+            </entity>
+        </node>
+		<node name="robot#0" id="222327344">
+            <position x="170.083" y="-28.7767" z="57.2619" />
+            <rotation qw="0.358368" qx="0" qy="0.933581" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="robot#0" meshFile="robot.mesh" castShadows="false">
+                <subentity index="0" materialName="Examples/Robot" />
             </entity>
         </node>
     </nodes>
