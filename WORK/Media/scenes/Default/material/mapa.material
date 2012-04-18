@@ -254,6 +254,29 @@ material "mapaMaterial18"
 		}
 	}
 }
+material "mapaMaterial27"
+{
+	technique mapaMaterial27_technique
+	{
+		pass mapaMaterial27_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0 0 0 0 25.5
+			emissive 0 0 0 1
+
+			texture_unit mapaMaterial27_Diffuse#0
+			{
+				texture mapafavela_01.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
 material "mapaMaterial20"
 {
 	technique mapaMaterial20_technique
@@ -291,6 +314,29 @@ material "mapaMaterial31"
 			texture_unit mapaMaterial31_Diffuse#0
 			{
 				texture mapafavela_06.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material "mapaMaterial47"
+{
+	technique mapaMaterial47_technique
+	{
+		pass mapaMaterial47_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0 0 0 0 25.5
+			emissive 0 0 0 1
+
+			texture_unit mapaMaterial47_Diffuse#0
+			{
+				texture mapaBrick_20.jpg
 				tex_coord_set 0
 				colour_op modulate
 				scale 1 1
@@ -668,29 +714,6 @@ material "mapaMaterial53"
 		}
 	}
 }
-material "mapaMaterial27"
-{
-	technique mapaMaterial27_technique
-	{
-		pass mapaMaterial27_standard
-		{
-			ambient 1 1 1 1
-			diffuse 1 1 1 1
-			specular 0 0 0 0 25.5
-			emissive 0 0 0 1
-
-			texture_unit mapaMaterial27_Diffuse#0
-			{
-				texture mapafavela_01.jpg
-				tex_coord_set 0
-				colour_op modulate
-				scale 1 1
-				scroll 0 0
-				rotate 0
-			}
-		}
-	}
-}
 material "mapaMaterial21"
 {
 	technique mapaMaterial21_technique
@@ -705,29 +728,6 @@ material "mapaMaterial21"
 			texture_unit mapaMaterial21_Diffuse#0
 			{
 				texture mapaBrick_12.jpg
-				tex_coord_set 0
-				colour_op modulate
-				scale 1 1
-				scroll 0 0
-				rotate 0
-			}
-		}
-	}
-}
-material "mapaMaterial47"
-{
-	technique mapaMaterial47_technique
-	{
-		pass mapaMaterial47_standard
-		{
-			ambient 1 1 1 1
-			diffuse 1 1 1 1
-			specular 0 0 0 0 25.5
-			emissive 0 0 0 1
-
-			texture_unit mapaMaterial47_Diffuse#0
-			{
-				texture mapaBrick_20.jpg
 				tex_coord_set 0
 				colour_op modulate
 				scale 1 1
