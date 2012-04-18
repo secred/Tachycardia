@@ -16,19 +16,31 @@ namespace Tachycardia.src.Sound
         public int m_ambients;
         public int[] m_sourceChannels;
         public int[] m_ambientChannels;
-        public int m_ktoryteraz;
+        //public int m_ktoryteraz;
         public AudioContext m_AudioContext;
         public Dictionary<string, int> m_Dictionary;
         public bool m_isMuted;
 
+        public int[] BgBuffers;
+        public int BgSource;
+        public int BgState;
+        public int BgChannels;
+        public int BgBits_per_sample;
+        public int BgSample_rate;
+        public int processed_count;
+        public int queued_count;
+        public bool IsPlaying;
+        //OggVorbisFileStream oggStream;
+
+
         public SoundDict()
         {
             basename = "Media/sfx/";
-            int m_channels=8;
-            int m_ambients=8;
+            m_channels=8;
+            m_ambients=1;
             m_sourceChannels = new int[m_channels];
             m_ambientChannels = new int[m_ambients];
-            m_ktoryteraz = 0;
+            //m_ktoryteraz = 0;
             m_AudioContext = new AudioContext();
             m_Dictionary = new Dictionary<string, int>();
             for (int i = 0; i < m_channels; i++)
@@ -40,10 +52,22 @@ namespace Tachycardia.src.Sound
                 m_sourceChannels[i] = AL.GenSource();
             }
             m_isMuted = false;
+            BgBuffers = AL.GenBuffers(2);
+            BgSource = AL.GenSource();
+            //alGenBuffers(2, buffers);
+            //alGenSources(1, &source);
+            IsPlaying = false;
+
             Initialize();
         }
         public void Initialize()
         {
+            Console.WriteLine("Loading test.ogg");
+            //oggStream = new OggVorbisFileStream("test.ogg");
+            Console.WriteLine("Loaded test.ogg");
+            float[] temp = { 0, 0, 1, 0, 1, 0 };
+            AL.Listener(ALListenerfv.Orientation, ref temp);
+            AL.Listener(ALListener3f.Position, 0, 0, 0);
             Insert("die_01.wav");
             Insert("player/step_concrete_01.wav");
             Insert("player/step_concrete_02.wav");
@@ -156,33 +180,209 @@ namespace Tachycardia.src.Sound
             m_Dictionary.Add(filename, tempbuf);
             return true;
         }
+
         public void Play(string filename, Mogre.Vector3 pos)
         {
             if (m_isMuted) return;
             int tempbuf;
             if (!m_Dictionary.TryGetValue(filename, out tempbuf)) return;
-            AL.SourceStop(m_sourceChannels[m_ktoryteraz]);
-            AL.Source(m_sourceChannels[m_ktoryteraz], ALSourcei.Buffer, tempbuf);
-            AL.Source(m_sourceChannels[m_ktoryteraz], ALSource3f.Position, pos.x, pos.y, pos.z);
-            AL.SourcePlay(m_sourceChannels[m_ktoryteraz]);
-            m_ktoryteraz++;
-            if (m_ktoryteraz >= m_channels) m_ktoryteraz = 0;
+            int state, ktoryteraz = -1;
+            Mogre.Vector3 tvec, lis;
+            AL.GetListener(ALListener3f.Position, out lis.x, out lis.y, out lis.z);
+            float plis = (pos - lis).SquaredLength;
+            float maxlen = 0.0f;
+            for (int i = 0; i < m_channels; i++)
+            {
+                
+                AL.GetSource(m_sourceChannels[i], ALGetSourcei.SourceState, out state);
+                if ((ALSourceState)state == ALSourceState.Playing)
+                {
+                    //wytypuj ten najdalszy
+                    AL.GetSource(m_sourceChannels[i], ALSource3f.Position, out tvec.x, out tvec.y, out tvec.z);
+                    
+                    tvec = tvec - lis;
+                    if (tvec.SquaredLength > maxlen)
+                    {
+                        maxlen = tvec.SquaredLength;
+                        ktoryteraz = i;
+                    }
+                }
+                else
+                {
+                    ktoryteraz = i;
+                    maxlen = float.MaxValue;
+                    //po porstu odtworz
+                }
+            }
+            if (plis > maxlen)return;
+            if (ktoryteraz == -1) return;
+            AL.SourceStop(m_sourceChannels[ktoryteraz]);
+            AL.Source(m_sourceChannels[ktoryteraz], ALSourcei.Buffer, tempbuf);
+            AL.Source(m_sourceChannels[ktoryteraz], ALSource3f.Position, pos.x, pos.y, pos.z);
+            AL.SourcePlay(m_sourceChannels[ktoryteraz]);
+            //m_ktoryteraz++;
+            //if (m_ktoryteraz >= m_channels) m_ktoryteraz = 0;
         }
 
         public void Update()
         {
-            /*
-             * TODO: streamowanie oggow bedzie potrzebowalo update'a.
-             */
-            AL.Listener(ALListener3f.Position, Core.Singleton.m_Camera.Position.x, Core.Singleton.m_Camera.Position.y, Core.Singleton.m_Camera.Position.z);
+            /*if (IsPlaying)
+            {
+                update_ogg();
+                if (!playing())
+                {
+                    //playback();
+                    if (!playback())
+                        Console.WriteLine("Ogg stopped");
+                    else
+                        Console.WriteLine("Ogg stream was interrupted.\n");
+                }
+            }*/
+            Mogre.Vector3 t = Core.Singleton.m_Camera.RealPosition;
+            Mogre.Vector3 w = Core.Singleton.m_Camera.Direction;
+            //w.Normalise();
+            Mogre.Vector3 u = Core.Singleton.m_Camera.Up;
+            //u.Normalise();
+            AL.Listener(ALListener3f.Position, t.x, t.y, t.z);
             float []temp = new float[6];
-            temp[0] = Core.Singleton.m_Camera.Orientation.x;
-            temp[1] = Core.Singleton.m_Camera.Orientation.y;
-            temp[2] = Core.Singleton.m_Camera.Orientation.z;
-            temp[3] = Core.Singleton.m_Camera.Up.x;
-            temp[4] = Core.Singleton.m_Camera.Up.y;
-            temp[5] = Core.Singleton.m_Camera.Up.z;
+            temp[0] = w.x;
+            temp[1] = w.y;
+            temp[2] = w.z;
+            temp[3] = u.x;
+            temp[4] = u.y;
+            temp[5] = u.z;
             AL.Listener(ALListenerfv.Orientation, ref temp);
         }
+
+        /*public void StartOGG()
+        {
+            //byte[] sound_data = LoadWave(File.Open("die_02.wav", FileMode.Open), out BgChannels, out BgBits_per_sample, out BgSample_rate);
+            // AL.BufferData(BgBuffer, GetSoundFormat(BgChannels, BgBits_per_sample), sound_data, sound_data.Length, BgSample_rate);
+            //AL.SourceQueueBuffers(BgSource, 4, BgBuffers);
+            //  AL.Source(BgSource, ALSourcei.Buffer, BgBuffer);
+            // AL.SourcePlay(BgSource);
+            IsPlaying = true;
+
+            playback();
+        }
+
+        public void StopOGG()
+        {
+            IsPlaying = false;
+            release();
+        }
+
+        public bool playback()
+        {
+            if (playing())
+                return true;
+
+            if (!stream(BgBuffers[0]))
+                return false;
+
+            if (!stream(BgBuffers[1]))
+                return false;
+
+            // alSourceQueueBuffers(BgSource, 2, BgBuffers);
+            AL.SourceQueueBuffers(BgSource, 2, BgBuffers);
+            //alSourcePlay(BgSource);
+            AL.SourcePlay(BgSource);
+
+            return true;
+        }
+
+        public bool playing()
+        {
+            int state;// = AL.GetSourceState(BgSource); //
+            AL.GetSource(BgSource, ALGetSourcei.SourceState, out state);
+            //alGetSourcei(source, AL_SOURCE_STATE, &state);
+
+            return ((ALSourceState)state == ALSourceState.Playing);
+        }
+
+        public bool update_ogg()
+        {
+            int processed;
+            bool active = true;
+
+            AL.GetSource(BgSource, ALGetSourcei.SourceState, out processed);
+            //int buffer;
+            while ((processed--) != 0)
+            {
+
+
+                // alSourceUnqueueBuffers(source, 1, buffer);
+                int buffer = AL.SourceUnqueueBuffer(BgSource);
+                //check();
+
+                active = stream(buffer);
+
+                //alSourceQueueBuffers(source, 1, &buffer);
+                AL.SourceQueueBuffer(BgSource, buffer);
+                //check();
+            }
+
+            return active;
+        }
+
+        public bool stream(int buffer)
+        {
+            //int BUFFER_SIZE = (4096 * 8);
+            byte[] data = new byte[32768];
+            int size = 0;
+            int section;
+            int result;
+
+            while (size < 32768)
+            {
+                //result = ov_read(&oggStream, data + size, 32768 - size, 0, 2, 1, ref section);
+                result = oggStream.Read(data, size, 32768 - size);
+                if (result > 0)
+                    size += result;
+                else
+                    if (result == 0) break;
+                // throw oggString(result);
+                //else
+
+            }
+
+            if (size == 0)
+                return false;
+
+            //alBufferData(buffer, format, data, size, vorbisInfo->rate);
+            AL.BufferData(buffer, ALFormat.Stereo8, data, size, oggStream.Info.Rate);
+
+            //check();
+
+            return false;
+        }
+
+        public void empty()
+        {
+            int queued;
+
+            //alGetSourcei(source, AL_BUFFERS_QUEUED, &queued);
+            AL.GetSource(BgSource, ALGetSourcei.BuffersQueued, out queued);
+
+            while (queued-- != 0)
+            {
+                //int buffer;
+
+                //alSourceUnqueueBuffers(source, 1, &buffer);
+                int[] buffer = AL.SourceUnqueueBuffers(BgSource, 1);
+                //check();
+            }
+        }
+
+        public void release()
+        {
+            AL.SourceStop(BgSource);
+            empty();
+            AL.DeleteSources(1, ref BgSource);
+            //check();
+            AL.DeleteBuffers(BgBuffers);
+            //ov_clear(&oggStream);
+            oggStream.Flush();
+        }*/
     }
 }
