@@ -90,6 +90,7 @@
     <Compile Include="src\Objects\PhysicsMaterials\GroundPlayerCallback.cs" />
     <Compile Include="src\Objects\PhysicsMaterials\MetalMetalCallback.cs" />
     <Compile Include="src\Objects\PhysicsMaterials\TriggerCallback.cs" />
+    <Compile Include="src\Player\NpcController.cs" />
     <Compile Include="src\Player\PlayerController.cs" />
     <Compile Include="src\Player\acoztym\PlayerData.cs" />
     <Compile Include="src\Player\acoztym\PlayerLogic.cs" />

@@ -20,8 +20,8 @@ namespace Tachycardia
             : base(node, entity, mass)
         {
             m_MainBody.Type = (int)PhysicsManager.BodyTypes.NPC;
-            m_MainBody.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("NPC");
-            m_SecondBody.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("NPC");
+            m_MainBody.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("Metal");
+            m_SecondBody.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("Metal");
         }
         
         public override void Update()
@@ -30,7 +30,7 @@ namespace Tachycardia
 
             if (m_MissionSteps <= 0)
             {
-                switch (Core.Singleton.Rand.Next() % 3)
+                switch (Core.Singleton.Rand.Next() % 2)
                 {
                     case 0:
                         m_MissionSteps = Core.Singleton.Rand.Next(5, 10);
@@ -52,19 +52,45 @@ namespace Tachycardia
                 }
             }
 
+            bool activateidle = true;
+            bool turning = false;
+
             if ((m_MissionType & GO_AHEAD) > 0)
             {
                 m_Pose.willForward();
+                activateidle = false;
+                m_backward = false;
             }
             if ((m_MissionType & GO_LEFT) > 0)
             {
                 m_Pose.willTurnLeft();
+                turning = true;
             }
             if ((m_MissionType & GO_RIGHT) > 0)
             {
                 m_Pose.willTurnRight();
+                turning = true;
             }
 
+            //zeroanie wektoras kretu
+            //if (!turning)
+            {
+                //m_GoTo = m_LookingAt;
+            }
+
+            //proba zatrzymania typa w miejscu w ktorym ostatnio puscil klawisze
+            if (activateidle == true && m_Pose == m_myPoses["normal"])
+            {
+                if (!m_MainBody.Velocity.IsZeroLength)
+                {//nie zatrzymal sie jeszcze to go zatrzymujemy
+                    Mogre.Vector3 xyVector = new Mogre.Vector3(0, 0, 1);
+                    Mogre.Vector3 velocityxy = m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1);
+                    Mogre.Quaternion ForceDirection = xyVector.GetRotationTo(velocityxy);
+                    Mogre.Vector3 StoppingForce = -ForceDirection * Mogre.Vector3.UNIT_Z * m_MainBody.Mass * 6;
+                    m_MainBody.AddForce(-StoppingForce);
+                }
+            }
+                   
         }
     }
 }
