@@ -4,6 +4,7 @@
         <resourceLocation type="FileSystem" name="./" />
         <resourceLocation type="FileSystem" name="./" />
         <resourceLocation type="FileSystem" name="./" />
+        <resourceLocation type="FileSystem" name="./" />
         <resourceLocation type="FileSystem" name="./program" />
         <resourceLocation type="FileSystem" name="./bitmap" />
         <resourceLocation type="FileSystem" name="./Calceum" />
@@ -18,7 +19,7 @@
         <resourceLocation type="FileSystem" name="../../particle" />
     </resourceLocations>
     <environment>
-        <scenemanager name="SceneManager" id="526535872" type="OctreeSceneManager" />
+        <scenemanager name="SceneManager" id="462080736" type="OctreeSceneManager" />
         <colourAmbient r="0.361333" g="0.361333" b="0.361333" a="3" />
         <fog mode="none" start="0" end="999" density="0">
             <colour r="0.5" g="0.5" b="0.5" a="1" />
@@ -28,123 +29,93 @@
         </viewport>
         <camera name="intViewCamera1" viewMode="0" polyMode="3" fov="1">
             <clipping near="1" far="1000" />
-            <position x="155.591" y="25.8523" z="-16.968" />
-            <rotation qw="-0.917351" qx="0.0450294" qy="0.395278" qz="0.0193436" />
+            <position x="-109.675" y="19.1451" z="3.01191" />
+            <rotation qw="-0.41916" qx="0.213577" qy="-0.786268" qz="-0.40059" />
         </camera>
     </environment>
     <nodes>
-        <node name="mapaGroup_062" id="974395008">
+        <node name="mapaGroup_062" id="842158272">
             <position x="164.213" y="29.5062" z="-21.2559" />
             <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_062" meshFile="mapaGroup_062.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_092" id="987456896">
-            <position x="159.425" y="26.5925" z="-19.7073" />
-            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_092" meshFile="mapaGroup_092.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_082" id="196508672">
-            <position x="152.728" y="29.5062" z="-20.551" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_082" meshFile="mapaGroup_082.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_052" id="947904896">
+        <node name="mapaGroup_052" id="982970624">
             <position x="163.034" y="26.5925" z="-23.1942" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_052" meshFile="mapaGroup_052.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_042" id="811059904">
-            <position x="-166.554" y="-27.032" z="19.4725" />
-            <rotation qw="-1" qx="0" qy="0" qz="0" />
+        <node name="mapaGroup_092" id="410718112">
+            <position x="159.425" y="26.5925" z="-19.7073" />
+            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_042" meshFile="mapaGroup_042.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial5" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
+            <entity name="mapaGroup_092" meshFile="mapaGroup_092.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
             </entity>
         </node>
-        <node name="mapaGroup_032" id="585558656">
-            <position x="-199.397" y="-229.663" z="472.992" />
-            <rotation qw="0.5" qx="0.5" qy="0.5" qz="-0.5" />
+        <node name="mapaGroup_082" id="504135264">
+            <position x="152.728" y="29.5062" z="-20.551" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_032" meshFile="mapaGroup_032.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
+            <entity name="mapaGroup_082" meshFile="mapaGroup_082.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
             </entity>
         </node>
-        <node name="mapaGroup_022" id="931638528">
-            <position x="452.729" y="-229.663" z="17.4569" />
-            <rotation qw="-0.303683" qx="-0.303683" qy="0.638574" qz="-0.638574" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_022" meshFile="mapaGroup_022.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_012" id="743797120">
-            <position x="47.0859" y="-229.663" z="-104.131" />
-            <rotation qw="-0.707107" qx="-0.707107" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_012" meshFile="mapaGroup_012.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_002" id="402417056">
-            <position x="160.402" y="-27.032" z="-31.9279" />
-            <rotation qw="-1" qx="0" qy="0" qz="0" />
-            <scale x="4.025" y="1" z="4.44" />
-            <entity name="mapaGroup_002" meshFile="mapaGroup_002.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_072" id="779656320">
+        <node name="mapaGroup_072" id="210577712">
             <position x="161.737" y="29.3688" z="-18.419" />
             <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_072" meshFile="mapaGroup_072.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaLayer0_001" id="798181120">
-            <position x="40.9142" y="1.37907" z="-7.92916" />
+        <node name="mapaGroup_002" id="996795520">
+            <position x="160.402" y="-27.032" z="-31.9279" />
+            <rotation qw="-1" qx="0" qy="0" qz="0" />
+            <scale x="4.025" y="1" z="4.44" />
+            <entity name="mapaGroup_002" meshFile="mapaGroup_002.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_012" id="837611008">
+            <position x="47.0859" y="-229.663" z="-104.131" />
+            <rotation qw="-0.707107" qx="-0.707107" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_012" meshFile="mapaGroup_012.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_022" id="517105632">
+            <position x="452.729" y="-229.663" z="17.4569" />
+            <rotation qw="-0.303683" qx="-0.303683" qy="0.638574" qz="-0.638574" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_022" meshFile="mapaGroup_022.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_032" id="153233440">
+            <position x="-199.397" y="-229.663" z="472.992" />
+            <rotation qw="0.5" qx="0.5" qy="0.5" qz="-0.5" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_032" meshFile="mapaGroup_032.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_042" id="834681216">
+            <position x="-166.554" y="-27.032" z="19.4725" />
+            <rotation qw="-1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_042" meshFile="mapaGroup_042.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial5" />
+            </entity>
+        </node>
+        <node name="mapaLayer0_001" id="862239424">
+            <position x="40.8525" y="1.44297" z="-7.87958" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaLayer0_001" meshFile="mapaLayer0_001.mesh" castShadows="true">
@@ -159,27 +130,27 @@
                 <subentity index="8" materialName="mapaMaterial65" />
                 <subentity index="9" materialName="mapaMaterial3" />
                 <subentity index="10" materialName="mapaMaterial18" />
-                <subentity index="11" materialName="mapaMaterial20" />
-                <subentity index="12" materialName="mapaMaterial31" />
-                <subentity index="13" materialName="mapaMaterial15" />
-                <subentity index="14" materialName="mapaMaterial16" />
-                <subentity index="15" materialName="mapaMaterial26" />
-                <subentity index="16" materialName="mapaMaterial30" />
-                <subentity index="17" materialName="mapaMaterial28" />
-                <subentity index="18" materialName="mapaMaterial29" />
-                <subentity index="19" materialName="mapaMaterial12" />
-                <subentity index="20" materialName="mapaMaterial23" />
-                <subentity index="21" materialName="mapaMaterial24" />
-                <subentity index="22" materialName="mapaMaterial17" />
-                <subentity index="23" materialName="mapaMaterial32" />
-                <subentity index="24" materialName="mapaMaterial33" />
-                <subentity index="25" materialName="mapaMaterial34" />
-                <subentity index="26" materialName="mapaMaterial41" />
-                <subentity index="27" materialName="mapaMaterial45" />
-                <subentity index="28" materialName="mapaMaterial53" />
-                <subentity index="29" materialName="mapaMaterial27" />
-                <subentity index="30" materialName="mapaMaterial21" />
-                <subentity index="31" materialName="mapaMaterial47" />
+                <subentity index="11" materialName="mapaMaterial27" />
+                <subentity index="12" materialName="mapaMaterial20" />
+                <subentity index="13" materialName="mapaMaterial31" />
+                <subentity index="14" materialName="mapaMaterial47" />
+                <subentity index="15" materialName="mapaMaterial15" />
+                <subentity index="16" materialName="mapaMaterial16" />
+                <subentity index="17" materialName="mapaMaterial26" />
+                <subentity index="18" materialName="mapaMaterial30" />
+                <subentity index="19" materialName="mapaMaterial28" />
+                <subentity index="20" materialName="mapaMaterial29" />
+                <subentity index="21" materialName="mapaMaterial12" />
+                <subentity index="22" materialName="mapaMaterial23" />
+                <subentity index="23" materialName="mapaMaterial24" />
+                <subentity index="24" materialName="mapaMaterial17" />
+                <subentity index="25" materialName="mapaMaterial32" />
+                <subentity index="26" materialName="mapaMaterial33" />
+                <subentity index="27" materialName="mapaMaterial34" />
+                <subentity index="28" materialName="mapaMaterial41" />
+                <subentity index="29" materialName="mapaMaterial45" />
+                <subentity index="30" materialName="mapaMaterial53" />
+                <subentity index="31" materialName="mapaMaterial21" />
                 <subentity index="32" materialName="mapaMaterial7" />
                 <subentity index="33" materialName="mapaMaterial49" />
                 <subentity index="34" materialName="mapaMaterial50" />
@@ -201,346 +172,261 @@
                 <subentity index="50" materialName="mapaMaterial8" />
                 <subentity index="51" materialName="mapaMaterial10" />
                 <subentity index="52" materialName="mapa&lt;Charcoal&gt;" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_061" id="782097792">
+        <node name="mapaGroup_061" id="657612864">
             <position x="164.557" y="29.5062" z="-21.5878" />
             <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_061" meshFile="mapaGroup_061.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_051" id="85451824">
+        <node name="mapaGroup_051" id="456099136">
             <position x="162.571" y="26.5925" z="-22.747" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_051" meshFile="mapaGroup_051.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_041" id="855098112">
+        <node name="mapaGroup_041" id="123020112">
             <position x="-214.539" y="-430.567" z="275.994" />
             <rotation qw="-0.666466" qx="-0.666466" qy="-0.236268" qz="0.236268" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_041" meshFile="mapaGroup_041.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial4" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_031" id="398693792">
+        <node name="mapaGroup_031" id="966612736">
             <position x="-199.397" y="-229.663" z="472.992" />
             <rotation qw="0.5" qx="0.5" qy="0.5" qz="-0.5" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_031" meshFile="mapaGroup_031.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_021" id="146549888">
+        <node name="mapaGroup_021" id="425153344">
             <position x="387.295" y="-229.663" z="-140.003" />
             <rotation qw="-0.5" qx="-0.5" qy="0.5" qz="-0.5" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_021" meshFile="mapaGroup_021.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_001" id="144810336">
+        <node name="mapaGroup_001" id="779656320">
             <position x="162.329" y="-23.932" z="-37.3746" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="4.025" y="1" z="4.44" />
             <entity name="mapaGroup_001" meshFile="mapaGroup_001.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_071" id="939085056">
+        <node name="mapaGroup_071" id="806238016">
             <position x="160.49" y="28.3061" z="-18.8998" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_071" meshFile="mapaGroup_071.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_081" id="36622212">
+        <node name="mapaGroup_081" id="628681280">
             <position x="146.614" y="23.3962" z="-12.2691" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_081" meshFile="mapaGroup_081.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_091" id="876003264">
+        <node name="mapaGroup_091" id="227301872">
             <position x="157.771" y="26.5925" z="-22.3457" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_091" meshFile="mapaGroup_091.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_063" id="870387904">
+        <node name="mapaGroup_063" id="109927672">
             <position x="154.162" y="26.5925" z="-18.8588" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_063" meshFile="mapaGroup_063.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_053" id="274971776">
+        <node name="mapaGroup_053" id="739188800">
             <position x="159.683" y="28.3061" z="-26.0303" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_053" meshFile="mapaGroup_053.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_033" id="684011328">
+        <node name="mapaGroup_033" id="821680384">
             <position x="11.6047" y="-229.663" z="503.058" />
             <rotation qw="0.367485" qx="0.367485" qy="0.604115" qz="-0.604115" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_033" meshFile="mapaGroup_033.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_023" id="47090060">
+        <node name="mapaGroup_023" id="751548800">
             <position x="455.401" y="-229.663" z="68.1339" />
             <rotation qw="-0.244816" qx="-0.244816" qy="0.663374" qz="-0.663374" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_023" meshFile="mapaGroup_023.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_013" id="361125536">
+        <node name="mapaGroup_013" id="484939136">
             <position x="47.0859" y="-229.663" z="-104.131" />
             <rotation qw="-0.707107" qx="-0.707107" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_013" meshFile="mapaGroup_013.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_003" id="136539824">
+        <node name="mapaGroup_003" id="611499392">
             <position x="150.803" y="-27.032" z="-17.9707" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="4.025" y="1" z="4.44" />
             <entity name="mapaGroup_003" meshFile="mapaGroup_003.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_073" id="656758336">
+        <node name="mapaGroup_073" id="553209024">
             <position x="161.185" y="29.3688" z="-17.886" />
             <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_073" meshFile="mapaGroup_073.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_083" id="389416192">
+        <node name="mapaGroup_083" id="695760960">
             <position x="157.344" y="28.3061" z="-15.8601" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_083" meshFile="mapaGroup_083.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_093" id="895718272">
+        <node name="mapaGroup_093" id="628070976">
             <position x="159.888" y="26.5925" z="-20.1545" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_093" meshFile="mapaGroup_093.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_064" id="456617952">
+        <node name="Razor#1" id="427808448">
+            <position x="150.863" y="13.8269" z="-7.66081" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="0.0362779" y="0.0362779" z="0.0362779" />
+            <entity name="Razor#1" meshFile="razor.mesh" castShadows="false">
+                <subentity index="0" materialName="Material__25" />
+            </entity>
+        </node>
+        <node name="mapaGroup_064" id="314065984">
             <position x="154.625" y="26.5925" z="-19.306" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_064" meshFile="mapaGroup_064.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_054" id="981780480">
+        <node name="mapaGroup_054" id="195989856">
             <position x="159.246" y="29.3688" z="-27.2926" />
             <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_054" meshFile="mapaGroup_054.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_044" id="691488384">
+        <node name="mapaGroup_044" id="517014080">
             <position x="88.0598" y="-23.932" z="-31.1831" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_044" meshFile="mapaGroup_044.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial9_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_034" id="435499136">
+        <node name="mapaGroup_034" id="191351056">
             <position x="11.6047" y="-229.663" z="503.058" />
             <rotation qw="0.367485" qx="0.367485" qy="0.604115" qz="-0.604115" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_034" meshFile="mapaGroup_034.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_024" id="336405504">
+        <node name="mapaGroup_024" id="168980992">
             <position x="386.467" y="-229.663" z="262.495" />
             <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_024" meshFile="mapaGroup_024.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_014" id="228492080">
+        <node name="mapaGroup_014" id="743736064">
             <position x="23.6898" y="-229.663" z="-90.3193" />
             <rotation qw="-0.69101" qx="-0.69101" qy="-0.150016" qz="0.150016" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_014" meshFile="mapaGroup_014.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_004" id="66164128">
+        <node name="mapaGroup_004" id="266212976">
             <position x="-15.5671" y="-27.032" z="-31.9582" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="4.025" y="1" z="4.44" />
             <entity name="mapaGroup_004" meshFile="mapaGroup_004.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_074" id="455458208">
+        <node name="mapaGroup_074" id="113773000">
             <position x="161.411" y="29.5062" z="-18.5481" />
             <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_074" meshFile="mapaGroup_074.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_084" id="70925016">
+        <node name="mapaGroup_084" id="189947200">
             <position x="158.591" y="29.3688" z="-15.3793" />
             <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_084" meshFile="mapaGroup_084.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_094" id="442060608">
+        <node name="mapaGroup_094" id="451612896">
             <position x="156.538" y="28.3061" z="-22.9906" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_094" meshFile="mapaGroup_094.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_065" id="750633216">
+        <node name="mapaGroup_065" id="286080512">
             <position x="156.279" y="26.5925" z="-16.6676" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_065" meshFile="mapaGroup_065.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_055" id="292245248">
+        <node name="mapaGroup_055" id="839442112">
             <position x="158.694" y="29.3688" z="-26.7596" />
             <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_055" meshFile="mapaGroup_055.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_045" id="530136992">
+        <node name="mapaGroup_045" id="426221504">
             <position x="98.1397" y="-29.692" z="-17.7544" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
@@ -548,324 +434,302 @@
                 <subentity index="0" materialName="mapaMaterial15_1" />
                 <subentity index="1" materialName="mapaMaterial20_1" />
                 <subentity index="2" materialName="mapaMaterial21_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_035" id="7171850">
+        <node name="mapaGroup_035" id="817194112">
             <position x="-374.199" y="-229.663" z="456.583" />
             <rotation qw="-0.565724" qx="-0.565724" qy="-0.424213" qz="0.424213" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_035" meshFile="mapaGroup_035.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_025" id="398602240">
+        <node name="mapaGroup_025" id="491897344">
             <position x="386.467" y="-229.663" z="262.495" />
             <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_025" meshFile="mapaGroup_025.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_015" id="229438160">
+        <node name="mapaGroup_015" id="457960768">
             <position x="29.3793" y="-229.663" z="-48.4096" />
             <rotation qw="-0.594449" qx="-0.594449" qy="-0.382924" qz="0.382924" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_015" meshFile="mapaGroup_015.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_005" id="573351232">
+        <node name="mapaGroup_005" id="840144064">
             <position x="60.9165" y="-27.032" z="-30.1454" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="4.025" y="1" z="4.44" />
             <entity name="mapaGroup_005" meshFile="mapaGroup_005.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_075" id="664174336">
+        <node name="mapaGroup_075" id="752220224">
             <position x="161.067" y="29.5062" z="-18.2162" />
             <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_075" meshFile="mapaGroup_075.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_085" id="155888544">
+        <node name="mapaGroup_085" id="178350160">
             <position x="158.039" y="29.3688" z="-14.8462" />
             <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_085" meshFile="mapaGroup_085.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_095" id="708517760">
+        <node name="mapaGroup_095" id="597827072">
             <position x="156.1" y="29.3688" z="-24.2529" />
             <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_095" meshFile="mapaGroup_095.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_066" id="404705952">
+        <node name="mapaGroup_066" id="140263072">
             <position x="156.742" y="26.5925" z="-17.1148" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_066" meshFile="mapaGroup_066.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_056" id="367534400">
+        <node name="mapaGroup_056" id="500900256">
             <position x="159.364" y="29.5062" z="-26.9624" />
             <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_056" meshFile="mapaGroup_056.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_046" id="142765584">
+        <node name="mapaGroup_046" id="949339264">
             <position x="172.989" y="-27.032" z="-3.37722" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_046" meshFile="mapaGroup_046.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial22_1" />
                 <subentity index="1" materialName="mapaMaterial23_2" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_036" id="601550336">
+        <node name="mapaGroup_036" id="155552848">
             <position x="137.763" y="-229.663" z="451.581" />
             <rotation qw="-0.277824" qx="-0.277824" qy="-0.650241" qz="0.650241" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_036" meshFile="mapaGroup_036.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_026" id="946165312">
+        <node name="mapaGroup_026" id="699758912">
             <position x="386.467" y="-229.663" z="262.495" />
             <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_026" meshFile="mapaGroup_026.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_016" id="542405504">
+        <node name="mapaGroup_016" id="744438016">
             <position x="90.1879" y="-229.663" z="-183.046" />
             <rotation qw="-0.706778" qx="-0.706778" qy="0.0215472" qz="-0.0215472" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_016" meshFile="mapaGroup_016.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_006" id="548051392">
+        <node name="mapaGroup_006" id="375865952">
             <position x="158.315" y="-20.832" z="-54.0663" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="4.025" y="1" z="4.44" />
             <entity name="mapaGroup_006" meshFile="mapaGroup_006.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial3_1" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_076" id="636341440">
+        <node name="mapaGroup_076" id="543443072">
             <position x="149.461" y="23.3962" z="-15.0203" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_076" meshFile="mapaGroup_076.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_086" id="454329056">
+        <node name="mapaGroup_086" id="457441920">
             <position x="158.265" y="29.5062" z="-15.5084" />
             <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_086" meshFile="mapaGroup_086.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_096" id="285561696">
+        <node name="mapaGroup_096" id="854792960">
             <position x="155.548" y="29.3688" z="-23.7199" />
             <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_096" meshFile="mapaGroup_096.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_047" id="727896960">
-            <position x="104.956" y="-23.932" z="-17.7544" />
-            <rotation qw="-1" qx="0" qy="0" qz="0" />
+        <node name="mapaGroup_077" id="436719872">
+            <position x="149.196" y="23.3962" z="-14.7637" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_047" meshFile="mapaGroup_047.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial20_2" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
+            <entity name="mapaGroup_077" meshFile="mapaGroup_077.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
             </entity>
         </node>
-        <node name="mapaGroup_037" id="576677760">
-            <position x="485.66" y="-229.663" z="181.824" />
-            <rotation qw="-0.145681" qx="-0.145681" qy="0.691937" qz="-0.691937" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_037" meshFile="mapaGroup_037.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_097" id="407635712">
-            <position x="156.218" y="29.5062" z="-23.9226" />
-            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_097" meshFile="mapaGroup_097.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_087" id="697347968">
-            <position x="157.921" y="29.5062" z="-15.1765" />
-            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_087" meshFile="mapaGroup_087.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_027" id="534226528">
-            <position x="386.467" y="-229.663" z="262.495" />
-            <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_027" meshFile="mapaGroup_027.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_017" id="53804132">
-            <position x="-252.214" y="-229.663" z="-233.928" />
-            <rotation qw="-0.543436" qx="-0.543436" qy="-0.452412" qz="0.452412" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_017" meshFile="mapaGroup_017.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_007" id="311349824">
+        <node name="mapaGroup_007" id="677205760">
             <position x="80.6333" y="-17.732" z="-61.5267" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_007" meshFile="mapaGroup_007.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial23_1" />
                 <subentity index="1" materialName="mapaMaterial65_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_077" id="422040448">
-            <position x="149.196" y="23.3962" z="-14.7637" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+        <node name="mapaGroup_017" id="599047808">
+            <position x="-252.214" y="-229.663" z="-233.928" />
+            <rotation qw="-0.543436" qx="-0.543436" qy="-0.452412" qz="0.452412" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_077" meshFile="mapaGroup_077.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_017" meshFile="mapaGroup_017.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
             </entity>
         </node>
-        <node name="mapaGroup_067" id="992614528">
+        <node name="mapaGroup_027" id="147495952">
+            <position x="386.467" y="-229.663" z="262.495" />
+            <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_027" meshFile="mapaGroup_027.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_067" id="834620160">
             <position x="153.392" y="28.3061" z="-19.9509" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_067" meshFile="mapaGroup_067.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_057" id="218634608">
+        <node name="mapaGroup_057" id="27466660">
             <position x="159.02" y="29.5062" z="-26.6305" />
             <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_057" meshFile="mapaGroup_057.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_058" id="240546896">
-            <position x="163.636" y="28.3061" z="-21.9395" />
-            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
+        <node name="mapaGroup_047" id="549546752">
+            <position x="104.956" y="-23.932" z="-17.7544" />
+            <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_058" meshFile="mapaGroup_058.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial78_1" />
-                <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_047" meshFile="mapaGroup_047.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial20_2" />
             </entity>
         </node>
-        <node name="mapaGroup_048" id="31067844">
+        <node name="mapaGroup_037" id="732016960">
+            <position x="485.66" y="-229.663" z="181.824" />
+            <rotation qw="-0.145681" qx="-0.145681" qy="0.691937" qz="-0.691937" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_037" meshFile="mapaGroup_037.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_097" id="624774912">
+            <position x="156.218" y="29.5062" z="-23.9226" />
+            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_097" meshFile="mapaGroup_097.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_087" id="97506632">
+            <position x="157.921" y="29.5062" z="-15.1765" />
+            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_087" meshFile="mapaGroup_087.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="Ellipsoid#1" id="253700368">
+            <position x="161" y="22.7744" z="-23" />
+            <rotation qw="0.707107" qx="0" qy="0" qz="-0.707107" />
+            <scale x="1.31785" y="1.31785" z="1.31785" />
+            <entity name="Ellipsoid#1" meshFile="cylinder.mesh" castShadows="false">
+                <subentity index="0" materialName="BaseWhite" />
+            </entity>
+        </node>
+        <node name="mapaGroup_098" id="565752128">
+            <position x="155.874" y="29.5062" z="-23.5908" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_098" meshFile="mapaGroup_098.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_088" id="94393752">
+            <position x="148.014" y="23.3962" z="-7.56695" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_088" meshFile="mapaGroup_088.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_078" id="696218752">
+            <position x="144.988" y="23.3962" z="-10.6982" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_078" meshFile="mapaGroup_078.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_068" id="600238016">
+            <position x="152.954" y="29.3688" z="-21.2132" />
+            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_068" meshFile="mapaGroup_068.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_008" id="8789332">
+            <position x="84.676" y="-20.832" z="-38.7078" />
+            <rotation qw="-1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_008" meshFile="mapaGroup_008.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial11_1" />
+                <subentity index="1" materialName="mapaMaterial18_1" />
+                <subentity index="2" materialName="mapaMaterial17_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_018" id="735007744">
+            <position x="71.6797" y="-229.663" z="-185.413" />
+            <rotation qw="-0.707107" qx="-0.707107" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_018" meshFile="mapaGroup_018.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_028" id="141575360">
+            <position x="386.467" y="-229.663" z="262.495" />
+            <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_028" meshFile="mapaGroup_028.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_038" id="279580064">
+            <position x="475.988" y="-229.663" z="-62.6005" />
+            <rotation qw="-0.355803" qx="-0.355803" qy="0.611068" qz="-0.611068" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_038" meshFile="mapaGroup_038.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_048" id="471724608">
             <position x="-52.9513" y="-27.032" z="-16.5299" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
@@ -875,113 +739,82 @@
                 <subentity index="2" materialName="mapaMaterial17_2" />
                 <subentity index="3" materialName="mapaMaterial6_1" />
                 <subentity index="4" materialName="mapaMaterial66_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_038" id="222327344">
-            <position x="475.988" y="-229.663" z="-62.6005" />
-            <rotation qw="-0.355803" qx="-0.355803" qy="0.611068" qz="-0.611068" />
+        <node name="mapaGroup_058" id="572588288">
+            <position x="163.636" y="28.3061" z="-21.9395" />
+            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_038" meshFile="mapaGroup_038.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
+            <entity name="mapaGroup_058" meshFile="mapaGroup_058.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial78_1" />
+                <subentity index="1" materialName="mapaMaterial85_1" />
             </entity>
         </node>
-        <node name="mapaGroup_028" id="693533120">
-            <position x="386.467" y="-229.663" z="262.495" />
-            <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
+        <node name="mapaGroup_099" id="184270752">
+            <position x="158.881" y="26.5925" z="-23.4184" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_028" meshFile="mapaGroup_028.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
+            <entity name="mapaGroup_099" meshFile="mapaGroup_099.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
             </entity>
         </node>
-        <node name="mapaGroup_018" id="524674240">
+        <node name="mapaGroup_089" id="931516480">
+            <position x="147.748" y="23.3962" z="-7.31028" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_089" meshFile="mapaGroup_089.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_079" id="436689344">
+            <position x="144.722" y="23.3962" z="-10.4415" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_079" meshFile="mapaGroup_079.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_069" id="252723776">
+            <position x="152.402" y="29.3688" z="-20.6802" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_069" meshFile="mapaGroup_069.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_009" id="275887296">
+            <position x="-325.236" y="-27.032" z="300.624" />
+            <rotation qw="-1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_009" meshFile="mapaGroup_009.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial3_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_019" id="572405184">
             <position x="71.6797" y="-229.663" z="-185.413" />
             <rotation qw="-0.707107" qx="-0.707107" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_018" meshFile="mapaGroup_018.mesh" castShadows="true">
+            <entity name="mapaGroup_019" meshFile="mapaGroup_019.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_008" id="808038592">
-            <position x="84.676" y="-20.832" z="-38.7078" />
-            <rotation qw="-1" qx="0" qy="0" qz="0" />
+        <node name="mapaGroup_029" id="692892224">
+            <position x="386.467" y="-229.663" z="262.495" />
+            <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_008" meshFile="mapaGroup_008.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial11_1" />
-                <subentity index="1" materialName="mapaMaterial18_1" />
-                <subentity index="2" materialName="mapaMaterial17_1" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
+            <entity name="mapaGroup_029" meshFile="mapaGroup_029.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
             </entity>
         </node>
-        <node name="mapaGroup_068" id="252082880">
-            <position x="152.954" y="29.3688" z="-21.2132" />
-            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+        <node name="mapaGroup_039" id="682241280">
+            <position x="200.652" y="-229.663" z="422.077" />
+            <rotation qw="0.244458" qx="0.244458" qy="0.663506" qz="-0.663506" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_068" meshFile="mapaGroup_068.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_039" meshFile="mapaGroup_039.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
             </entity>
         </node>
-        <node name="mapaGroup_078" id="540574400">
-            <position x="144.988" y="23.3962" z="-10.6982" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_078" meshFile="mapaGroup_078.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_088" id="684469120">
-            <position x="148.014" y="23.3962" z="-7.56695" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_088" meshFile="mapaGroup_088.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_098" id="710196288">
-            <position x="155.874" y="29.5062" z="-23.5908" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_098" meshFile="mapaGroup_098.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_059" id="902279744">
-            <position x="164.883" y="29.3688" z="-21.4587" />
-            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_059" meshFile="mapaGroup_059.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_049" id="644520384">
+        <node name="mapaGroup_049" id="846980224">
             <position x="141.628" y="22.568" z="-4.28459" />
             <rotation qw="-1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
@@ -1013,843 +846,583 @@
                 <subentity index="24" materialName="mapaMaterial97" />
                 <subentity index="25" materialName="mapaMaterial80" />
                 <subentity index="26" materialName="mapaMaterial86" />
-                <userData>
-                    <property type="7" name="material" data="Glass" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_039" id="4272592">
-            <position x="200.652" y="-229.663" z="422.077" />
-            <rotation qw="0.244458" qx="0.244458" qy="0.663506" qz="-0.663506" />
+        <node name="mapaGroup_059" id="531327232">
+            <position x="164.883" y="29.3688" z="-21.4587" />
+            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_039" meshFile="mapaGroup_039.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_029" id="259163168">
-            <position x="386.467" y="-229.663" z="262.495" />
-            <rotation qw="3.09086e-008" qx="3.09086e-008" qy="0.707107" qz="-0.707107" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_029" meshFile="mapaGroup_029.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_019" id="94668416">
-            <position x="71.6797" y="-229.663" z="-185.413" />
-            <rotation qw="-0.707107" qx="-0.707107" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_019" meshFile="mapaGroup_019.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_009" id="284249408">
-            <position x="-325.236" y="-27.032" z="300.624" />
-            <rotation qw="-1" qx="0" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_009" meshFile="mapaGroup_009.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial3_1" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_069" id="247688224">
-            <position x="152.402" y="29.3688" z="-20.6802" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_069" meshFile="mapaGroup_069.mesh" castShadows="true">
+            <entity name="mapaGroup_059" meshFile="mapaGroup_059.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_079" id="536454368">
-            <position x="144.722" y="23.3962" z="-10.4415" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_079" meshFile="mapaGroup_079.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+        <node name="Razor#2" id="302285856">
+            <position x="146.015" y="13.8269" z="-12.4103" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="0.036278" y="0.036278" z="0.036278" />
+            <entity name="Razor#2" meshFile="razor.mesh" castShadows="false">
+                <subentity index="0" materialName="Material__25" />
             </entity>
         </node>
-        <node name="mapaGroup_089" id="835718848">
-            <position x="147.748" y="23.3962" z="-7.31028" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_089" meshFile="mapaGroup_089.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_099" id="896053952">
-            <position x="158.881" y="26.5925" z="-23.4184" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_099" meshFile="mapaGroup_099.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_060" id="902645952">
-            <position x="164.331" y="29.3688" z="-20.9257" />
-            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_060" meshFile="mapaGroup_060.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_040" id="82247384">
-            <position x="-166.554" y="-27.032" z="19.4725" />
-            <rotation qw="-1" qx="0" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_040" meshFile="mapaGroup_040.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial4" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_030" id="525589760">
-            <position x="280.657" y="-229.663" z="378.806" />
-            <rotation qw="0.148251" qx="0.148251" qy="0.691391" qz="-0.691391" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_030" meshFile="mapaGroup_030.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_020" id="891537216">
-            <position x="267.514" y="-229.663" z="-221.226" />
-            <rotation qw="-0.632295" qx="-0.632295" qy="0.316548" qz="-0.316548" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_020" meshFile="mapaGroup_020.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_010" id="895229952">
-            <position x="-167.119" y="-27.032" z="84.5416" />
-            <rotation qw="-1" qx="0" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_010" meshFile="mapaGroup_010.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial2" />
-                <userData>
-                    <property type="7" name="material" data="Ground" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_070" id="620319232">
-            <position x="153.072" y="29.5062" z="-20.8829" />
-            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_070" meshFile="mapaGroup_070.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_080" id="396954240">
-            <position x="146.88" y="23.3962" z="-12.5258" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_080" meshFile="mapaGroup_080.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_090" id="199591056">
+        <node name="mapaGroup_090" id="894619584">
             <position x="157.308" y="26.5925" z="-21.8985" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_090" meshFile="mapaGroup_090.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_100" id="397412032">
-            <position x="159.344" y="26.5925" z="-23.8656" />
+        <node name="mapaGroup_080" id="577867968">
+            <position x="146.88" y="23.3962" z="-12.5258" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_100" meshFile="mapaGroup_100.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_080" meshFile="mapaGroup_080.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
             </entity>
         </node>
-        <node name="mapaGroup_110" id="517960128">
-            <position x="162.64" y="29.5062" z="-19.7361" />
+        <node name="mapaGroup_070" id="1617482">
+            <position x="153.072" y="29.5062" z="-20.8829" />
+            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_070" meshFile="mapaGroup_070.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_010" id="587908544">
+            <position x="-167.119" y="-27.032" z="84.5416" />
+            <rotation qw="-1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_010" meshFile="mapaGroup_010.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_020" id="151554912">
+            <position x="267.514" y="-229.663" z="-221.226" />
+            <rotation qw="-0.632295" qx="-0.632295" qy="0.316548" qz="-0.316548" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_020" meshFile="mapaGroup_020.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_030" id="426557216">
+            <position x="280.657" y="-229.663" z="378.806" />
+            <rotation qw="0.148251" qx="0.148251" qy="0.691391" qz="-0.691391" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_030" meshFile="mapaGroup_030.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial2" />
+            </entity>
+        </node>
+        <node name="mapaGroup_040" id="721915392">
+            <position x="-166.554" y="-27.032" z="19.4725" />
+            <rotation qw="-1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_040" meshFile="mapaGroup_040.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial4" />
+            </entity>
+        </node>
+        <node name="mapaGroup_060" id="843043328">
+            <position x="164.331" y="29.3688" z="-20.9257" />
             <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_110" meshFile="mapaGroup_110.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_060" meshFile="mapaGroup_060.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
             </entity>
         </node>
-        <node name="mapaGroup_120" id="543992448">
+        <node name="mapaGroup_150" id="951719680">
+            <position x="147.876" y="23.7653" z="-9.55837" />
+            <rotation qw="-0.6891" qx="-0.15856" qy="-0.15856" qz="-0.6891" />
+            <scale x="1.815" y="1.815" z="1.815" />
+            <entity name="mapaGroup_150" meshFile="mapaGroup_150.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_140" id="606280704">
+            <position x="160.917" y="26.5925" z="-25.3854" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_140" meshFile="mapaGroup_140.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_130" id="72267832">
+            <position x="151.381" y="29.3688" z="-19.6933" />
+            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_130" meshFile="mapaGroup_130.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_120" id="408978560">
             <position x="158.917" y="28.3061" z="-17.3799" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_120" meshFile="mapaGroup_120.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_130" id="484664448">
-            <position x="151.381" y="29.3688" z="-19.6933" />
-            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+        <node name="mapaGroup_110" id="727683392">
+            <position x="162.64" y="29.5062" z="-19.7361" />
+            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_130" meshFile="mapaGroup_130.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_110" meshFile="mapaGroup_110.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
             </entity>
         </node>
-        <node name="mapaGroup_140" id="391186272">
-            <position x="160.917" y="26.5925" z="-25.3854" />
+        <node name="mapaGroup_100" id="555131648">
+            <position x="159.344" y="26.5925" z="-23.8656" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_140" meshFile="mapaGroup_140.mesh" castShadows="true">
+            <entity name="mapaGroup_100" meshFile="mapaGroup_100.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_150" id="672750016">
-            <position x="147.876" y="23.7653" z="-9.55837" />
-            <rotation qw="-0.6891" qx="-0.15856" qy="-0.15856" qz="-0.6891" />
-            <scale x="1.815" y="1.815" z="1.815" />
-            <entity name="mapaGroup_150" meshFile="mapaGroup_150.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Glass" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_101" id="308603168">
-            <position x="160.998" y="26.5925" z="-21.2272" />
-            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_101" meshFile="mapaGroup_101.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_111" id="438520448">
-            <position x="155.735" y="26.5925" z="-20.3787" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_111" meshFile="mapaGroup_111.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_121" id="545365760">
-            <position x="160.164" y="29.3688" z="-16.8991" />
-            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_121" meshFile="mapaGroup_121.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_131" id="439863264">
-            <position x="150.829" y="29.3688" z="-19.1603" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_131" meshFile="mapaGroup_131.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_141" id="31037324">
-            <position x="149.905" y="23.3962" z="-9.39457" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_141" meshFile="mapaGroup_141.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_151" id="10223702">
+        <node name="mapaGroup_151" id="27832880">
             <position x="146.534" y="23.764" z="-10.6914" />
             <rotation qw="-0.565781" qx="-0.426748" qy="-0.556149" qz="-0.434139" />
             <scale x="1.815" y="1.815" z="1.815" />
             <entity name="mapaGroup_151" meshFile="mapaGroup_151.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Glass" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_102" id="570574016">
-            <position x="161.461" y="26.5925" z="-21.6743" />
+        <node name="mapaGroup_141" id="5890073">
+            <position x="149.905" y="23.3962" z="-9.39457" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_141" meshFile="mapaGroup_141.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_131" id="653859072">
+            <position x="150.829" y="29.3688" z="-19.1603" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_131" meshFile="mapaGroup_131.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_121" id="465559872">
+            <position x="160.164" y="29.3688" z="-16.8991" />
+            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_121" meshFile="mapaGroup_121.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_111" id="667775488">
+            <position x="155.735" y="26.5925" z="-20.3787" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_111" meshFile="mapaGroup_111.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_101" id="242866288">
+            <position x="160.998" y="26.5925" z="-21.2272" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_102" meshFile="mapaGroup_102.mesh" castShadows="true">
+            <entity name="mapaGroup_101" meshFile="mapaGroup_101.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_112" id="90426344">
-            <position x="156.198" y="26.5925" z="-20.8259" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_112" meshFile="mapaGroup_112.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_122" id="464033920">
-            <position x="159.612" y="29.3688" z="-16.3661" />
-            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_122" meshFile="mapaGroup_122.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_132" id="605944960">
-            <position x="151.499" y="29.5062" z="-19.3631" />
-            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_132" meshFile="mapaGroup_132.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_142" id="857936320">
-            <position x="149.639" y="23.3962" z="-9.1379" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_142" meshFile="mapaGroup_142.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_152" id="341563168">
+        <node name="mapaGroup_152" id="55909908">
             <position x="145.953" y="23.764" z="-10.7014" />
             <rotation qw="-0.093085" qx="-0.695013" qy="-0.0915001" qz="-0.70705" />
             <scale x="1.815" y="1.815" z="1.815" />
             <entity name="mapaGroup_152" meshFile="mapaGroup_152.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_103" id="733695488">
-            <position x="157.121" y="29.3688" z="-25.2397" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_103" meshFile="mapaGroup_103.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_113" id="75777456">
-            <position x="157.852" y="26.5925" z="-18.1874" />
-            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_113" meshFile="mapaGroup_113.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_123" id="727866496">
-            <position x="159.838" y="29.5062" z="-17.0283" />
-            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_123" meshFile="mapaGroup_123.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_133" id="401074272">
-            <position x="151.155" y="29.5062" z="-19.0312" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_133" meshFile="mapaGroup_133.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_143" id="401898272">
-            <position x="152.487" y="23.3962" z="-11.8891" />
+        <node name="mapaGroup_142" id="100619528">
+            <position x="149.639" y="23.3962" z="-9.1379" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_143" meshFile="mapaGroup_143.mesh" castShadows="true">
+            <entity name="mapaGroup_142" meshFile="mapaGroup_142.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_153" id="771019648">
+        <node name="mapaGroup_132" id="104800560">
+            <position x="151.499" y="29.5062" z="-19.3631" />
+            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_132" meshFile="mapaGroup_132.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_122" id="152653584">
+            <position x="159.612" y="29.3688" z="-16.3661" />
+            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_122" meshFile="mapaGroup_122.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_112" id="315012064">
+            <position x="156.198" y="26.5925" z="-20.8259" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_112" meshFile="mapaGroup_112.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_102" id="604724288">
+            <position x="161.461" y="26.5925" z="-21.6743" />
+            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_102" meshFile="mapaGroup_102.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_153" id="847071744">
             <position x="146.534" y="23.764" z="-10.6914" />
             <rotation qw="-0.707051" qx="0.0915001" qy="-0.695013" qz="0.0930849" />
             <scale x="1.815" y="1.815" z="1.815" />
             <entity name="mapaGroup_153" meshFile="mapaGroup_153.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_104" id="736381120">
-            <position x="157.791" y="29.5062" z="-25.4425" />
-            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+        <node name="mapaGroup_143" id="863246592">
+            <position x="152.487" y="23.3962" z="-11.8891" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_104" meshFile="mapaGroup_104.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_143" meshFile="mapaGroup_143.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
             </entity>
         </node>
-        <node name="mapaGroup_114" id="355082880">
-            <position x="158.315" y="26.5925" z="-18.6346" />
+        <node name="mapaGroup_133" id="227088224">
+            <position x="151.155" y="29.5062" z="-19.0312" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_133" meshFile="mapaGroup_133.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_123" id="737998592">
+            <position x="159.838" y="29.5062" z="-17.0283" />
+            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_123" meshFile="mapaGroup_123.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_113" id="305825984">
+            <position x="157.852" y="26.5925" z="-18.1874" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_114" meshFile="mapaGroup_114.mesh" castShadows="true">
+            <entity name="mapaGroup_113" meshFile="mapaGroup_113.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_124" id="679921856">
-            <position x="159.494" y="29.5062" z="-16.6964" />
-            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
+        <node name="mapaGroup_103" id="584612544">
+            <position x="157.121" y="29.3688" z="-25.2397" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_124" meshFile="mapaGroup_124.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_103" meshFile="mapaGroup_103.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
             </entity>
         </node>
-        <node name="mapaGroup_134" id="842646528">
+        <node name="mapaGroup_154" id="596881024">
+            <position x="146.536" y="24.1441" z="-10.8009" />
+            <rotation qw="-0.39724" qx="-0.582188" qy="-0.390477" qz="-0.592272" />
+            <scale x="1.815" y="1.815" z="1.815" />
+            <entity name="mapaGroup_154" meshFile="mapaGroup_154.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_144" id="747337280">
+            <position x="152.221" y="23.3962" z="-11.6325" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_144" meshFile="mapaGroup_144.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial93_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_134" id="919980480">
             <position x="155.771" y="28.3061" z="-14.3402" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_134" meshFile="mapaGroup_134.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_144" id="611590912">
-            <position x="152.221" y="23.3962" z="-11.6325" />
+        <node name="mapaGroup_124" id="826685376">
+            <position x="159.494" y="29.5062" z="-16.6964" />
+            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_124" meshFile="mapaGroup_124.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_114" id="108554344">
+            <position x="158.315" y="26.5925" z="-18.6346" />
+            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_114" meshFile="mapaGroup_114.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_104" id="494460896">
+            <position x="157.791" y="29.5062" z="-25.4425" />
+            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_104" meshFile="mapaGroup_104.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_155" id="853968896">
+            <position x="145.955" y="24.1441" z="-10.8109" />
+            <rotation qw="0.137908" qx="-0.687778" qy="0.13556" qz="-0.69969" />
+            <scale x="1.815" y="1.815" z="1.815" />
+            <entity name="mapaGroup_155" meshFile="mapaGroup_155.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_145" id="380108032">
+            <position x="146.535" y="23.2559" z="-9.01417" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1.815" y="1.815" z="2.52285" />
+            <entity name="mapaGroup_145" meshFile="mapaGroup_145.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_135" id="662800960">
+            <position x="157.018" y="29.3688" z="-13.8594" />
+            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_135" meshFile="mapaGroup_135.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_125" id="873348160">
+            <position x="152.589" y="26.5925" z="-17.339" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_144" meshFile="mapaGroup_144.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial93_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_125" meshFile="mapaGroup_125.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
             </entity>
         </node>
-        <node name="mapaGroup_154" id="869869056">
-            <position x="146.536" y="24.1441" z="-10.8009" />
-            <rotation qw="-0.39724" qx="-0.582188" qy="-0.390477" qz="-0.592272" />
-            <scale x="1.815" y="1.815" z="1.815" />
-            <entity name="mapaGroup_154" meshFile="mapaGroup_154.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Glass" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_105" id="139316992">
-            <position x="157.447" y="29.5062" z="-25.1106" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_105" meshFile="mapaGroup_105.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_115" id="697286912">
+        <node name="mapaGroup_115" id="851222272">
             <position x="154.965" y="28.3061" z="-21.4707" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_115" meshFile="mapaGroup_115.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_125" id="372112192">
-            <position x="152.589" y="26.5925" z="-17.339" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+        <node name="mapaGroup_105" id="740745216">
+            <position x="157.447" y="29.5062" z="-25.1106" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_125" meshFile="mapaGroup_125.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_105" meshFile="mapaGroup_105.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
             </entity>
         </node>
-        <node name="mapaGroup_135" id="623310016">
-            <position x="157.018" y="29.3688" z="-13.8594" />
-            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_135" meshFile="mapaGroup_135.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_145" id="875423424">
-            <position x="146.535" y="23.2559" z="-9.01417" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1.815" y="1.815" z="2.52285" />
-            <entity name="mapaGroup_145" meshFile="mapaGroup_145.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Plastic" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_155" id="725577536">
-            <position x="145.955" y="24.1441" z="-10.8109" />
-            <rotation qw="0.137908" qx="-0.687778" qy="0.13556" qz="-0.69969" />
+        <node name="mapaGroup_156" id="126468704">
+            <position x="146.536" y="24.1441" z="-10.8009" />
+            <rotation qw="-0.69969" qx="-0.13556" qy="-0.687778" qz="-0.137908" />
             <scale x="1.815" y="1.815" z="1.815" />
-            <entity name="mapaGroup_155" meshFile="mapaGroup_155.mesh" castShadows="true">
+            <entity name="mapaGroup_156" meshFile="mapaGroup_156.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_106" id="272591328">
+        <node name="mapaGroup_146" id="552812288">
+            <position x="147.027" y="23.764" z="-10.3838" />
+            <rotation qw="-0.693828" qx="-0.295208" qy="-0.384723" qz="-0.532393" />
+            <scale x="1.815" y="1.815" z="1.815" />
+            <entity name="mapaGroup_146" meshFile="mapaGroup_146.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_136" id="492538208">
+            <position x="156.466" y="29.3688" z="-13.3264" />
+            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_136" meshFile="mapaGroup_136.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_126" id="300057984">
+            <position x="153.052" y="26.5925" z="-17.7861" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_126" meshFile="mapaGroup_126.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_116" id="154881440">
+            <position x="154.527" y="29.3688" z="-22.7331" />
+            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_116" meshFile="mapaGroup_116.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_106" id="620380288">
             <position x="162.063" y="28.3061" z="-20.4196" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_106" meshFile="mapaGroup_106.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_116" id="394848480">
-            <position x="154.527" y="29.3688" z="-22.7331" />
-            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_116" meshFile="mapaGroup_116.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_126" id="49958800">
-            <position x="153.052" y="26.5925" z="-17.7861" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_126" meshFile="mapaGroup_126.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_136" id="53468428">
-            <position x="156.466" y="29.3688" z="-13.3264" />
-            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_136" meshFile="mapaGroup_136.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_146" id="595019392">
-            <position x="147.027" y="23.764" z="-10.3838" />
-            <rotation qw="-0.693828" qx="-0.295208" qy="-0.384723" qz="-0.532393" />
-            <scale x="1.815" y="1.815" z="1.815" />
-            <entity name="mapaGroup_146" meshFile="mapaGroup_146.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Plastic" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_156" id="893948224">
-            <position x="146.536" y="24.1441" z="-10.8009" />
-            <rotation qw="-0.69969" qx="-0.13556" qy="-0.687778" qz="-0.137908" />
-            <scale x="1.815" y="1.815" z="1.815" />
-            <entity name="mapaGroup_156" meshFile="mapaGroup_156.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_107" id="911130048">
-            <position x="163.31" y="29.3688" z="-19.9388" />
-            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_107" meshFile="mapaGroup_107.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_117" id="675740864">
-            <position x="153.975" y="29.3688" z="-22.2" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_117" meshFile="mapaGroup_117.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_127" id="169560832">
-            <position x="154.706" y="26.5925" z="-15.1477" />
-            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_127" meshFile="mapaGroup_127.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_137" id="863551744">
-            <position x="156.692" y="29.5062" z="-13.9885" />
-            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_137" meshFile="mapaGroup_137.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_147" id="793176064">
-            <position x="146.534" y="23.764" z="-10.6914" />
-            <rotation qw="-0.114152" qx="-0.480784" qy="-0.0632964" qz="-0.86707" />
-            <scale x="1.815" y="1.815" z="1.815" />
-            <entity name="mapaGroup_147" meshFile="mapaGroup_147.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Plastic" />
-                </userData>
-            </entity>
-        </node>
-        <node name="mapaGroup_157" id="535569312">
+        <node name="mapaGroup_157" id="617145280">
             <position x="158.111" y="28.3061" z="-24.5104" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_157" meshFile="mapaGroup_157.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_108" id="517654944">
-            <position x="162.758" y="29.3688" z="-19.4058" />
-            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
-            <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_108" meshFile="mapaGroup_108.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+        <node name="mapaGroup_147" id="955717632">
+            <position x="146.534" y="23.764" z="-10.6914" />
+            <rotation qw="-0.114152" qx="-0.480784" qy="-0.0632964" qz="-0.86707" />
+            <scale x="1.815" y="1.815" z="1.815" />
+            <entity name="mapaGroup_147" meshFile="mapaGroup_147.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
             </entity>
         </node>
-        <node name="mapaGroup_118" id="198706016">
-            <position x="154.645" y="29.5062" z="-22.4028" />
-            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+        <node name="mapaGroup_137" id="496810816">
+            <position x="156.692" y="29.5062" z="-13.9885" />
+            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_118" meshFile="mapaGroup_118.mesh" castShadows="true">
+            <entity name="mapaGroup_137" meshFile="mapaGroup_137.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_128" id="310556352">
-            <position x="155.169" y="26.5925" z="-15.5949" />
+        <node name="mapaGroup_127" id="127231672">
+            <position x="154.706" y="26.5925" z="-15.1477" />
             <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_128" meshFile="mapaGroup_128.mesh" castShadows="true">
+            <entity name="mapaGroup_127" meshFile="mapaGroup_127.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_138" id="306405856">
-            <position x="156.348" y="29.5062" z="-13.6566" />
-            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
+        <node name="mapaGroup_117" id="79348128">
+            <position x="153.975" y="29.3688" z="-22.2" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_138" meshFile="mapaGroup_138.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_117" meshFile="mapaGroup_117.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
             </entity>
         </node>
-        <node name="mapaGroup_148" id="590624704">
-            <position x="147.027" y="23.764" z="-10.3838" />
-            <rotation qw="-0.867069" qx="0.0632965" qy="-0.480784" qz="0.114152" />
-            <scale x="1.815" y="1.815" z="1.815" />
-            <entity name="mapaGroup_148" meshFile="mapaGroup_148.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+        <node name="mapaGroup_107" id="804528960">
+            <position x="163.31" y="29.3688" z="-19.9388" />
+            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_107" meshFile="mapaGroup_107.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
             </entity>
         </node>
-        <node name="mapaGroup_158" id="780083584">
+        <node name="mapaGroup_158" id="65950496">
             <position x="157.673" y="29.3688" z="-25.7728" />
             <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_158" meshFile="mapaGroup_158.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial84_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_109" id="907437376">
-            <position x="162.984" y="29.5062" z="-20.068" />
-            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
+        <node name="mapaGroup_148" id="176580096">
+            <position x="147.027" y="23.764" z="-10.3838" />
+            <rotation qw="-0.867069" qx="0.0632965" qy="-0.480784" qz="0.114152" />
+            <scale x="1.815" y="1.815" z="1.815" />
+            <entity name="mapaGroup_148" meshFile="mapaGroup_148.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_138" id="509262368">
+            <position x="156.348" y="29.5062" z="-13.6566" />
+            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_109" meshFile="mapaGroup_109.mesh" castShadows="true">
+            <entity name="mapaGroup_138" meshFile="mapaGroup_138.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_119" id="615710912">
-            <position x="154.301" y="29.5062" z="-22.0709" />
-            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
+        <node name="mapaGroup_128" id="784966592">
+            <position x="155.169" y="26.5925" z="-15.5949" />
+            <rotation qw="-1.63803e-008" qx="-0.374737" qy="4.05262e-008" qz="-0.927131" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_119" meshFile="mapaGroup_119.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial86_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_128" meshFile="mapaGroup_128.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
             </entity>
         </node>
-        <node name="mapaGroup_129" id="212469856">
+        <node name="mapaGroup_118" id="640980224">
+            <position x="154.645" y="29.5062" z="-22.4028" />
+            <rotation qw="-0.855276" qx="-0.357876" qy="-0.345694" qz="0.14465" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_118" meshFile="mapaGroup_118.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_108" id="576036864">
+            <position x="162.758" y="29.3688" z="-19.4058" />
+            <rotation qw="0.345694" qx="0.14465" qy="-0.855276" qz="0.357876" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_108" meshFile="mapaGroup_108.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial84_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_149" id="131626336">
+            <position x="147.892" y="23.7653" z="-9.56631" />
+            <rotation qw="-0.6891" qx="-0.15856" qy="-0.15856" qz="-0.6891" />
+            <scale x="1.815" y="1.815" z="1.815" />
+            <entity name="mapaGroup_149" meshFile="mapaGroup_149.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaskp_front_default_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_139" id="688161856">
+            <position x="160.454" y="26.5925" z="-24.9383" />
+            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_139" meshFile="mapaGroup_139.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial96_1" />
+            </entity>
+        </node>
+        <node name="mapaGroup_129" id="609637760">
             <position x="151.819" y="28.3061" z="-18.431" />
             <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
             <scale x="1" y="1" z="1" />
             <entity name="mapaGroup_129" meshFile="mapaGroup_129.mesh" castShadows="true">
                 <subentity index="0" materialName="mapaMaterial78_1" />
                 <subentity index="1" materialName="mapaMaterial85_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
             </entity>
         </node>
-        <node name="mapaGroup_139" id="26703696">
-            <position x="160.454" y="26.5925" z="-24.9383" />
-            <rotation qw="-0.927131" qx="0" qy="-0.374737" qz="0" />
+        <node name="mapaGroup_119" id="545091072">
+            <position x="154.301" y="29.5062" z="-22.0709" />
+            <rotation qw="0.357877" qx="-0.855276" qy="0.14465" qz="0.345694" />
             <scale x="1" y="1" z="1" />
-            <entity name="mapaGroup_139" meshFile="mapaGroup_139.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaMaterial96_1" />
-                <userData>
-                    <property type="7" name="material" data="Metal" />
-                </userData>
+            <entity name="mapaGroup_119" meshFile="mapaGroup_119.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
             </entity>
         </node>
-        <node name="mapaGroup_149" id="569200704">
-            <position x="147.892" y="23.7653" z="-9.56631" />
-            <rotation qw="-0.6891" qx="-0.15856" qy="-0.15856" qz="-0.6891" />
-            <scale x="1.815" y="1.815" z="1.815" />
-            <entity name="mapaGroup_149" meshFile="mapaGroup_149.mesh" castShadows="true">
-                <subentity index="0" materialName="mapaskp_front_default_1" />
-                <userData>
-                    <property type="7" name="material" data="Plastic" />
-                </userData>
+        <node name="mapaGroup_109" id="911557376">
+            <position x="162.984" y="29.5062" z="-20.068" />
+            <rotation qw="0.14465" qx="-0.345694" qy="-0.357876" qz="-0.855276" />
+            <scale x="1" y="1" z="1" />
+            <entity name="mapaGroup_109" meshFile="mapaGroup_109.mesh" castShadows="true">
+                <subentity index="0" materialName="mapaMaterial86_1" />
             </entity>
         </node>
-        <node name="triggerBox#1" id="447584448">
+        <node name="Box#1" id="611102656">
+            <position x="-105" y="-27.8641" z="-5" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="1.69899" y="1.69899" z="1.69899" />
+            <entity name="Box#1" meshFile="box.mesh" castShadows="false">
+                <subentity index="0" materialName="BaseWhite" />
+            </entity>
+        </node>
+        <node name="Robot#1" id="225562304">
+            <position x="170.083" y="-28.7767" z="57.2619" />
+            <rotation qw="0.358368" qx="0" qy="0.933581" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="Robot#1" meshFile="robot.mesh" castShadows="false">
+                <subentity index="0" materialName="Examples/Robot" />
+            </entity>
+        </node>
+        <node name="triggerBox#1" id="151493872">
             <position x="-105" y="-27.4" z="-5" />
             <rotation qw="1" qx="0" qy="0" qz="0" />
             <scale x="1" y="1" z="1" />
@@ -1859,74 +1432,37 @@
                     <property type="7" name="triggerAction" data="teleport" />
                     <property type="9" name="triggerPosition" data="-105 -27.4 -5" />
                     <property type="9" name="triggerSize" data="2 2 2" />
-                    <property type="9" name="triggerDestination" data="157 24 -19" />
+                    <property type="9" name="triggerDestination" data="156 23.5 -18" />
                     <property type="7" name="material" data="Trigger" />
                 </userData>
             </entity>
         </node>
-        <node name="Waterfall#1" id="79012424">
-            <position x="-122.018" y="-1.13939" z="15.1387" />
-            <rotation qw="0.998392" qx="0" qy="0.0566928" qz="0" />
-            <scale x="0.005" y="0.01" z="0.02" />
-            <particleSystem name="Waterfall#1" script="Examples/Rain" />
-            <userData>
-                <property type="7" name="material" data="Particle" />
-            </userData>
-        </node>
-        <node name="Particle#0" id="916623424">
-            <position x="-104.569" y="-27.3035" z="-5.25637" />
+        <node name="triggerEllipsoid#1" id="407483136">
+            <position x="161" y="23" z="-23" />
             <rotation qw="1" qx="0" qy="0" qz="0" />
-            <scale x="1e-006" y="1e-006" z="1e-006" />
-            <particleSystem name="Particle#0" script="Examples/JetEngine1" />
-            <userData>
-                <property type="7" name="material" data="Particle" />
-            </userData>
-        </node>
-        <node name="Particle#1" id="362407296">
-            <position x="160.886" y="22.8737" z="-22.9606" />
-            <rotation qw="1" qx="0" qy="0" qz="0" />
-            <scale x="1e-006" y="1e-006" z="1e-006" />
-            <particleSystem name="Particle#1" script="EmptyParticle" />
-            <userData>
-                <property type="7" name="material" data="Particle" />
-            </userData>
-        </node>
-        <node name="box#1" id="974333952">
-            <position x="-105" y="-27.5" z="-5" />
-            <rotation qw="1" qx="0" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
-            <entity name="box#1" meshFile="box.mesh" castShadows="false">
-                <subentity index="0" materialName="BaseWhite" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
-            </entity>
-        </node>
-        <node name="triggerEllipsoid#1" id="323068960">
-            <position x="161" y="22.7" z="-23" />
-            <rotation qw="1" qx="0" qy="0" qz="0" />
-            <scale x="1" y="1" z="1" />
+            <scale x="0.772066" y="0.772066" z="0.772066" />
             <entity name="triggerEllipsoid#1" meshFile="ellipsoid.mesh" castShadows="false">
-                <subentity index="0" materialName="BaseWhite" />
+                <subentity index="0" materialName="1334603318_SketchupDefault" />
                 <userData>
                     <property type="7" name="triggerAction" data="teleport" />
-                    <property type="9" name="triggerPosition" data="161 22.7 -23" />
+                    <property type="9" name="triggerPosition" data="161 23 -23" />
                     <property type="9" name="triggerSize" data="2 2 2" />
-                    <property type="9" name="triggerDestination" data="52 -26 42" />
+                    <property type="9" name="triggerDestination" data="150 35 -13" />
                     <property type="7" name="material" data="Trigger" />
                 </userData>
             </entity>
         </node>
-        <node name="cylinder#0" id="387585088">
-            <position x="161" y="23.0885" z="-23" />
-            <rotation qw="0.707107" qx="0" qy="0" qz="-0.707107" />
-            <scale x="0.64893" y="0.64893" z="0.64893" />
-            <entity name="cylinder#0" meshFile="cylinder.mesh" castShadows="false">
-                <subentity index="0" materialName="BaseWhite" />
-                <userData>
-                    <property type="7" name="material" data="Concrete" />
-                </userData>
-            </entity>
+        <node name="Waterfall#1" id="569200704">
+            <position x="-123.851" y="-0.966956" z="13.7233" />
+            <rotation qw="0.989651" qx="0" qy="0.143493" qz="0" />
+            <scale x="0.004" y="1e-005" z="0.007" />
+            <particleSystem name="Waterfall#1" script="Examples/Rain" />
+        </node>
+        <node name="Particle#1" id="391735584">
+            <position x="-105" y="-27.1749" z="-5" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="1e-006" y="1e-006" z="1e-006" />
+            <particleSystem name="Particle#1" script="Examples/JetEngine2" />
         </node>
     </nodes>
 </scene>

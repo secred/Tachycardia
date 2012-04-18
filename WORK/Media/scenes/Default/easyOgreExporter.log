@@ -1,4 +1,4 @@
-Logging to file c:\users\konrad\desktop\mapa-indor\indor\easyOgreExporter.log
+Logging to file c:\users\konrad\desktop\tachymapa\najnowsza mapa\easyOgreExporter.log
 Found node: Layer0_001
 Found mesh node: Layer0_001
 Writing Layer0_001 mesh binary...
@@ -6,7 +6,7 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #71
+Texture Name: Map #1
 Diffuse channel texture.
 Info: create submesh : 0
 Exporting 0 textures...
@@ -14,301 +14,301 @@ Info: create submesh : 1
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #72
+Texture Name: Map #2
 Diffuse channel texture.
 Info: create submesh : 2
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #73
+Texture Name: Map #3
 Diffuse channel texture.
 Info: create submesh : 3
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #74
+Texture Name: Map #4
 Diffuse channel texture.
 Info: create submesh : 4
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #75
+Texture Name: Map #5
 Diffuse channel texture.
 Info: create submesh : 5
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #76
+Texture Name: Map #6
 Diffuse channel texture.
 Info: create submesh : 6
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #77
+Texture Name: Map #7
 Diffuse channel texture.
 Info: create submesh : 7
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #78
+Texture Name: Map #8
 Diffuse channel texture.
 Info: create submesh : 8
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #79
+Texture Name: Map #9
 Diffuse channel texture.
 Info: create submesh : 9
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #80
+Texture Name: Map #10
 Diffuse channel texture.
 Info: create submesh : 10
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #81
+Texture Name: Map #11
 Diffuse channel texture.
 Info: create submesh : 11
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #82
+Texture Name: Map #12
 Diffuse channel texture.
 Info: create submesh : 12
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #83
+Texture Name: Map #13
 Diffuse channel texture.
 Info: create submesh : 13
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #83
+Texture Name: Map #14
 Diffuse channel texture.
 Info: create submesh : 14
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #84
+Texture Name: Map #15
 Diffuse channel texture.
 Info: create submesh : 15
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #85
+Texture Name: Map #15
 Diffuse channel texture.
 Info: create submesh : 16
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #86
+Texture Name: Map #16
 Diffuse channel texture.
 Info: create submesh : 17
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #87
+Texture Name: Map #17
 Diffuse channel texture.
 Info: create submesh : 18
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #83
+Texture Name: Map #18
 Diffuse channel texture.
 Info: create submesh : 19
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #88
+Texture Name: Map #19
 Diffuse channel texture.
 Info: create submesh : 20
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #89
+Texture Name: Map #15
 Diffuse channel texture.
 Info: create submesh : 21
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #90
+Texture Name: Map #20
 Diffuse channel texture.
 Info: create submesh : 22
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #91
+Texture Name: Map #21
 Diffuse channel texture.
 Info: create submesh : 23
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #92
+Texture Name: Map #22
 Diffuse channel texture.
 Info: create submesh : 24
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #93
+Texture Name: Map #23
 Diffuse channel texture.
 Info: create submesh : 25
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #94
+Texture Name: Map #24
 Diffuse channel texture.
 Info: create submesh : 26
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #95
+Texture Name: Map #25
 Diffuse channel texture.
 Info: create submesh : 27
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #96
+Texture Name: Map #26
 Diffuse channel texture.
 Info: create submesh : 28
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #97
+Texture Name: Map #27
 Diffuse channel texture.
 Info: create submesh : 29
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #98
+Texture Name: Map #28
 Diffuse channel texture.
 Info: create submesh : 30
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #99
+Texture Name: Map #29
 Diffuse channel texture.
 Info: create submesh : 31
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #80
+Texture Name: Map #10
 Diffuse channel texture.
 Info: create submesh : 32
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #100
+Texture Name: Map #30
 Diffuse channel texture.
 Info: create submesh : 33
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #94
+Texture Name: Map #26
 Diffuse channel texture.
 Info: create submesh : 34
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #101
+Texture Name: Map #31
 Diffuse channel texture.
 Info: create submesh : 35
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #102
+Texture Name: Map #32
 Diffuse channel texture.
 Info: create submesh : 36
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #103
+Texture Name: Map #33
 Diffuse channel texture.
 Info: create submesh : 37
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #104
+Texture Name: Map #34
 Diffuse channel texture.
 Info: create submesh : 38
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #105
+Texture Name: Map #35
 Diffuse channel texture.
 Info: create submesh : 39
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #106
+Texture Name: Map #36
 Diffuse channel texture.
 Info: create submesh : 40
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #107
+Texture Name: Map #37
 Diffuse channel texture.
 Info: create submesh : 41
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #108
+Texture Name: Map #38
 Diffuse channel texture.
 Info: create submesh : 42
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #109
+Texture Name: Map #39
 Diffuse channel texture.
 Info: create submesh : 43
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #110
+Texture Name: Map #40
 Diffuse channel texture.
 Info: create submesh : 44
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #111
+Texture Name: Map #41
 Diffuse channel texture.
 Info: create submesh : 45
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #80
+Texture Name: Map #10
 Diffuse channel texture.
 Info: create submesh : 46
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #112
+Texture Name: Map #42
 Diffuse channel texture.
 Info: create submesh : 47
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #113
+Texture Name: Map #43
 Diffuse channel texture.
 Info: create submesh : 48
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #89
+Texture Name: Map #21
 Diffuse channel texture.
 Info: create submesh : 49
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #90
+Texture Name: Map #22
 Diffuse channel texture.
 Info: create submesh : 50
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #92
+Texture Name: Map #24
 Diffuse channel texture.
 Info: create submesh : 51
 Exporting 0 textures...
@@ -316,7 +316,7 @@ Info: create submesh : 52
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaLayer0_001.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaLayer0_001.mesh
 Found node: Layer0_002
 Found node: Group_001
 Found mesh node: Group_001
@@ -327,7 +327,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_001.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_001.mesh
 Found node: Group_002
 Found mesh node: Group_002
 Writing Group_002 mesh binary...
@@ -336,7 +336,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_002.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_002.mesh
 Found node: Group_003
 Found mesh node: Group_003
 Writing Group_003 mesh binary...
@@ -345,7 +345,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_003.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_003.mesh
 Found node: Group_004
 Found mesh node: Group_004
 Writing Group_004 mesh binary...
@@ -354,7 +354,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_004.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_004.mesh
 Found node: Group_005
 Found mesh node: Group_005
 Writing Group_005 mesh binary...
@@ -363,7 +363,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_005.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_005.mesh
 Found node: Group_006
 Found mesh node: Group_006
 Writing Group_006 mesh binary...
@@ -371,13 +371,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #79
+Texture Name: Map #9
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_006.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_006.mesh
 Found node: Group_007
 Found mesh node: Group_007
 Writing Group_007 mesh binary...
@@ -385,19 +385,19 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #88
+Texture Name: Map #20
 Diffuse channel texture.
 Info: create submesh : 0
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #78
+Texture Name: Map #8
 Diffuse channel texture.
 Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_007.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_007.mesh
 Found node: Group_008
 Found mesh node: Group_008
 Writing Group_008 mesh binary...
@@ -405,25 +405,25 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #71
+Texture Name: Map #1
 Diffuse channel texture.
 Info: create submesh : 0
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #80
+Texture Name: Map #10
 Diffuse channel texture.
 Info: create submesh : 1
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #90
+Texture Name: Map #22
 Diffuse channel texture.
 Info: create submesh : 2
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_008.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_008.mesh
 Found node: Group_009
 Found mesh node: Group_009
 Writing Group_009 mesh binary...
@@ -432,7 +432,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_009.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_009.mesh
 Found node: Group_010
 Found mesh node: Group_010
 Writing Group_010 mesh binary...
@@ -440,13 +440,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #114
+Texture Name: Map #44
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_010.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_010.mesh
 Found node: Group_011
 Found node: Group_012
 Found mesh node: Group_012
@@ -456,7 +456,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_012.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_012.mesh
 Found node: Group_013
 Found mesh node: Group_013
 Writing Group_013 mesh binary...
@@ -465,7 +465,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_013.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_013.mesh
 Found node: Group_014
 Found mesh node: Group_014
 Writing Group_014 mesh binary...
@@ -474,7 +474,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_014.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_014.mesh
 Found node: Group_015
 Found mesh node: Group_015
 Writing Group_015 mesh binary...
@@ -483,7 +483,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_015.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_015.mesh
 Found node: Group_016
 Found mesh node: Group_016
 Writing Group_016 mesh binary...
@@ -492,7 +492,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_016.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_016.mesh
 Found node: Group_017
 Found mesh node: Group_017
 Writing Group_017 mesh binary...
@@ -501,7 +501,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_017.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_017.mesh
 Found node: Group_018
 Found mesh node: Group_018
 Writing Group_018 mesh binary...
@@ -510,7 +510,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_018.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_018.mesh
 Found node: Group_019
 Found mesh node: Group_019
 Writing Group_019 mesh binary...
@@ -519,7 +519,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_019.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_019.mesh
 Found node: Group_020
 Found mesh node: Group_020
 Writing Group_020 mesh binary...
@@ -528,7 +528,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_020.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_020.mesh
 Found node: Group_021
 Found mesh node: Group_021
 Writing Group_021 mesh binary...
@@ -537,7 +537,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_021.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_021.mesh
 Found node: Group_022
 Found mesh node: Group_022
 Writing Group_022 mesh binary...
@@ -546,7 +546,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_022.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_022.mesh
 Found node: Group_023
 Found mesh node: Group_023
 Writing Group_023 mesh binary...
@@ -555,7 +555,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_023.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_023.mesh
 Found node: Group_024
 Found mesh node: Group_024
 Writing Group_024 mesh binary...
@@ -564,7 +564,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_024.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_024.mesh
 Found node: Group_025
 Found mesh node: Group_025
 Writing Group_025 mesh binary...
@@ -573,7 +573,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_025.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_025.mesh
 Found node: Group_026
 Found mesh node: Group_026
 Writing Group_026 mesh binary...
@@ -582,7 +582,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_026.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_026.mesh
 Found node: Group_027
 Found mesh node: Group_027
 Writing Group_027 mesh binary...
@@ -591,7 +591,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_027.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_027.mesh
 Found node: Group_028
 Found mesh node: Group_028
 Writing Group_028 mesh binary...
@@ -600,7 +600,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_028.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_028.mesh
 Found node: Group_029
 Found mesh node: Group_029
 Writing Group_029 mesh binary...
@@ -609,7 +609,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_029.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_029.mesh
 Found node: Group_030
 Found mesh node: Group_030
 Writing Group_030 mesh binary...
@@ -618,7 +618,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_030.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_030.mesh
 Found node: Group_031
 Found mesh node: Group_031
 Writing Group_031 mesh binary...
@@ -627,7 +627,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_031.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_031.mesh
 Found node: Group_032
 Found mesh node: Group_032
 Writing Group_032 mesh binary...
@@ -636,7 +636,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_032.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_032.mesh
 Found node: Group_033
 Found mesh node: Group_033
 Writing Group_033 mesh binary...
@@ -645,7 +645,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_033.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_033.mesh
 Found node: Group_034
 Found mesh node: Group_034
 Writing Group_034 mesh binary...
@@ -654,7 +654,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_034.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_034.mesh
 Found node: Group_035
 Found mesh node: Group_035
 Writing Group_035 mesh binary...
@@ -663,7 +663,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_035.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_035.mesh
 Found node: Group_036
 Found mesh node: Group_036
 Writing Group_036 mesh binary...
@@ -672,7 +672,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_036.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_036.mesh
 Found node: Group_037
 Found mesh node: Group_037
 Writing Group_037 mesh binary...
@@ -681,7 +681,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_037.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_037.mesh
 Found node: Group_038
 Found mesh node: Group_038
 Writing Group_038 mesh binary...
@@ -690,7 +690,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_038.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_038.mesh
 Found node: Group_039
 Found mesh node: Group_039
 Writing Group_039 mesh binary...
@@ -699,7 +699,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_039.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_039.mesh
 Found node: Group_040
 Found mesh node: Group_040
 Writing Group_040 mesh binary...
@@ -707,13 +707,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #115
+Texture Name: Map #45
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_040.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_040.mesh
 Found node: Group_041
 Found mesh node: Group_041
 Writing Group_041 mesh binary...
@@ -722,7 +722,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_041.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_041.mesh
 Found node: Group_042
 Found mesh node: Group_042
 Writing Group_042 mesh binary...
@@ -730,13 +730,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #116
+Texture Name: Map #46
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_042.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_042.mesh
 Found node: Group_043
 Found node: Group_044
 Found mesh node: Group_044
@@ -745,13 +745,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #73
+Texture Name: Map #3
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_044.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_044.mesh
 Found node: Group_045
 Found mesh node: Group_045
 Writing Group_045 mesh binary...
@@ -759,25 +759,25 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #83
+Texture Name: Map #15
 Diffuse channel texture.
 Info: create submesh : 0
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #81
+Texture Name: Map #12
 Diffuse channel texture.
 Info: create submesh : 1
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #98
+Texture Name: Map #29
 Diffuse channel texture.
 Info: create submesh : 2
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_045.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_045.mesh
 Found node: Group_046
 Found mesh node: Group_046
 Writing Group_046 mesh binary...
@@ -785,19 +785,19 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #108
+Texture Name: Map #38
 Diffuse channel texture.
 Info: create submesh : 0
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #88
+Texture Name: Map #20
 Diffuse channel texture.
 Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_046.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_046.mesh
 Found node: Group_047
 Found mesh node: Group_047
 Writing Group_047 mesh binary...
@@ -805,13 +805,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #81
+Texture Name: Map #12
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_047.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_047.mesh
 Found node: Group_048
 Found mesh node: Group_048
 Writing Group_048 mesh binary...
@@ -819,37 +819,37 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #98
+Texture Name: Map #29
 Diffuse channel texture.
 Info: create submesh : 0
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #89
+Texture Name: Map #21
 Diffuse channel texture.
 Info: create submesh : 1
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #90
+Texture Name: Map #22
 Diffuse channel texture.
 Info: create submesh : 2
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #101
+Texture Name: Map #31
 Diffuse channel texture.
 Info: create submesh : 3
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #77
+Texture Name: Map #7
 Diffuse channel texture.
 Info: create submesh : 4
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_048.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_048.mesh
 Found node: Group_049
 Found mesh node: Group_049
 Writing Group_049 mesh binary...
@@ -857,67 +857,67 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #117
+Texture Name: Map #47
 Diffuse channel texture.
 Info: create submesh : 0
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #118
+Texture Name: Map #48
 Diffuse channel texture.
 Info: create submesh : 1
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #119
+Texture Name: Map #49
 Diffuse channel texture.
 Info: create submesh : 2
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #120
+Texture Name: Map #50
 Diffuse channel texture.
 Info: create submesh : 3
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #121
+Texture Name: Map #51
 Diffuse channel texture.
 Info: create submesh : 4
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #120
+Texture Name: Map #50
 Diffuse channel texture.
 Info: create submesh : 5
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #122
+Texture Name: Map #52
 Diffuse channel texture.
 Info: create submesh : 6
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #123
+Texture Name: Map #53
 Diffuse channel texture.
 Info: create submesh : 7
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #124
+Texture Name: Map #54
 Diffuse channel texture.
 Info: create submesh : 8
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #125
+Texture Name: Map #55
 Diffuse channel texture.
 Info: create submesh : 9
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #126
+Texture Name: Map #56
 Diffuse channel texture.
 Info: create submesh : 10
 Exporting 0 textures...
@@ -925,97 +925,97 @@ Info: create submesh : 11
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #127
+Texture Name: Map #57
 Diffuse channel texture.
 Info: create submesh : 12
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #128
+Texture Name: Map #58
 Diffuse channel texture.
 Info: create submesh : 13
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #129
+Texture Name: Map #59
 Diffuse channel texture.
 Info: create submesh : 14
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #130
+Texture Name: Map #60
 Diffuse channel texture.
 Info: create submesh : 15
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #131
+Texture Name: Map #61
 Diffuse channel texture.
 Info: create submesh : 16
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #132
+Texture Name: Map #62
 Diffuse channel texture.
 Info: create submesh : 17
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #133
+Texture Name: Map #63
 Diffuse channel texture.
 Info: create submesh : 18
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #134
+Texture Name: Map #64
 Diffuse channel texture.
 Info: create submesh : 19
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #135
+Texture Name: Map #65
 Diffuse channel texture.
 Info: create submesh : 20
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #132
+Texture Name: Map #62
 Diffuse channel texture.
 Info: create submesh : 21
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #136
+Texture Name: Map #66
 Diffuse channel texture.
 Info: create submesh : 22
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #137
+Texture Name: Map #67
 Diffuse channel texture.
 Info: create submesh : 23
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #138
+Texture Name: Map #68
 Diffuse channel texture.
 Info: create submesh : 24
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #139
+Texture Name: Map #69
 Diffuse channel texture.
 Info: create submesh : 25
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #140
+Texture Name: Map #70
 Diffuse channel texture.
 Info: create submesh : 26
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_049.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_049.mesh
 Found node: Group_050
 Found node: Group_051
 Found mesh node: Group_051
@@ -1024,13 +1024,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #117
+Texture Name: Map #47
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_051.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_051.mesh
 Found node: Group_052
 Found mesh node: Group_052
 Writing Group_052 mesh binary...
@@ -1039,7 +1039,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_052.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_052.mesh
 Found node: Group_053
 Found mesh node: Group_053
 Writing Group_053 mesh binary...
@@ -1047,19 +1047,19 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #119
+Texture Name: Map #49
 Diffuse channel texture.
 Info: create submesh : 0
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #123
+Texture Name: Map #53
 Diffuse channel texture.
 Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_053.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_053.mesh
 Found node: Group_054
 Found mesh node: Group_054
 Writing Group_054 mesh binary...
@@ -1067,13 +1067,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #124
+Texture Name: Map #54
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_054.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_054.mesh
 Found node: Group_055
 Found mesh node: Group_055
 Writing Group_055 mesh binary...
@@ -1082,7 +1082,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_055.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_055.mesh
 Found node: Group_056
 Found mesh node: Group_056
 Writing Group_056 mesh binary...
@@ -1090,13 +1090,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #140
+Texture Name: Map #70
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_056.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_056.mesh
 Found node: Group_057
 Found mesh node: Group_057
 Writing Group_057 mesh binary...
@@ -1105,7 +1105,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_057.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_057.mesh
 Found node: Group_058
 Found mesh node: Group_058
 Writing Group_058 mesh binary...
@@ -1115,7 +1115,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_058.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_058.mesh
 Found node: Group_059
 Found mesh node: Group_059
 Writing Group_059 mesh binary...
@@ -1124,7 +1124,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_059.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_059.mesh
 Found node: Group_060
 Found mesh node: Group_060
 Writing Group_060 mesh binary...
@@ -1133,7 +1133,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_060.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_060.mesh
 Found node: Group_061
 Found mesh node: Group_061
 Writing Group_061 mesh binary...
@@ -1142,7 +1142,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_061.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_061.mesh
 Found node: Group_062
 Found mesh node: Group_062
 Writing Group_062 mesh binary...
@@ -1151,7 +1151,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_062.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_062.mesh
 Found node: Group_063
 Found mesh node: Group_063
 Writing Group_063 mesh binary...
@@ -1160,7 +1160,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_063.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_063.mesh
 Found node: Group_064
 Found mesh node: Group_064
 Writing Group_064 mesh binary...
@@ -1169,7 +1169,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_064.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_064.mesh
 Found node: Group_065
 Found mesh node: Group_065
 Writing Group_065 mesh binary...
@@ -1178,7 +1178,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_065.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_065.mesh
 Found node: Group_066
 Found mesh node: Group_066
 Writing Group_066 mesh binary...
@@ -1187,7 +1187,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_066.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_066.mesh
 Found node: Group_067
 Found mesh node: Group_067
 Writing Group_067 mesh binary...
@@ -1197,7 +1197,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_067.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_067.mesh
 Found node: Group_068
 Found mesh node: Group_068
 Writing Group_068 mesh binary...
@@ -1206,7 +1206,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_068.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_068.mesh
 Found node: Group_069
 Found mesh node: Group_069
 Writing Group_069 mesh binary...
@@ -1215,7 +1215,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_069.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_069.mesh
 Found node: Group_070
 Found mesh node: Group_070
 Writing Group_070 mesh binary...
@@ -1224,7 +1224,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_070.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_070.mesh
 Found node: Group_071
 Found mesh node: Group_071
 Writing Group_071 mesh binary...
@@ -1234,7 +1234,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_071.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_071.mesh
 Found node: Group_072
 Found mesh node: Group_072
 Writing Group_072 mesh binary...
@@ -1243,7 +1243,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_072.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_072.mesh
 Found node: Group_073
 Found mesh node: Group_073
 Writing Group_073 mesh binary...
@@ -1252,7 +1252,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_073.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_073.mesh
 Found node: Group_074
 Found mesh node: Group_074
 Writing Group_074 mesh binary...
@@ -1261,7 +1261,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_074.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_074.mesh
 Found node: Group_075
 Found mesh node: Group_075
 Writing Group_075 mesh binary...
@@ -1270,7 +1270,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_075.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_075.mesh
 Found node: Group_076
 Found mesh node: Group_076
 Writing Group_076 mesh binary...
@@ -1278,13 +1278,13 @@ Info: Create Ogre submeshs
 Exporting 1 textures...
 Exporting 0 texture from Bitmap...
 Texture Index: 0
-Texture Name: Map #122
+Texture Name: Map #52
 Diffuse channel texture.
 Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_076.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_076.mesh
 Found node: Group_077
 Found mesh node: Group_077
 Writing Group_077 mesh binary...
@@ -1293,7 +1293,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_077.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_077.mesh
 Found node: Group_078
 Found mesh node: Group_078
 Writing Group_078 mesh binary...
@@ -1302,7 +1302,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_078.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_078.mesh
 Found node: Group_079
 Found mesh node: Group_079
 Writing Group_079 mesh binary...
@@ -1311,7 +1311,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_079.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_079.mesh
 Found node: Group_080
 Found mesh node: Group_080
 Writing Group_080 mesh binary...
@@ -1320,7 +1320,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_080.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_080.mesh
 Found node: Group_081
 Found mesh node: Group_081
 Writing Group_081 mesh binary...
@@ -1329,7 +1329,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_081.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_081.mesh
 Found node: Group_082
 Found mesh node: Group_082
 Writing Group_082 mesh binary...
@@ -1338,7 +1338,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_082.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_082.mesh
 Found node: Group_083
 Found mesh node: Group_083
 Writing Group_083 mesh binary...
@@ -1348,7 +1348,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_083.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_083.mesh
 Found node: Group_084
 Found mesh node: Group_084
 Writing Group_084 mesh binary...
@@ -1357,7 +1357,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_084.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_084.mesh
 Found node: Group_085
 Found mesh node: Group_085
 Writing Group_085 mesh binary...
@@ -1366,7 +1366,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_085.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_085.mesh
 Found node: Group_086
 Found mesh node: Group_086
 Writing Group_086 mesh binary...
@@ -1375,7 +1375,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_086.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_086.mesh
 Found node: Group_087
 Found mesh node: Group_087
 Writing Group_087 mesh binary...
@@ -1384,7 +1384,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_087.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_087.mesh
 Found node: Group_088
 Found mesh node: Group_088
 Writing Group_088 mesh binary...
@@ -1393,7 +1393,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_088.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_088.mesh
 Found node: Group_089
 Found mesh node: Group_089
 Writing Group_089 mesh binary...
@@ -1402,7 +1402,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_089.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_089.mesh
 Found node: Group_090
 Found mesh node: Group_090
 Writing Group_090 mesh binary...
@@ -1411,7 +1411,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_090.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_090.mesh
 Found node: Group_091
 Found mesh node: Group_091
 Writing Group_091 mesh binary...
@@ -1420,7 +1420,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_091.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_091.mesh
 Found node: Group_092
 Found mesh node: Group_092
 Writing Group_092 mesh binary...
@@ -1429,7 +1429,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_092.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_092.mesh
 Found node: Group_093
 Found mesh node: Group_093
 Writing Group_093 mesh binary...
@@ -1438,7 +1438,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_093.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_093.mesh
 Found node: Group_094
 Found mesh node: Group_094
 Writing Group_094 mesh binary...
@@ -1448,7 +1448,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_094.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_094.mesh
 Found node: Group_095
 Found mesh node: Group_095
 Writing Group_095 mesh binary...
@@ -1457,7 +1457,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_095.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_095.mesh
 Found node: Group_096
 Found mesh node: Group_096
 Writing Group_096 mesh binary...
@@ -1466,7 +1466,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_096.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_096.mesh
 Found node: Group_097
 Found mesh node: Group_097
 Writing Group_097 mesh binary...
@@ -1475,7 +1475,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_097.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_097.mesh
 Found node: Group_098
 Found mesh node: Group_098
 Writing Group_098 mesh binary...
@@ -1484,7 +1484,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_098.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_098.mesh
 Found node: Group_099
 Found mesh node: Group_099
 Writing Group_099 mesh binary...
@@ -1493,7 +1493,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_099.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_099.mesh
 Found node: Group_100
 Found mesh node: Group_100
 Writing Group_100 mesh binary...
@@ -1502,7 +1502,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_100.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_100.mesh
 Found node: Group_101
 Found mesh node: Group_101
 Writing Group_101 mesh binary...
@@ -1511,7 +1511,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_101.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_101.mesh
 Found node: Group_102
 Found mesh node: Group_102
 Writing Group_102 mesh binary...
@@ -1520,7 +1520,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_102.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_102.mesh
 Found node: Group_103
 Found mesh node: Group_103
 Writing Group_103 mesh binary...
@@ -1529,7 +1529,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_103.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_103.mesh
 Found node: Group_104
 Found mesh node: Group_104
 Writing Group_104 mesh binary...
@@ -1538,7 +1538,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_104.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_104.mesh
 Found node: Group_105
 Found mesh node: Group_105
 Writing Group_105 mesh binary...
@@ -1547,7 +1547,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_105.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_105.mesh
 Found node: Group_106
 Found mesh node: Group_106
 Writing Group_106 mesh binary...
@@ -1557,7 +1557,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_106.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_106.mesh
 Found node: Group_107
 Found mesh node: Group_107
 Writing Group_107 mesh binary...
@@ -1566,7 +1566,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_107.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_107.mesh
 Found node: Group_108
 Found mesh node: Group_108
 Writing Group_108 mesh binary...
@@ -1575,7 +1575,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_108.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_108.mesh
 Found node: Group_109
 Found mesh node: Group_109
 Writing Group_109 mesh binary...
@@ -1584,7 +1584,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_109.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_109.mesh
 Found node: Group_110
 Found mesh node: Group_110
 Writing Group_110 mesh binary...
@@ -1593,7 +1593,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_110.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_110.mesh
 Found node: Group_111
 Found mesh node: Group_111
 Writing Group_111 mesh binary...
@@ -1602,7 +1602,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_111.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_111.mesh
 Found node: Group_112
 Found mesh node: Group_112
 Writing Group_112 mesh binary...
@@ -1611,7 +1611,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_112.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_112.mesh
 Found node: Group_113
 Found mesh node: Group_113
 Writing Group_113 mesh binary...
@@ -1620,7 +1620,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_113.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_113.mesh
 Found node: Group_114
 Found mesh node: Group_114
 Writing Group_114 mesh binary...
@@ -1629,7 +1629,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_114.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_114.mesh
 Found node: Group_115
 Found mesh node: Group_115
 Writing Group_115 mesh binary...
@@ -1639,7 +1639,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_115.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_115.mesh
 Found node: Group_116
 Found mesh node: Group_116
 Writing Group_116 mesh binary...
@@ -1648,7 +1648,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_116.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_116.mesh
 Found node: Group_117
 Found mesh node: Group_117
 Writing Group_117 mesh binary...
@@ -1657,7 +1657,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_117.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_117.mesh
 Found node: Group_118
 Found mesh node: Group_118
 Writing Group_118 mesh binary...
@@ -1666,7 +1666,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_118.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_118.mesh
 Found node: Group_119
 Found mesh node: Group_119
 Writing Group_119 mesh binary...
@@ -1675,7 +1675,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_119.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_119.mesh
 Found node: Group_120
 Found mesh node: Group_120
 Writing Group_120 mesh binary...
@@ -1685,7 +1685,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_120.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_120.mesh
 Found node: Group_121
 Found mesh node: Group_121
 Writing Group_121 mesh binary...
@@ -1694,7 +1694,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_121.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_121.mesh
 Found node: Group_122
 Found mesh node: Group_122
 Writing Group_122 mesh binary...
@@ -1703,7 +1703,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_122.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_122.mesh
 Found node: Group_123
 Found mesh node: Group_123
 Writing Group_123 mesh binary...
@@ -1712,7 +1712,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_123.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_123.mesh
 Found node: Group_124
 Found mesh node: Group_124
 Writing Group_124 mesh binary...
@@ -1721,7 +1721,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_124.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_124.mesh
 Found node: Group_125
 Found mesh node: Group_125
 Writing Group_125 mesh binary...
@@ -1730,7 +1730,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_125.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_125.mesh
 Found node: Group_126
 Found mesh node: Group_126
 Writing Group_126 mesh binary...
@@ -1739,7 +1739,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_126.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_126.mesh
 Found node: Group_127
 Found mesh node: Group_127
 Writing Group_127 mesh binary...
@@ -1748,7 +1748,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_127.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_127.mesh
 Found node: Group_128
 Found mesh node: Group_128
 Writing Group_128 mesh binary...
@@ -1757,7 +1757,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_128.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_128.mesh
 Found node: Group_129
 Found mesh node: Group_129
 Writing Group_129 mesh binary...
@@ -1767,7 +1767,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_129.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_129.mesh
 Found node: Group_130
 Found mesh node: Group_130
 Writing Group_130 mesh binary...
@@ -1776,7 +1776,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_130.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_130.mesh
 Found node: Group_131
 Found mesh node: Group_131
 Writing Group_131 mesh binary...
@@ -1785,7 +1785,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_131.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_131.mesh
 Found node: Group_132
 Found mesh node: Group_132
 Writing Group_132 mesh binary...
@@ -1794,7 +1794,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_132.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_132.mesh
 Found node: Group_133
 Found mesh node: Group_133
 Writing Group_133 mesh binary...
@@ -1803,7 +1803,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_133.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_133.mesh
 Found node: Group_134
 Found mesh node: Group_134
 Writing Group_134 mesh binary...
@@ -1813,7 +1813,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_134.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_134.mesh
 Found node: Group_135
 Found mesh node: Group_135
 Writing Group_135 mesh binary...
@@ -1822,7 +1822,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_135.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_135.mesh
 Found node: Group_136
 Found mesh node: Group_136
 Writing Group_136 mesh binary...
@@ -1831,7 +1831,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_136.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_136.mesh
 Found node: Group_137
 Found mesh node: Group_137
 Writing Group_137 mesh binary...
@@ -1840,7 +1840,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_137.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_137.mesh
 Found node: Group_138
 Found mesh node: Group_138
 Writing Group_138 mesh binary...
@@ -1849,7 +1849,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_138.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_138.mesh
 Found node: Group_139
 Found mesh node: Group_139
 Writing Group_139 mesh binary...
@@ -1858,7 +1858,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_139.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_139.mesh
 Found node: Group_140
 Found mesh node: Group_140
 Writing Group_140 mesh binary...
@@ -1867,7 +1867,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_140.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_140.mesh
 Found node: Group_141
 Found mesh node: Group_141
 Writing Group_141 mesh binary...
@@ -1876,7 +1876,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_141.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_141.mesh
 Found node: Group_142
 Found mesh node: Group_142
 Writing Group_142 mesh binary...
@@ -1885,7 +1885,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_142.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_142.mesh
 Found node: Group_143
 Found mesh node: Group_143
 Writing Group_143 mesh binary...
@@ -1894,7 +1894,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_143.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_143.mesh
 Found node: Group_144
 Found mesh node: Group_144
 Writing Group_144 mesh binary...
@@ -1903,7 +1903,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_144.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_144.mesh
 Found node: Group_145
 Found mesh node: Group_145
 Writing Group_145 mesh binary...
@@ -1912,7 +1912,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_145.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_145.mesh
 Found node: Group_146
 Found mesh node: Group_146
 Writing Group_146 mesh binary...
@@ -1921,7 +1921,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_146.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_146.mesh
 Found node: Group_147
 Found mesh node: Group_147
 Writing Group_147 mesh binary...
@@ -1930,7 +1930,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_147.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_147.mesh
 Found node: Group_148
 Found mesh node: Group_148
 Writing Group_148 mesh binary...
@@ -1939,7 +1939,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_148.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_148.mesh
 Found node: Group_149
 Found mesh node: Group_149
 Writing Group_149 mesh binary...
@@ -1948,7 +1948,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_149.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_149.mesh
 Found node: Group_150
 Found mesh node: Group_150
 Writing Group_150 mesh binary...
@@ -1957,7 +1957,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_150.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_150.mesh
 Found node: Group_151
 Found mesh node: Group_151
 Writing Group_151 mesh binary...
@@ -1966,7 +1966,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_151.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_151.mesh
 Found node: Group_152
 Found mesh node: Group_152
 Writing Group_152 mesh binary...
@@ -1975,7 +1975,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_152.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_152.mesh
 Found node: Group_153
 Found mesh node: Group_153
 Writing Group_153 mesh binary...
@@ -1984,7 +1984,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_153.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_153.mesh
 Found node: Group_154
 Found mesh node: Group_154
 Writing Group_154 mesh binary...
@@ -1993,7 +1993,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_154.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_154.mesh
 Found node: Group_155
 Found mesh node: Group_155
 Writing Group_155 mesh binary...
@@ -2002,7 +2002,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_155.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_155.mesh
 Found node: Group_156
 Found mesh node: Group_156
 Writing Group_156 mesh binary...
@@ -2011,7 +2011,7 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_156.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_156.mesh
 Found node: Group_157
 Found mesh node: Group_157
 Writing Group_157 mesh binary...
@@ -2021,7 +2021,7 @@ Info: create submesh : 1
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_157.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_157.mesh
 Found node: Group_158
 Found mesh node: Group_158
 Writing Group_158 mesh binary...
@@ -2030,6 +2030,6 @@ Info: create submesh : 0
 Info: Create mesh bounding box
 Info: Create mesh edge list
 Info: Create mesh tangents
-Info: Write mesh file : c:\users\konrad\desktop\mapa-indor\indor\mesh\mapaGroup_158.mesh
+Info: Write mesh file : c:\users\konrad\desktop\tachymapa\najnowsza mapa\mesh\mapaGroup_158.mesh
 Writing materials data...
 Info: export done.

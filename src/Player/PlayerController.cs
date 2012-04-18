@@ -437,6 +437,10 @@ namespace Tachycardia
         {
             if (Core.Singleton.m_StateManager.IsActiveState("Game"))
             {
+                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_X))
+                {
+                    Core.Singleton.m_Log.LogMessage("Pozycja X = " + Core.Singleton.m_Camera.Position.x + " Y = " + Core.Singleton.m_Camera.Position.y + " Z  = " + Core.Singleton.m_Camera.Position.z);
+                }
                 bool activateidle = true;
                 bool turning = false;
                 //JUMP
