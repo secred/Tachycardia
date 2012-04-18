@@ -15,7 +15,7 @@ namespace Tachycardia
         {
             base.Enter();
             m_Player = (Character) Core.Singleton.m_ObjectManager.Find("player");
-
+            //m_Player = (Character)Core.Singleton.m_ObjectManager.Find("bot1");
             Core.Singleton.m_GameCamera.Character = m_Player;
             Core.Singleton.m_GameCamera.Distance = 4;
             Core.Singleton.m_GameCamera.Angle = new Degree(20);

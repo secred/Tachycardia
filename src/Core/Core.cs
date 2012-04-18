@@ -148,9 +148,9 @@ namespace Tachycardia
             //m_PhysicsManager.getMaterialPair("NPCNPC").SetDefaultElasticity(0);
             //m_PhysicsManager.setPairCallback("NPCNPC", "NPCNPCCallback");
 
-            m_PhysicsManager.addMaterialPair("Ground", "NPC");//ground material podstawowy
-            m_PhysicsManager.getMaterialPair("GroundNPC").SetDefaultElasticity(0);
-            m_PhysicsManager.setPairCallback("GroundNPC", "GroundPlayerCallback");
+            //m_PhysicsManager.addMaterialPair("Ground", "NPC");//ground material podstawowy
+            //m_PhysicsManager.getMaterialPair("GroundNPC").SetDefaultElasticity(0);
+           // m_PhysicsManager.setPairCallback("GroundNPC", "GroundPlayerCallback");
             /*
                         * Koniec inicjalizacji materialow ktora musi sie znalezc w opisie mapy, dla niekumatych w ogitorze. 
                         */
@@ -299,7 +299,7 @@ namespace Tachycardia
 			m_Log.LogMessage("Player created.");
 
             // NPCs:
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 50; i++)
             {
                 player = new Character("Man.mesh", 70, true);
                 player.SetPosition(new Vector3(-50 + Rand.Next() % 100, 0, -50 + Rand.Next() % 100));

@@ -11,7 +11,7 @@
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <StartWorkingDirectory>../../WORK</StartWorkingDirectory>
+    <StartWorkingDirectory>C:\tahcycardiagit\Tachycardia\WORK\</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <StartWorkingDirectory>../../WORK</StartWorkingDirectory>

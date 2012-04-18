@@ -25,7 +25,7 @@ namespace Tachycardia
         }
 
         //position buffor
-        public override void BodyTransformCallback(MogreNewt.Body sender, Mogre.Quaternion orientation, Mogre.Vector3 position, int threadIndex)
+       /* public override void BodyTransformCallback(MogreNewt.Body sender, Mogre.Quaternion orientation, Mogre.Vector3 position, int threadIndex)
         {//calling each physics iteration
             //odczytywac ze stanu wysokosc kamery
             m_PlayerNode.Position = position + _position;
@@ -55,7 +55,7 @@ namespace Tachycardia
                 m_PlayerNode.Orientation = xyVector.GetRotationTo(velocityxy);
             }
         }
-
+        */
         public override void BodyForceCallback(MogreNewt.Body body, float timeStep, int threadIndex)
         {//calling each physics iteration
 
@@ -151,7 +151,7 @@ namespace Tachycardia
             m_myPoses = new Dictionary<string, LogicState>();
 
             //m_adrenaline
-            m_adrenaline = 2;
+            m_adrenaline = 1;
             //sila wyskoku
             m_jumpForce = 6;
             //pozycja wyprostowana
