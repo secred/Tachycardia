@@ -26,7 +26,6 @@ namespace Tachycardia
         public float m_MaxSpdBoost;
         public float m_MaxSpd;
 
-
         public MogreNewt.ConvexCollision m_collision;
 
         public PlayerController m_Control;
@@ -105,7 +104,7 @@ namespace Tachycardia
             _force *= m_Control.m_MainBody.Mass * getMaxForce() * m_Control.m_adrenaline;
             m_Control.m_MainBody.AddForce(-_force);
             //przeciwsila im wieksza predkosc tym wieksza sila stopujaca
-            //m_Control.m_MainBody.AddForce(-m_Control.m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1) * 4 * m_Control.m_MainBody.Mass);
+            m_Control.m_MainBody.AddForce(-m_Control.m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1) * 4 * m_Control.m_MainBody.Mass);
 
         }
     };
@@ -312,7 +311,8 @@ namespace Tachycardia
         public int m_Onground;
         public int m_jumpLimit;
         public float m_jumpForce;
-
+        public bool m_backward;
+        
 
         public PlayerController(Mogre.Node node, Mogre.Entity entity, float mass)
         {
@@ -382,6 +382,7 @@ namespace Tachycardia
             {
                 m_State = CharacterState.IDLE;
                 m_PlayerNode.Orientation = m_LookingAt;
+                m_backward = false;
             }
             else
             {
@@ -397,9 +398,12 @@ namespace Tachycardia
                     m_State = CharacterState.JUMP;
                 }
 
-                Mogre.Vector3 xyVector = new Mogre.Vector3(0, 0, 1);
-                Mogre.Vector3 velocityxy = m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1);
-                m_LookingAt = m_PlayerNode.Orientation = xyVector.GetRotationTo(velocityxy);
+                if (!m_backward)
+                {//dla wstecznego
+                    Mogre.Vector3 xyVector = new Mogre.Vector3(0, 0, 1);
+                    Mogre.Vector3 velocityxy = m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1);
+                    m_LookingAt = m_PlayerNode.Orientation = xyVector.GetRotationTo(velocityxy);
+                }
             }
         }
 
@@ -447,26 +451,42 @@ namespace Tachycardia
                 {//i want to go forward, can i in this position?
                     m_Pose.willForward();
                     activateidle = false;
+                    m_backward = false;
                 }
 
                 //MOVE BACKWARD 
                 if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_S))
                 {//i want to go backward its possible?
                     m_Pose.willBackward();
+                    m_backward = true;
                     activateidle = false;
                 }
 
                 //TURN ME LEFT!
                 if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_A))
                 {//i want turn left, without exception?
-                    m_Pose.willTurnLeft();
+                    /*if (activateidle)
+                    {
+                        m_Pose.willTurnLeftWithForce();
+                    }
+                    else
+                    {*/
+                        m_Pose.willTurnLeft();
+                    //}
                     turning = true;
                 }
 
                 //TURN ME RIGHT! 
                 if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_D))
                 {//i want turn right, possible always?
-                    m_Pose.willTurnRight();
+                    /*if (activateidle)
+                    {
+                        m_Pose.willTurnRightWithForce();
+                    }
+                    else
+                    {*/
+                        m_Pose.willTurnRight();
+                    //}
                     turning = true;
                 }
 
@@ -512,7 +532,8 @@ namespace Tachycardia
         protected void initLogicStates()
         {
             m_myPoses = new Dictionary<string, LogicState>();
-
+            
+            m_backward = false;
             //m_adrenaline
             m_adrenaline = 1;
             //sila wyskoku
