@@ -23,7 +23,9 @@ namespace Tachycardia.Objects.Actions
             //Tachycardia.Core.Singleton.m_Camera.DoSmth();
             //move player to:
             _Player.m_Control.m_MainBody.SetPositionOrientation(m_TeleportTo, Mogre.Quaternion.IDENTITY);
-            _Player.m_Control.m_MainBody.Velocity = new Mogre.Vector3(0,0,0);
+            _Player.m_Control.m_SecondBody.SetPositionOrientation(m_TeleportTo + new Mogre.Vector3(0,1,0), Mogre.Quaternion.IDENTITY);
+            _Player.m_Control.m_MainBody.Velocity = new Mogre.Vector3(0, 0, 0);
+            _Player.m_Control.m_SecondBody.Velocity = new Mogre.Vector3(0, 0, 0);
         }
     }
 }
