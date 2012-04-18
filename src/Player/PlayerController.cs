@@ -372,7 +372,7 @@ namespace Tachycardia
 
         //position buffor
         protected Mogre.Vector3 _position = new Mogre.Vector3(0, 0.65f, 0);
-        void BodyTransformCallback(MogreNewt.Body sender, Mogre.Quaternion orientation, Mogre.Vector3 position, int threadIndex)
+        public virtual void BodyTransformCallback(MogreNewt.Body sender, Mogre.Quaternion orientation, Mogre.Vector3 position, int threadIndex)
         {//calling each physics iteration
             //odczytywac ze stanu wysokosc kamery
             m_PlayerNode.Position = position + _position;
@@ -407,7 +407,7 @@ namespace Tachycardia
             }
         }
 
-        public void BodyForceCallback(MogreNewt.Body body, float timeStep, int threadIndex)
+        public virtual void BodyForceCallback(MogreNewt.Body body, float timeStep, int threadIndex)
         {//calling each physics iteration
 
             //testuje jak dawno dotykal gruntu jezeli wartosc nie przekracza 5 lub 10 to moze wybic sie
@@ -529,7 +529,7 @@ namespace Tachycardia
             }
         }
 
-        protected void initLogicStates()
+        protected virtual void initLogicStates()
         {
             m_myPoses = new Dictionary<string, LogicState>();
             

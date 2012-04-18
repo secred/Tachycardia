@@ -7,12 +7,18 @@ namespace Tachycardia
 {
     class PhysicsManager
     {
-        public enum BodyTypes
+        public class BodyTypes
         {
-            PLAYER,
-            NPC,
-            TRIGGER
-        };
+            public const int PLAYER = 0;
+            public const int NPC = 1;
+            public const int TRIGGER = 2;
+        }
+        //public enum BodyTypes
+        //{
+        //    PLAYER,
+        //    NPC,
+        //    TRIGGER
+        //};
 
         Dictionary<string, MogreNewt.MaterialID> m_Materials;
         Dictionary<string, MogreNewt.MaterialPair> m_MaterialsPair;

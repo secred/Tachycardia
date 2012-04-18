@@ -14,7 +14,8 @@ namespace Tachycardia.Objects.PhysicsMaterials
 
         public override void UserProcess(MogreNewt.ContactJoint contact, float timestep, int threadIndex)
         {
-            if (contact.Body0.Type == (int)PhysicsManager.BodyTypes.PLAYER)
+            if (contact.Body0.Type == (int)PhysicsManager.BodyTypes.PLAYER
+                || contact.Body0.Type == (int)PhysicsManager.BodyTypes.NPC)
             {
                 Tachycardia.PlayerController controler = (Tachycardia.PlayerController)contact.Body0.UserData;
                 if (controler != null)
@@ -28,7 +29,8 @@ namespace Tachycardia.Objects.PhysicsMaterials
                     controler.m_Onground = 0;
                 }
             }
-            else if (contact.Body1.Type == (int)PhysicsManager.BodyTypes.PLAYER)
+            else if (contact.Body1.Type == (int)PhysicsManager.BodyTypes.PLAYER
+                || contact.Body1.Type == (int)PhysicsManager.BodyTypes.NPC)
             {
                 Tachycardia.PlayerController controler = (Tachycardia.PlayerController)contact.Body1.UserData;
                 if (controler != null)

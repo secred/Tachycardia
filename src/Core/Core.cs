@@ -142,6 +142,12 @@ namespace Tachycardia
             m_PhysicsManager.addMaterialPair("Ground", "Player");//ground material podstawowy
             m_PhysicsManager.getMaterialPair("GroundPlayer").SetDefaultElasticity(0);
             m_PhysicsManager.setPairCallback("GroundPlayer", "GroundPlayerCallback");
+
+            // NPC:
+            //m_PhysicsManager.addMaterialPair("NPC", "NPC");//ground material podstawowy
+            //m_PhysicsManager.getMaterialPair("NPCNPC").SetDefaultElasticity(0);
+            //m_PhysicsManager.setPairCallback("NPCNPC", "NPCNPCCallback");
+
             m_PhysicsManager.addMaterialPair("Ground", "NPC");//ground material podstawowy
             m_PhysicsManager.getMaterialPair("GroundNPC").SetDefaultElasticity(0);
             m_PhysicsManager.setPairCallback("GroundNPC", "GroundPlayerCallback");
@@ -287,15 +293,16 @@ namespace Tachycardia
             //z pominieciem profilu, jezeli mi ktos przedstawi jaki byl glebszy sens tego to wrocimy
             m_Log.LogMessage("Creating player...");
             Character player = new Character("Man.mesh", 70);//tworzenie grafiki
-            player.SetPosition(new Vector3(-160f, -25f, 15.5f));
+            //player.SetPosition(new Vector3(-160f, -25f, 15.5f));
+            player.SetPosition(new Vector3(0,0,0));
             m_ObjectManager.Add("player", player);
 			m_Log.LogMessage("Player created.");
 
             // NPCs:
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 30; i++)
             {
                 player = new Character("Man.mesh", 70, true);
-                player.SetPosition(new Vector3(0f, -i / 10f, 0f));
+                player.SetPosition(new Vector3(-50 + Rand.Next() % 100, 0, -50 + Rand.Next() % 100));
                 m_ObjectManager.Add("bot" + i.ToString(), player);
             }
             
@@ -361,14 +368,14 @@ namespace Tachycardia
                 messageBox.Top = (m_RenderWindow.Height - messageBox.Height) / 2;
 
                 var messageBody = OverlayManager.Singleton.GetOverlayElement("HelloWorldOverlay/MessageBox/Body");
-                messageBody.Caption = "Ssij palke :*";
+                //messageBody.Caption = "Ssij palke :*";
 
                 OverlayManager.Singleton.GetByName("HelloWorldOverlay").Show();
             }
 
             if (keyEventRef.key == MOIS.KeyCode.KC_R)
             {
-                OverlayManager.Singleton.GetByName("Red").Show();
+                //OverlayManager.Singleton.GetByName("Red").Show();
             }
 
             if (keyEventRef.key == MOIS.KeyCode.KC_B)
