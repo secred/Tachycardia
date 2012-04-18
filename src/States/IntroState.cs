@@ -34,7 +34,8 @@ namespace Tachycardia
                     PushState("Game");
                     break;
                 case MOIS.KeyCode.KC_ESCAPE:
-                    PopState();
+                    if(Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_RSHIFT))
+                        PopState();
                     break;
             }
             return true;

@@ -294,12 +294,12 @@ namespace Tachycardia
             //z pominieciem profilu, jezeli mi ktos przedstawi jaki byl glebszy sens tego to wrocimy
             m_Log.LogMessage("Creating player...");
             Character player = new Character("Man.mesh", 70);//tworzenie grafiki
-            //player.SetPosition(new Vector3(-160f, -25f, 15.5f));
-            player.SetPosition(new Vector3(0,0,0));
+            player.SetPosition(new Vector3(-160f, -25f, 15.5f));
+            //player.SetPosition(new Vector3(0,0,0));
             m_ObjectManager.Add("player", player);
 			m_Log.LogMessage("Player created.");
 
-            CreateElevator();
+            //CreateElevator();
 
             // NPCs:
             for (int i = 0; i < 50; i++)
