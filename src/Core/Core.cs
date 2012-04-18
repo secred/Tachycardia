@@ -447,12 +447,12 @@ namespace Tachycardia
 
             Mogre.Vector3 wek = new Vector3(vec2.x - vec1.x, vec2.y - vec1.y, vec2.z - vec1.z);
 
-            int dlugoscMostu = 10;
+            int dlugoscMostu = 22;
             Barrel[] m_Barrel = new Barrel[dlugoscMostu];
             for (int i = dlugoscMostu - 1; i >= 0; i--)
             {
-                m_Barrel[i] = new Barrel("Barrel.mesh", 5, vec1 + new Vector3(107, -30 + i * 1f, 18));
-                m_ObjectManager.Add("b" + i, m_Barrel[i]);
+                m_Barrel[i] = new Barrel("Barrel.mesh", vec1 + new Vector3(98, -25 + i * 0.2f, 68), 15);
+                m_ObjectManager.Add("b" + i, m_Barrel[i]);//101 -19 66
             }
 
             int dlugoscMostu2 = 20;

@@ -1747,6 +1747,12 @@
             <scale x="1" y="1" z="1" />
             <particleSystem name="Particle#3" script="Examples/PurpleFountain" />
         </node>
+		<node name="Particle#4" id="601550336">
+            <position x="100" y="-30" z="11" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <particleSystem name="Particle#4" script="Examples/JetEngine1" />
+        </node>
         <node name="box#1" id="974333952">
             <position x="-105" y="-27.5" z="-5" />
             <rotation qw="1" qx="0" qy="0" qz="0" />
@@ -1773,6 +1779,20 @@
                 </userData>
             </entity>
         </node>
+		<node name="triggerEllipsoid#2" id="891537216">
+            <position x="100" y="-30" z="11" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="1" y="1" z="1" />
+            <entity name="triggerEllipsoid#2" meshFile="ellipsoid.mesh" castShadows="false">
+                <subentity index="0" materialName="BaseWhite" />
+                <userData>
+                    <property type="7" name="triggerAction" data="teleport" />
+                    <property type="9" name="triggerPosition" data="100 -30 11" />
+                    <property type="9" name="triggerSize" data="2 2 2" />
+                    <property type="9" name="triggerDestination" data="150 36 -13" />
+                </userData>
+            </entity>
+        </node>
         <node name="cylinder#0" id="387585088">
             <position x="161" y="23.0885" z="-23" />
             <rotation qw="0.707107" qx="0" qy="0" qz="-0.707107" />
@@ -1782,6 +1802,14 @@
                 <userData>
                     <property type="7" name="material" data="Concrete" />
                 </userData>
+            </entity>
+        </node>
+		<node name="cylinder#1" id="684011328">
+            <position x="100" y="-30" z="11" />
+            <rotation qw="0.722364" qx="0" qy="0" qz="-0.691513" />
+            <scale x="0.918179" y="0.918179" z="0.918179" />
+            <entity name="cylinder#1" meshFile="cylinder.mesh" castShadows="false">
+                <subentity index="0" materialName="BaseWhite" />
             </entity>
         </node>
 		<node name="razor#0" id="743797120">

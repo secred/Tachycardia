@@ -38,6 +38,18 @@ namespace Tachycardia.Objects
             SetPhysics(m_Entity, m_Node, mass);
         }
 
+        public Barrel(string meshName, Vector3 v, float mass)
+        {
+            m_Entity = Core.Singleton.m_SceneManager.CreateEntity(meshName);
+            m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_Node.AttachObject(m_Entity);
+            m_Node.Scale(0.1f, 0.1f, 0.1f);
+            m_Node.Scale(new Vector3(0.3f, 0.3f, 0.3f));
+            // m_Node.Rotate(new Mogre.Quaternion(new Mogre.Radian(1.57f), new Mogre.Vector3(0f, 0f, 1f) ));
+            m_Node.SetPosition(v.x, v.y, v.z);
+            SetPhysics(m_Entity, m_Node, mass);
+        }
+
         public void SetPhysics(Mogre.Entity entity, Mogre.SceneNode node, float mass)
         {
             MogreNewt.ConvexCollision collision = new MogreNewt.CollisionPrimitives.Cylinder(
