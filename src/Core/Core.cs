@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Mogre;
 using MogreNewt;
+using Tachycardia.Objects;
 using Tachycardia.src.Sound;
 
 namespace Tachycardia
@@ -298,6 +299,8 @@ namespace Tachycardia
             m_ObjectManager.Add("player", player);
 			m_Log.LogMessage("Player created.");
 
+            CreateElevator();
+
             // NPCs:
             for (int i = 0; i < 50; i++)
             {
@@ -430,6 +433,46 @@ namespace Tachycardia
 				return instance;
 			}
 		}
+
+        public void CreateElevator()
+        {
+            m_Log.LogMessage("Creating elevator...");
+
+            Vector3 vec1 = new Vector3(4f, 1f, 0f);
+            Vector3 vec2 = new Vector3(266f, 0f, -7f);
+
+            Mogre.Vector3 wek = new Vector3(vec2.x - vec1.x, vec2.y - vec1.y, vec2.z - vec1.z);
+
+            int dlugoscMostu = 10;
+            Barrel[] m_Barrel = new Barrel[dlugoscMostu];
+            for (int i = dlugoscMostu - 1; i >= 0; i--)
+            {
+                m_Barrel[i] = new Barrel("Barrel.mesh", 5, vec1 + new Vector3(107, -30 + i * 1f, 18));
+                m_ObjectManager.Add("b" + i, m_Barrel[i]);
+            }
+
+            int dlugoscMostu2 = 20;
+            Barrel[] m_Barrel2 = new Barrel[dlugoscMostu2];
+            for (int i = dlugoscMostu2 - 1; i >= 0; i--)
+            {
+                m_Barrel2[i] = new Barrel("Barrel.mesh", 5, vec1 + new Vector3(109, -27 + i * 0.5f, 18+i*2));
+                m_ObjectManager.Add("bb" + i, m_Barrel2[i]);
+            }
+
+            Elevator winda = new Elevator("winda2.mesh", 300, new Vector3(143f, -23f, -4f), true);
+            m_ObjectManager.Add("winda2", winda);
+
+            m_PhysicsManager.addElevator(winda);
+            winda.m_Body.IsGravityEnabled = false;
+            winda.m_Body.ForceCallback += winda.CallBack;
+
+            Elevator[] m_Connector = new Elevator[dlugoscMostu * 4];
+
+            m_PhysicsManager.addRope(m_Barrel, m_Connector, vec1, vec2, dlugoscMostu);
+            m_Log.LogMessage("bridge created.");
+
+        }
+
 	}
 }
 
