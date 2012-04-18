@@ -18,3 +18,11 @@ D:\Tachycardia\bin\Release\Mogre.dll
 D:\Tachycardia\bin\Release\MogreNewt.dll
 D:\Tachycardia\bin\Release\MOIS.dll
 D:\Tachycardia\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\pl\Desktop\secred-Tachycardia-00a903e\obj\x86\Release\Tachycardia.exe
+C:\Users\pl\Desktop\secred-Tachycardia-00a903e\obj\x86\Release\Tachycardia.pdb
+C:\Users\pl\Desktop\secred-Tachycardia-00a903e\bin\Release\Tachycardia.exe
+C:\Users\pl\Desktop\secred-Tachycardia-00a903e\bin\Release\Tachycardia.pdb
+C:\Users\pl\Desktop\secred-Tachycardia-00a903e\bin\Release\Mogre.dll
+C:\Users\pl\Desktop\secred-Tachycardia-00a903e\bin\Release\MogreNewt.dll
+C:\Users\pl\Desktop\secred-Tachycardia-00a903e\bin\Release\MOIS.dll
+C:\Users\pl\Desktop\secred-Tachycardia-00a903e\obj\x86\Release\ResolveAssemblyReference.cache
