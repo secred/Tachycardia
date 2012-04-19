@@ -1,525 +1,537 @@
-21:45:37: Creating resource group General
-21:45:37: Creating resource group Internal
-21:45:37: Creating resource group Autodetect
-21:45:37: SceneManagerFactory for type 'DefaultSceneManager' registered.
-21:45:37: Registering ResourceManager for type Material
-21:45:37: Registering ResourceManager for type Mesh
-21:45:37: Registering ResourceManager for type Skeleton
-21:45:37: MovableObjectFactory for type 'ParticleSystem' registered.
-21:45:37: OverlayElementFactory for type Panel registered.
-21:45:37: OverlayElementFactory for type BorderPanel registered.
-21:45:37: OverlayElementFactory for type TextArea registered.
-21:45:37: Registering ResourceManager for type Font
-21:45:37: ArchiveFactory for archive type FileSystem registered.
-21:45:37: ArchiveFactory for archive type Zip registered.
-21:45:37: DDS codec registering
-21:45:37: FreeImage version: 3.13.1
-21:45:37: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
-21:45:37: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,cut,xbm,xpm,gif,hdr,g3,sgi,exr,j2k,j2c,jp2,pfm,pct,pict,pic,bay,bmq,cr2,crw,cs1,dc2,dcr,dng,erf,fff,hdr,k25,kdc,mdc,mos,mrw,nef,orf,pef,pxn,raf,raw,rdc,sr2,srf,arw,3fr,cine,ia,kc2,mef,nrw,qtk,rw2,sti,drf,dsc,ptx,cap,iiq,rwz
-21:45:37: PVRTC codec registering
-21:45:37: Registering ResourceManager for type HighLevelGpuProgram
-21:45:37: Registering ResourceManager for type Compositor
-21:45:37: MovableObjectFactory for type 'Entity' registered.
-21:45:37: MovableObjectFactory for type 'Light' registered.
-21:45:37: MovableObjectFactory for type 'BillboardSet' registered.
-21:45:37: MovableObjectFactory for type 'ManualObject' registered.
-21:45:37: MovableObjectFactory for type 'BillboardChain' registered.
-21:45:37: MovableObjectFactory for type 'RibbonTrail' registered.
-21:45:37: Loading library .\RenderSystem_Direct3D9
-21:45:37: Installing plugin: D3D9 RenderSystem
-21:45:37: D3D9 : Direct3D9 Rendering Subsystem created.
-21:45:37: D3D9: Driver Detection Starts
-21:45:37: D3D9: Driver Detection Ends
-21:45:37: Plugin successfully installed
-21:45:37: Loading library .\Plugin_ParticleFX
-21:45:37: Installing plugin: ParticleFX
-21:45:37: Particle Emitter Type 'Point' registered
-21:45:37: Particle Emitter Type 'Box' registered
-21:45:37: Particle Emitter Type 'Ellipsoid' registered
-21:45:37: Particle Emitter Type 'Cylinder' registered
-21:45:37: Particle Emitter Type 'Ring' registered
-21:45:37: Particle Emitter Type 'HollowEllipsoid' registered
-21:45:37: Particle Affector Type 'LinearForce' registered
-21:45:37: Particle Affector Type 'ColourFader' registered
-21:45:37: Particle Affector Type 'ColourFader2' registered
-21:45:37: Particle Affector Type 'ColourImage' registered
-21:45:37: Particle Affector Type 'ColourInterpolator' registered
-21:45:37: Particle Affector Type 'Scaler' registered
-21:45:37: Particle Affector Type 'Rotator' registered
-21:45:37: Particle Affector Type 'DirectionRandomiser' registered
-21:45:37: Particle Affector Type 'DeflectorPlane' registered
-21:45:37: Plugin successfully installed
-21:45:37: *-*-* OGRE Initialising
-21:45:37: *-*-* Version 1.7.1 (Cthugha)
-21:45:37: Creating resource group Bootstrap
-21:45:37: Added resource location 'Media/packs/OgreCore.zip' of type 'Zip' to resource group 'Bootstrap'
-21:45:37: Added resource location 'Media' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/particle' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/fonts' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/models' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/materials' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/materials/programs' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/materials/scripts' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/materials/textures' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/overlays' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/scenes/Default/material' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/scenes/Default/materials' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/scenes/Default/Models' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/scenes/Default/mesh' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/scenes/Default/program' of type 'FileSystem' to resource group 'General'
-21:45:37: Added resource location 'Media/scenes/Default/bitmap' of type 'FileSystem' to resource group 'General'
-21:45:37: Creating resource group Hydrax
-21:45:37: Added resource location 'Media/Hydrax' of type 'FileSystem' to resource group 'Hydrax'
-21:45:37: Creating resource group Scenes
-21:45:37: Added resource location 'Media/scenes' of type 'FileSystem' to resource group 'Scenes'
-21:45:37: Added resource location 'Media/scenes/Default' of type 'FileSystem' to resource group 'Scenes'
-21:45:37: Creating resource group SkyX
-21:45:37: Added resource location 'Media/SkyX' of type 'FileSystem' to resource group 'SkyX'
-21:45:37: D3D9 : RenderSystem Option: Allow NVPerfHUD = No
-21:45:37: D3D9 : RenderSystem Option: FSAA = 0
-21:45:37: D3D9 : RenderSystem Option: Floating-point mode = Fastest
-21:45:37: D3D9 : RenderSystem Option: Full Screen = No
-21:45:37: D3D9 : RenderSystem Option: Rendering Device = Monitor-1-NVIDIA GeForce GT 240M
-21:45:37: D3D9 : RenderSystem Option: Resource Creation Policy = Create on all devices
-21:45:37: D3D9 : RenderSystem Option: VSync = No
-21:45:37: D3D9 : RenderSystem Option: VSync Interval = 1
-21:45:37: D3D9 : RenderSystem Option: Video Mode = 1024 x 768 @ 32-bit colour
-21:45:37: D3D9 : RenderSystem Option: sRGB Gamma Conversion = No
-21:45:37: CPU Identifier & Features
-21:45:37: -------------------------
-21:45:37:  *   CPU ID: GenuineIntel: Intel(R) Core(TM)2 Duo CPU     T6600  @ 2.20GHz
-21:45:37:  *      SSE: yes
-21:45:37:  *     SSE2: yes
-21:45:37:  *     SSE3: yes
-21:45:37:  *      MMX: yes
-21:45:37:  *   MMXEXT: yes
-21:45:37:  *    3DNOW: no
-21:45:37:  * 3DNOWEXT: no
-21:45:37:  *     CMOV: yes
-21:45:37:  *      TSC: yes
-21:45:37:  *      FPU: yes
-21:45:37:  *      PRO: yes
-21:45:37:  *       HT: no
-21:45:37: -------------------------
-21:45:37: D3D9 : Subsystem Initialising
-21:45:37: Registering ResourceManager for type Texture
-21:45:37: Registering ResourceManager for type GpuProgram
-21:45:37: D3D9RenderSystem::_createRenderWindow "OGRE Render Window", 1024x768 windowed  miscParams: FSAA=0 FSAAHint= colourDepth=32 gamma=false monitorIndex=0 useNVPerfHUD=false vsync=false vsyncInterval=1 
-21:45:37: D3D9 : Created D3D9 Rendering Window 'OGRE Render Window' : 1024x768, 32bpp
-21:45:37: D3D9 : WARNING - disabling VSync in windowed mode can cause timing issues at lower frame rates, turn VSync on if you observe this problem.
-21:45:37: D3D9: Vertex texture format supported - PF_FLOAT16_RGB
-21:45:37: D3D9: Vertex texture format supported - PF_FLOAT16_RGBA
-21:45:37: D3D9: Vertex texture format supported - PF_FLOAT32_RGB
-21:45:37: D3D9: Vertex texture format supported - PF_FLOAT32_RGBA
-21:45:37: D3D9: Vertex texture format supported - PF_FLOAT16_R
-21:45:37: D3D9: Vertex texture format supported - PF_FLOAT32_R
-21:45:37: D3D9: Vertex texture format supported - PF_FLOAT16_GR
-21:45:37: D3D9: Vertex texture format supported - PF_FLOAT32_GR
-21:45:37: RenderSystem capabilities
-21:45:37: -------------------------
-21:45:37: RenderSystem Name: Direct3D9 Rendering Subsystem
-21:45:37: GPU Vendor: nvidia
-21:45:37: Device Name: Monitor-1-NVIDIA GeForce GT 240M
-21:45:38: Driver Version: 8.17.12.9610
-21:45:38:  * Fixed function pipeline: yes
-21:45:38:  * Hardware generation of mipmaps: yes
-21:45:38:  * Texture blending: yes
-21:45:38:  * Anisotropic texture filtering: yes
-21:45:38:  * Dot product texture operation: yes
-21:45:38:  * Cube mapping: yes
-21:45:38:  * Hardware stencil buffer: yes
-21:45:38:    - Stencil depth: 8
-21:45:38:    - Two sided stencil support: yes
-21:45:38:    - Wrap stencil values: yes
-21:45:38:  * Hardware vertex / index buffers: yes
-21:45:38:  * Vertex programs: yes
-21:45:38:  * Number of floating-point constants for vertex programs: 256
-21:45:38:  * Number of integer constants for vertex programs: 16
-21:45:38:  * Number of boolean constants for vertex programs: 16
-21:45:38:  * Fragment programs: yes
-21:45:38:  * Number of floating-point constants for fragment programs: 224
-21:45:38:  * Number of integer constants for fragment programs: 16
-21:45:38:  * Number of boolean constants for fragment programs: 16
-21:45:38:  * Geometry programs: no
-21:45:38:  * Number of floating-point constants for geometry programs: 0
-21:45:38:  * Number of integer constants for geometry programs: 0
-21:45:38:  * Number of boolean constants for geometry programs: 0
-21:45:38:  * Supported Shader Profiles: hlsl ps_1_1 ps_1_2 ps_1_3 ps_1_4 ps_2_0 ps_2_a ps_2_b ps_2_x ps_3_0 vs_1_1 vs_2_0 vs_2_a vs_2_x vs_3_0
-21:45:38:  * Texture Compression: yes
-21:45:38:    - DXT: yes
-21:45:38:    - VTC: no
-21:45:38:    - PVRTC: no
-21:45:38:  * Scissor Rectangle: yes
-21:45:38:  * Hardware Occlusion Query: yes
-21:45:38:  * User clip planes: yes
-21:45:38:  * VET_UBYTE4 vertex element type: yes
-21:45:38:  * Infinite far plane projection: yes
-21:45:38:  * Hardware render-to-texture: yes
-21:45:38:  * Floating point textures: yes
-21:45:38:  * Non-power-of-two textures: yes
-21:45:38:  * Volume textures: yes
-21:45:38:  * Multiple Render Targets: 4
-21:45:38:    - With different bit depths: yes
-21:45:38:  * Point Sprites: yes
-21:45:38:  * Extended point parameters: yes
-21:45:38:  * Max Point Size: 10
-21:45:38:  * Vertex texture fetch: yes
-21:45:38:  * Number of world matrices: 0
-21:45:38:  * Number of texture units: 8
-21:45:38:  * Stencil buffer depth: 8
-21:45:38:  * Number of vertex blend matrices: 0
-21:45:38:    - Max vertex textures: 4
-21:45:38:    - Vertex textures shared: no
-21:45:38:  * Render to Vertex Buffer : no
-21:45:38:  * DirectX per stage constants: yes
-21:45:38: ***************************************
-21:45:38: *** D3D9 : Subsystem Initialised OK ***
-21:45:38: ***************************************
-21:45:38: DefaultWorkQueue('Root') initialising on thread main.
-21:45:38: Particle Renderer Type 'billboard' registered
-21:45:38: Parsing scripts for resource group Autodetect
-21:45:38: Finished parsing scripts for resource group Autodetect
-21:45:38: Parsing scripts for resource group Bootstrap
-21:45:38: Parsing script OgreCore.material
-21:45:38: Parsing script OgreProfiler.material
-21:45:38: Parsing script Ogre.fontdef
-21:45:38: Parsing script OgreDebugPanel.overlay
-21:45:38: Texture: New_Ogre_Border_Center.png: Loading 1 faces(PF_A8R8G8B8,256x128x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x128x1.
-21:45:38: Texture: New_Ogre_Border.png: Loading 1 faces(PF_A8R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x256x1.
-21:45:38: Texture: New_Ogre_Border_Break.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
-21:45:38: Texture: ogretext.png: Loading 1 faces(PF_A8R8G8B8,256x128x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x128x1.
-21:45:38: Parsing script OgreLoadingPanel.overlay
-21:45:38: Finished parsing scripts for resource group Bootstrap
-21:45:38: Parsing scripts for resource group General
-21:45:38: Parsing script Examples.program
-21:45:38: Parsing script StdQuad_vp.program
-21:45:38: Parsing script mapa.program
-21:45:38: Parsing script decha2.material
-21:45:38: Parsing script winda2.material
-21:45:38: Parsing script mapa.material
-21:45:38: Parsing script BlackAndWhite.material
-21:45:38: Parsing script Bloom.material
-21:45:38: Parsing script DepthShadowmap.material
-21:45:38: Parsing script DOF.material
-21:45:38: Compiler error: object name expected in DOF.material(55)
-21:45:38: Parsing script Embossed.material
-21:45:38: Parsing script Example-DynTex.material
-21:45:38: Parsing script Example-Water.material
-21:45:38: Parsing script Example.material
-21:45:38: Parsing script Examples-Advanced.material
-21:45:38: Parsing script facial.material
-21:45:38: Parsing script Glass.material
-21:45:38: Parsing script hdr.material
-21:45:39: Parsing script HeatVision.material
-21:45:39: Parsing script Hurt.material
-21:45:39: Parsing script instancing.material
-21:45:39: Parsing script Invert.material
-21:45:39: Parsing script Laplace.material
-21:45:39: Parsing script Level.material
-21:45:39: Parsing script Man.material
-21:45:39: Parsing script MotionBlur.material
-21:45:39: Parsing script Ocean.material
-21:45:39: Parsing script OffsetMapping.material
-21:45:39: Parsing script Ogre.material
-21:45:39: Parsing script OgreNewt_Example.material
-21:45:39: Parsing script OldMovie.material
-21:45:39: Parsing script OldTV.material
-21:45:39: Parsing script Posterize.material
-21:45:39: Parsing script RZR-002.material
-21:45:39: Parsing script SharpenEdges.material
-21:45:39: Parsing script smoke.material
-21:45:39: Parsing script Tiling.material
-21:45:39: Parsing script VarianceShadowmap.material
-21:45:39: Parsing script mapa.material
-21:45:39: Parsing script BrokenScreen.material
-21:45:39: Parsing script red.material
-21:45:39: Parsing script mapa.material
-21:45:39: Parsing script emitted_emitter.particle
-21:45:39: Parsing script Example-Water.particle
-21:45:39: Parsing script Example.particle
-21:45:39: Parsing script smoke.particle
-21:45:39: Parsing script Examples.compositor
-21:45:39: Parsing script sample.fontdef
-21:45:39: Parsing script BrokenScreen.overlay
-21:45:39: Texture: blood7.png: Loading 1 faces(PF_A8R8G8B8,1680x1050x1) with 10 generated mipmaps from Image. Internal format is PF_A8R8G8B8,1680x1050x1.
-21:45:40: Parsing script Compositor.overlay
-21:45:40: Parsing script DP3.overlay
-21:45:40: Parsing script Example-CubeMapping.overlay
-21:45:40: Parsing script Example-DynTex.overlay
-21:45:40: Parsing script Example-Water.overlay
-21:45:40: Parsing script hello.overlay
-21:45:40: Parsing script red.overlay
-21:45:40: Texture: red2.png: Loading 1 faces(PF_A8R8G8B8,1680x1050x1) with 10 generated mipmaps from Image. Internal format is PF_A8R8G8B8,1680x1050x1.
-21:45:41: Parsing script Shadows.overlay
-21:45:41: Parsing script test.overlay
-21:45:41: Finished parsing scripts for resource group General
-21:45:41: Parsing scripts for resource group Hydrax
-21:45:41: Finished parsing scripts for resource group Hydrax
-21:45:41: Parsing scripts for resource group Internal
-21:45:41: Finished parsing scripts for resource group Internal
-21:45:41: Parsing scripts for resource group Scenes
-21:45:41: Finished parsing scripts for resource group Scenes
-21:45:41: Parsing scripts for resource group SkyX
-21:45:41: Parsing script SkyX.material
-21:45:43: Finished parsing scripts for resource group SkyX
-21:45:44: Creating Default scene...
-21:45:44: Loading scene data...
-21:45:44: [DotSceneLoader] Parsing dotScene file with version 1.0.0
-21:45:44: Mesh: Loading mapaGroup_062.mesh.
-21:45:44: Texture: mapamod_light1a.bmp: Loading 1 faces(PF_R8G8B8,32x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,32x128x1.
-21:45:44: Mesh: Loading mapaGroup_052.mesh.
-21:45:44: Texture: mapapk01_gra_floor02_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:44: Mesh: Loading mapaGroup_092.mesh.
-21:45:44: Mesh: Loading mapaGroup_082.mesh.
-21:45:44: Mesh: Loading mapaGroup_072.mesh.
-21:45:44: Texture: mapapk01_thin_wall01b_d.jpg: Loading 1 faces(PF_R8G8B8,128x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x512x1.
-21:45:44: Mesh: Loading mapaGroup_002.mesh.
-21:45:44: Mesh: Loading mapaGroup_012.mesh.
-21:45:44: Texture: maparock1_d.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:44: Mesh: Loading mapaGroup_022.mesh.
-21:45:44: Mesh: Loading mapaGroup_032.mesh.
-21:45:44: Mesh: Loading mapaGroup_042.mesh.
-21:45:44: Texture: mapacretewall03.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:44: Mesh: Loading mapaLayer0_001.mesh.
-21:45:44: Texture: mapaRooftilesMetal0003_2_S.jpg: Loading 1 faces(PF_R8G8B8,640x640x1) with 9 generated mipmaps from Image. Internal format is PF_X8R8G8B8,640x640x1.
-21:45:44: Texture: mapadach_01.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:44: Texture: mapaBrick_07.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:45: Texture: mapacy_01.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
-21:45:45: Texture: mapadach_02.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapadach_05.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapadach_04.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapadach_03.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapadirt01.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapaBrick_04.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:45: Texture: mapafavela_01.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapaBrick_11.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:45: Texture: mapafavela_06.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:45: Texture: mapaBrick_20.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapaBrick_08.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapaBrick_13.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:45: Texture: mapafavela_04.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:45: Texture: mapafavela_02.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:45: Texture: mapafavela_03.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:45: Texture: mapabrick_09.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
-21:45:45: Texture: mapaBrick_05.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:46: Texture: mapaBrick_01.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapafavela_07.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapaBrick_03.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapafavela_15.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapafavela_14.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapaBrick_18.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:46: Texture: mapafavela_09.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapaBrick_12.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapafavela_12.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:46: Texture: mapabrick_02.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
-21:45:46: Texture: mapafavela_08.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapafavela_11.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:46: Texture: mapaBrick_06.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:46: Texture: mapaBrick_23.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:46: Texture: mapaBrick_24.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:46: Texture: mapabrick_22.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:47: Texture: mapabrick_10.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
-21:45:47: Texture: mapaBrick_17.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:47: Texture: mapaBrick_16.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:47: Texture: mapabrick_21.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
-21:45:47: Texture: mapaBrick_19.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:47: Texture: mapaBrick_15.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
-21:45:47: Mesh: Loading mapaGroup_061.mesh.
-21:45:47: Mesh: Loading mapaGroup_051.mesh.
-21:45:47: Mesh: Loading mapaGroup_041.mesh.
-21:45:47: Texture: maparock01.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
-21:45:47: Mesh: Loading mapaGroup_031.mesh.
-21:45:47: Mesh: Loading mapaGroup_021.mesh.
-21:45:47: Mesh: Loading mapaGroup_001.mesh.
-21:45:47: Mesh: Loading mapaGroup_071.mesh.
-21:45:47: Texture: mapapk01_pan_wall02a1_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
-21:45:47: Texture: mapapk01_thin_wall02b_d.jpg: Loading 1 faces(PF_R8G8B8,128x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x512x1.
-21:45:47: Mesh: Loading mapaGroup_081.mesh.
-21:45:47: Texture: mapaik_gtrimv_lit3b.jpg: Loading 1 faces(PF_R8G8B8,64x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x256x1.
-21:45:47: Mesh: Loading mapaGroup_091.mesh.
-21:45:47: Mesh: Loading mapaGroup_063.mesh.
-21:45:47: Mesh: Loading mapaGroup_053.mesh.
-21:45:47: Mesh: Loading mapaGroup_033.mesh.
-21:45:48: Mesh: Loading mapaGroup_023.mesh.
-21:45:48: Mesh: Loading mapaGroup_013.mesh.
-21:45:48: Mesh: Loading mapaGroup_003.mesh.
-21:45:48: Mesh: Loading mapaGroup_073.mesh.
-21:45:48: Mesh: Loading mapaGroup_083.mesh.
-21:45:48: Mesh: Loading mapaGroup_093.mesh.
-21:45:48: Mesh: Loading razor.mesh.
-21:45:48: WARNING: razor.mesh is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
-21:45:48: Texture: texmap2.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:48: Mesh: Loading mapaGroup_064.mesh.
-21:45:48: Mesh: Loading mapaGroup_054.mesh.
-21:45:48: Mesh: Loading mapaGroup_044.mesh.
-21:45:48: Mesh: Loading mapaGroup_034.mesh.
-21:45:48: Mesh: Loading mapaGroup_024.mesh.
-21:45:48: Mesh: Loading mapaGroup_014.mesh.
-21:45:48: Mesh: Loading mapaGroup_004.mesh.
-21:45:48: Mesh: Loading mapaGroup_074.mesh.
-21:45:48: Mesh: Loading mapaGroup_084.mesh.
-21:45:48: Mesh: Loading mapaGroup_094.mesh.
-21:45:48: Mesh: Loading mapaGroup_065.mesh.
-21:45:48: Mesh: Loading mapaGroup_055.mesh.
-21:45:48: Mesh: Loading mapaGroup_045.mesh.
-21:45:48: Mesh: Loading mapaGroup_035.mesh.
-21:45:48: Mesh: Loading mapaGroup_025.mesh.
-21:45:48: Mesh: Loading mapaGroup_015.mesh.
-21:45:48: Mesh: Loading mapaGroup_005.mesh.
-21:45:48: Mesh: Loading mapaGroup_075.mesh.
-21:45:48: Mesh: Loading mapaGroup_085.mesh.
-21:45:48: Mesh: Loading mapaGroup_095.mesh.
-21:45:48: Mesh: Loading mapaGroup_066.mesh.
-21:45:48: Mesh: Loading mapaGroup_056.mesh.
-21:45:48: Mesh: Loading mapaGroup_046.mesh.
-21:45:48: Mesh: Loading mapaGroup_036.mesh.
-21:45:48: Mesh: Loading mapaGroup_026.mesh.
-21:45:48: Mesh: Loading mapaGroup_016.mesh.
-21:45:48: Mesh: Loading mapaGroup_006.mesh.
-21:45:48: Mesh: Loading mapaGroup_076.mesh.
-21:45:48: Mesh: Loading mapaGroup_086.mesh.
-21:45:48: Mesh: Loading mapaGroup_096.mesh.
-21:45:48: Mesh: Loading mapaGroup_077.mesh.
-21:45:48: Mesh: Loading mapaGroup_007.mesh.
-21:45:48: Mesh: Loading mapaGroup_017.mesh.
-21:45:48: Mesh: Loading mapaGroup_027.mesh.
-21:45:48: Mesh: Loading mapaGroup_067.mesh.
-21:45:48: Mesh: Loading mapaGroup_057.mesh.
-21:45:48: Mesh: Loading mapaGroup_047.mesh.
-21:45:48: Mesh: Loading mapaGroup_037.mesh.
-21:45:48: Mesh: Loading mapaGroup_097.mesh.
-21:45:48: Mesh: Loading mapaGroup_087.mesh.
-21:45:48: Mesh: Loading cylinder.mesh.
-21:45:48: WARNING: cylinder.mesh is an older format ([MeshSerializer_v1.30]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
-21:45:48: Mesh: Loading mapaGroup_098.mesh.
-21:45:48: Mesh: Loading mapaGroup_088.mesh.
-21:45:48: Mesh: Loading mapaGroup_078.mesh.
-21:45:48: Mesh: Loading mapaGroup_068.mesh.
-21:45:48: Mesh: Loading mapaGroup_008.mesh.
-21:45:48: Mesh: Loading mapaGroup_018.mesh.
-21:45:48: Mesh: Loading mapaGroup_028.mesh.
-21:45:48: Mesh: Loading mapaGroup_038.mesh.
-21:45:48: Mesh: Loading mapaGroup_048.mesh.
-21:45:48: Mesh: Loading mapaGroup_058.mesh.
-21:45:48: Mesh: Loading mapaGroup_099.mesh.
-21:45:48: Mesh: Loading mapaGroup_089.mesh.
-21:45:48: Mesh: Loading mapaGroup_079.mesh.
-21:45:48: Mesh: Loading mapaGroup_069.mesh.
-21:45:48: Mesh: Loading mapaGroup_009.mesh.
-21:45:48: Mesh: Loading mapaGroup_019.mesh.
-21:45:48: Mesh: Loading mapaGroup_029.mesh.
-21:45:48: Mesh: Loading mapaGroup_039.mesh.
-21:45:48: Mesh: Loading mapaGroup_049.mesh.
-21:45:48: Texture: mapapk01_floor01a_d.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:48: Texture: mapapk01_wall01_d.jpg: Loading 1 faces(PF_R8G8B8,128x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x256x1.
-21:45:48: Texture: mapapk01_tile_floor01b_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
-21:45:48: Texture: mapapk01_wall03b_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:48: Texture: mapamech1_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:48: Texture: mapapk01_wall03a_d.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:48: Texture: mapapk01_pan_trim01_d.jpg: Loading 1 faces(PF_R8G8B8,64x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x256x1.
-21:45:48: Texture: mapapk01_panel01a_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
-21:45:48: Texture: mapafloor02.jpg: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
-21:45:48: Texture: mapapk01_pan_floor02a_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:48: Texture: mapaWindowsBacklit0020_7_M.jpg: Loading 1 faces(PF_R8G8B8,541x1600x1) with 10 generated mipmaps from Image. Internal format is PF_X8R8G8B8,541x1600x1.
-21:45:49: Texture: mapapk01_door01b_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
-21:45:49: Texture: mapapk01_panel_small01red_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:49: Texture: mapajfgrid.jpg: Loading 1 faces(PF_R8G8B8,64x64x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x64x1.
-21:45:49: Texture: mapapk_trim3_da.jpg: Loading 1 faces(PF_R8G8B8,256x64x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x64x1.
-21:45:49: Texture: mapapk01_panel03b_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
-21:45:49: Texture: mapa11pipes_d.jpg: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
-21:45:49: Texture: mapawires1_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:55: Mesh: Loading mapaGroup_059.mesh.
-21:45:55: Mesh: Loading mapaGroup_090.mesh.
-21:45:55: Mesh: Loading mapaGroup_080.mesh.
-21:45:55: Mesh: Loading mapaGroup_070.mesh.
-21:45:55: Mesh: Loading mapaGroup_010.mesh.
-21:45:55: Mesh: Loading mapaGroup_020.mesh.
-21:45:55: Mesh: Loading mapaGroup_030.mesh.
-21:45:55: Mesh: Loading mapaGroup_040.mesh.
-21:45:55: Mesh: Loading mapaGroup_060.mesh.
-21:45:55: Mesh: Loading mapaGroup_150.mesh.
-21:45:55: Mesh: Loading mapaGroup_140.mesh.
-21:45:55: Mesh: Loading mapaGroup_130.mesh.
-21:45:55: Mesh: Loading mapaGroup_120.mesh.
-21:45:55: Mesh: Loading mapaGroup_110.mesh.
-21:45:55: Mesh: Loading mapaGroup_100.mesh.
-21:45:55: Mesh: Loading mapaGroup_151.mesh.
-21:45:55: Mesh: Loading mapaGroup_141.mesh.
-21:45:55: Mesh: Loading mapaGroup_131.mesh.
-21:45:55: Mesh: Loading mapaGroup_121.mesh.
-21:45:55: Mesh: Loading mapaGroup_111.mesh.
-21:45:55: Mesh: Loading mapaGroup_101.mesh.
-21:45:55: Mesh: Loading mapaGroup_152.mesh.
-21:45:55: Mesh: Loading mapaGroup_142.mesh.
-21:45:55: Mesh: Loading mapaGroup_132.mesh.
-21:45:55: Mesh: Loading mapaGroup_122.mesh.
-21:45:55: Mesh: Loading mapaGroup_112.mesh.
-21:45:55: Mesh: Loading mapaGroup_102.mesh.
-21:45:55: Mesh: Loading mapaGroup_153.mesh.
-21:45:55: Mesh: Loading mapaGroup_143.mesh.
-21:45:55: Mesh: Loading mapaGroup_133.mesh.
-21:45:55: Mesh: Loading mapaGroup_123.mesh.
-21:45:55: Mesh: Loading mapaGroup_113.mesh.
-21:45:55: Mesh: Loading mapaGroup_103.mesh.
-21:45:55: Mesh: Loading mapaGroup_154.mesh.
-21:45:55: Mesh: Loading mapaGroup_144.mesh.
-21:45:55: Mesh: Loading mapaGroup_134.mesh.
-21:45:55: Mesh: Loading mapaGroup_124.mesh.
-21:45:55: Mesh: Loading mapaGroup_114.mesh.
-21:45:55: Mesh: Loading mapaGroup_104.mesh.
-21:45:55: Mesh: Loading mapaGroup_155.mesh.
-21:45:55: Mesh: Loading mapaGroup_145.mesh.
-21:45:55: Mesh: Loading mapaGroup_135.mesh.
-21:45:55: Mesh: Loading mapaGroup_125.mesh.
-21:45:55: Mesh: Loading mapaGroup_115.mesh.
-21:45:55: Mesh: Loading mapaGroup_105.mesh.
-21:45:55: Mesh: Loading mapaGroup_156.mesh.
-21:45:55: Mesh: Loading mapaGroup_146.mesh.
-21:45:55: Mesh: Loading mapaGroup_136.mesh.
-21:45:55: Mesh: Loading mapaGroup_126.mesh.
-21:45:55: Mesh: Loading mapaGroup_116.mesh.
-21:45:55: Mesh: Loading mapaGroup_106.mesh.
-21:45:55: Mesh: Loading mapaGroup_157.mesh.
-21:45:55: Mesh: Loading mapaGroup_147.mesh.
-21:45:55: Mesh: Loading mapaGroup_137.mesh.
-21:45:55: Mesh: Loading mapaGroup_127.mesh.
-21:45:55: Mesh: Loading mapaGroup_117.mesh.
-21:45:55: Mesh: Loading mapaGroup_107.mesh.
-21:45:55: Mesh: Loading mapaGroup_158.mesh.
-21:45:55: Mesh: Loading mapaGroup_148.mesh.
-21:45:55: Mesh: Loading mapaGroup_138.mesh.
-21:45:55: Mesh: Loading mapaGroup_128.mesh.
-21:45:55: Mesh: Loading mapaGroup_118.mesh.
-21:45:55: Mesh: Loading mapaGroup_108.mesh.
-21:45:55: Mesh: Loading mapaGroup_149.mesh.
-21:45:55: Mesh: Loading mapaGroup_139.mesh.
-21:45:55: Mesh: Loading mapaGroup_129.mesh.
-21:45:55: Mesh: Loading mapaGroup_119.mesh.
-21:45:55: Mesh: Loading mapaGroup_109.mesh.
-21:45:55: Mesh: Loading box.mesh.
-21:45:55: WARNING: box.mesh is an older format ([MeshSerializer_v1.30]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
-21:45:55: Mesh: Loading robot.mesh.
-21:45:55: Skeleton: Loading robot.skeleton
-21:45:55: WARNING: robot.mesh is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
-21:45:55: Texture: r2skin.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-21:45:55: [DotSceneLoader] Error loading an entity!Nast¹pi³a próba odczytu lub zapisu pamiêci chronionej. Czêsto wskazuje to, ¿e inna pamiêæ jest uszkodzona.
-21:45:55: [DotSceneLoader] Error loading an entity!Nast¹pi³a próba odczytu lub zapisu pamiêci chronionej. Czêsto wskazuje to, ¿e inna pamiêæ jest uszkodzona.
-21:45:55: Scene data loaded.
-21:45:55: Creating player...
-21:45:55: Mesh: Loading Man.mesh.
-21:45:55: Skeleton: Loading Man.skeleton
-21:45:56: Player created.
-21:45:56: Creating elevator...
-21:45:56: Mesh: Loading Barrel.mesh.
-21:45:56: WARNING: Barrel.mesh is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
-21:45:56: Texture: RustyBarrel.png: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:56: Mesh: Loading winda2.mesh.
-21:45:56: bridge created.
-21:45:56: Adding light...
-21:45:56: Light added.
-21:45:56: Default scene created.
-21:45:56: Core.Log: Entering to state `Intro`...
-21:45:56: Core.Log: 
+23:09:41: Creating resource group General
+23:09:41: Creating resource group Internal
+23:09:41: Creating resource group Autodetect
+23:09:41: SceneManagerFactory for type 'DefaultSceneManager' registered.
+23:09:41: Registering ResourceManager for type Material
+23:09:41: Registering ResourceManager for type Mesh
+23:09:41: Registering ResourceManager for type Skeleton
+23:09:41: MovableObjectFactory for type 'ParticleSystem' registered.
+23:09:41: OverlayElementFactory for type Panel registered.
+23:09:41: OverlayElementFactory for type BorderPanel registered.
+23:09:41: OverlayElementFactory for type TextArea registered.
+23:09:41: Registering ResourceManager for type Font
+23:09:41: ArchiveFactory for archive type FileSystem registered.
+23:09:41: ArchiveFactory for archive type Zip registered.
+23:09:41: DDS codec registering
+23:09:41: FreeImage version: 3.13.1
+23:09:41: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+23:09:41: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,cut,xbm,xpm,gif,hdr,g3,sgi,exr,j2k,j2c,jp2,pfm,pct,pict,pic,bay,bmq,cr2,crw,cs1,dc2,dcr,dng,erf,fff,hdr,k25,kdc,mdc,mos,mrw,nef,orf,pef,pxn,raf,raw,rdc,sr2,srf,arw,3fr,cine,ia,kc2,mef,nrw,qtk,rw2,sti,drf,dsc,ptx,cap,iiq,rwz
+23:09:41: PVRTC codec registering
+23:09:41: Registering ResourceManager for type HighLevelGpuProgram
+23:09:41: Registering ResourceManager for type Compositor
+23:09:41: MovableObjectFactory for type 'Entity' registered.
+23:09:41: MovableObjectFactory for type 'Light' registered.
+23:09:41: MovableObjectFactory for type 'BillboardSet' registered.
+23:09:41: MovableObjectFactory for type 'ManualObject' registered.
+23:09:42: MovableObjectFactory for type 'BillboardChain' registered.
+23:09:42: MovableObjectFactory for type 'RibbonTrail' registered.
+23:09:42: Loading library .\RenderSystem_Direct3D9
+23:09:42: Installing plugin: D3D9 RenderSystem
+23:09:42: D3D9 : Direct3D9 Rendering Subsystem created.
+23:09:42: D3D9: Driver Detection Starts
+23:09:42: D3D9: Driver Detection Ends
+23:09:42: Plugin successfully installed
+23:09:42: Loading library .\Plugin_ParticleFX
+23:09:42: Installing plugin: ParticleFX
+23:09:42: Particle Emitter Type 'Point' registered
+23:09:42: Particle Emitter Type 'Box' registered
+23:09:42: Particle Emitter Type 'Ellipsoid' registered
+23:09:42: Particle Emitter Type 'Cylinder' registered
+23:09:42: Particle Emitter Type 'Ring' registered
+23:09:42: Particle Emitter Type 'HollowEllipsoid' registered
+23:09:42: Particle Affector Type 'LinearForce' registered
+23:09:42: Particle Affector Type 'ColourFader' registered
+23:09:42: Particle Affector Type 'ColourFader2' registered
+23:09:42: Particle Affector Type 'ColourImage' registered
+23:09:42: Particle Affector Type 'ColourInterpolator' registered
+23:09:42: Particle Affector Type 'Scaler' registered
+23:09:42: Particle Affector Type 'Rotator' registered
+23:09:42: Particle Affector Type 'DirectionRandomiser' registered
+23:09:42: Particle Affector Type 'DeflectorPlane' registered
+23:09:42: Plugin successfully installed
+23:09:42: Loading library .\Plugin_CgProgramManager
+23:09:42: Installing plugin: Cg Program Manager
+23:09:42: Plugin successfully installed
+23:09:42: *-*-* OGRE Initialising
+23:09:42: *-*-* Version 1.7.1 (Cthugha)
+23:09:42: Creating resource group Bootstrap
+23:09:42: Added resource location 'Media/packs/OgreCore.zip' of type 'Zip' to resource group 'Bootstrap'
+23:09:42: Added resource location 'Media' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/particle' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/fonts' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/models' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/materials' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/materials/programs' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/materials/scripts' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/materials/textures' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/overlays' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/scenes/Default/material' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/scenes/Default/materials' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/scenes/Default/Models' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/scenes/Default/mesh' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/scenes/Default/program' of type 'FileSystem' to resource group 'General'
+23:09:42: Added resource location 'Media/scenes/Default/bitmap' of type 'FileSystem' to resource group 'General'
+23:09:42: Creating resource group Hydrax
+23:09:42: Added resource location 'Media/Hydrax' of type 'FileSystem' to resource group 'Hydrax'
+23:09:42: Creating resource group Scenes
+23:09:42: Added resource location 'Media/scenes' of type 'FileSystem' to resource group 'Scenes'
+23:09:42: Added resource location 'Media/scenes/Default' of type 'FileSystem' to resource group 'Scenes'
+23:09:42: Creating resource group SkyX
+23:09:42: Added resource location 'Media/SkyX' of type 'FileSystem' to resource group 'SkyX'
+23:09:42: D3D9 : RenderSystem Option: Allow NVPerfHUD = No
+23:09:42: D3D9 : RenderSystem Option: FSAA = 0
+23:09:42: D3D9 : RenderSystem Option: Floating-point mode = Fastest
+23:09:42: D3D9 : RenderSystem Option: Full Screen = No
+23:09:42: D3D9 : RenderSystem Option: Rendering Device = Monitor-1-NVIDIA GeForce GTX 560 Ti
+23:09:42: D3D9 : RenderSystem Option: Resource Creation Policy = Create on all devices
+23:09:42: D3D9 : RenderSystem Option: VSync = No
+23:09:42: D3D9 : RenderSystem Option: VSync Interval = 1
+23:09:42: D3D9 : RenderSystem Option: Video Mode = 1024 x 768 @ 32-bit colour
+23:09:42: D3D9 : RenderSystem Option: sRGB Gamma Conversion = No
+23:09:42: CPU Identifier & Features
+23:09:42: -------------------------
+23:09:42:  *   CPU ID: AuthenticAMD: AMD FX(tm)-4100 Quad-Core Processor
+23:09:42:  *      SSE: yes
+23:09:42:  *     SSE2: yes
+23:09:42:  *     SSE3: yes
+23:09:42:  *      MMX: yes
+23:09:42:  *   MMXEXT: yes
+23:09:42:  *    3DNOW: no
+23:09:42:  * 3DNOWEXT: no
+23:09:42:  *     CMOV: yes
+23:09:42:  *      TSC: yes
+23:09:42:  *      FPU: yes
+23:09:42:  *      PRO: yes
+23:09:42:  *       HT: no
+23:09:42: -------------------------
+23:09:42: D3D9 : Subsystem Initialising
+23:09:42: Registering ResourceManager for type Texture
+23:09:42: Registering ResourceManager for type GpuProgram
+23:09:42: D3D9RenderSystem::_createRenderWindow "OGRE Render Window", 1024x768 windowed  miscParams: FSAA=0 FSAAHint= colourDepth=32 gamma=false monitorIndex=0 useNVPerfHUD=false vsync=false vsyncInterval=1 
+23:09:42: D3D9 : Created D3D9 Rendering Window 'OGRE Render Window' : 1024x768, 32bpp
+23:09:42: D3D9 : WARNING - disabling VSync in windowed mode can cause timing issues at lower frame rates, turn VSync on if you observe this problem.
+23:09:42: D3D9: Vertex texture format supported - PF_A8R8G8B8
+23:09:42: D3D9: Vertex texture format supported - PF_B8G8R8A8
+23:09:42: D3D9: Vertex texture format supported - PF_FLOAT16_RGB
+23:09:42: D3D9: Vertex texture format supported - PF_FLOAT16_RGBA
+23:09:42: D3D9: Vertex texture format supported - PF_FLOAT32_RGB
+23:09:42: D3D9: Vertex texture format supported - PF_FLOAT32_RGBA
+23:09:42: D3D9: Vertex texture format supported - PF_R8G8B8A8
+23:09:42: D3D9: Vertex texture format supported - PF_DEPTH
+23:09:42: D3D9: Vertex texture format supported - PF_FLOAT16_R
+23:09:42: D3D9: Vertex texture format supported - PF_FLOAT32_R
+23:09:42: D3D9: Vertex texture format supported - PF_FLOAT16_GR
+23:09:42: D3D9: Vertex texture format supported - PF_FLOAT32_GR
+23:09:42: D3D9: Vertex texture format supported - PF_PVRTC_RGB2
+23:09:42: D3D9: Vertex texture format supported - PF_PVRTC_RGBA2
+23:09:42: D3D9: Vertex texture format supported - PF_PVRTC_RGB4
+23:09:42: D3D9: Vertex texture format supported - PF_PVRTC_RGBA4
+23:09:42: RenderSystem capabilities
+23:09:42: -------------------------
+23:09:42: RenderSystem Name: Direct3D9 Rendering Subsystem
+23:09:42: GPU Vendor: nvidia
+23:09:42: Device Name: Monitor-1-NVIDIA GeForce GTX 560 Ti
+23:09:42: Driver Version: 8.17.12.8026
+23:09:42:  * Fixed function pipeline: yes
+23:09:42:  * Hardware generation of mipmaps: yes
+23:09:42:  * Texture blending: yes
+23:09:42:  * Anisotropic texture filtering: yes
+23:09:42:  * Dot product texture operation: yes
+23:09:42:  * Cube mapping: yes
+23:09:42:  * Hardware stencil buffer: yes
+23:09:42:    - Stencil depth: 8
+23:09:42:    - Two sided stencil support: yes
+23:09:42:    - Wrap stencil values: yes
+23:09:42:  * Hardware vertex / index buffers: yes
+23:09:42:  * Vertex programs: yes
+23:09:42:  * Number of floating-point constants for vertex programs: 256
+23:09:42:  * Number of integer constants for vertex programs: 16
+23:09:42:  * Number of boolean constants for vertex programs: 16
+23:09:42:  * Fragment programs: yes
+23:09:42:  * Number of floating-point constants for fragment programs: 224
+23:09:42:  * Number of integer constants for fragment programs: 16
+23:09:42:  * Number of boolean constants for fragment programs: 16
+23:09:42:  * Geometry programs: no
+23:09:42:  * Number of floating-point constants for geometry programs: 0
+23:09:42:  * Number of integer constants for geometry programs: 0
+23:09:42:  * Number of boolean constants for geometry programs: 0
+23:09:42:  * Supported Shader Profiles: hlsl ps_1_1 ps_1_2 ps_1_3 ps_1_4 ps_2_0 ps_2_a ps_2_b ps_2_x ps_3_0 vs_1_1 vs_2_0 vs_2_a vs_2_x vs_3_0
+23:09:42:  * Texture Compression: yes
+23:09:42:    - DXT: yes
+23:09:42:    - VTC: no
+23:09:42:    - PVRTC: no
+23:09:42:  * Scissor Rectangle: yes
+23:09:42:  * Hardware Occlusion Query: yes
+23:09:42:  * User clip planes: yes
+23:09:42:  * VET_UBYTE4 vertex element type: yes
+23:09:42:  * Infinite far plane projection: yes
+23:09:42:  * Hardware render-to-texture: yes
+23:09:42:  * Floating point textures: yes
+23:09:42:  * Non-power-of-two textures: yes
+23:09:42:  * Volume textures: yes
+23:09:42:  * Multiple Render Targets: 4
+23:09:42:    - With different bit depths: yes
+23:09:42:  * Point Sprites: yes
+23:09:42:  * Extended point parameters: yes
+23:09:42:  * Max Point Size: 10
+23:09:42:  * Vertex texture fetch: yes
+23:09:42:  * Number of world matrices: 0
+23:09:42:  * Number of texture units: 8
+23:09:42:  * Stencil buffer depth: 8
+23:09:42:  * Number of vertex blend matrices: 0
+23:09:42:    - Max vertex textures: 4
+23:09:42:    - Vertex textures shared: no
+23:09:42:  * Render to Vertex Buffer : no
+23:09:42:  * DirectX per stage constants: yes
+23:09:42: ***************************************
+23:09:42: *** D3D9 : Subsystem Initialised OK ***
+23:09:42: ***************************************
+23:09:42: DefaultWorkQueue('Root') initialising on thread main.
+23:09:42: Particle Renderer Type 'billboard' registered
+23:09:42: Parsing scripts for resource group Autodetect
+23:09:42: Finished parsing scripts for resource group Autodetect
+23:09:42: Parsing scripts for resource group Bootstrap
+23:09:42: Parsing script OgreCore.material
+23:09:42: Parsing script OgreProfiler.material
+23:09:42: Parsing script Ogre.fontdef
+23:09:42: Parsing script OgreDebugPanel.overlay
+23:09:42: Texture: New_Ogre_Border_Center.png: Loading 1 faces(PF_A8R8G8B8,256x128x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x128x1.
+23:09:42: Texture: New_Ogre_Border.png: Loading 1 faces(PF_A8R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x256x1.
+23:09:42: Texture: New_Ogre_Border_Break.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
+23:09:42: Texture: ogretext.png: Loading 1 faces(PF_A8R8G8B8,256x128x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x128x1.
+23:09:42: Parsing script OgreLoadingPanel.overlay
+23:09:42: Finished parsing scripts for resource group Bootstrap
+23:09:42: Parsing scripts for resource group General
+23:09:42: Parsing script Examples.program
+23:09:42: Parsing script StdQuad_vp.program
+23:09:42: Parsing script mapa.program
+23:09:42: Parsing script decha2.material
+23:09:42: Parsing script winda2.material
+23:09:42: Parsing script mapa.material
+23:09:42: Parsing script BlackAndWhite.material
+23:09:42: Parsing script Bloom.material
+23:09:43: Parsing script DepthShadowmap.material
+23:09:43: Parsing script DOF.material
+23:09:43: Compiler error: object name expected in DOF.material(55)
+23:09:43: Parsing script Embossed.material
+23:09:43: Parsing script Example-DynTex.material
+23:09:43: Parsing script Example-Water.material
+23:09:43: Parsing script Example.material
+23:09:43: Parsing script Examples-Advanced.material
+23:09:43: Compiler error: number expected in Examples-Advanced.material(679): incorrect float constant declaration
+23:09:43: Parsing script facial.material
+23:09:43: Parsing script Glass.material
+23:09:43: Parsing script hdr.material
+23:09:43: Parsing script HeatVision.material
+23:09:43: Parsing script Hurt.material
+23:09:43: Parsing script instancing.material
+23:09:43: Parsing script Invert.material
+23:09:43: Parsing script Laplace.material
+23:09:43: Parsing script Level.material
+23:09:43: Parsing script Man.material
+23:09:43: Parsing script MotionBlur.material
+23:09:43: Parsing script Ocean.material
+23:09:43: Parsing script OffsetMapping.material
+23:09:43: Parsing script Ogre.material
+23:09:43: Parsing script OgreNewt_Example.material
+23:09:43: Parsing script OldMovie.material
+23:09:43: Parsing script OldTV.material
+23:09:43: Parsing script Posterize.material
+23:09:43: Parsing script RZR-002.material
+23:09:43: Parsing script SharpenEdges.material
+23:09:43: Parsing script smoke.material
+23:09:43: Parsing script Tiling.material
+23:09:43: Parsing script VarianceShadowmap.material
+23:09:43: Parsing script mapa.material
+23:09:43: Parsing script BrokenScreen.material
+23:09:43: Parsing script red.material
+23:09:43: Parsing script mapa.material
+23:09:43: Parsing script emitted_emitter.particle
+23:09:43: Parsing script Example-Water.particle
+23:09:43: Parsing script Example.particle
+23:09:43: Parsing script smoke.particle
+23:09:43: Parsing script Examples.compositor
+23:09:43: Parsing script sample.fontdef
+23:09:43: Parsing script BrokenScreen.overlay
+23:09:43: Texture: blood7.png: Loading 1 faces(PF_A8R8G8B8,1680x1050x1) with 10 generated mipmaps from Image. Internal format is PF_A8R8G8B8,1680x1050x1.
+23:09:44: Parsing script Compositor.overlay
+23:09:44: Parsing script DP3.overlay
+23:09:44: Parsing script Example-CubeMapping.overlay
+23:09:44: Parsing script Example-DynTex.overlay
+23:09:44: Parsing script Example-Water.overlay
+23:09:44: Parsing script hello.overlay
+23:09:44: Parsing script red.overlay
+23:09:44: Texture: red2.png: Loading 1 faces(PF_A8R8G8B8,1680x1050x1) with 10 generated mipmaps from Image. Internal format is PF_A8R8G8B8,1680x1050x1.
+23:09:45: Parsing script Shadows.overlay
+23:09:45: Parsing script test.overlay
+23:09:45: Finished parsing scripts for resource group General
+23:09:45: Parsing scripts for resource group Hydrax
+23:09:45: Finished parsing scripts for resource group Hydrax
+23:09:45: Parsing scripts for resource group Internal
+23:09:45: Finished parsing scripts for resource group Internal
+23:09:45: Parsing scripts for resource group Scenes
+23:09:45: Finished parsing scripts for resource group Scenes
+23:09:45: Parsing scripts for resource group SkyX
+23:09:45: Parsing script SkyX.material
+23:09:46: Finished parsing scripts for resource group SkyX
+23:09:46: Creating Default scene...
+23:09:46: Loading scene data...
+23:09:46: [DotSceneLoader] Parsing dotScene file with version 1.0.0
+23:09:46: Mesh: Loading mapaGroup_062.mesh.
+23:09:46: Texture: mapamod_light1a.bmp: Loading 1 faces(PF_R8G8B8,32x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,32x128x1.
+23:09:46: Mesh: Loading mapaGroup_052.mesh.
+23:09:46: Texture: mapapk01_gra_floor02_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:46: Mesh: Loading mapaGroup_092.mesh.
+23:09:46: Mesh: Loading mapaGroup_082.mesh.
+23:09:46: Mesh: Loading mapaGroup_072.mesh.
+23:09:46: Texture: mapapk01_thin_wall01b_d.jpg: Loading 1 faces(PF_R8G8B8,128x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x512x1.
+23:09:46: Mesh: Loading mapaGroup_002.mesh.
+23:09:46: Mesh: Loading mapaGroup_012.mesh.
+23:09:46: Texture: maparock1_d.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:46: Mesh: Loading mapaGroup_022.mesh.
+23:09:46: Mesh: Loading mapaGroup_032.mesh.
+23:09:46: Mesh: Loading mapaGroup_042.mesh.
+23:09:46: Texture: mapacretewall03.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:46: Mesh: Loading mapaLayer0_001.mesh.
+23:09:47: Texture: mapaRooftilesMetal0003_2_S.jpg: Loading 1 faces(PF_R8G8B8,640x640x1) with 9 generated mipmaps from Image. Internal format is PF_X8R8G8B8,640x640x1.
+23:09:47: Texture: mapadach_01.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapaBrick_07.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:47: Texture: mapacy_01.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
+23:09:47: Texture: mapadach_02.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapadach_05.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapadach_04.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapadach_03.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapadirt01.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapaBrick_04.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:47: Texture: mapafavela_01.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapaBrick_11.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:47: Texture: mapafavela_06.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:47: Texture: mapaBrick_20.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapaBrick_08.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapaBrick_13.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapafavela_04.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:47: Texture: mapafavela_02.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:47: Texture: mapafavela_03.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:47: Texture: mapabrick_09.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
+23:09:47: Texture: mapaBrick_05.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:47: Texture: mapaBrick_01.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapafavela_07.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapaBrick_03.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapafavela_15.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapafavela_14.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapaBrick_18.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:48: Texture: mapafavela_09.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapaBrick_12.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapafavela_12.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:48: Texture: mapabrick_02.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
+23:09:48: Texture: mapafavela_08.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapafavela_11.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapaBrick_06.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:48: Texture: mapaBrick_23.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:48: Texture: mapaBrick_24.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:48: Texture: mapabrick_22.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:48: Texture: mapabrick_10.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
+23:09:48: Texture: mapaBrick_17.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapaBrick_16.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:48: Texture: mapabrick_21.jpg: Loading 1 faces(PF_R8G8B8,512x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x1024x1.
+23:09:48: Texture: mapaBrick_19.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:48: Texture: mapaBrick_15.jpg: Loading 1 faces(PF_R8G8B8,1024x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x512x1.
+23:09:49: Mesh: Loading mapaGroup_061.mesh.
+23:09:49: Mesh: Loading mapaGroup_051.mesh.
+23:09:49: Mesh: Loading mapaGroup_041.mesh.
+23:09:49: Texture: maparock01.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+23:09:49: Mesh: Loading mapaGroup_031.mesh.
+23:09:49: Mesh: Loading mapaGroup_021.mesh.
+23:09:49: Mesh: Loading mapaGroup_001.mesh.
+23:09:49: Mesh: Loading mapaGroup_071.mesh.
+23:09:49: Texture: mapapk01_pan_wall02a1_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
+23:09:49: Texture: mapapk01_thin_wall02b_d.jpg: Loading 1 faces(PF_R8G8B8,128x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x512x1.
+23:09:49: Mesh: Loading mapaGroup_081.mesh.
+23:09:49: Texture: mapaik_gtrimv_lit3b.jpg: Loading 1 faces(PF_R8G8B8,64x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x256x1.
+23:09:49: Mesh: Loading mapaGroup_091.mesh.
+23:09:49: Mesh: Loading mapaGroup_063.mesh.
+23:09:49: Mesh: Loading mapaGroup_053.mesh.
+23:09:49: Mesh: Loading mapaGroup_033.mesh.
+23:09:49: Mesh: Loading mapaGroup_023.mesh.
+23:09:49: Mesh: Loading mapaGroup_013.mesh.
+23:09:49: Mesh: Loading mapaGroup_003.mesh.
+23:09:49: Mesh: Loading mapaGroup_073.mesh.
+23:09:49: Mesh: Loading mapaGroup_083.mesh.
+23:09:49: Mesh: Loading mapaGroup_093.mesh.
+23:09:49: Mesh: Loading razor.mesh.
+23:09:49: WARNING: razor.mesh is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
+23:09:49: Texture: texmap2.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:49: Mesh: Loading mapaGroup_064.mesh.
+23:09:49: Mesh: Loading mapaGroup_054.mesh.
+23:09:49: Mesh: Loading mapaGroup_044.mesh.
+23:09:49: Mesh: Loading mapaGroup_034.mesh.
+23:09:49: Mesh: Loading mapaGroup_024.mesh.
+23:09:49: Mesh: Loading mapaGroup_014.mesh.
+23:09:49: Mesh: Loading mapaGroup_004.mesh.
+23:09:49: Mesh: Loading mapaGroup_074.mesh.
+23:09:49: Mesh: Loading mapaGroup_084.mesh.
+23:09:49: Mesh: Loading mapaGroup_094.mesh.
+23:09:49: Mesh: Loading mapaGroup_065.mesh.
+23:09:49: Mesh: Loading mapaGroup_055.mesh.
+23:09:49: Mesh: Loading mapaGroup_045.mesh.
+23:09:49: Mesh: Loading mapaGroup_035.mesh.
+23:09:49: Mesh: Loading mapaGroup_025.mesh.
+23:09:49: Mesh: Loading mapaGroup_015.mesh.
+23:09:49: Mesh: Loading mapaGroup_005.mesh.
+23:09:49: Mesh: Loading mapaGroup_075.mesh.
+23:09:49: Mesh: Loading mapaGroup_085.mesh.
+23:09:49: Mesh: Loading mapaGroup_095.mesh.
+23:09:49: Mesh: Loading mapaGroup_066.mesh.
+23:09:49: Mesh: Loading mapaGroup_056.mesh.
+23:09:49: Mesh: Loading mapaGroup_046.mesh.
+23:09:49: Mesh: Loading mapaGroup_036.mesh.
+23:09:49: Mesh: Loading mapaGroup_026.mesh.
+23:09:49: Mesh: Loading mapaGroup_016.mesh.
+23:09:49: Mesh: Loading mapaGroup_006.mesh.
+23:09:49: Mesh: Loading mapaGroup_076.mesh.
+23:09:49: Mesh: Loading mapaGroup_086.mesh.
+23:09:49: Mesh: Loading mapaGroup_096.mesh.
+23:09:49: Mesh: Loading mapaGroup_077.mesh.
+23:09:49: Mesh: Loading mapaGroup_007.mesh.
+23:09:49: Mesh: Loading mapaGroup_017.mesh.
+23:09:49: Mesh: Loading mapaGroup_027.mesh.
+23:09:49: Mesh: Loading mapaGroup_067.mesh.
+23:09:49: Mesh: Loading mapaGroup_057.mesh.
+23:09:49: Mesh: Loading mapaGroup_047.mesh.
+23:09:49: Mesh: Loading mapaGroup_037.mesh.
+23:09:49: Mesh: Loading mapaGroup_097.mesh.
+23:09:49: Mesh: Loading mapaGroup_087.mesh.
+23:09:49: Mesh: Loading cylinder.mesh.
+23:09:49: WARNING: cylinder.mesh is an older format ([MeshSerializer_v1.30]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
+23:09:49: Mesh: Loading mapaGroup_098.mesh.
+23:09:49: Mesh: Loading mapaGroup_088.mesh.
+23:09:49: Mesh: Loading mapaGroup_078.mesh.
+23:09:49: Mesh: Loading mapaGroup_068.mesh.
+23:09:49: Mesh: Loading mapaGroup_008.mesh.
+23:09:49: Mesh: Loading mapaGroup_018.mesh.
+23:09:49: Mesh: Loading mapaGroup_028.mesh.
+23:09:49: Mesh: Loading mapaGroup_038.mesh.
+23:09:49: Mesh: Loading mapaGroup_048.mesh.
+23:09:49: Mesh: Loading mapaGroup_058.mesh.
+23:09:49: Mesh: Loading mapaGroup_099.mesh.
+23:09:49: Mesh: Loading mapaGroup_089.mesh.
+23:09:49: Mesh: Loading mapaGroup_079.mesh.
+23:09:49: Mesh: Loading mapaGroup_069.mesh.
+23:09:49: Mesh: Loading mapaGroup_009.mesh.
+23:09:49: Mesh: Loading mapaGroup_019.mesh.
+23:09:49: Mesh: Loading mapaGroup_029.mesh.
+23:09:49: Mesh: Loading mapaGroup_039.mesh.
+23:09:49: Mesh: Loading mapaGroup_049.mesh.
+23:09:49: Texture: mapapk01_floor01a_d.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:49: Texture: mapapk01_wall01_d.jpg: Loading 1 faces(PF_R8G8B8,128x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x256x1.
+23:09:49: Texture: mapapk01_tile_floor01b_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
+23:09:49: Texture: mapapk01_wall03b_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:49: Texture: mapamech1_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:49: Texture: mapapk01_wall03a_d.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:49: Texture: mapapk01_pan_trim01_d.jpg: Loading 1 faces(PF_R8G8B8,64x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x256x1.
+23:09:49: Texture: mapapk01_panel01a_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
+23:09:49: Texture: mapafloor02.jpg: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
+23:09:49: Texture: mapapk01_pan_floor02a_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:49: Texture: mapaWindowsBacklit0020_7_M.jpg: Loading 1 faces(PF_R8G8B8,541x1600x1) with 10 generated mipmaps from Image. Internal format is PF_X8R8G8B8,541x1600x1.
+23:09:50: Texture: mapapk01_door01b_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
+23:09:50: Texture: mapapk01_panel_small01red_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:50: Texture: mapajfgrid.jpg: Loading 1 faces(PF_R8G8B8,64x64x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x64x1.
+23:09:50: Texture: mapapk_trim3_da.jpg: Loading 1 faces(PF_R8G8B8,256x64x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x64x1.
+23:09:50: Texture: mapapk01_panel03b_d.jpg: Loading 1 faces(PF_R8G8B8,256x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x512x1.
+23:09:50: Texture: mapa11pipes_d.jpg: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
+23:09:50: Texture: mapawires1_d.jpg: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:55: Mesh: Loading mapaGroup_059.mesh.
+23:09:55: Mesh: Loading mapaGroup_090.mesh.
+23:09:55: Mesh: Loading mapaGroup_080.mesh.
+23:09:55: Mesh: Loading mapaGroup_070.mesh.
+23:09:55: Mesh: Loading mapaGroup_010.mesh.
+23:09:55: Mesh: Loading mapaGroup_020.mesh.
+23:09:55: Mesh: Loading mapaGroup_030.mesh.
+23:09:55: Mesh: Loading mapaGroup_040.mesh.
+23:09:55: Mesh: Loading mapaGroup_060.mesh.
+23:09:55: Mesh: Loading mapaGroup_150.mesh.
+23:09:55: Mesh: Loading mapaGroup_140.mesh.
+23:09:55: Mesh: Loading mapaGroup_130.mesh.
+23:09:55: Mesh: Loading mapaGroup_120.mesh.
+23:09:55: Mesh: Loading mapaGroup_110.mesh.
+23:09:55: Mesh: Loading mapaGroup_100.mesh.
+23:09:55: Mesh: Loading mapaGroup_151.mesh.
+23:09:55: Mesh: Loading mapaGroup_141.mesh.
+23:09:55: Mesh: Loading mapaGroup_131.mesh.
+23:09:55: Mesh: Loading mapaGroup_121.mesh.
+23:09:55: Mesh: Loading mapaGroup_111.mesh.
+23:09:55: Mesh: Loading mapaGroup_101.mesh.
+23:09:55: Mesh: Loading mapaGroup_152.mesh.
+23:09:55: Mesh: Loading mapaGroup_142.mesh.
+23:09:55: Mesh: Loading mapaGroup_132.mesh.
+23:09:55: Mesh: Loading mapaGroup_122.mesh.
+23:09:55: Mesh: Loading mapaGroup_112.mesh.
+23:09:55: Mesh: Loading mapaGroup_102.mesh.
+23:09:55: Mesh: Loading mapaGroup_153.mesh.
+23:09:55: Mesh: Loading mapaGroup_143.mesh.
+23:09:55: Mesh: Loading mapaGroup_133.mesh.
+23:09:55: Mesh: Loading mapaGroup_123.mesh.
+23:09:55: Mesh: Loading mapaGroup_113.mesh.
+23:09:55: Mesh: Loading mapaGroup_103.mesh.
+23:09:55: Mesh: Loading mapaGroup_154.mesh.
+23:09:55: Mesh: Loading mapaGroup_144.mesh.
+23:09:55: Mesh: Loading mapaGroup_134.mesh.
+23:09:55: Mesh: Loading mapaGroup_124.mesh.
+23:09:55: Mesh: Loading mapaGroup_114.mesh.
+23:09:55: Mesh: Loading mapaGroup_104.mesh.
+23:09:55: Mesh: Loading mapaGroup_155.mesh.
+23:09:55: Mesh: Loading mapaGroup_145.mesh.
+23:09:55: Mesh: Loading mapaGroup_135.mesh.
+23:09:55: Mesh: Loading mapaGroup_125.mesh.
+23:09:55: Mesh: Loading mapaGroup_115.mesh.
+23:09:55: Mesh: Loading mapaGroup_105.mesh.
+23:09:55: Mesh: Loading mapaGroup_156.mesh.
+23:09:55: Mesh: Loading mapaGroup_146.mesh.
+23:09:55: Mesh: Loading mapaGroup_136.mesh.
+23:09:55: Mesh: Loading mapaGroup_126.mesh.
+23:09:55: Mesh: Loading mapaGroup_116.mesh.
+23:09:55: Mesh: Loading mapaGroup_106.mesh.
+23:09:55: Mesh: Loading mapaGroup_157.mesh.
+23:09:55: Mesh: Loading mapaGroup_147.mesh.
+23:09:56: Mesh: Loading mapaGroup_137.mesh.
+23:09:56: Mesh: Loading mapaGroup_127.mesh.
+23:09:56: Mesh: Loading mapaGroup_117.mesh.
+23:09:56: Mesh: Loading mapaGroup_107.mesh.
+23:09:56: Mesh: Loading mapaGroup_158.mesh.
+23:09:56: Mesh: Loading mapaGroup_148.mesh.
+23:09:56: Mesh: Loading mapaGroup_138.mesh.
+23:09:56: Mesh: Loading mapaGroup_128.mesh.
+23:09:56: Mesh: Loading mapaGroup_118.mesh.
+23:09:56: Mesh: Loading mapaGroup_108.mesh.
+23:09:56: Mesh: Loading mapaGroup_149.mesh.
+23:09:56: Mesh: Loading mapaGroup_139.mesh.
+23:09:56: Mesh: Loading mapaGroup_129.mesh.
+23:09:56: Mesh: Loading mapaGroup_119.mesh.
+23:09:56: Mesh: Loading mapaGroup_109.mesh.
+23:09:56: Mesh: Loading box.mesh.
+23:09:56: WARNING: box.mesh is an older format ([MeshSerializer_v1.30]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
+23:09:56: Mesh: Loading robot.mesh.
+23:09:56: Skeleton: Loading robot.skeleton
+23:09:56: WARNING: robot.mesh is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
+23:09:56: Texture: r2skin.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+23:09:56: [DotSceneLoader] Error loading an entity!Nast¹pi³a próba odczytu lub zapisu pamiêci chronionej. Czêsto wskazuje to, ¿e inna pamiêæ jest uszkodzona.
+23:09:56: [DotSceneLoader] Error loading an entity!Nast¹pi³a próba odczytu lub zapisu pamiêci chronionej. Czêsto wskazuje to, ¿e inna pamiêæ jest uszkodzona.
+23:09:56: Scene data loaded.
+23:09:56: Creating player...
+23:09:56: Mesh: Loading Man.mesh.
+23:09:56: Skeleton: Loading Man.skeleton
+23:09:56: Player created.
+23:09:56: Creating elevator...
+23:09:56: Mesh: Loading Barrel.mesh.
+23:09:56: WARNING: Barrel.mesh is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
+23:09:56: Texture: RustyBarrel.png: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:56: Mesh: Loading winda2.mesh.
+23:09:56: bridge created.
+23:09:56: Adding light...
+23:09:56: Light added.
+23:09:56: Default scene created.
+23:09:56: Core.Log: Entering to state `Intro`...
+23:09:56: Core.Log: 
 
 INTRO  INSTRUCTION:
 
@@ -527,12 +539,12 @@ SPACE  -  Enter Game State
 ESCAPE  -  Exit Application
 
 
-21:45:56: Texture: spot_shadow_fade.png: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
-21:45:56: Texture: basic_droplet.png: Loading 1 faces(PF_R8G8B8,64x64x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x64x1.
-21:45:56: Texture: flare.png: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-21:45:59: Core.Log: Pausing state `Intro`...
-21:45:59: Core.Log: Entering to state `Game`...
-21:45:59: Core.Log: 
+23:09:56: Texture: spot_shadow_fade.png: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
+23:09:56: Texture: basic_droplet.png: Loading 1 faces(PF_R8G8B8,64x64x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x64x1.
+23:09:56: Texture: flare.png: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:09:59: Core.Log: Pausing state `Intro`...
+23:09:59: Core.Log: Entering to state `Game`...
+23:09:59: Core.Log: 
 
 GAME  INSTRUCTION:
 
@@ -541,9 +553,10 @@ W+LSHIFT  -  Run
 ESCAPE  -  Exit Game
 
 
-21:46:14: Core.Log: Exiting from state `Game`...
-21:46:14: Core.Log: Resuming state `Intro`...
-21:46:14: Core.Log: 
+23:10:03: Texture: WaterNormal1.tga: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
+23:10:14: Core.Log: Exiting from state `Game`...
+23:10:14: Core.Log: Resuming state `Intro`...
+23:10:14: Core.Log: 
 
 INTRO  INSTRUCTION:
 
@@ -551,22 +564,25 @@ SPACE  -  Enter Game State
 ESCAPE  -  Exit Application
 
 
-21:46:16: Core.Log: Exiting from state `Intro`...
-21:46:16: DefaultWorkQueue('Root') shutting down on thread main.
-21:46:16: *-*-* OGRE Shutdown
-21:46:16: Unregistering ResourceManager for type Compositor
-21:46:16: Unregistering ResourceManager for type Font
-21:46:16: Unregistering ResourceManager for type Skeleton
-21:46:16: Unregistering ResourceManager for type Mesh
-21:46:16: Unregistering ResourceManager for type HighLevelGpuProgram
-21:46:16: Uninstalling plugin: ParticleFX
-21:46:16: Plugin successfully uninstalled
-21:46:16: Unloading library .\Plugin_ParticleFX
-21:46:16: Uninstalling plugin: D3D9 RenderSystem
-21:46:16: D3D9 : Shutting down cleanly.
-21:46:16: Unregistering ResourceManager for type Texture
-21:46:16: Unregistering ResourceManager for type GpuProgram
-21:46:16: D3D9 : Direct3D9 Rendering Subsystem destroyed.
-21:46:16: Plugin successfully uninstalled
-21:46:16: Unloading library .\RenderSystem_Direct3D9
-21:46:16: Unregistering ResourceManager for type Material
+23:10:16: Core.Log: Exiting from state `Intro`...
+23:10:16: DefaultWorkQueue('Root') shutting down on thread main.
+23:10:16: *-*-* OGRE Shutdown
+23:10:16: Unregistering ResourceManager for type Compositor
+23:10:16: Unregistering ResourceManager for type Font
+23:10:16: Unregistering ResourceManager for type Skeleton
+23:10:16: Unregistering ResourceManager for type Mesh
+23:10:16: Unregistering ResourceManager for type HighLevelGpuProgram
+23:10:16: Uninstalling plugin: Cg Program Manager
+23:10:16: Plugin successfully uninstalled
+23:10:16: Unloading library .\Plugin_CgProgramManager
+23:10:16: Uninstalling plugin: ParticleFX
+23:10:16: Plugin successfully uninstalled
+23:10:16: Unloading library .\Plugin_ParticleFX
+23:10:16: Uninstalling plugin: D3D9 RenderSystem
+23:10:16: D3D9 : Shutting down cleanly.
+23:10:16: Unregistering ResourceManager for type Texture
+23:10:16: Unregistering ResourceManager for type GpuProgram
+23:10:16: D3D9 : Direct3D9 Rendering Subsystem destroyed.
+23:10:16: Plugin successfully uninstalled
+23:10:16: Unloading library .\RenderSystem_Direct3D9
+23:10:16: Unregistering ResourceManager for type Material

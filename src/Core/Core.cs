@@ -384,7 +384,8 @@ namespace Tachycardia
             }
             if (keyEventRef.key == MOIS.KeyCode.KC_R)
             {
-                //OverlayManager.Singleton.GetByName("Red").Show();
+                CompositorManager.Singleton.AddCompositor(m_Viewport, "Glass");
+                CompositorManager.Singleton.SetCompositorEnabled(m_Viewport, "Glass", true);
             }
 
             if (keyEventRef.key == MOIS.KeyCode.KC_B)
@@ -401,6 +402,7 @@ namespace Tachycardia
             if (keyEventRef.key == MOIS.KeyCode.KC_T)
             {
                 //OverlayManager.Singleton.GetByName("Red").Hide();
+                CompositorManager.Singleton.SetCompositorEnabled(m_Viewport, "Glass", false);
                 OverlayManager.Singleton.GetByName("HelloWorldOverlay").Hide();
                 OverlayManager.Singleton.GetByName("BrokenScreen").Hide();
             }

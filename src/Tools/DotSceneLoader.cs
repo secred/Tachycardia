@@ -740,7 +740,6 @@
             try
             {
                 ParticleSystem pParticles = mSceneMgr.CreateParticleSystem(particleName, script);
-                pParticles.Visible = true;
                 pParent.AttachObject(pParticles);
                 ParticleMethod.Instance.addStaticParticleName2List(particleName);
 
