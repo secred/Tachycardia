@@ -17,14 +17,6 @@ D:\Tachycardia2\obj\x86\Debug\Tachycardia.pdb
 E:\Tachycardia\Tachycardia\obj\x86\Debug\Tachycardia.exe
 E:\Tachycardia\Tachycardia\obj\x86\Debug\Tachycardia.pdb
 E:\Tachycardia\Tachycardia\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\Tachycardia.exe
-C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\Tachycardia.pdb
-C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\Mogre.dll
-C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\MogreNewt.dll
-C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\MOIS.dll
-C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\Tachycardia.exe
-C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\Tachycardia.pdb
 D:\Moje Dokumenty\Programowanie\Tachycardia C#\bin\Debug\Tachycardia.exe
 D:\Moje Dokumenty\Programowanie\Tachycardia C#\bin\Debug\Tachycardia.pdb
 D:\Moje Dokumenty\Programowanie\Tachycardia C#\bin\Debug\Mogre.dll
@@ -73,3 +65,11 @@ C:\Users\pl\Desktop\secred-Tachycardia-00a903e\bin\Debug\Mogre.dll
 C:\Users\pl\Desktop\secred-Tachycardia-00a903e\bin\Debug\MogreNewt.dll
 C:\Users\pl\Desktop\secred-Tachycardia-00a903e\bin\Debug\MOIS.dll
 C:\Users\pl\Desktop\secred-Tachycardia-00a903e\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\Tachycardia.exe
+C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\Tachycardia.pdb
+C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\Mogre.dll
+C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\MogreNewt.dll
+C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\MOIS.dll
+C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\Tachycardia.exe
+C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\Tachycardia.pdb

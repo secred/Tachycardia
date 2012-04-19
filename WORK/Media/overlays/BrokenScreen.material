@@ -10,7 +10,7 @@ material BrokenScreen
 
 			texture_unit
 			{
-				texture BrokenScreen.png
+				texture blood7.png
 			}
 		}
 	}

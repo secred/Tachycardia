@@ -49,6 +49,8 @@ namespace Tachycardia
 		int m_PHYSUPS = 0;
 		int m_PHYSUPSStored = 0;
 
+        float alphaLevel = 1.0f;
+
 		public static void Log(string message)
 		{
 			Console.WriteLine("Core.Log: " + message);
@@ -388,22 +390,39 @@ namespace Tachycardia
             if (keyEventRef.key == MOIS.KeyCode.KC_B)
             {
                 OverlayManager.Singleton.GetByName("BrokenScreen").Show();
+                MaterialPtr mat = MaterialManager.Singleton.GetByName("BrokenScreen");
+                TextureUnitState tus = mat.GetTechnique(0).GetPass(0).GetTextureUnitState(0);
+                mat.GetTechnique(0).GetPass(0).SetSceneBlending(Mogre.SceneBlendType.SBT_TRANSPARENT_ALPHA);
+               
+                
+                tus.SetAlphaOperation(Mogre.LayerBlendOperationEx.LBX_MODULATE, Mogre.LayerBlendSource.LBS_MANUAL, Mogre.LayerBlendSource.LBS_TEXTURE, alphaLevel);
             }
 
             if (keyEventRef.key == MOIS.KeyCode.KC_T)
             {
-                OverlayManager.Singleton.GetByName("Red").Hide();
+                //OverlayManager.Singleton.GetByName("Red").Hide();
                 OverlayManager.Singleton.GetByName("HelloWorldOverlay").Hide();
                 OverlayManager.Singleton.GetByName("BrokenScreen").Hide();
             }
 
             if (keyEventRef.key == MOIS.KeyCode.KC_V)
             {
-                OverlayManager.Singleton.GetByName("Red").ZOrder -= 50;
-            }
+                
+                OverlayManager.Singleton.GetByName("BrokenScreen").Show();
+                MaterialPtr mat = MaterialManager.Singleton.GetByName("BrokenScreen");
+                TextureUnitState tus = mat.GetTechnique(0).GetPass(0).GetTextureUnitState(0);
+                mat.GetTechnique(0).GetPass(0).SetSceneBlending(Mogre.SceneBlendType.SBT_TRANSPARENT_ALPHA);
 
+                if (alphaLevel > 0.0f)
+                    alphaLevel -= 0.1f;
+                else alphaLevel = 1.0f;
+
+                tus.SetAlphaOperation(Mogre.LayerBlendOperationEx.LBX_MODULATE, Mogre.LayerBlendSource.LBS_MANUAL, Mogre.LayerBlendSource.LBS_TEXTURE, alphaLevel);
+
+               
+            }
             return true;
-        }
+         }
 
 		public bool KeyPressed(MOIS.KeyEvent keyEventRef)
 		{
