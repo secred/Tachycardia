@@ -7,32 +7,56 @@ namespace Tachycardia
 {
     class LogicState
     {
-        //maximum force 
-        //public float m_MaxForce;
-        //maximum speed of moving forward 
-        public float m_MaxForceNormal;
-        //maximum speed of moving backward with shift
-        public float m_MaxForceBoost;
-        //maximum speed of moving backward 
-        //public float m_MaxSpdBack;
+        public string m_name;
+        //maximum force of moving forward without boost 
+        public float m_ForwardForce;
+        //maximum speed of moving forward with boost
+        public float m_ForwardForceBoost;
+        //maximum force of moving backward without boost 
+        public float m_BackwardForce;
+        //maximum speed of moving backward with boost
+        public float m_BackwardForceBoost;
+
         //maximum speed of turning left or right
-        public float m_spdTurn;
-        //maximum speed of turning left or right in boost
+        public Mogre.Degree m_spdTurn;
+        //maximum speed of turning left or right with boost
         public float m_spdTurnBoost;
         //maximum breaking force 
-        public float m_spdStop;
+        public float m_ForceStop;
+        //damping value helps to stop body but prevents in the fly
+        public float m_LinearDampingValue;
+        
         //collision shape for this state
-
-        public float m_MaxSpdBoost;
-        public float m_MaxSpd;
-
         public MogreNewt.ConvexCollision m_collision;
+        
+        public Mogre.Vector3 m_HeadPosition;
 
+        //my controler instance
         public PlayerController m_Control;
-
-        public float getSpdTurn()
+        public LogicState()
         {
-            if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_LSHIFT))
+            m_name = "unknown";
+            m_HeadPosition = new Mogre.Vector3(0, 0.65f, 0);
+            //forward move
+            m_ForwardForce = 20;
+            m_ForwardForceBoost = 40;
+            
+            //backwardmove
+            m_BackwardForce = 10;
+            m_BackwardForceBoost = 20;
+            
+            //turning angle in degree
+            m_spdTurn = 25;
+            m_spdTurnBoost = 15;
+
+            //stopping power
+            m_ForceStop = 6;
+            m_LinearDampingValue = 1.0f;
+        }
+
+        public Mogre.Degree getSpdTurn()
+        {
+            if (m_Control.m_bBoost)
             {//boost speed
                 return m_spdTurnBoost;
             }
@@ -42,70 +66,82 @@ namespace Tachycardia
             }
         }
 
-        public float getMaxSpd()
+        public float getForwardForce()
         {
-            if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_LSHIFT))
+            if (m_Control.m_bBoost)
             {//boost speed
-                return m_MaxSpdBoost;
+                return m_ForwardForceBoost;
             }
             else
             {//normal state speed
-                return m_MaxSpd;
-            }
-        }
-        public float getMaxForce()
-        {
-            if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_LSHIFT))
-            {//boost speed
-                return m_MaxForceBoost;
-            }
-            else
-            {//normal state speed
-                return m_MaxForceNormal;
+                return m_ForwardForce;
             }
         }
 
-        public virtual void willJump() { }
+        public float getBackwardForce()
+        {
+            if (m_Control.m_bBoost)
+            {//boost speed
+                return m_BackwardForceBoost;
+            }
+            else
+            {//normal state speed
+                return m_BackwardForce;
+            }
+        }
+        public virtual void willJump() {/* control passed to specific Pose object */ }
+        public virtual void willCrouch() {/* control passed to specific Pose object */ }
 
         public virtual void willTurnLeft()
-        {//pokracznie troche ale jest
+        {//turning left
             if (m_Control.m_MainBody.Velocity.Length > 0.1f)
-                m_Control.m_GoTo = m_Control.m_LookingAt * new Mogre.Quaternion(new Mogre.Degree(35), Mogre.Vector3.UNIT_Y);
+            {
+                m_Control.m_GoTo = m_Control.m_PlayerNode.Orientation * new Mogre.Quaternion(new Mogre.Degree(getSpdTurn()), Mogre.Vector3.UNIT_Y);
+            }
             else
-                m_Control.m_LookingAt *= Mogre.Vector3.UNIT_Z.GetRotationTo(new Mogre.Vector3(3 * Core.m_FixedTime, 0, 1.0f).NormalisedCopy);
+            {//
+                m_Control.m_PlayerNode.Orientation *= Mogre.Vector3.UNIT_Z.GetRotationTo(new Mogre.Vector3(3 * Core.m_FixedTime, 0, 1.0f).NormalisedCopy);
+            }
         }
 
         public virtual void willTurnRight()
-        {//pokracznie troche ale jest
+        {//turning right
             if (m_Control.m_MainBody.Velocity.Length > 0.1f)
-                m_Control.m_GoTo = m_Control.m_LookingAt * new Mogre.Quaternion(new Mogre.Degree(-35), Mogre.Vector3.UNIT_Y);
+            {//
+                m_Control.m_GoTo = m_Control.m_PlayerNode.Orientation * new Mogre.Quaternion(new Mogre.Degree(-getSpdTurn()), Mogre.Vector3.UNIT_Y);
+            }
             else
-                m_Control.m_LookingAt *= Mogre.Vector3.UNIT_Z.GetRotationTo(new Mogre.Vector3(-3 * Core.m_FixedTime, 0, 1.0f).NormalisedCopy);
+            {//
+                m_Control.m_PlayerNode.Orientation *= Mogre.Vector3.UNIT_Z.GetRotationTo(new Mogre.Vector3(-3 * Core.m_FixedTime, 0, 1.0f).NormalisedCopy);
+            }
         }
 
         public virtual void willForward()
         {
             Mogre.Vector3 _force = m_Control.m_GoTo * Mogre.Vector3.UNIT_Z;
-            _force *= m_Control.m_MainBody.Mass * getMaxForce() * m_Control.m_adrenaline;
+            _force *= m_Control.m_MainBody.Mass * getForwardForce() * m_Control.m_adrenaline;
             m_Control.m_MainBody.AddForce(_force);
-            //przeciwsila im wieksza predkosc tym wieksza sila stopujaca
+           
+            //pseudo air resistance and other forces which stopping us in moving, determined experimentally
             m_Control.m_MainBody.AddForce(-m_Control.m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1) * 4 * m_Control.m_MainBody.Mass);
         }
 
         public virtual void willBackward()
         {
-            /*if (m_Control.m_MainBody.Velocity.Length < getMaxSpd() && m_Control.m_MainBody.Velocity.Length > getMaxSpd() * -1)
-            {
-                Mogre.Vector3 _force = m_Control.m_GoTo * Mogre.Vector3.UNIT_Z;
-                _force *= m_Control.m_MainBody.Mass * m_MaxForce * m_Control.m_adrenaline;
-                m_Control.m_MainBody.AddForce(-_force);
-            }*/
-            Mogre.Vector3 _force = m_Control.m_LookingAt * Mogre.Vector3.UNIT_Z;
-            _force *= m_Control.m_MainBody.Mass * getMaxForce() * m_Control.m_adrenaline;
+            Mogre.Vector3 _force = m_Control.m_PlayerNode.Orientation * Mogre.Vector3.UNIT_Z;
+            _force *= m_Control.m_MainBody.Mass * getBackwardForce() * m_Control.m_adrenaline;
             m_Control.m_MainBody.AddForce(-_force);
-            //przeciwsila im wieksza predkosc tym wieksza sila stopujaca
+            
+            //pseudo air resistance and other forces which stopping us in moving, determined experimentally
             m_Control.m_MainBody.AddForce(-m_Control.m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1) * 4 * m_Control.m_MainBody.Mass);
+        }
 
+        public virtual void Activate()
+        {
+            m_Control.m_MainBody.LinearDamping = m_LinearDampingValue;
+            m_Control.m_SecondBody.Collision = m_collision;
+            //zmiana jointa rowniez np zeby byl nizszy niz wczesniej
+            m_Control.m_Pose = this;
         }
     };
 
@@ -113,15 +149,13 @@ namespace Tachycardia
     {
         public Normal()
         {
-            m_MaxForceNormal = 20;
-            m_MaxForceBoost = 40;
-            //m_MaxSpdBack = 2;
-            m_spdStop = 2;
-            m_spdTurn = 5;
-            m_spdTurnBoost = 3;
+            m_name = "normal";
+            m_ForwardForce = 20;
+            m_ForwardForceBoost = 40;
+
             m_collision = new MogreNewt.CollisionPrimitives.Capsule(
                 Core.Singleton.m_NewtonWorld,
-                0.25f,
+                0.30f,
                 1.25f,
                 Mogre.Vector3.UNIT_X.GetRotationTo(Mogre.Vector3.UNIT_Y),
                 Core.Singleton.GetUniqueBodyId());
@@ -129,44 +163,27 @@ namespace Tachycardia
 
         public override void willJump()
         {
-            //addimpulse()
-            System.Console.WriteLine("FLY + IMPULSE");
-
             m_Control.m_MainBody.AddImpulse(new Mogre.Vector3(0, m_Control.m_jumpForce * m_Control.m_adrenaline, 0), m_Control.m_MainBody.Position);
-            m_Control.m_Pose = m_Control.m_myPoses["fly"];
-            m_Control.m_MainBody.LinearDamping = 0.3f;
+            m_Control.ChangePoseTo("fly");
             m_Control.m_jumpLimit = (int)Core.m_FixedFPS;//ograniczenie mozliwosci skoku na jedna sekunde
-            //m_Control.changestateto(""fly)/
         }
 
-        /*public override void willTurnLeft()
+        public override void willCrouch()
         {
-            //normal turn
+            m_Control.ChangePoseTo("crouch");
         }
-
-        public override void willTurnRight()
-        {
-            //normal turn
-        }
-
-        public override void willForward() 
-        {
-            //normal forward
-        }*/
     }
 
     class Fly : LogicState
     {
         public Fly()
         {
-            m_MaxForceNormal = 0;
-            m_MaxForceBoost = 0;
-
-            m_MaxSpd = 0;
-            m_MaxSpdBoost = 0;
-            //m_MaxSpdBack = 0;
-            m_spdStop = 0;
-            m_spdTurn = 0;
+            m_name = "fly";
+            m_ForwardForce = 0;
+            m_ForwardForceBoost = 0;
+            m_ForceStop = 0;//nie zatzrymuj go w powietrzu
+            //lekki opór powietrza
+            m_LinearDampingValue = 0.3f;
             m_collision = new MogreNewt.CollisionPrimitives.Capsule(
                 Core.Singleton.m_NewtonWorld,
                 0.30f,
@@ -200,15 +217,9 @@ namespace Tachycardia
     {
         public Crouch()
         {
-            m_MaxForceNormal = 12;
-            m_MaxForceBoost = 16;
-            m_MaxSpd = 1.5f;
-            m_MaxSpdBoost = 2;
-            //m_MaxSpdBack = 1;
-            m_spdStop = 1;
-            m_spdTurn = 2;
-            m_spdTurnBoost = 3;
-
+            m_ForwardForce = 12;
+            m_ForwardForceBoost = 16;
+            m_name = "crouch";
             m_collision = new MogreNewt.CollisionPrimitives.Capsule(
                 Core.Singleton.m_NewtonWorld,
                 0.25f,
@@ -219,25 +230,9 @@ namespace Tachycardia
 
         public override void willJump()
         {
+            m_Control.ChangePoseTo("normal");
             //jump impossible, check if can I change state to normal if yes do it
-            m_Control.m_Pose = m_Control.m_myPoses["walk"];
-            m_Control.m_SecondBody.Collision = m_Control.m_Pose.m_collision;
         }
-
-        /*public override void willTurnLeft()
-        {
-            //normal turn
-        }
-
-        public override void willTurnRight()
-        {
-            //normal turn
-        }
-
-        public override void willForward()
-        {
-            //forward with my paramaters
-        }*/
     }
 
     class Hanging : LogicState
@@ -289,15 +284,20 @@ namespace Tachycardia
             //czyt: (ludzie obracaja glowa nie patrza tylko i wylacznie przed siebie
 
         };
-
-
+        /* Button Flags */
+        public bool m_bForward;
+        public bool m_bBackward;
+        public bool m_bLeft;
+        public bool m_bRight;
+        public bool m_bBoost;
+        
         public MogreNewt.Body m_MainBody;
         public MogreNewt.Body m_SecondBody;
         public Mogre.Node m_PlayerNode;
 
-        public Mogre.Quaternion m_GoTo;//miejsce w ktore skierowana jest obecnie sila
-        public Mogre.Quaternion m_LookingAt;//miejsce w ktore skierowana jest obecnie postac
 
+        public Mogre.Quaternion m_GoTo;//miejsce w ktore skierowana jest obecnie sila
+        
         public CharacterState m_State;
         public Dictionary<string, LogicState> m_myPoses;
 
@@ -311,7 +311,6 @@ namespace Tachycardia
         public int m_Onground;
         public int m_jumpLimit;
         public float m_jumpForce;
-        public bool m_backward;
         
 
         public PlayerController(Mogre.Node node, Mogre.Entity entity, float mass)
@@ -371,38 +370,34 @@ namespace Tachycardia
         }
 
         //position buffor
-        protected Mogre.Vector3 _position = new Mogre.Vector3(0, 0.65f, 0);
         public virtual void BodyTransformCallback(MogreNewt.Body sender, Mogre.Quaternion orientation, Mogre.Vector3 position, int threadIndex)
         {//calling each physics iteration
             //odczytywac ze stanu wysokosc kamery
-            m_PlayerNode.Position = position + _position;
+            m_PlayerNode.Position = position + m_Pose.m_HeadPosition;
 
             //obracanie zgodnie z kierunkiem ruchu lub jezeli 0 to z kierunkiem goto
             if (m_MainBody.Velocity.Length < 0.1f)
             {
                 m_State = CharacterState.IDLE;
-                m_PlayerNode.Orientation = m_LookingAt;
-                m_backward = false;
             }
             else
             {
-                if (m_Pose == m_myPoses["normal"])
+                if (m_Pose.m_name == "normal")
                 {
                     if (m_MainBody.Velocity.Length > 3.5)
                         m_State = CharacterState.RUN;
                     else
                         m_State = CharacterState.WALK;
                 }
-                else if (m_Pose == m_myPoses["fly"])
+                else if (m_Pose.m_name == "fly")
                 {
                     m_State = CharacterState.JUMP;
                 }
 
-                if (!m_backward)
+                if (!m_bBackward)
                 {//dla wstecznego
-                    Mogre.Vector3 xyVector = new Mogre.Vector3(0, 0, 1);
                     Mogre.Vector3 velocityxy = m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1);
-                    m_LookingAt = m_PlayerNode.Orientation = xyVector.GetRotationTo(velocityxy);
+                    m_PlayerNode.Orientation = Mogre.Vector3.UNIT_Z.GetRotationTo(velocityxy);
                 }
             }
         }
@@ -410,19 +405,16 @@ namespace Tachycardia
         public virtual void BodyForceCallback(MogreNewt.Body body, float timeStep, int threadIndex)
         {//calling each physics iteration
 
-            //testuje jak dawno dotykal gruntu jezeli wartosc nie przekracza 5 lub 10 to moze wybic sie
-            //w przeciwnym wypadku oznacza to ze dawno nie dotykal ziemi
+            //testuje jak dawno dotykal gruntu jezeli wartosc przekracza 5 lub 10 iteracji fiyzki
+            //zmienia pozycje na lot
             if (m_Onground < 10)
-            {
                 m_Onground++;
-            }
-            else
-            {//jest w locie - zmieniamy mu stan 
-                m_Pose = m_myPoses["fly"];
-                m_MainBody.LinearDamping = 0.3f;
-            }
+            else//jest w locie - zmieniamy mu stan 
+                ChangePoseTo("fly");
+            
             if (m_jumpLimit > 0)
                 m_jumpLimit--;
+            
             //obnizanie poziomu adrenaliny o staly czynnik
             if (m_adrenaline > 1)
                 m_adrenaline -= 0.01f * timeStep;
@@ -431,117 +423,74 @@ namespace Tachycardia
 
             Update();
 
+            //trying to stop body in one position
+            if (!m_bBackward && !m_bForward && !m_bLeft && !m_bRight)
+            {
+                if (!m_MainBody.Velocity.IsZeroLength)
+                {//nie zatrzymal sie jeszcze to go zatrzymujemy
+                    //dla bardzo malych predksoci dac cos w stylu velocity 0 ... albo wprowadzic
+                    //punkt zatrzymania (x,y,z) dla velocity < 0.00001
+                    Mogre.Vector3 xyVector = new Mogre.Vector3(0, 0, 1);
+                    Mogre.Vector3 velocityxy = m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1);
+                    Mogre.Quaternion ForceDirection = xyVector.GetRotationTo(velocityxy);
+                    Mogre.Vector3 StoppingForce = -ForceDirection * Mogre.Vector3.UNIT_Z * m_MainBody.Mass * m_Pose.m_ForceStop;
+                    m_MainBody.AddForce(-StoppingForce);
+                }
+            }
+        }
+
+        //change position
+        public void ChangePoseTo(string poseName)
+        {
+            if(m_Pose.m_name!=poseName)
+            {
+                m_myPoses[poseName].Activate();
+            }
         }
 
         public virtual void Update()
         {
-            if (Core.Singleton.m_StateManager.IsActiveState("Game"))
-            {
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_X))
-                {
-                    Core.Singleton.m_Log.LogMessage("Pozycja X = " + Core.Singleton.m_Camera.Position.x + " Y = " + Core.Singleton.m_Camera.Position.y + " Z  = " + Core.Singleton.m_Camera.Position.z);
-                }
-                bool activateidle = true;
-                bool turning = false;
-                //JUMP
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_SPACE) && m_jumpLimit == 0)
-                {//ograniczenie czasowe skokow!
-                    m_Pose.willJump();
-                    activateidle = false;
-                }
-
+                //TURN ME LEFT!
+                if (m_bLeft)
+                    m_Pose.willTurnLeft();
+                
+                //TURN ME RIGHT! 
+                if (m_bRight)m_Pose.willTurnRight();
+            
                 //MOVE FORWARD
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_W))
+                if ( m_bForward || 
+                    (m_State != CharacterState.IDLE && (m_bRight==true || m_bLeft==true ))
+                    )
                 {//i want to go forward, can i in this position?
                     m_Pose.willForward();
-                    activateidle = false;
-                    m_backward = false;
                 }
 
                 //MOVE BACKWARD 
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_S))
-                {//i want to go backward its possible?
+                if (m_bBackward)
                     m_Pose.willBackward();
-                    m_backward = true;
-                    activateidle = false;
+                
+                //zerowanie wektoras kretu
+                if (!m_bLeft && !m_bRight && !m_bForward && !m_bBackward)
+                {//jezeli nie ma przycisnietego przcyisku to keiruj sie zawsze tam gdzie wskazuje
+                    //looking at czyli grafika
+                    m_GoTo = m_PlayerNode.Orientation;
                 }
-
-                //TURN ME LEFT!
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_A))
-                {//i want turn left, without exception?
-                    /*if (activateidle)
-                    {
-                        m_Pose.willTurnLeftWithForce();
-                    }
-                    else
-                    {*/
-                        m_Pose.willTurnLeft();
-                    //}
-                    turning = true;
-                }
-
-                //TURN ME RIGHT! 
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_D))
-                {//i want turn right, possible always?
-                    /*if (activateidle)
-                    {
-                        m_Pose.willTurnRightWithForce();
-                    }
-                    else
-                    {*/
-                        m_Pose.willTurnRight();
-                    //}
-                    turning = true;
-                }
-
-                //CROUCH
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_C))
-                {//i want crouch, possible? 1. no contact with water or smth?
-                    //m_Pose.willCrouch();
-
-                    if (m_Pose != m_myPoses["crouch"])
-                    {
-                        m_Pose = m_myPoses["crouch"];
-                        m_SecondBody.Collision = m_Pose.m_collision;
-                    }
-                }
-
-                //CRAWL
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_Z))
-                {//i want to crawl, possible? 1. no contact with water or smth?
-
-                }
-
-                //zeroanie wektoras kretu
-                if (!turning)
-                {
-                    m_GoTo = m_LookingAt;
-                }
-
-                //proba zatrzymania typa w miejscu w ktorym ostatnio puscil klawisze
-                if (activateidle == true && m_Pose == m_myPoses["normal"])
-                {
-                    if (!m_MainBody.Velocity.IsZeroLength)
-                    {//nie zatrzymal sie jeszcze to go zatrzymujemy
-                        Mogre.Vector3 xyVector = new Mogre.Vector3(0, 0, 1);
-                        Mogre.Vector3 velocityxy = m_MainBody.Velocity * new Mogre.Vector3(1, 0, 1);
-                        Mogre.Quaternion ForceDirection = xyVector.GetRotationTo(velocityxy);
-                        Mogre.Vector3 StoppingForce = -ForceDirection * Mogre.Vector3.UNIT_Z * m_MainBody.Mass * 6;
-                        m_MainBody.AddForce(-StoppingForce);
-                    }
-                }
-            }
         }
 
         protected virtual void initLogicStates()
         {
             m_myPoses = new Dictionary<string, LogicState>();
+
+            m_bForward      = false;
+            m_bBackward     = false;
+            m_bLeft         = false;
+            m_bRight        = false;
+            m_bBoost        = false;
             
-            m_backward = false;
             //m_adrenaline
-            m_adrenaline = 1;
+            m_adrenaline    = 1;
             //sila wyskoku
-            m_jumpForce = 6;
+            m_jumpForce     = 6;
             //pozycja wyprostowana
             LogicState normal = new Normal();//LogicState();
             normal.m_Control = this;//przyda sie uchwyt do swojego kontrolera
@@ -558,6 +507,60 @@ namespace Tachycardia
             m_myPoses.Add("fly", fly);//dodanie obiektu
 
         }
+        
+        public void ForwardButtonPressed()
+        {
+            m_bForward = true;
+        }
+        public void ForwardButtonReleased()
+        {
+            m_bForward = false;
+        }
 
+        public void BackwardButtonPressed()
+        {
+            m_bBackward = true;
+        }
+        public void BackwardButtonReleased()
+        {
+            m_bBackward = false;
+        }
+
+        public void LeftButtonPressed()
+        {
+            m_bLeft = true;
+        }
+        public void LeftButtonReleased()
+        {
+            m_bLeft = false;
+        }
+
+        public void RightButtonPressed()
+        {
+           m_bRight = true;
+        }
+        public void RightButtonReleased()
+        {
+            m_bRight = false;
+        }
+
+        public void BoostButtonPressed()
+        {
+            m_bBoost = true;
+        }
+        public void BoostButtonReleased()
+        {
+            m_bBoost = false;
+        }
+
+        public void CrouchButtonPressed()
+        {
+            m_Pose.willCrouch();
+        }
+
+        public void JumpButtonPressed()
+        {
+            m_Pose.willJump();
+        }
     }
 }

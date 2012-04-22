@@ -48,31 +48,63 @@ namespace Tachycardia
                 case MOIS.KeyCode.KC_4:
                     Core.Singleton.m_GameCamera.Cam4();
                     break;
+                /* controler */
+                case MOIS.KeyCode.KC_W:
+                    m_Player.m_Control.ForwardButtonPressed();
+                    break;
+                case MOIS.KeyCode.KC_S:
+                    m_Player.m_Control.BackwardButtonPressed();
+                    break;
+                case MOIS.KeyCode.KC_A:
+                    m_Player.m_Control.LeftButtonPressed();
+                    break;
+                case MOIS.KeyCode.KC_D:
+                    m_Player.m_Control.RightButtonPressed();
+                    break;
+                case MOIS.KeyCode.KC_LSHIFT:
+                    m_Player.m_Control.BoostButtonPressed();
+                    break;
+                case MOIS.KeyCode.KC_SPACE:
+                    m_Player.m_Control.JumpButtonPressed();
+                    break;
+                case MOIS.KeyCode.KC_C:
+                    m_Player.m_Control.CrouchButtonPressed();
+                    break;
+                case MOIS.KeyCode.KC_X:
+                    Console.WriteLine("Pozycja X = " + Core.Singleton.m_Camera.Position.x + " Y = " + Core.Singleton.m_Camera.Position.y + " Z  = " + Core.Singleton.m_Camera.Position.z);
+                    break;
 
+            }
+            return true;
+        }
+
+        public override bool KeyReleased(MOIS.KeyEvent keyEventRef)
+        {
+            switch (keyEventRef.key)
+            {
+                /* Klawisze dla controlera */
+                case MOIS.KeyCode.KC_W:
+                    m_Player.m_Control.ForwardButtonReleased();
+                    break;
+                case MOIS.KeyCode.KC_S:
+                    m_Player.m_Control.BackwardButtonReleased();
+                    break;
+                case MOIS.KeyCode.KC_A:
+                    m_Player.m_Control.LeftButtonReleased();
+                    break;
+                case MOIS.KeyCode.KC_D:
+                    m_Player.m_Control.RightButtonReleased();
+                    break;
+                case MOIS.KeyCode.KC_LSHIFT:
+                    m_Player.m_Control.BoostButtonReleased();
+                    break;
             }
             return true;
         }
 
         public override void Update()
         {
-            /*
-            if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_ESCAPE))
-                Core.Singleton.Shutdown();
 
-            if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_A))
-                m_Player.m_Orientation *= Vector3.UNIT_Z.GetRotationTo(new Vector3(5.0f * Core.m_FixedTime, 0, 1.0f).NormalisedCopy);
-            if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_D))
-                m_Player.m_Orientation *= Vector3.UNIT_Z.GetRotationTo(new Vector3(-5.0f * Core.m_FixedTime, 0, 1.0f).NormalisedCopy);
-            if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_W))
-            {
-                if (Core.Singleton.m_Keyboard.IsKeyDown(MOIS.KeyCode.KC_LSHIFT))
-                    m_Player.m_State = Character.CharacterState.RUN;
-                else
-                    m_Player.m_State = Character.CharacterState.WALK;
-            }
-            else
-                m_Player.m_State = Character.CharacterState.IDLE;
-*/
         }
             
     }

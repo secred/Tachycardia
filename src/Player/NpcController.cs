@@ -78,8 +78,8 @@ namespace Tachycardia
 
             if (m_MissionSteps <= 0)
             {
-                if ((m_MissionType & RUN) > 0)
-                    m_Pose.m_MaxSpd /= 1.5f;
+                /*if ((m_MissionType & RUN) > 0)
+                    m_Pose.m_MaxSpd /= 1.5f;*/
                 switch (Core.Singleton.Rand.Next() % 10)
                 {
                     case 0:
@@ -102,7 +102,7 @@ namespace Tachycardia
                     case 6:
                         m_MissionSteps = Core.Singleton.Rand.Next(30, 120);
                         m_MissionType = RUN;
-                        m_Pose.m_MaxSpd *= 1.5f;
+                        //m_Pose.m_MaxSpd *= 1.5f;
                         break;
                     default:
                         m_MissionSteps = Core.Singleton.Rand.Next(20, 60);

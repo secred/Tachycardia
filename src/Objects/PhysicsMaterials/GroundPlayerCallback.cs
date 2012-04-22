@@ -20,11 +20,10 @@ namespace Tachycardia.Objects.PhysicsMaterials
                 Tachycardia.PlayerController controler = (Tachycardia.PlayerController)contact.Body0.UserData;
                 if (controler != null)
                 {
-                    if (controler.m_Pose == controler.m_myPoses["fly"] && controler.m_jumpLimit < Core.m_FixedFPS / 2)
+                    if (controler.m_Pose.m_name == "fly" && controler.m_jumpLimit < Core.m_FixedFPS / 2)
                     {
-                        controler.m_Pose = controler.m_myPoses["normal"];
-                        controler.m_MainBody.LinearDamping = 1.0f;
-                        Console.WriteLine("NORMAL");
+                        controler.ChangePoseTo("normal");
+                        Console.WriteLine(controler.m_Pose.m_name);
                     }
                     controler.m_Onground = 0;
                 }
@@ -35,11 +34,10 @@ namespace Tachycardia.Objects.PhysicsMaterials
                 Tachycardia.PlayerController controler = (Tachycardia.PlayerController)contact.Body1.UserData;
                 if (controler != null)
                 {
-                    if (controler.m_Pose == controler.m_myPoses["fly"] && controler.m_jumpLimit < Core.m_FixedFPS / 2)
+                    if (controler.m_Pose.m_name == "fly" && controler.m_jumpLimit < Core.m_FixedFPS / 2)
                     {
-                        controler.m_Pose = controler.m_myPoses["normal"];
-                        controler.m_MainBody.LinearDamping = 1.0f;
-                        Console.WriteLine("NORMAL");
+                        controler.ChangePoseTo("normal");
+                        Console.WriteLine(controler.m_Pose.m_name);
                     }
                     controler.m_Onground = 0;
                 }
