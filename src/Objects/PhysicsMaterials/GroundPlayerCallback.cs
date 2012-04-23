@@ -12,6 +12,16 @@ namespace Tachycardia.Objects.PhysicsMaterials
             System.Console.WriteLine(": ");
         }
 
+        public void killtest()
+        {
+            Mogre.OverlayManager.Singleton.GetByName("BrokenScreen").Show();
+            Mogre.MaterialPtr mat = Mogre.MaterialManager.Singleton.GetByName("BrokenScreen");
+            Mogre.TextureUnitState tus = mat.GetTechnique(0).GetPass(0).GetTextureUnitState(0);
+            mat.GetTechnique(0).GetPass(0).SetSceneBlending(Mogre.SceneBlendType.SBT_TRANSPARENT_ALPHA);
+            tus.SetAlphaOperation(Mogre.LayerBlendOperationEx.LBX_MODULATE, Mogre.LayerBlendSource.LBS_MANUAL, Mogre.LayerBlendSource.LBS_TEXTURE, 1);
+            Core.Singleton.m_SoundDict.Play("die_01.wav", new Mogre.Vector3(0, 0, 0));
+        }
+
         public override void UserProcess(MogreNewt.ContactJoint contact, float timestep, int threadIndex)
         {
             if (contact.Body0.Type == (int)PhysicsManager.BodyTypes.PLAYER
@@ -22,6 +32,8 @@ namespace Tachycardia.Objects.PhysicsMaterials
                 {
                     if (controler.m_Pose.m_name == "fly" && controler.m_jumpLimit < Core.m_FixedFPS / 2)
                     {
+                        if (controler.m_MainBody.Velocity.y < -8)
+                            killtest();
                         controler.ChangePoseTo("normal");
                         Console.WriteLine(controler.m_Pose.m_name);
                     }
@@ -36,6 +48,8 @@ namespace Tachycardia.Objects.PhysicsMaterials
                 {
                     if (controler.m_Pose.m_name == "fly" && controler.m_jumpLimit < Core.m_FixedFPS / 2)
                     {
+                        if (controler.m_MainBody.Velocity.y < -8)
+                            killtest();
                         controler.ChangePoseTo("normal");
                         Console.WriteLine(controler.m_Pose.m_name);
                     }
