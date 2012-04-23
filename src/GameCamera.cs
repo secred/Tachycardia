@@ -8,6 +8,46 @@ using Mogre;
 
 namespace Tachycardia
 {
+
+    public class PredicateRaycast : MogreNewt.Raycast
+    {
+        public class ContactInfo
+        {
+            public float Distance;
+            public MogreNewt.Body Body;
+            public Vector3 Normal;
+        }
+
+        public Predicate<MogreNewt.Body> Predicate;
+        public List<ContactInfo> Contacts;
+
+        public PredicateRaycast(Predicate<MogreNewt.Body> pred)
+        {
+            Predicate = pred;
+            Contacts = new List<ContactInfo>();
+        }
+
+        public override bool UserPreFilterCallback(MogreNewt.Body body)
+        {
+            return Predicate(body);
+        }
+
+        public void SortContacts()
+        {
+            Contacts.Sort((a, b) => a.Distance.CompareTo(b.Distance));
+        }
+
+        public override bool UserCallback(MogreNewt.Body body, float distance, Vector3 normal, int collisionID)
+        {
+            ContactInfo contact = new ContactInfo();
+            contact.Distance = distance;
+            contact.Body = body;
+            contact.Normal = normal;
+            Contacts.Add(contact);
+            return true;
+        }
+    }
+
     class GameCamera
     {
         public Character Character;
@@ -17,15 +57,16 @@ namespace Tachycardia
         public int m_Type;
         public float m_Tight;
         public Vector3 m_Height;
+        public Vector3 InterPosition;
 
         public GameCamera()
         {
-            float mass = 1;
+            //float mass = 1;
             m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
 
         }
 
-        public void Update()
+        /*public void Update()
         {
             Vector3 offset =
             Character.m_Node.Orientation * (-Vector3.UNIT_Z +
@@ -41,6 +82,32 @@ namespace Tachycardia
             m_Node.SetPosition(newPosition.x, newPosition.y, newPosition.z);
 
             Core.Singleton.m_Camera.Position = m_Node.Position + m_Height;
+
+            Core.Singleton.m_Camera.LookAt(head);
+        }*/
+
+        public void Update()
+        {
+            Vector3 offset =
+            Character.m_Node.Orientation * (-Vector3.UNIT_Z +
+                (Vector3.UNIT_Y * (float)System.Math.Tan(Angle.ValueRadians))
+                ).NormalisedCopy * Distance;
+
+            Vector3 head = Character.m_Node.Position + Character.m_HeadOffset;
+            Vector3 desiredPosition = head + offset;
+
+            InterPosition += (desiredPosition - InterPosition) * 0.1f;
+
+            PredicateRaycast raycast = new PredicateRaycast((b => !(b.UserData is Tachycardia.Objects.Trigger || b.UserData is Character)));
+            raycast.Go(Core.Singleton.m_NewtonWorld, head, InterPosition);
+            if (raycast.Contacts.Count != 0)
+            {
+                raycast.SortContacts();
+                Core.Singleton.m_Camera.Position = head + (InterPosition - head) * raycast.Contacts[0].Distance
+                    + raycast.Contacts[0].Normal * 0.15f;
+            }
+            else
+                Core.Singleton.m_Camera.Position = InterPosition;
 
             Core.Singleton.m_Camera.LookAt(head);
         }
