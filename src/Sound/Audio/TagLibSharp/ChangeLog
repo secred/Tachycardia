@@ -1,0 +1,30 @@
+2010-05-09  El Dragon  <thedragon@the-dragons-nest.co.uk>
+
+	* File.cs: Added comments to describe change in previous
+	  revision
+
+2010-05-09  El Dragon  <thedragon@the-dragons-nest.co.uk>
+
+	* File.cs: Altered FileStream initialisation to prevent
+	  sharing violation when used in conjunction with CSVorbis
+
+2010-04-16  El Dragon  <thedragon@the-dragons-nest.co.uk>
+
+	* Tag.cs:
+	* File.cs:
+	* Genres.cs:
+	* ICodec.cs:
+	* Picture.cs:
+	* ListBase.cs:
+	* FileTypes.cs:
+	* ByteVector.cs:
+	* Properties.cs:
+	* StringList.cs:
+	* TagLib.sources:
+	* CombinedTag.cs:
+	* ByteVectorList.cs:
+	* SupportedMimeType.cs:
+	* ReadOnlyByteVector.cs:
+	* CorruptFileException.cs:
+	* UnsupportedFormatException.cs: 
+
