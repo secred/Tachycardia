@@ -73,3 +73,5 @@ C:\Users\Andrzej\Projekt_Gry\Tachycardia\bin\Debug\MOIS.dll
 C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\Tachycardia.exe
 C:\Users\Andrzej\Projekt_Gry\Tachycardia\obj\x86\Debug\Tachycardia.pdb
+E:\Tachycardia\obj\x86\Debug\Tachycardia.exe
+E:\Tachycardia\obj\x86\Debug\Tachycardia.pdb

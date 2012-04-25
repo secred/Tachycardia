@@ -66,6 +66,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>WORK\Mogre\MOIS.dll</HintPath>
     </Reference>
+    <Reference Include="OpenTK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WORK\OpenTK.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -97,13 +101,49 @@
     <Compile Include="src\Player\acoztym\PlayerLogic.cs" />
     <Compile Include="src\Sound\AudioContext.cs" />
     <Compile Include="src\Sound\Audio\AudioCapture.cs" />
-    <Compile Include="src\Sound\Audio\AudioContextException.cs" />
     <Compile Include="src\Sound\Audio\AudioDeviceEnumerator.cs" />
     <Compile Include="src\Sound\Audio\AudioDeviceErrorChecker.cs" />
     <Compile Include="src\Sound\Audio\AudioDeviceException.cs" />
     <Compile Include="src\Sound\Audio\AudioException.cs" />
     <Compile Include="src\Sound\Audio\AudioValueException.cs" />
     <Compile Include="src\Sound\Audio\BlittableValueType.cs" />
+    <Compile Include="src\Sound\Audio\csogg\Buffer.cs" />
+    <Compile Include="src\Sound\Audio\csogg\Packet.cs" />
+    <Compile Include="src\Sound\Audio\csogg\Page.cs" />
+    <Compile Include="src\Sound\Audio\csogg\StreamState.cs" />
+    <Compile Include="src\Sound\Audio\csogg\SyncState.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\AllocChain.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Block.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\CodeBook.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Comment.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\csorbisException.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Drft.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\DspState.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\EncodeAuxNearestMatch.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\EncodeAuxThreshMatch.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Floor0.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Floor1.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\FuncFloor.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\FuncMapping.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\FuncResidue.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\FuncTime.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Info.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\InfoMode.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Lookup.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Lpc.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Lsp.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Mapping0.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Mdct.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\PsyInfo.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\PsyLook.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Residue0.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Residue1.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Residue2.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\StaticCodeBook.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\Time0.cs" />
+    <Compile Include="src\Sound\Audio\csvorbis\VorbisFile.cs" />
+    <Compile Include="src\Sound\Audio\OggFile.cs" />
+    <Compile Include="src\Sound\Audio\OggPlayer.cs" />
     <Compile Include="src\Sound\Audio\ContextHandle.cs" />
     <Compile Include="src\Sound\Audio\OpenAL\Alc\Alc.cs" />
     <Compile Include="src\Sound\Audio\OpenAL\Alc\AlcEnums.cs" />
@@ -113,6 +153,23 @@
     <Compile Include="src\Sound\Audio\OpenAL\AL\EffectsExtensionEnums.cs" />
     <Compile Include="src\Sound\Audio\OpenAL\AL\EffectsExtensionPresets.cs" />
     <Compile Include="src\Sound\Audio\OpenAL\AL\XRamExtension.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\ByteVector.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\ByteVectorList.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\File.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\FileTypes.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\ICodec.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\ListBase.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Ogg\Bitstream.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Ogg\Codec.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Ogg\Codecs\Theora.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Ogg\Codecs\Vorbis.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Ogg\File.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Ogg\Page.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Ogg\PageHeader.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Ogg\Paginator.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\Properties.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\ReadOnlyByteVector.cs" />
+    <Compile Include="src\Sound\Audio\TagLibSharp\SupportedMimeType.cs" />
     <Compile Include="src\Sound\SoundDict.cs" />
     <Compile Include="src\Tools\DotSceneLoader.cs" />
     <Compile Include="Program.cs" />
