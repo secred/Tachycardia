@@ -21,6 +21,8 @@ namespace Tachycardia
             Core.Singleton.m_GameCamera.Angle = new Degree(20);
             Core.Singleton.m_GameCamera.Cam1();
 
+            Core.Singleton.m_SoundDict.PlayBGM();
+
             Core.Log("\n\nGAME  INSTRUCTION:\n\nW/A/D  -  Player controller\nW+LSHIFT  -  Run\nESCAPE  -  Exit Game\n\n");
         }
 

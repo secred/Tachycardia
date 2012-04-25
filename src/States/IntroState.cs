@@ -23,6 +23,7 @@ namespace Tachycardia
         public override void Resume()
         {
             base.Resume();
+            Core.Singleton.m_SoundDict.PauseBGM();
             Init();
         }
 

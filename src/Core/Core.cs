@@ -5,7 +5,7 @@ using System.Text;
 using Mogre;
 using MogreNewt;
 using Tachycardia.Objects;
-using Tachycardia.src.Sound;
+using Tachycardia.Sound;
 
 namespace Tachycardia
 {
@@ -407,9 +407,12 @@ namespace Tachycardia
                 OverlayManager.Singleton.GetByName("BrokenScreen").Hide();
             }
 
+            if (keyEventRef.key == MOIS.KeyCode.KC_M) m_SoundDict.PlayBGM();
+            if (keyEventRef.key == MOIS.KeyCode.KC_N) m_SoundDict.StopBGM();
+            if (keyEventRef.key == MOIS.KeyCode.KC_J) m_SoundDict.PauseBGM();
+
             if (keyEventRef.key == MOIS.KeyCode.KC_V)
             {
-                
                 OverlayManager.Singleton.GetByName("BrokenScreen").Show();
                 MaterialPtr mat = MaterialManager.Singleton.GetByName("BrokenScreen");
                 TextureUnitState tus = mat.GetTechnique(0).GetPass(0).GetTextureUnitState(0);
