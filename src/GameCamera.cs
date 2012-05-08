@@ -62,7 +62,7 @@ namespace Tachycardia
         public GameCamera()
         {
             //float mass = 1;
-            m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_Node = Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
 
         }
 
@@ -76,14 +76,14 @@ namespace Tachycardia
             Vector3 head = Character.m_Node.Position + Character.m_HeadOffset;
             Vector3 desiredPosition = head + offset;
 
-            Vector3 newPosition = (Core.Singleton.m_Camera.Position +
-                    (desiredPosition - Core.Singleton.m_Camera.Position) * m_Tight);
+            Vector3 newPosition = (Core.Singleton.Camera.Position +
+                    (desiredPosition - Core.Singleton.Camera.Position) * m_Tight);
 
             m_Node.SetPosition(newPosition.x, newPosition.y, newPosition.z);
 
-            Core.Singleton.m_Camera.Position = m_Node.Position + m_Height;
+            Core.Singleton.Camera.Position = m_Node.Position + m_Height;
 
-            Core.Singleton.m_Camera.LookAt(head);
+            Core.Singleton.Camera.LookAt(head);
         }*/
 
         public void Update()
@@ -99,17 +99,17 @@ namespace Tachycardia
             InterPosition += (desiredPosition - InterPosition) * 0.1f;
 
             PredicateRaycast raycast = new PredicateRaycast((b => !(b.UserData is Tachycardia.Objects.Trigger || b.UserData is Character)));
-            raycast.Go(Core.Singleton.m_NewtonWorld, head, InterPosition);
+            raycast.Go(Core.Singleton.NewtonWorld, head, InterPosition);
             if (raycast.Contacts.Count != 0)
             {
                 raycast.SortContacts();
-                Core.Singleton.m_Camera.Position = head + (InterPosition - head) * raycast.Contacts[0].Distance
+                Core.Singleton.Camera.Position = head + (InterPosition - head) * raycast.Contacts[0].Distance
                     + raycast.Contacts[0].Normal * 0.15f;
             }
             else
-                Core.Singleton.m_Camera.Position = InterPosition;
+                Core.Singleton.Camera.Position = InterPosition;
 
-            Core.Singleton.m_Camera.LookAt(head);
+            Core.Singleton.Camera.LookAt(head);
         }
 
         public void Cam1()

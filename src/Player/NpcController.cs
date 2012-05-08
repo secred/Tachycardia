@@ -20,8 +20,8 @@ namespace Tachycardia
             : base(node, entity, mass)
         {
             m_MainBody.Type = (int)PhysicsManager.BodyTypes.NPC;
-            m_MainBody.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("NPC");
-            m_SecondBody.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("NPC");
+            m_MainBody.MaterialGroupID = Core.Singleton.PhysicsManager.getMaterialID("NPC");
+            m_SecondBody.MaterialGroupID = Core.Singleton.PhysicsManager.getMaterialID("NPC");
         }
 
         //position buffor

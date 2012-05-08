@@ -20,8 +20,8 @@ namespace Tachycardia
         public void SetGraphicsMesh(String meshFile)
         {
             m_GraphicsNode =
-                Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
-            m_GraphicsEntity = Core.Singleton.m_SceneManager.CreateEntity(meshFile);
+                Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_GraphicsEntity = Core.Singleton.SceneManager.CreateEntity(meshFile);
             m_GraphicsNode.AttachObject(m_GraphicsEntity);
             m_GraphicsEntity.CastShadows = false;
         }
@@ -29,17 +29,17 @@ namespace Tachycardia
         public void SetCollisionMesh(String meshFile)
         {
             m_CollisionNode =
-                Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
-            m_CollisionEntity = Core.Singleton.m_SceneManager.CreateEntity(meshFile);
+                Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_CollisionEntity = Core.Singleton.SceneManager.CreateEntity(meshFile);
             m_CollisionNode.AttachObject(m_CollisionEntity);
 
             m_CollisionNode.SetVisible(false);
 
              MogreNewt.CollisionPrimitives.TreeCollisionSceneParser collision = 
                  new MogreNewt.CollisionPrimitives.TreeCollisionSceneParser(
-                Core.Singleton.m_NewtonWorld);
+                Core.Singleton.NewtonWorld);
              collision.ParseScene(m_CollisionNode, true, 1);
-             m_Body = new Body(Core.Singleton.m_NewtonWorld, collision);
+             m_Body = new Body(Core.Singleton.NewtonWorld, collision);
             collision.Dispose();
             m_Body.AttachNode(m_CollisionNode);
         }

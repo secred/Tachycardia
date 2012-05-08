@@ -12,7 +12,7 @@ namespace Tachycardia.Objects.Actions
         public override void Go()
         {
             //getting pointer to player
-            Tachycardia.Character _Player = (Tachycardia.Character)Tachycardia.Core.Singleton.m_ObjectManager.Find("player");
+            Tachycardia.Character _Player = (Tachycardia.Character)Tachycardia.Core.Singleton.ObjectManager.Find("player");
             //added at each physics loop, must be a limit, time or smth
             //if(time > lastUsed+1000)
             //_Player.adrenaline += m_addValue;

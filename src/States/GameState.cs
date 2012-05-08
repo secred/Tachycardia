@@ -14,14 +14,14 @@ namespace Tachycardia
         public override void Enter()
         {
             base.Enter();
-            m_Player = (Character) Core.Singleton.m_ObjectManager.Find("player");
-            //m_Player = (Character)Core.Singleton.m_ObjectManager.Find("bot1");
-            Core.Singleton.m_GameCamera.Character = m_Player;
-            Core.Singleton.m_GameCamera.Distance = 4;
-            Core.Singleton.m_GameCamera.Angle = new Degree(20);
-            Core.Singleton.m_GameCamera.Cam1();
+            m_Player = (Character) Core.Singleton.ObjectManager.Find("player");
+            //m_Player = (Character)Core.Singleton.ObjectManager.Find("bot1");
+            Core.Singleton.GameCamera.Character = m_Player;
+            Core.Singleton.GameCamera.Distance = 4;
+            Core.Singleton.GameCamera.Angle = new Degree(20);
+            Core.Singleton.GameCamera.Cam1();
 
-            Core.Singleton.m_SoundDict.PlayBGM();
+            Core.Singleton.SoundDict.PlayBGM();
 
             Core.Log("\n\nGAME  INSTRUCTION:\n\nW/A/D  -  Player controller\nW+LSHIFT  -  Run\nESCAPE  -  Exit Game\n\n");
         }
@@ -39,16 +39,16 @@ namespace Tachycardia
                     PopState();
                     break;
                 case MOIS.KeyCode.KC_1:
-                    Core.Singleton.m_GameCamera.Cam1();
+                    Core.Singleton.GameCamera.Cam1();
                     break;
                 case MOIS.KeyCode.KC_2:
-                    Core.Singleton.m_GameCamera.Cam2();
+                    Core.Singleton.GameCamera.Cam2();
                     break;
                 case MOIS.KeyCode.KC_3:
-                    Core.Singleton.m_GameCamera.Cam3();
+                    Core.Singleton.GameCamera.Cam3();
                     break;
                 case MOIS.KeyCode.KC_4:
-                    Core.Singleton.m_GameCamera.Cam4();
+                    Core.Singleton.GameCamera.Cam4();
                     break;
                 /* controler */
                 case MOIS.KeyCode.KC_W:
@@ -73,7 +73,7 @@ namespace Tachycardia
                     m_Player.m_Control.CrouchButtonPressed();
                     break;
                 case MOIS.KeyCode.KC_X:
-                    Console.WriteLine("Pozycja X = " + Core.Singleton.m_Camera.Position.x + " Y = " + Core.Singleton.m_Camera.Position.y + " Z  = " + Core.Singleton.m_Camera.Position.z);
+                    Console.WriteLine("Pozycja X = " + Core.Singleton.Camera.Position.x + " Y = " + Core.Singleton.Camera.Position.y + " Z  = " + Core.Singleton.Camera.Position.z);
                     break;
 
             }

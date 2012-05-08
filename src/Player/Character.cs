@@ -44,8 +44,8 @@ namespace Tachycardia
         {//tworzy grafike playera i podczepia mu kontroler, obsluguje animacje i uaktualnia kontroler
             m_HeadOffset = new Vector3(0, 0.8f, 0);
             //headoffset powinien byc chyba zmienny dla croucha itp
-            m_Entity = Core.Singleton.m_SceneManager.CreateEntity(meshName);
-            m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_Entity = Core.Singleton.SceneManager.CreateEntity(meshName);
+            m_Node = Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
             m_Node.AttachObject(m_Entity);
 
             if (npc)
@@ -85,7 +85,7 @@ namespace Tachycardia
                         && (walkAnimation.TimePosition - (Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector)) / walkAnimation.Length < 0.5f
                         || (walkAnimation.TimePosition - (Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector)) / walkAnimation.Length < 0.0f)
                     {
-                        Core.Singleton.m_SoundDict.Play("player/step_gravel_0" + new Random().Next(1, 4) + ".wav", m_Control.m_MainBody.Position);
+                        Core.Singleton.SoundDict.Play("player/step_gravel_0" + new Random().Next(1, 4) + ".wav", m_Control.m_MainBody.Position);
                     }
                     break;
                 case PlayerController.CharacterState.RUN:
@@ -97,7 +97,7 @@ namespace Tachycardia
                         && (walkAnimation.TimePosition - (Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector)) / walkAnimation.Length < 0.5f
                         || (walkAnimation.TimePosition - (Core.m_FixedTime * m_Control.m_MainBody.Velocity.Length * animationCorrector)) / walkAnimation.Length < 0.0f)
                     {
-                        Core.Singleton.m_SoundDict.Play("player/step_gravel_0" + new Random().Next(1, 4) + ".wav", m_Control.m_MainBody.Position);
+                        Core.Singleton.SoundDict.Play("player/step_gravel_0" + new Random().Next(1, 4) + ".wav", m_Control.m_MainBody.Position);
                     }
                     break;
             }

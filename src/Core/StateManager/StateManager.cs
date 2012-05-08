@@ -145,7 +145,7 @@ namespace Tachycardia
 
         public void Init(State state)
         {
-            Core.Singleton.m_RenderWindow.ResetStatistics();
+            Core.Singleton.RenderWindow.ResetStatistics();
         }
 
         public void Update()

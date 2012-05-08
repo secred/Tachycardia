@@ -66,9 +66,16 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>WORK\Mogre\MOIS.dll</HintPath>
     </Reference>
+    <Reference Include="MSkyX, Version=1.0.4510.39635, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WORK\MSkyX.dll</HintPath>
+    </Reference>
     <Reference Include="OpenTK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>WORK\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections">
+      <HintPath>WORK\PowerCollections.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -171,6 +178,9 @@
     <Compile Include="src\Sound\Audio\TagLibSharp\ReadOnlyByteVector.cs" />
     <Compile Include="src\Sound\Audio\TagLibSharp\SupportedMimeType.cs" />
     <Compile Include="src\Sound\SoundDict.cs" />
+    <Compile Include="src\Tools\Commands\Command.cs" />
+    <Compile Include="src\Tools\Commands\SkyX.cs" />
+    <Compile Include="src\Tools\ConsoleParser.cs" />
     <Compile Include="src\Tools\DotSceneLoader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

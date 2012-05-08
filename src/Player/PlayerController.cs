@@ -154,7 +154,7 @@ namespace Tachycardia
             m_ForwardForceBoost = 40;
 
             m_collision = new MogreNewt.CollisionPrimitives.Capsule(
-                Core.Singleton.m_NewtonWorld,
+                Core.Singleton.NewtonWorld,
                 0.30f,
                 1.25f,
                 Mogre.Vector3.UNIT_X.GetRotationTo(Mogre.Vector3.UNIT_Y),
@@ -185,7 +185,7 @@ namespace Tachycardia
             //lekki opór powietrza
             m_LinearDampingValue = 0.3f;
             m_collision = new MogreNewt.CollisionPrimitives.Capsule(
-                Core.Singleton.m_NewtonWorld,
+                Core.Singleton.NewtonWorld,
                 0.30f,
                 1.25f,
                 Mogre.Vector3.UNIT_X.GetRotationTo(Mogre.Vector3.UNIT_Y),
@@ -221,7 +221,7 @@ namespace Tachycardia
             m_ForwardForceBoost = 16;
             m_name = "crouch";
             m_collision = new MogreNewt.CollisionPrimitives.Capsule(
-                Core.Singleton.m_NewtonWorld,
+                Core.Singleton.NewtonWorld,
                 0.25f,
                 0.5f,
                 Mogre.Vector3.UNIT_X.GetRotationTo(Mogre.Vector3.UNIT_Y),
@@ -323,7 +323,7 @@ namespace Tachycardia
             m_PlayerNode = node;
             //Ball
             MogreNewt.ConvexCollision collision = new MogreNewt.CollisionPrimitives.Ellipsoid(
-                    Core.Singleton.m_NewtonWorld,
+                    Core.Singleton.NewtonWorld,
                     new Mogre.Vector3(0.25f, 0.25f, 0.25f),
                     new Mogre.Quaternion(new Mogre.Radian(1.57f), new Mogre.Vector3(0, 1, 0)),
                     Core.Singleton.GetUniqueBodyId());
@@ -332,7 +332,7 @@ namespace Tachycardia
             collision.CalculateInertialMatrix(out inertia, out offset);
             inertia *= mass;//mass
 
-            m_MainBody = new MogreNewt.Body(Core.Singleton.m_NewtonWorld, collision, true);
+            m_MainBody = new MogreNewt.Body(Core.Singleton.NewtonWorld, collision, true);
             m_MainBody.SetMassMatrix(mass, inertia);
             m_MainBody.AutoSleep = false;
 
@@ -344,7 +344,7 @@ namespace Tachycardia
 
             collision.Dispose();
 
-            m_MainBody.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("Player");
+            m_MainBody.MaterialGroupID = Core.Singleton.PhysicsManager.getMaterialID("Player");
             //Ball end
 
             m_Pose = m_myPoses["normal"];
@@ -353,20 +353,20 @@ namespace Tachycardia
 
             m_Pose.m_collision.CalculateInertialMatrix(out inertia2, out offset2);
             inertia2 *= 1;
-            m_SecondBody = new MogreNewt.Body(Core.Singleton.m_NewtonWorld, m_Pose.m_collision, true);
+            m_SecondBody = new MogreNewt.Body(Core.Singleton.NewtonWorld, m_Pose.m_collision, true);
             m_SecondBody.SetMassMatrix(1, inertia2);
             m_SecondBody.AutoSleep = false;
             m_SecondBody.IsGravityEnabled = false;
             m_SecondBody.SetPositionOrientation(new Mogre.Vector3(0, 1f, 0), Mogre.Quaternion.IDENTITY);
-            m_SecondBody.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("Player");
+            m_SecondBody.MaterialGroupID = Core.Singleton.PhysicsManager.getMaterialID("Player");
             m_SecondBody.UserData = null;
 
             //set Y joint for second body
             MogreNewt.Joint upVector = new MogreNewt.BasicJoints.UpVector(
-            Core.Singleton.m_NewtonWorld, m_SecondBody, Mogre.Vector3.UNIT_Y);
+            Core.Singleton.NewtonWorld, m_SecondBody, Mogre.Vector3.UNIT_Y);
 
             //connections between player bodies!
-            player_join = new MogreNewt.BasicJoints.BallAndSocket(Core.Singleton.m_NewtonWorld, m_MainBody, m_SecondBody, new Mogre.Vector3(0, 0, 0));
+            player_join = new MogreNewt.BasicJoints.BallAndSocket(Core.Singleton.NewtonWorld, m_MainBody, m_SecondBody, new Mogre.Vector3(0, 0, 0));
         }
 
         //position buffor

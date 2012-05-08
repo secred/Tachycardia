@@ -55,8 +55,8 @@ namespace Tachycardia.Objects
         {//tworzy grafike playera i podczepia mu kontroler, obsluguje animacje i uaktualnia kontroler
             m_HeadOffset = new Vector3(0, 0.1f, 0);
             //headoffset powinien byc chyba zmienny dla croucha itp
-            m_Entity = Core.Singleton.m_SceneManager.CreateEntity(meshName);
-            m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_Entity = Core.Singleton.SceneManager.CreateEntity(meshName);
+            m_Node = Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
             m_Node.AttachObject(m_Entity);
             m_Node.SetPosition(0f, 0f, 0f);
             SetPhysics(m_Entity, m_Node, mass);
@@ -66,8 +66,8 @@ namespace Tachycardia.Objects
         {//tworzy grafike playera i podczepia mu kontroler, obsluguje animacje i uaktualnia kontroler
             m_HeadOffset = new Vector3(0, 0.1f, 0);
             //headoffset powinien byc chyba zmienny dla croucha itp
-            m_Entity = Core.Singleton.m_SceneManager.CreateEntity(meshName);
-            m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_Entity = Core.Singleton.SceneManager.CreateEntity(meshName);
+            m_Node = Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
             m_Node.AttachObject(m_Entity);
             m_Node.Rotate(new Mogre.Quaternion(new Mogre.Radian(Mogre.Math.RadiansToDegrees(20)), new Mogre.Vector3(0f, 1f, 0f)));
             m_Node.SetPosition(v.x, v.y, v.z);
@@ -78,8 +78,8 @@ namespace Tachycardia.Objects
         {//tworzy grafike playera i podczepia mu kontroler, obsluguje animacje i uaktualnia kontroler
             m_HeadOffset = new Vector3(0, 0.1f, 0);
             //headoffset powinien byc chyba zmienny dla croucha itp
-            m_Entity = Core.Singleton.m_SceneManager.CreateEntity(meshName);
-            m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_Entity = Core.Singleton.SceneManager.CreateEntity(meshName);
+            m_Node = Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
             m_Node.AttachObject(m_Entity);
             m_Node.SetPosition(v.x, v.y, v.z);
             SetPhysics(m_Entity, m_Node);
@@ -91,8 +91,8 @@ namespace Tachycardia.Objects
         {//tworzy grafike playera i podczepia mu kontroler, obsluguje animacje i uaktualnia kontroler
             m_HeadOffset = new Vector3(0, 0.1f, 0);
             //headoffset powinien byc chyba zmienny dla croucha itp
-            m_Entity = Core.Singleton.m_SceneManager.CreateEntity(meshName);
-            m_Node = Core.Singleton.m_SceneManager.RootSceneNode.CreateChildSceneNode();
+            m_Entity = Core.Singleton.SceneManager.CreateEntity(meshName);
+            m_Node = Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
             m_Node.AttachObject(m_Entity);
             m_Node.SetPosition(v.x, v.y, v.z);
             SetPhysics(m_Entity, m_Node);
@@ -101,10 +101,10 @@ namespace Tachycardia.Objects
         public void SetPhysics(Mogre.Entity entity, Mogre.SceneNode node, float mass)
         {
             MogreNewt.ConvexCollision collision = new MogreNewt.CollisionPrimitives.Box(
-                Core.Singleton.m_NewtonWorld,
-                Core.Singleton.m_PhysicsManager.getCollisionBoxSize(entity, node),
-               // Core.Singleton.m_PhysicsManager.getCollisionCylinderRadius(entity, node),
-               // Core.Singleton.m_PhysicsManager.getCollisionCylinderHeight(entity, node),
+                Core.Singleton.NewtonWorld,
+                Core.Singleton.PhysicsManager.getCollisionBoxSize(entity, node),
+               // Core.Singleton.PhysicsManager.getCollisionCylinderRadius(entity, node),
+               // Core.Singleton.PhysicsManager.getCollisionCylinderHeight(entity, node),
                // new Mogre.Quaternion(new Mogre.Radian(1.57f), new Mogre.Vector3(0f, 0f, 1f)),
                 Core.Singleton.GetUniqueBodyId()
                 );
@@ -113,20 +113,20 @@ namespace Tachycardia.Objects
             collision.CalculateInertialMatrix(out inertia, out offset);
             inertia *= mass;
 
-            m_Body = new MogreNewt.Body(Core.Singleton.m_NewtonWorld, collision, true);
+            m_Body = new MogreNewt.Body(Core.Singleton.NewtonWorld, collision, true);
             m_Body.AttachNode(node);
             m_Body.SetMassMatrix(mass, inertia);
             m_Body.SetPositionOrientation( node.Position + new Vector3(0,1,0) , node.Orientation);
-            m_Body.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("Ground");
+            m_Body.MaterialGroupID = Core.Singleton.PhysicsManager.getMaterialID("Ground");
         }
 
 
         public void SetPhysics(Mogre.Entity entity, Mogre.SceneNode node)
         {
             MogreNewt.ConvexCollision collision = new MogreNewt.CollisionPrimitives.Cylinder(
-                Core.Singleton.m_NewtonWorld,
-                Core.Singleton.m_PhysicsManager.getCollisionCylinderRadius(entity, node),
-                Core.Singleton.m_PhysicsManager.getCollisionCylinderHeight(entity, node),
+                Core.Singleton.NewtonWorld,
+                Core.Singleton.PhysicsManager.getCollisionCylinderRadius(entity, node),
+                Core.Singleton.PhysicsManager.getCollisionCylinderHeight(entity, node),
                 new Mogre.Quaternion(new Mogre.Radian(1.57f), new Mogre.Vector3(0f, 0f, 1f)),
                 Core.Singleton.GetUniqueBodyId()
                 );
@@ -135,11 +135,11 @@ namespace Tachycardia.Objects
             collision.CalculateInertialMatrix(out inertia, out offset);
             
 
-            m_Body = new MogreNewt.Body(Core.Singleton.m_NewtonWorld, collision, true);
+            m_Body = new MogreNewt.Body(Core.Singleton.NewtonWorld, collision, true);
             m_Body.AttachNode(node);
             
             m_Body.SetPositionOrientation(node.Position + new Vector3(0, 1, 0), node.Orientation);
-            m_Body.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("Ground");
+            m_Body.MaterialGroupID = Core.Singleton.PhysicsManager.getMaterialID("Ground");
         }
 
         public override void Update()

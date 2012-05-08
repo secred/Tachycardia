@@ -13,10 +13,10 @@ namespace Tachycardia
         {
             if (Core.Singleton.Initialise())
             {
-                Core.Singleton.m_StateManager.RegisterState("Intro", new IntroState());
-                Core.Singleton.m_StateManager.RegisterState("Game", new GameState());
+                Core.Singleton.StateManager.RegisterState("Intro", new IntroState());
+                Core.Singleton.StateManager.RegisterState("Game", new GameState());
 
-                Core.Singleton.m_StateManager.PushState("Intro");
+                Core.Singleton.StateManager.PushState("Intro");
                 Core.Singleton.Go();
             }
             else

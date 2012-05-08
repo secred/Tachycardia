@@ -20,7 +20,7 @@ namespace Tachycardia.Objects
             {
                 case "box":
                     m_collision = new MogreNewt.CollisionPrimitives.Box(
-                                    Core.Singleton.m_NewtonWorld,
+                                    Core.Singleton.NewtonWorld,
                                     _shapesize,
                                     new Mogre.Quaternion(new Mogre.Radian(1.57f), new Mogre.Vector3(0, 0, 1)),
                                     Core.Singleton.GetUniqueBodyId()
@@ -28,7 +28,7 @@ namespace Tachycardia.Objects
                     break;
                 case "ellipsoid":
                     m_collision = new MogreNewt.CollisionPrimitives.Ellipsoid(
-                                    Core.Singleton.m_NewtonWorld,
+                                    Core.Singleton.NewtonWorld,
                                     _shapesize,
                                     new Mogre.Quaternion(new Mogre.Radian(1.57f), new Mogre.Vector3(0, 0, 1)),
                                     Core.Singleton.GetUniqueBodyId()
@@ -37,10 +37,10 @@ namespace Tachycardia.Objects
             }
 
             m_collision.IsTriggerVolume = true;
-            m_Body = new MogreNewt.Body(Core.Singleton.m_NewtonWorld, m_collision, true);
+            m_Body = new MogreNewt.Body(Core.Singleton.NewtonWorld, m_collision, true);
             m_Body.UserData = this;
             m_Body.Type = (int)PhysicsManager.BodyTypes.TRIGGER;
-            m_Body.MaterialGroupID = Core.Singleton.m_PhysicsManager.getMaterialID("Trigger");
+            m_Body.MaterialGroupID = Core.Singleton.PhysicsManager.getMaterialID("Trigger");
         }
 
         public void SetPosition(Mogre.Vector3 position)

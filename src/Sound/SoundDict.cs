@@ -190,10 +190,10 @@ namespace Tachycardia.Sound
 
         public void Update()
         {
-            Mogre.Vector3 t = Core.Singleton.m_Camera.RealPosition;
-            Mogre.Vector3 w = Core.Singleton.m_Camera.Direction;
+            Mogre.Vector3 t = Core.Singleton.Camera.RealPosition;
+            Mogre.Vector3 w = Core.Singleton.Camera.Direction;
             //w.Normalise();
-            Mogre.Vector3 u = Core.Singleton.m_Camera.Up;
+            Mogre.Vector3 u = Core.Singleton.Camera.Up;
             //u.Normalise();
             AL.Listener(ALListener3f.Position, t.x, t.y, t.z);
             float []temp = new float[6];

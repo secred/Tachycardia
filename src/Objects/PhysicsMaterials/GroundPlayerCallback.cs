@@ -19,7 +19,7 @@ namespace Tachycardia.Objects.PhysicsMaterials
             Mogre.TextureUnitState tus = mat.GetTechnique(0).GetPass(0).GetTextureUnitState(0);
             mat.GetTechnique(0).GetPass(0).SetSceneBlending(Mogre.SceneBlendType.SBT_TRANSPARENT_ALPHA);
             tus.SetAlphaOperation(Mogre.LayerBlendOperationEx.LBX_MODULATE, Mogre.LayerBlendSource.LBS_MANUAL, Mogre.LayerBlendSource.LBS_TEXTURE, 1);
-            Core.Singleton.m_SoundDict.Play("die_01.wav", new Mogre.Vector3(0, 0, 0));
+            Core.Singleton.SoundDict.Play("die_01.wav", new Mogre.Vector3(0, 0, 0));
         }
 
         public override void UserProcess(MogreNewt.ContactJoint contact, float timestep, int threadIndex)

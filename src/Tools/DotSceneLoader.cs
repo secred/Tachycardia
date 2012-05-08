@@ -547,14 +547,14 @@
             {
                 //pNode.SetVisible(false);
                 MogreNewt.CollisionPrimitives.TreeCollisionSceneParser collision =
-                        new MogreNewt.CollisionPrimitives.TreeCollisionSceneParser(Tachycardia.Core.Singleton.m_NewtonWorld);
+                        new MogreNewt.CollisionPrimitives.TreeCollisionSceneParser(Tachycardia.Core.Singleton.NewtonWorld);
                 collision.ParseScene(pNode, true, 1);
-                Tachycardia.Map map = Tachycardia.Core.Singleton.m_CurrentMap = new Tachycardia.Map();
-                map.m_Body = new MogreNewt.Body(Tachycardia.Core.Singleton.m_NewtonWorld, collision);
+                Tachycardia.Map map = Tachycardia.Core.Singleton.CurrentMap = new Tachycardia.Map();
+                map.m_Body = new MogreNewt.Body(Tachycardia.Core.Singleton.NewtonWorld, collision);
                 map.m_Body.SetPositionOrientation(pNode.Position, pNode.Orientation);
                 collision.Dispose();
                 //to do wymiany powinno byc w propertisie
-                map.m_Body.MaterialGroupID = Tachycardia.Core.Singleton.m_PhysicsManager.getMaterialID("Ground");
+                map.m_Body.MaterialGroupID = Tachycardia.Core.Singleton.PhysicsManager.getMaterialID("Ground");
                 map.m_Body.AttachNode(pNode);
             }
             else
@@ -702,7 +702,7 @@
                     Console.WriteLine("TriggerName: " + triggerName);
                     //Console.WriteLine("Material: " + PhysicsMaterial);
 
-                    Tachycardia.Core.Singleton.m_ObjectManager.Add(triggerName, TriggerTeleport);
+                    Tachycardia.Core.Singleton.ObjectManager.Add(triggerName, TriggerTeleport);
                 }
 
                 pElement = (XmlElement)pElement.NextSibling;
