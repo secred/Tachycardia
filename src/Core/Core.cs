@@ -16,7 +16,7 @@ namespace Tachycardia
 		private Mogre.Root m_Root;
 		private Mogre.RenderWindow m_RenderWindow;
 		private Mogre.SceneManager m_SceneManager;
-		private Mogre.Camera m_Camera;
+		public Mogre.Camera m_Camera;
 		private Mogre.Viewport m_Viewport;
 		private MOIS.Keyboard m_Keyboard;
 		private MOIS.Mouse m_Mouse;
@@ -29,7 +29,7 @@ namespace Tachycardia
 
 		private Map m_CurrentMap;
 		private GameCamera m_GameCamera;
-		private ObjectManager m_ObjectManager;
+		public ObjectManager m_ObjectManager;
 		private StateManager m_StateManager;
 		private PhysicsManager m_PhysicsManager;
 		private SoundDict m_SoundDict;
@@ -405,7 +405,7 @@ namespace Tachycardia
 
 			//overlaye na klawisz: Enter i R wlacza, T wylacza
 			m_Keyboard.KeyPressed += new MOIS.KeyListener.KeyPressedHandler(KeyPressedHandler);
-
+            m_Keyboard.KeyReleased += new MOIS.KeyListener.KeyReleasedHandler(KeyReleasedHandler);
 
 		}
 		/*
@@ -440,6 +440,10 @@ private void CreateScene()
 		//hello world na wierzch - V
 		//wylacz - T
 		//broken screen - B
+        //bullet time (in sound) - K
+        //background music play - M
+        //background music pause - J
+        // background music stop - N
 		public bool KeyPressedHandler(MOIS.KeyEvent keyEventRef)
 		{
 			if (keyEventRef.key == MOIS.KeyCode.KC_RETURN)
@@ -486,6 +490,7 @@ private void CreateScene()
 			if (keyEventRef.key == MOIS.KeyCode.KC_M) m_SoundDict.PlayBGM();
 			if (keyEventRef.key == MOIS.KeyCode.KC_N) m_SoundDict.StopBGM();
 			if (keyEventRef.key == MOIS.KeyCode.KC_J) m_SoundDict.PauseBGM();
+            if (keyEventRef.key == MOIS.KeyCode.KC_K) m_SoundDict.m_IsBulletTime = true;
 
 			if (keyEventRef.key == MOIS.KeyCode.KC_V)
 			{
@@ -504,6 +509,12 @@ private void CreateScene()
 			}
 			return true;
 		}
+
+        public bool KeyReleasedHandler(MOIS.KeyEvent keyEventRef)
+        {
+            if (keyEventRef.key == MOIS.KeyCode.KC_K) m_SoundDict.m_IsBulletTime = false;
+            return true;
+        }
 
 		public bool KeyPressed(MOIS.KeyEvent keyEventRef)
 		{

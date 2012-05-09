@@ -18,47 +18,78 @@ namespace Tachycardia.Sound.BGM
         public int BufferLength, ReturnValue, RateHz;
     }
 
-	public class OggPlayer
-	{
+    public class OggPlayer
+    {
+        private OggFile m_CurrentFile;
         private uint[] m_Buffers;
         private int m_BufferSize;
-        private OggFile m_CurrentFile;
-        private uint m_Source;
+        public uint m_Source;
         private OggPlayerStatus m_PlayerState;
         private event OggPlayerStateChangedHandler StateChanged;
 
         private int BufferSize { get { return m_BufferSize; } }
         private OggFile CurrentFile { get { return m_CurrentFile; } }
-        private bool SetCurrentFile(string NewFilename) { return SetCurrentFile(new OggFile(NewFilename)); }
+        public bool SetCurrentFile(string NewFilename) { return SetCurrentFile(new OggFile(NewFilename)); }
         private OggPlayerStatus PlayerState { get { return m_PlayerState; } }
 
-        public bool SetCurrentFile(OggFile NewFile){
+        private static readonly object StateLocker = new object();
+        private static object OALLocker = new object();
+
+        /**
+         * Ustawia poziom g³oœnoœci muzyki w tle na poziom z parametru
+        */
+        //public void SetVolume(float m_Value) 
+        //{
+        //    AL.Source(m_Source, ALSourcef.Gain, m_Value); 
+        //}
+
+        /**
+         * Ustawia wysokoœæ d¿wiêków muzyki w tle na poziom z parametru
+         * (spowalnia/przyspiesza odtwarzanie)
+        */
+        //public void SetPitch(float m_Value) 
+        //{ 
+        //    AL.Source(m_Source, ALSourcef.Pitch, m_Value); 
+        //}
+
+        /**
+         * Ustawia œcie¿kê do pliku, który mo¿e zostaæ nastêpnie odtworzony
+        */
+        public bool SetCurrentFile(OggFile NewFile1)
+        {
             if (!((m_PlayerState == OggPlayerStatus.Stopped) || (m_PlayerState == OggPlayerStatus.Waiting))) { return false; }
-            m_CurrentFile = NewFile;
+            m_CurrentFile = NewFile1;
             StateChange(OggPlayerStatus.Stopped, OggPlayerStateChanger.UserRequest);
             return true;
         }
 
-        public OggPlayer() {
+        public OggPlayer()
+        {
             m_BufferSize = 4096;
-            m_Buffers = new uint[32];	 
-            m_PlayerState = OggPlayerStatus.Waiting;	
+            m_Buffers = new uint[32];
+            m_PlayerState = OggPlayerStatus.Waiting;
             InitSource();
         }
 
-        ~OggPlayer() {
+        ~OggPlayer()
+        {
             AL.DeleteBuffers(m_Buffers);
             AL.DeleteSource(ref m_Source);
             if (m_CurrentFile != null) { m_CurrentFile.Dispose(); m_CurrentFile = null; }
         }
 
         private void StateChange(OggPlayerStatus NewState) { StateChange(NewState, OggPlayerStateChanger.Internal); }
-        private void StateChange(OggPlayerStatus NewState, OggPlayerStateChanger Reason){
-			if (StateChanged!=null) { StateChanged(this, new OggPlayerStateChangedArgs(m_PlayerState, NewState, Reason)); }
-			m_PlayerState = NewState;
-		}	
+        private void StateChange(OggPlayerStatus NewState, OggPlayerStateChanger Reason)
+        {
+            if (StateChanged != null) { StateChanged(this, new OggPlayerStateChangedArgs(m_PlayerState, NewState, Reason)); }
+            m_PlayerState = NewState;
+        }
 
-        public void Play() {
+        /**
+         * Przygotowanie i odpalenie w¹tku odtwarzania
+        */
+        public void Playback()
+        {
             if (m_PlayerState == OggPlayerStatus.Stopped)
             {
                 StateChange(OggPlayerStatus.Buffering, OggPlayerStateChanger.UserRequest);
@@ -89,7 +120,11 @@ namespace Tachycardia.Sound.BGM
             else if (m_PlayerState == OggPlayerStatus.Paused) UnPause();
         }
 
-        public void Stop() {
+        /**
+         * Zakoñczenie odtwarzania bie¿¹cego pliku
+        */
+        public void Stop()
+        {
             if (!((m_PlayerState == OggPlayerStatus.Paused) || (m_PlayerState == OggPlayerStatus.Playing))) { return; }
             lock (OALLocker)
             {
@@ -105,55 +140,73 @@ namespace Tachycardia.Sound.BGM
             StateChange(OggPlayerStatus.Stopped, OggPlayerStateChanger.UserRequest);
         }
 
-        public void Pause() {
+        /**
+         * Wejœcie do stanu Paused
+        */
+        public void Pause()
+        {
             if (!(m_PlayerState == OggPlayerStatus.Playing)) { return; }
             lock (OALLocker) { AL.SourcePause(m_Source); }
             StateChange(OggPlayerStatus.Paused, OggPlayerStateChanger.UserRequest);
         }
 
-        private void UnPause() {
+        /**
+         * Powoduje wyjœcie ze stanu Paused - wznowienie odtwarzania
+        */
+        private void UnPause()
+        {
             if (!(m_PlayerState == OggPlayerStatus.Paused)) { return; }
             lock (OALLocker) { AL.SourcePlay(m_Source); }
             StateChange(OggPlayerStatus.Playing, OggPlayerStateChanger.UserRequest);
         }
 
-		private bool InitSource() {
-			try 
-			{
-				AL.GenSource(out m_Source);
-				AL.Source(m_Source, ALSource3f.Position, 0.0f, 0.0f, 0.0f);
-				AL.Source(m_Source, ALSource3f.Velocity, 0.0f, 0.0f, 0.0f);
-				AL.Source(m_Source, ALSource3f.Direction, 0.0f, 0.0f, 0.0f);
-				AL.Source(m_Source, ALSourcef.RolloffFactor, 0.0f);
-				AL.Source(m_Source, ALSourceb.SourceRelative, true);	
-				return true;
-			}
-			catch (Exception ex) { return false; }
-		}
+        /**
+         * Ustawia pocz¹tkowe parametry Ÿród³a dŸwiêku
+        */
+        private bool InitSource()
+        {
+            try
+            {
+                AL.GenSource(out m_Source);
+                AL.Source(m_Source, ALSource3f.Position, 0.0f, 0.0f, 0.0f);
+                AL.Source(m_Source, ALSource3f.Velocity, 0.0f, 0.0f, 0.0f);
+                AL.Source(m_Source, ALSource3f.Direction, 0.0f, 0.0f, 0.0f);
+                AL.Source(m_Source, ALSourcef.RolloffFactor, 0.0f);
+                AL.Source(m_Source, ALSourceb.SourceRelative, true);
+                return true;
+            }
+            catch (Exception ex) { return false; }
+        }
 
-        private bool DestroySource() {
-			try
-			{
-				if ( (AL.GetSourceState(m_Source) == ALSourceState.Paused) 
-                    || (AL.GetSourceState(m_Source) == ALSourceState.Playing) )
-					AL.SourceStop(m_Source);	
-				AL.DeleteSource(ref m_Source);
-				return true;
-			}
-			catch (Exception ex){ return false; }
-		}	
-		
-        private static readonly object StateLocker = new object();
-        private static object OALLocker = new object();
+        /**
+         *  sprz¹tanie
+         */
+        private bool DestroySource()
+        {
+            try
+            {
+                if ((AL.GetSourceState(m_Source) == ALSourceState.Paused)
+                    || (AL.GetSourceState(m_Source) == ALSourceState.Playing))
+                    AL.SourceStop(m_Source);
+                AL.DeleteSource(ref m_Source);
+                return true;
+            }
+            catch (Exception ex) { return false; }
+        }
 
-        public void Dispose() {
+        public void Dispose()
+        {
             this.Stop();
             AL.DeleteBuffers(m_Buffers);
             DestroySource();
             if (m_CurrentFile != null) { m_CurrentFile.Dispose(); m_CurrentFile = null; }
         }
 
-        private void PlayThread() {
+        /**
+         *  funkcja odpalana na oddzielnym w¹tku
+         */
+        private void PlayThread()
+        {
             bool Running = true; bool ReachedEOF = false; bool UnderRun = false;
             while (Running)
             {
@@ -187,7 +240,7 @@ namespace Tachycardia.Sound.BGM
                         if (AL.GetSourceState(m_Source) != ALSourceState.Playing)
                             AL.SourcePlay(m_Source);
 
-                    int ProcessedBuffers = 0; 
+                    int ProcessedBuffers = 0;
                     uint BufferRef = 0;
                     lock (OALLocker)
                     {
@@ -229,7 +282,8 @@ namespace Tachycardia.Sound.BGM
                             }
                         }
 
-                        if ( AL.GetError()!=ALError.NoError ) {
+                        if (AL.GetError() != ALError.NoError)
+                        {
                             StateChange(OggPlayerStatus.Error, OggPlayerStateChanger.Error);
                             lock (OALLocker) { AL.SourceStop(m_Source); }
                             Running = false;
@@ -245,18 +299,19 @@ namespace Tachycardia.Sound.BGM
                 Thread.Sleep(10);
             }
         }
-	}
-	
-	public delegate void OggPlayerStateChangedHandler(object sender, OggPlayerStateChangedArgs e);
-	
-	public class OggPlayerStateChangedArgs
-	{
-		private OggPlayerStatus m_OldState, m_NewState;
-		private OggPlayerStateChanger m_Changer;
-		
-		public OggPlayerStateChangedArgs(OggPlayerStatus eOldState, OggPlayerStatus eNewState, OggPlayerStateChanger eChanger){ m_OldState = eOldState; m_NewState = eNewState; m_Changer = eChanger; }
+
+    }
+
+    public delegate void OggPlayerStateChangedHandler(object sender, OggPlayerStateChangedArgs e);
+
+    public class OggPlayerStateChangedArgs
+    {
+        private OggPlayerStatus m_OldState, m_NewState;
+        private OggPlayerStateChanger m_Changer;
+
+        public OggPlayerStateChangedArgs(OggPlayerStatus eOldState, OggPlayerStatus eNewState, OggPlayerStateChanger eChanger) { m_OldState = eOldState; m_NewState = eNewState; m_Changer = eChanger; }
         public OggPlayerStateChanger Changer { get { return m_Changer; } }
         public OggPlayerStatus OldState { get { return m_OldState; } }
-		public OggPlayerStatus NewState { get { return m_NewState; } }
-	}
+        public OggPlayerStatus NewState { get { return m_NewState; } }
+    }
 }

@@ -6,39 +6,46 @@ using System.IO;
 using OpenTK.Audio.OpenAL;
 using OpenTK.Audio;
 using Tachycardia.Sound.BGM;
+using Tachycardia;
 
 namespace Tachycardia.Sound
 {
     class SoundDict
     {
         private OggPlayer m_player;
+        private float m_BGMVolume;
+        private float m_Pitch;
 
-        //static readonly string filename = Path.Combine(Path.Combine("Data", "Audio"), "the_ring_that_fell.wav");
+        public bool m_IsBulletTime;
+
         private string basename;
         private int m_channels;
         private int m_ambients;
         private int[] m_sourceChannels;
         private int[] m_ambientChannels;
-        //public int m_ktoryteraz;
         private AudioContext m_AudioContext;
         private Dictionary<string, int> m_Dictionary;
         private bool m_isMuted;
 
+        private int m_HeartBeatChannel;
+        private int m_HeartBeatBuff;
+        private float m_Pulse;
+        private float m_PulseRatio;
+
         public SoundDict()
         {
             basename = "Media/sfx/";
-            m_channels=8;
-            m_ambients=1;
+            m_channels = 8;
+            m_ambients = 1;
             m_sourceChannels = new int[m_channels];
             m_ambientChannels = new int[m_ambients];
-            //m_ktoryteraz = 0;
             m_AudioContext = new AudioContext();
-            
+            m_Dictionary = new Dictionary<string, int>();
+
             // background music player
             m_player = new OggPlayer();
-            
 
-            m_Dictionary = new Dictionary<string, int>();
+            m_HeartBeatChannel = AL.GenSource();
 
             for (int i = 0; i < m_channels; i++)
                 m_sourceChannels[i] = AL.GenSource();
@@ -52,8 +59,22 @@ namespace Tachycardia.Sound
 
         private void Initialize()
         {
-            OggFile file = new OggFile("Media\\bgm\\main_menu.ogg");
-            m_player.SetCurrentFile(file);
+            m_player.SetCurrentFile("Media\\bgm\\main_menu.ogg");
+            m_BGMVolume = 1.0f;
+            m_Pitch = 1.0f;
+            m_Pulse = 83.0f; // prawidłowo 65-85, a wg próbki 83 bpm
+            m_PulseRatio = 1.0f; ; // z zakresu 1-2, bo tętno wysiłkowe może mieć ponad 150 bpm
+
+
+            m_IsBulletTime = false;
+
+            //m_HeartBeat.LoadFile("Media\\sfx\\player\\heartbeat.wav");
+            int tempbuf, channels, bits_per_sample, sample_rate;
+            Stream stream = File.Open("Media\\sfx\\player\\heartbeat.wav", FileMode.Open);
+            byte[] sound_data = LoadWave(stream, out channels, out bits_per_sample, out sample_rate);
+            m_HeartBeatBuff = AL.GenBuffer();
+            AL.BufferData(m_HeartBeatBuff, GetSoundFormat(channels, bits_per_sample), sound_data, sound_data.Length, sample_rate);
+            // AL.Source(m_HeartBeatChannel, ALSourcef.Gain, 0.8f);
 
             float[] temp = { 0, 0, 1, 0, 1, 0 };
             AL.Listener(ALListenerfv.Orientation, ref temp);
@@ -68,7 +89,7 @@ namespace Tachycardia.Sound
             Insert("player/step_gravel_02.wav");
             Insert("player/step_gravel_03.wav");
             Insert("player/step_gravel_04.wav");
-            Play("die_01.wav", new Mogre.Vector3(0,0,0));
+            Play("die_01.wav", new Mogre.Vector3(0, 0, 0));
         }
 
         private byte[] LoadWave(Stream stream, out int channels, out int bits, out int rate)
@@ -127,20 +148,21 @@ namespace Tachycardia.Sound
         {
             int tempbuf;
             int channels, bits_per_sample, sample_rate;
-            if(m_Dictionary.ContainsKey(filename))
+            if (m_Dictionary.ContainsKey(filename))
             {
-                Console.WriteLine("SoundDict Error. Już jest taki klucz. "+basename+filename);
+                Console.WriteLine("SoundDict Error. Już jest taki klucz. " + basename + filename);
                 return false;
             }
-            Stream stream = File.Open(basename+filename, FileMode.Open);
+            Stream stream = File.Open(basename + filename, FileMode.Open);
             if (stream == null)
             {
-                Console.WriteLine("SoundDict Error. Nie ma takiego pliku: "+basename+filename);
+                Console.WriteLine("SoundDict Error. Nie ma takiego pliku: " + basename + filename);
                 return false;
             }
             byte[] sound_data = LoadWave(stream, out channels, out bits_per_sample, out sample_rate);
             tempbuf = AL.GenBuffer();
             AL.BufferData(tempbuf, GetSoundFormat(channels, bits_per_sample), sound_data, sound_data.Length, sample_rate);
+
             m_Dictionary.Add(filename, tempbuf);
             return true;
         }
@@ -157,13 +179,13 @@ namespace Tachycardia.Sound
             float maxlen = 0.0f;
             for (int i = 0; i < m_channels; i++)
             {
-                
+
                 AL.GetSource(m_sourceChannels[i], ALGetSourcei.SourceState, out state);
                 if ((ALSourceState)state == ALSourceState.Playing)
                 {
                     //wytypuj ten najdalszy
                     AL.GetSource(m_sourceChannels[i], ALSource3f.Position, out tvec.x, out tvec.y, out tvec.z);
-                    
+
                     tvec = tvec - lis;
                     if (tvec.SquaredLength > maxlen)
                     {
@@ -178,7 +200,7 @@ namespace Tachycardia.Sound
                     //po porstu odtworz
                 }
             }
-            if (plis > maxlen)return;
+            if (plis > maxlen) return;
             if (ktoryteraz == -1) return;
             AL.SourceStop(m_sourceChannels[ktoryteraz]);
             AL.Source(m_sourceChannels[ktoryteraz], ALSourcei.Buffer, tempbuf);
@@ -190,13 +212,13 @@ namespace Tachycardia.Sound
 
         public void Update()
         {
-            Mogre.Vector3 t = Core.Singleton.Camera.RealPosition;
-            Mogre.Vector3 w = Core.Singleton.Camera.Direction;
+            Mogre.Vector3 t = Core.Singleton.m_Camera.RealPosition;
+            Mogre.Vector3 w = Core.Singleton.m_Camera.Direction;
             //w.Normalise();
-            Mogre.Vector3 u = Core.Singleton.Camera.Up;
+            Mogre.Vector3 u = Core.Singleton.m_Camera.Up;
             //u.Normalise();
             AL.Listener(ALListener3f.Position, t.x, t.y, t.z);
-            float []temp = new float[6];
+            float[] temp = new float[6];
             temp[0] = w.x;
             temp[1] = w.y;
             temp[2] = w.z;
@@ -205,12 +227,76 @@ namespace Tachycardia.Sound
             temp[5] = u.z;
             AL.Listener(ALListenerfv.Orientation, ref temp);
 
+            Character m_Player = (Character)Core.Singleton.m_ObjectManager.Find("player");
+            if (m_Player.m_Control.m_bBoost && m_Pulse < 165) m_Pulse += 0.1f;
+            else if (m_Pulse > 83) m_Pulse -= 0.1f;
+
+            m_PulseRatio = 0.90f + (float)Math.Sin((m_Pulse - 83.0f) / 83.0f);
+
+            ////////////////////////////////////////
+            // obsługa stanu spowolnionego tempa gry
+            if (m_IsBulletTime)
+            {
+                if (m_Pitch > 0.35f)
+                    m_Pitch *= 0.95f;
+                else
+                    m_Pitch = 0.35f;
+            }
+            else
+            {
+                if (m_Pitch < 1.0f)
+                    m_Pitch /= 0.95f;
+                else
+                    m_Pitch = 1.0f;
+            }
+
+            AL.Source(m_player.m_Source, ALSourcef.Pitch, m_Pitch);
+
+            for (int i = 0; i < m_channels; i++)
+                AL.Source(m_sourceChannels[i], ALSourcef.Pitch, m_Pitch);
+
+            for (int i = 0; i < m_ambients; i++)
+                AL.Source(m_sourceChannels[i], ALSourcef.Pitch, m_Pitch);
+
+            AL.Source(m_HeartBeatChannel, ALSourcef.Pitch, m_Pitch * m_PulseRatio);
+            ///////////////////////////////////////
+
+            // odtwarzanie bicia serca (narazie parametr tempo zmienia pitch, 
+            // a docelowo tempo ma się zmieniać bez zmiany wysokości dźwięków)
+            int state;
+            AL.GetSource(m_HeartBeatChannel, ALGetSourcei.SourceState, out state);
+            if ((ALSourceState)state != ALSourceState.Playing)
+            {
+
+                AL.Source(m_HeartBeatChannel, ALSourcei.Buffer, m_HeartBeatBuff);
+                AL.SourcePlay(m_HeartBeatChannel);
+            }
+
+            // tu będzie obsługa zapętlenia odtwarzania muzyki
             //player.Play();
         }
 
-        public void PlayBGM() { m_player.Play(); }
+        /**
+         * Obsługa odtwarzania OGG
+        */
+        public void PlayBGM() { m_player.Playback(); }
         public void StopBGM() { m_player.Stop(); }
         public void PauseBGM() { m_player.Pause(); }
+
+        /**
+         * Ustawia poziom głośności muzyki w tle na wartości z zakresu 0-1
+        */
+        public void BGMVolumeUp()
+        {
+            if (m_BGMVolume < 1.0) m_BGMVolume += 0.1f;
+            AL.Source(m_player.m_Source, ALSourcef.Gain, m_BGMVolume);
+        }
+
+        public void BGMVolumeDown()
+        {
+            if (m_BGMVolume > 0.0) m_BGMVolume -= 0.1f;
+            AL.Source(m_player.m_Source, ALSourcef.Gain, m_BGMVolume);
+        }
 
     }
 
