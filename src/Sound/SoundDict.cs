@@ -68,13 +68,11 @@ namespace Tachycardia.Sound
 
             m_IsBulletTime = false;
 
-            //m_HeartBeat.LoadFile("Media\\sfx\\player\\heartbeat.wav");
             int tempbuf, channels, bits_per_sample, sample_rate;
             Stream stream = File.Open("Media\\sfx\\player\\heartbeat.wav", FileMode.Open);
             byte[] sound_data = LoadWave(stream, out channels, out bits_per_sample, out sample_rate);
             m_HeartBeatBuff = AL.GenBuffer();
             AL.BufferData(m_HeartBeatBuff, GetSoundFormat(channels, bits_per_sample), sound_data, sound_data.Length, sample_rate);
-            // AL.Source(m_HeartBeatChannel, ALSourcef.Gain, 0.8f);
 
             float[] temp = { 0, 0, 1, 0, 1, 0 };
             AL.Listener(ALListenerfv.Orientation, ref temp);
@@ -89,7 +87,7 @@ namespace Tachycardia.Sound
             Insert("player/step_gravel_02.wav");
             Insert("player/step_gravel_03.wav");
             Insert("player/step_gravel_04.wav");
-            Play("die_01.wav", new Mogre.Vector3(0, 0, 0));
+            Play("player/step_concrete_01.wav", new Mogre.Vector3(0, 0, 0));
         }
 
         private byte[] LoadWave(Stream stream, out int channels, out int bits, out int rate)
