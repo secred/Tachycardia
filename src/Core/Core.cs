@@ -28,7 +28,7 @@ namespace Tachycardia
 		private MSkyX.BasicController m_BasicController;
 
 		private Map m_CurrentMap;
-		private GameCamera m_GameCamera;
+		public GameCamera m_GameCamera;
 		public ObjectManager m_ObjectManager;
 		private StateManager m_StateManager;
 		private PhysicsManager m_PhysicsManager;

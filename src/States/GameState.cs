@@ -103,7 +103,19 @@ namespace Tachycardia
             }
             return true;
         }
+        
+        public float camy;
+        public override bool MouseMoved(MOIS.MouseEvent evt)
+        {
+            camy += (float)evt.state.Y.rel / 5.0f;
+            //Core.Singleton.m_GameCamera.Angle = camy;
+            Core.Singleton.m_GameCamera.orientation *= Mogre.Vector3.UNIT_Z.GetRotationTo(new Vector3((float)evt.state.X.rel / -5 * Core.m_FixedTime, 0, 1.0f).NormalisedCopy);
 
+            Console.WriteLine("X" + evt.state.X.abs);
+            Console.WriteLine("Z" + evt.state.Z.abs);
+
+            return true;
+        }
         public override void Update()
         {
 

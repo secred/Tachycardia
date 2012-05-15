@@ -118,7 +118,7 @@ namespace Tachycardia
 
         public virtual void willForward()
         {
-            Mogre.Vector3 _force = m_Control.m_GoTo * Mogre.Vector3.UNIT_Z;
+            Mogre.Vector3 _force = Core.Singleton.GameCamera.orientation/*m_Control.m_GoTo*/ * Mogre.Vector3.UNIT_Z;
             _force *= m_Control.m_MainBody.Mass * getForwardForce() * m_Control.m_adrenaline;
             m_Control.m_MainBody.AddForce(_force);
            

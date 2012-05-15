@@ -58,12 +58,14 @@ namespace Tachycardia
         public float m_Tight;
         public Vector3 m_Height;
         public Vector3 InterPosition;
+        public Mogre.Quaternion orientation;
 
         public GameCamera()
         {
             //float mass = 1;
             m_Node = Core.Singleton.SceneManager.RootSceneNode.CreateChildSceneNode();
-
+            orientation = Mogre.Quaternion.IDENTITY;
+        
         }
 
         /*public void Update()
@@ -89,7 +91,7 @@ namespace Tachycardia
         public void Update()
         {
             Vector3 offset =
-            Character.m_Node.Orientation * (-Vector3.UNIT_Z +
+                /*Character.m_Node.Orientation*/orientation * (-Vector3.UNIT_Z +
                 (Vector3.UNIT_Y * (float)System.Math.Tan(Angle.ValueRadians))
                 ).NormalisedCopy * Distance;
 
